@@ -66,7 +66,8 @@ contact: 'info@eberle-zentrum.uni-tuebingen.de' # FIXME
 
 # Order of episodes in your lesson
 episodes:
-- introduction.md
+- Forschungsdaten.md
+- Suchen-und-Zitieren.md
 
 # Information for Learners
 learners:
