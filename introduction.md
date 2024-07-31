@@ -1,114 +1,56 @@
 ---
-title: "Using Markdown"
+title: "Forschungsdaten"
 teaching: 10
 exercises: 2
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- How do you write a lesson using Markdown and `{sandpaper}`?
+- Was zählt zu Forschungsdaten?
+- Warum sollten diese geteilt werden?
+- Was sind die F.A.I.R.-Prinzipien?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::: objectives
 
-- Explain how to use markdown with The Carpentries Workbench
-- Demonstrate how to include pieces of code, figures, and nested challenge blocks
+- TODO
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Introduction
+## Forschungsdaten ...
 
-This is a lesson created via The Carpentries Workbench. It is written in
-[Pandoc-flavored Markdown](https://pandoc.org/MANUAL.txt) for static files and
-[R Markdown][r-markdown] for dynamic files that can render code into output. 
-Please refer to the [Introduction to The Carpentries 
-Workbench](https://carpentries.github.io/sandpaper-docs/) for full documentation.
+... sind die Grundlage wissenschaftlicher Erkenntnisse und können in unterschiedlichen Formen vorliegen.
 
-What you need to know is that there are three sections required for a valid
-Carpentries lesson:
-
- 1. `questions` are displayed at the beginning of the episode to prime the
-    learner for the content.
- 2. `objectives` are the learning objectives for an episode displayed with
-    the questions.
- 3. `keypoints` are displayed at the end of the episode to reinforce the
-    objectives.
-
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
-
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
-
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-::::::::::::::::::::::::::::::::::::: challenge 
-
-## Challenge 1: Can you do it?
-
-What is the output of this command?
-
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
-
-:::::::::::::::::::::::: solution 
-
-## Output
- 
-```output
-[1] "This new lesson looks good"
-```
-
-:::::::::::::::::::::::::::::::::
+Im Folgenden werden wir auf einige externe Seiten verweisen, die Ihnen einen Überblick über Forschungsdaten und deren Management geben.
 
 
-## Challenge 2: how do you nest solutions within challenge blocks?
+::::::::: callout
 
-:::::::::::::::::::::::: solution 
+# Was zählt zu Forschungsdaten?
 
-You can add a line with at least three colons and a `solution` tag.
+Studieren sie folgende Seite von *Forschungsdaten.info* und machen sie sich Notizen.
 
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
+- [Was sind Forschungsdaten?](https://forschungsdaten.info/themen/informieren-und-planen/was-sind-forschungsdaten/)
 
-## Figures
+:::::::::::::::::
 
-You can use standard markdown for static figures with the following syntax:
+::::::::: challenge
+# Sind das schon Forschungsdaten?
 
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
+*Was macht eine Datei zu Forschungsdaten?*
 
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
+:::: solution
+Üblicherweise handelt es sich bei Forschungsdaten um *Rohdaten*, denn das Filtern, Verarbeiten und Interpretieren der Daten im Rahmen einer Forschungsfrage beeinflusst die Daten und macht sie zu Ergebnisdaten.
+Zudem sollten die Daten *strukturiert* und *dokumentiert* sein, um sie für (sich selbst und) andere Forschende *nachvollziehbar* zu machen.
+Eine lose Textdatei mit Notizen oder eine Präsentation sind daher i.d.R. keine Forschungsdaten, sondern eher Ergebnisse oder Dokumentationen.
+Ob die Daten in einem nachnutzbaren Format vorliegen, ist zentral für die Wiederverwendbarkeit und wird durch die F.A.I.R.-Prinzipien adressiert, die wir bald kennenlernen werden.
+:::::::::::::
 
-::::::::::::::::::::::::::::::::::::: callout
-
-Callout sections can highlight information.
-
-They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present "asides": 
-content that is not central to the narrative of the lesson,
-e.g. by providing the answer to a commonly-asked question.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
+::::::::::::::::::::
 
 
-## Math
 
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
-
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
-
-Cool, right?
-
-::::::::::::::::::::::::::::::::::::: keypoints 
-
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-[r-markdown]: https://rmarkdown.rstudio.com/
+:::::: keypoints
+ - TODO
+::::::::::::::::::::
