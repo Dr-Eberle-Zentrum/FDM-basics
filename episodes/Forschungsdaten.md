@@ -1,7 +1,7 @@
 ---
 title: "Forschungsdaten"
-teaching: 10
-exercises: 2
+teaching: 30
+exercises: 5
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -20,9 +20,9 @@ exercises: 2
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Forschungsdaten ...
+## Was ist das?
 
-... sind die Grundlage wissenschaftlicher Erkenntnisse und können in unterschiedlichen Formen vorliegen.
+Forschungsdaten sind die Grundlage wissenschaftlicher Erkenntnisse und können in unterschiedlichen Formen vorliegen.
 
 Im Folgenden werden wir auf einige externe Seiten verweisen, die Ihnen einen Überblick über Forschungsdaten und deren Management geben.
 
@@ -55,6 +55,9 @@ Ob die Daten in einem nachnutzbaren Format vorliegen, ist zentral für die Wiede
 ::::::::::::::::::::
 
 Das heißt, Forschungsdaten sind nicht nur die Rohdaten, sondern auch die Metadaten, die Dokumentation und die Software, die zur Erhebung und Analyse der Daten verwendet wurde.
+
+
+## Warum teilen?
 
 In der Vergangenheit wurden Forschungsdaten i.d.R. nicht publiziert, sondern nur die Ergebnisse der Forschung. Das hat sich in den letzten Jahren geändert, und es wird immer wichtiger, auch die Daten zu publizieren, um die Nachvollziehbarkeit und Wiederverwendbarkeit der Forschung zu gewährleisten.
 
@@ -95,6 +98,8 @@ Die folgenden Punkte betreffen sowohl ihre eigene Forschung als auch die Forschu
 
 ::::::::::::::::::::
 
+
+## F.A.I.R.-Prinzipien
 
 Das Teilen von Daten wird durch die F.A.I.R.-Prinzipien unterstützt, die die Auffindbarkeit, Zugänglichkeit, Interoperabilität und Wiederverwendbarkeit von Daten fördern.
 Dies betrifft sowohl den eigenen Zugriff auf schon geteilte Daten als auch die Veröffentlichung eigener Daten.
