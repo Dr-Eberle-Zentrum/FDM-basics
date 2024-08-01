@@ -65,3 +65,10 @@ Hier eine Zusammenfassung der wichtigsten Punkte:
 - Lizenzen müssen die Wiederverwendung erlauben.
 - Korrekte Zitation ist zentral in wissenschaftlicher Praxis.
 ::::::::::::::::::::
+
+
+:::::::::::::::: instructor
+
+[Sitzungsaufgabe](Aufgabe-Finden-und-Zitieren.md)
+
+:::::::::::::::::::::::::::
