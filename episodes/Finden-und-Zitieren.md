@@ -69,6 +69,6 @@ Hier eine Zusammenfassung der wichtigsten Punkte:
 
 :::::::::::::::: instructor
 
-[Sitzungsaufgabe](../instructors/Aufgabe-Finden-und-Zitieren.md)
+[Sitzungsaufgabe](Aufgabe-Finden-und-Zitieren.md)
 
 :::::::::::::::::::::::::::
