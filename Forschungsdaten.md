@@ -68,7 +68,7 @@ In der Vergangenheit wurden Forschungsdaten i.d.R. nicht publiziert, sondern nur
 
 Die folgende Seite von *Forschungsdaten.info* diskutiert
 
-- [Vorteile einer Datenpublikation](https://forschungsdaten.info/themen/veroeffentlichen-und-archivieren/daten-publizieren/)
+- [Vorteile einer Datenpublikation](https://forschungsdaten.info/themen/veroeffentlichen-und-archivieren/daten-publizieren/) (nur erster Teil der Seite!!!)
 
 :::::::::::::::::
 
