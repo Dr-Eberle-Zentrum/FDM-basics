@@ -83,22 +83,22 @@ Ein deutliches Zeichen, dass die falsche Codierung verwendet wird, ist, wenn ans
 Dies tritt häufig auf, wenn man mit *älteren Dateien* arbeitet, was gerade im wissenschaftlichen Bereich *in der Datennachnutzung von Daten* immer wieder vorkommt.
 
 
-::::::::::: callout
+::::::::::: testimonial
 
 # Hinweis
 
 In diesem Fall, muss man händisch die Codierung ändern, um den Text korrekt darzustellen.
 Hier bleibt häufig nichts weiter übrig, als die Codierung auszuprobieren, bis der Text korrekt dargestellt wird.
-Dabei ist es hilfreich, über den Urheber der Datei Bescheid zu wissen.
+Dabei ist es hilfreich, über den Ursprung der Datei Bescheid zu wissen.
 
 Hier kommt wieder die Dokumentation von Daten ins Spiel!
 
-::::::::::::::::::::
+:::::::::::::::::::::::::
 
-### Zeilenumbruch
+### Zeilenumbruch im Text
 
-Ein weiteres Problem, das beim Lesen von Textdateien auftreten kann, ist der **Zeilenumbruch**, also das Zeichen, das angibt, dass eine neue Zeile beginnt.
-In verschiedenen Betriebssystemen wird der Zeilenumbruch unterschiedlich dargestellt:
+Ein weiteres Problem, das beim Lesen und Verarbeiten von Textdateien auftreten kann, ist der **Zeilenumbruch**, also das Zeichen, das angibt, dass eine neue Zeile beginnt.
+In aktuellen Betriebssystemen wird der Zeilenumbruch unterschiedlich abgespeichert:
 
 - **Windows**: `\r\n` (zwei Zeichen: Carriage Return und Line Feed)
 - **Linux**: `\n` (ein Zeichen: Line Feed)
@@ -106,14 +106,14 @@ In verschiedenen Betriebssystemen wird der Zeilenumbruch unterschiedlich dargest
 
 Dies kann dazu führen, dass Textdateien auf einem Betriebssystem, auf dem sie nicht erstellt wurden, nicht korrekt dargestellt oder verarbeitet werden können.
 
-::::::::::: callout
+::::::::::: testimonial
 
 # Hinweis
 
 Texteditoren wie Notepad++ oder Visual Studio Code können automatisch die Zeilenumbrüche in Textdateien erkennen und korrekt darstellen.
 Auch ist es dort möglich, die Zeilenumbrüche in einem Textdokument zu konvertieren, d.h. von einem Format in ein anderes zu ändern.
 
-::::::::::::::::::::
+::::::::::::::::::::::::
 
 ## Zahlen
 
