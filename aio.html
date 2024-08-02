@@ -264,6 +264,18 @@
 </div>
 <!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush4">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading4">
+        <a href="Digitale-Daten.html">3. Digitale Daten</a>
+    </div>
+<!--/div.accordion-header-->
+
+  </div>
+<!--/div.accordion-item-->
+</div>
+<!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -704,7 +716,223 @@ geprüft werden, um eine Wiederverwendung zu ermöglichen.</li>
 </ul>
 </div>
 </div>
-</div></section>
+</div></section><section id="aio-Digitale-Daten"><p>Content from <a href="Digitale-Daten.html">Digitale Daten</a></p>
+<hr>
+<p>Last updated on 2024-08-02 |
+
+        <a href="https://github.com/Dr-Eberle-Zentrum/FDM-basics/edit/main/episodes/Digitale-Daten.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Expand All Solutions " data-collapse="Collapse All Solutions "> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Overview</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Questions</h3>
+<ul>
+<li>Wie wird … gespeichert?</li>
+<li>Was gibt es für Probleme?</li>
+<li>Worauf muss man achten?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Objectives</h3>
+<ul>
+<li>Verständnis wie verschiedene Informationstypen digital repräsentiert
+sind</li>
+<li>Wissen um die Grenzen und Schwierigkeiten von
+Informationsspeicherung</li>
+<li>Lösungsstrategien für häufige Daten(import)probleme</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Grundlegende Formen von Information sind Text, Zahlen, Bilder, Audio
+und Video. Wenn wir an diese denken, haben wir meistens eine Vorstellung
+von einem physischen Medium wie einem Blatt Papier etc., auf dem diese
+gespeichert sind. Eine solche Form der Informationsspeicherung wird als
+<strong>analoge</strong> Speicherung bezeichnet.</p>
+<p>In Computern wird Information in Form von <strong>digitalen
+Daten</strong> gespeichert. Digital bedeuted, vereinfacht gesagt, dass
+die Information in Form von Zahlen gespeichert wird, die wiederum in
+Form von elektrischen Signalen (z.B. “Strom an oder aus”) repräsentiert
+werden. Letzteres ist die Grundlage für die Funktionsweise von
+Computern.</p>
+<p>Das bedeutet, dass alle Informationen, die wir in Computern
+speichern, in Form von Zahlen repräsentiert werden muss. Eine weitere
+wichtige Eigenschaft von digitalen Daten ist, dass sie in
+<strong>diskreten</strong> Einheiten gespeichert werden, also i.d.R. in
+Form von ganzen Zahlen.</p>
+<p>Im Folgenden werden wir uns mit den verschiedenen Arten von digitalen
+Daten und deren Speicherung beschäftigen.</p>
+<section><h2 class="section-heading" id="text">Text<a class="anchor" aria-label="anchor" href="#text"></a>
+<a class="anchor" aria-label="anchor" href="#text"></a>
+</h2>
+<hr class="half-width">
+<p>Text ist die einfachste Form von digitalen Daten. Text wird in
+Computern in Form von <strong>Zeichenketten</strong> gespeichert. Jedes
+Zeichen wird dabei durch eine Zahl repräsentiert, wobei die Zuordnung
+von Zeichen zu Zahlen durch eine <strong>Zeichencodierung</strong>
+festgelegt wird. Letztere ist eine Tabelle, die jedem Zeichen eine Zahl
+zuordnet.</p>
+<p>Die bekannteste und eine der ersten ist die
+<strong>ASCII</strong>-Codierung (American Standard Code for Information
+Interchange), welche 128 Zeichen umfasst und im Folgenden dargestellt
+ist.</p>
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/ASCII-Table-wide.svg/800px-ASCII-Table-wide.svg.png" alt="ASCII" class="figure mx-auto d-block"><div class="figcaption">ASCII</div>
+</figure><p>Wenn wir die Tabelle betrachten, fällt uns auf, dass nicht nur
+Buchstaben oder Ziffern, sondern auch Sonderzeichen und Steuerzeichen
+(z.B. Zeilenumbruch) enthalten sind. Zudem fehlen Umlaute und
+Sonderzeichen, die in anderen Sprachen verwendet werden.</p>
+<p>Daher wurden im Laufe der Zeit weitere Zeichencodierungen entwickelt,
+die mehr Zeichen umfassen. Hier ein paar Beispiele:</p>
+<ul>
+<li>
+<strong>latin1</strong> (ISO-8859-1): 256 Zeichen, enthält Umlaute
+und Sonderzeichen für westeuropäische Sprachen</li>
+<li>
+<strong>latin2</strong> (ISO-8859-2): 256 Zeichen, enthält Umlaute
+und Sonderzeichen für osteuropäische Sprachen</li>
+<li>
+<strong>GB2312</strong>: 6.763 Zeichen, enthält chinesische
+Schriftzeichen</li>
+<li>
+<strong>UTF-8</strong>: 1.112.064 Zeichen, enthält fast alle
+Schriftzeichen der Welt</li>
+</ul>
+<p>Hierbei ist zu beachten, dass die erweiterten Zeichencodierungen
+rückwärtskompatibel sind, d.h. die Zahlen-Buchstaben-Kodierungen der
+ersten 128 Zahlen entsprechen i.d.R. der “alten” ASCII Codierungen.</p>
+<p>Aktuell ist <strong>UTF-8</strong> die am weitesten verbreitete
+Zeichencodierung, da sie fast alle Schriftzeichen der Welt umfasst und
+daher für die meisten Anwendungsfälle geeignet ist. Diese Kodierung wird
+auch von den meisten neueren Betriebssystemen und Anwendungen
+standardmäßig verwendet.</p>
+<div id="kodierungsprobleme" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="kodierungsprobleme" class="callout-inner">
+<h3 class="callout-title">Kodierungsprobleme<a class="anchor" aria-label="anchor" href="#kodierungsprobleme"></a>
+</h3>
+<div class="callout-content">
+<p><em>Was kann passieren, wenn ein Text mit
+<strong>latin1</strong>-Codierung abgespeichert wird (also in Zahlen
+umgewandelt wird) und anschliessend mit
+<strong>latin2</strong>-Codierung gelesen wird (also die Zahlen wieder
+mit Buchstaben ersetzt werden)?</em></p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Show me the solution </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>Es werden falsche Zeichen angezeigt, da die
+Zahlen-Buchstaben-Zuordnung nicht übereinstimmt.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Das Problem mit den verschiedenen Zeichencodierungen ist, dass beim
+Öffnen einer Datei mit einer anderen Codierung als der, in der sie
+gespeichert wurde, die Zeichen falsch dargestellt werden. Daher ist es
+wichtig, die Codierung einer Datei zu kennen, um sie korrekt lesen zu
+können. Ein deutliches Zeichen, dass die falsche Codierung verwendet
+wird, ist, wenn anstelle von Umlauten oder Sonderzeichen nur
+Fragezeichen oder andere Zeichen angezeigt werden, wie in folgendem
+Bild.</p>
+<figure><img src="fig/encoding-problem.jpg" alt="Kodierungsproblem" class="figure mx-auto d-block"><div class="figcaption">Kodierungsproblem</div>
+</figure><p>Dies tritt häufig auf, wenn man mit <em>älteren Dateien</em>
+arbeitet, was gerade im wissenschaftlichen Bereich <em>in der
+Datennachnutzung von Daten</em> immer wieder vorkommt.</p>
+<div id="hinweis" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="hinweis" class="callout-inner">
+<h3 class="callout-title">Hinweis<a class="anchor" aria-label="anchor" href="#hinweis"></a>
+</h3>
+<div class="callout-content">
+<p>In diesem Fall, muss man händisch die Codierung ändern, um den Text
+korrekt darzustellen. Hier bleibt häufig nichts weiter übrig, als die
+Codierung auszuprobieren, bis der Text korrekt dargestellt wird. Dabei
+ist es hilfreich, über den Urheber der Datei Bescheid zu wissen.</p>
+<p>Hier kommt wieder die Dokumentation von Daten ins Spiel!</p>
+</div>
+</div>
+</div>
+<div class="section level3">
+<h3 id="zeilenumbruch">Zeilenumbruch<a class="anchor" aria-label="anchor" href="#zeilenumbruch"></a>
+</h3>
+<p>Ein weiteres Problem, das beim Lesen von Textdateien auftreten kann,
+ist der <strong>Zeilenumbruch</strong>, also das Zeichen, das angibt,
+dass eine neue Zeile beginnt. In verschiedenen Betriebssystemen wird der
+Zeilenumbruch unterschiedlich dargestellt:</p>
+<ul>
+<li>
+<strong>Windows</strong>: <code>\r\n</code> (zwei Zeichen: Carriage
+Return und Line Feed)</li>
+<li>
+<strong>Linux</strong>: <code>\n</code> (ein Zeichen: Line
+Feed)</li>
+<li>
+<strong>MacOS</strong>: <code>\r</code> oder <code>\n</code>, je
+nach Alter des Betriebssystems (Carriage Return oder Line Feed)</li>
+</ul>
+<p>Dies kann dazu führen, dass Textdateien auf einem Betriebssystem, auf
+dem sie nicht erstellt wurden, nicht korrekt dargestellt oder
+verarbeitet werden können.</p>
+<div id="hinweis-1" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="hinweis-1" class="callout-inner">
+<h3 class="callout-title">Hinweis<a class="anchor" aria-label="anchor" href="#hinweis-1"></a>
+</h3>
+<div class="callout-content">
+<p>Texteditoren wie Notepad++ oder Visual Studio Code können automatisch
+die Zeilenumbrüche in Textdateien erkennen und korrekt darstellen. Auch
+ist es dort möglich, die Zeilenumbrüche in einem Textdokument zu
+konvertieren, d.h. von einem Format in ein anderes zu ändern.</p>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="zahlen">Zahlen<a class="anchor" aria-label="anchor" href="#zahlen"></a>
+<a class="anchor" aria-label="anchor" href="#zahlen"></a>
+</h2>
+<hr class="half-width">
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Key Points<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>TODO</li>
+</ul>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section>
 </div>
     </main>
 </div>
@@ -752,8 +980,8 @@ geprüft werden, um eine Wiederverwendung zu ermöglichen.</li>
   "url": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/aio.html",
   "identifier": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/aio.html",
   "dateCreated": "2024-08-01",
-  "dateModified": "2024-08-01",
-  "datePublished": "2024-08-01"
+  "dateModified": "2024-08-02",
+  "datePublished": "2024-08-02"
 }
 
   </script><script>
