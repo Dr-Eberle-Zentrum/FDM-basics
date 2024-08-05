@@ -198,6 +198,8 @@ Die Binärzahl 1011 entspricht der Dezimalzahl 10, da
 
 ::::::::::: testimonial
 
+## Bits und Bytes
+
 Einzelne "01 Ziffern" einer Binärzahl werden **bit** genannt, was für "binary digit" steht.
 
 Kolonnen von 8 Bits werden **Byte** genannt, was für "by eight" steht.
@@ -205,6 +207,26 @@ Kolonnen von 8 Bits werden **Byte** genannt, was für "by eight" steht.
 Ein Byte kann also 256 verschiedene Werte annehmen, da 2^8 = 256 verschiedene 01 Kombinationen mit 8 Stellen möglich sind.
 
 :::::::::::::::::::::::
+
+::::::::: callout
+
+## Überlaufproblem
+
+Da die Anzahl der Bits, die zur Speicherung einer Zahl zur Verfügung stehen, begrenzt ist, kann es zu einem Überlauf kommen.
+Ein Überlauf tritt auf, wenn das Ergebnis einer Berechnung mehr Stellen benötigt als die maximale Anzahl an Bits, die zur Speicherung zur Verfügung stehen.
+Hierbei werden die führenden Stellen einfach abgeschnitten, was zu einem falschen Ergebnis führt.
+
+```plaintext
+Beispiel unter der Annahme von 4 Bit Zahlendarstellung:
+
+10 = 7 + 3 = 0111 + 0011 = 11010 (5 Bit = Überlauf)
+                         =  1010 (4 Bit Speicherdarstellung)
+                         = 2 (Dezimalzahl, falsches Ergebnis)
+```
+
+Diese Problem ist heutzutage jedoch durch die Verwendung von 32 oder 64 Bit Zahlen in modernen Computern nur noch selten relevant.
+
+:::::::::::::::::
 
 
 ### Fließ- oder Gleitkommazahlen
