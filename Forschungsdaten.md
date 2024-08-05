@@ -142,8 +142,7 @@ Ohne oder bei eingeschränkter Dokumentation können folgende Fragen nicht beant
 ::::::::::::::::::::
 
 
-Hier eine Zusammenfassung der wichtigsten Punkte:
-
+## Zusammenfassung
 
 :::::: keypoints
 - Forschungsdaten sind nicht nur Rohdaten, sondern auch Metadaten, Dokumentation und Software.

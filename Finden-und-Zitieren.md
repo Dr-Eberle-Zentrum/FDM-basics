@@ -54,8 +54,7 @@ Bitte auch die dortigen *Wissenstests* an den Seitenenden durchführen!
 
 
 
-Hier eine Zusammenfassung der wichtigsten Punkte:
-
+## Zusammenfassung
 
 :::::: keypoints
 - Forschungsdaten sind in speziellen Repositorien und Datenbanken abgelegt, i.d.R. öffentlich zugänglich.
