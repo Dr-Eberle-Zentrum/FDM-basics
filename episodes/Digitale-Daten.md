@@ -351,6 +351,8 @@ Dieser Überlauf führt dazu, dass die Zeit wieder bei -2.147.483.648 beginnt, w
 
 ::::::::::::::
 
+::::::::::::::::::::
+
 ## Farben
 
 Farben werden in Computern z.B. als **RGB-Werte** gespeichert, also als Kombination von Rot-, Grün- und Blauanteilen des jeweiligen Lichtes.
