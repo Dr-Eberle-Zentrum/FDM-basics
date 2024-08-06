@@ -208,6 +208,22 @@ Ein Byte kann also 256 verschiedene Werte annehmen, da 2^8 = 256 verschiedene 01
 
 :::::::::::::::::::::::
 
+Um Daten im Computer speichern, verwalten und abrufen zu können, ist es unumgänglich schon im Vorfeld zu wissen, wie viele Bits und Bytes für die jeweilige Information verwendt wurde.
+Andernfalls könnten zu wenige oder zuviele Bits gelesen werden, was zu einem falschen Ergebnis führen würde.
+Oder noch schlimmer: Datenoperationen überlappen, das heisst das Speichern einer Information überschreibt (ggf. auch nur teilweise) eine andere Information.
+
+Um dies zu vermeiden und die Datenintegrität zu gewährleisten, wurden Standards festgelegt, welche die Anzahl der Bits und Bytes für verschiedene Datentypen festlegen. Hier ein paar Beispiele:
+
+- **int** (Integer): 4 Bytes (32 Bit)
+- **long** (Long Integer): 8 Bytes (64 Bit)
+- **char** (Character): 1 Byte (8 Bit)
+- **float**: 4 Bytes (32 Bit) - für Gleitkommazahlen
+- **double**: 8 Bytes (64 Bit) - für Gleitkommazahlen
+
+Um **negative Zahlen** darstellen zu können, wird in der Regel das erste Bit als Vorzeichenbit verwendet.
+Dieses schränkt die Anzahl der darstellbaren Zahlen ein, da nur noch 7 Bit (bzw. 1 Bit weniger) für die eigentliche Zahlenrepräsentation zur Verfügung stehen.
+
+
 ::::::::: callout
 
 ## Überlaufproblem
@@ -309,10 +325,33 @@ Aber *sie selbst* müssen *daran denken*!
 
 ## Zeit
 
-Die Zeit wird in Computern als **Anzahl von Sekunden seit einem festgelegten Zeitpunkt** gespeichert.
+Die Zeit wird in Computern als **Anzahl von (Milli)Sekunden seit einem festgelegten Zeitpunkt** gespeichert.
+
 Dieser Zeitpunkt ist in der Regel der 1. Januar 1970 um 00:00:00 Uhr (UTC), auch als **Unix-Zeit** bekannt.
 Diese Darstellung hat den Vorteil, dass die Zeit als Ganzzahl gespeichert werden kann, was die Speicherung und Verarbeitung vereinfacht und Rundungsfehler vermeidet.
 
+::::::::: challenge
+
+## Jahr-2038-Problem
+
+Ein Problem bei der Speicherung von Zeit als Ganzzahl ist das **Jahr-2038-Problem**.
+Lesen sie diesen [Wikipedia-Artikel](https://de.wikipedia.org/wiki/Jahr-2038-Problem) und erklären sie, warum es auftritt und welche Auswirkungen es haben könnte.
+
+:::: solution
+
+## Antwort
+
+Das Jahr-2038-Problem tritt auf, weil die Unix-Zeit als *vorzeichenbehaftete* 32-Bit-Ganzzahl gespeichert wird.
+
+Das heisst nicht alle 32 Bit sind für die Zahl selbst reserviert, sondern das erste Bit gibt das Vorzeichen an.
+Da die Unix-Zeit den 1. Januar 1970 als Nullpunkt hat, wird die Zeit in Sekunden seit diesem Zeitpunkt gespeichert.
+Da eine 32-Bit-Ganzzahl nur 2^32 = 4.294.967.296 verschiedene Werte speichern kann, wird die Unix-Zeit am 19. Januar 2038 um 03:14:07 Uhr UTC den Wert 2.147.483.647 erreichen.
+Da die Unix-Zeit als vorzeichenbehaftete Ganzzahl gespeichert wird, wird der Wert am 19. Januar 2038 um 03:14:07 Uhr UTC auf -2.147.483.648 springen, was zu einem **Überlauf** führt.
+Dieser Überlauf führt dazu, dass die Zeit wieder bei -2.147.483.648 beginnt, was dem 13. Dezember 1901 um 20:45:52 Uhr UTC entspricht.
+
+::::::::::::::
+
+::::::::::::::::::::
 
 ## Farben
 
@@ -367,11 +406,17 @@ Da es sich um eine kontinuierliche Größe handelt, wird die Amplitude in der Re
 - Ganzzahlen können in Binärform gespeichert und verarbeitet werden
   - dabei in 2er-Potenzen zerlegt
   - Interpretation analog zu Dezimalzahlen (rechts nach links, ...)
-  - "Ziffer" ist ein Bit (0 oder 1)
+  - Bit = eine "Ziffer" einer Binärzahl (0 oder 1)
   - 8 Bit = 1 Byte
-- Gebrochene Zahlen können als Gleitkommazahlen gespeichert werden
-  - hierbei kann es zu Rundungsfehlern kommen
-  - Sprachabhängige Darstellung von Zahlen kann zu Importproblemen führen
+  - Anzahl der Bits bestimmt die maximal darstellbare Zahl (Überlaufproblem)
+- Probleme digitaler Informationsrepräsentation
+  - Überlaufproblem bei zu großen Zahlen
+  - Diskretisierung von kontinuierlichen Größen
+    - Rundungsfehler bei Gleitkommazahlen
+    - Verlust von Genauigkeit bei zu kleinen/großen Zahlen
+  - Kodierungsprobleme bei Textimport
+    - Sprachabhängige Darstellung von Zahlen
+    - Unterschiedliche Zeichenencodings
   
 ::::::::::::::::
 
