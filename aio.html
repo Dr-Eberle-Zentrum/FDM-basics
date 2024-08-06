@@ -730,7 +730,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-Digitale-Daten"><p>Content from <a href="Digitale-Daten.html">Digitale Daten</a></p>
 <hr>
-<p>Last updated on 2024-08-05 |
+<p>Last updated on 2024-08-06 |
 
         <a href="https://github.com/Dr-Eberle-Zentrum/FDM-basics/edit/main/episodes/Digitale-Daten.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1047,6 +1047,34 @@ verschiedene 01 Kombinationen mit 8 Stellen möglich sind.</p>
 </div>
 </div>
 </div>
+<p>Um Daten im Computer speichern, verwalten und abrufen zu können, ist
+es unumgänglich schon im Vorfeld zu wissen, wie viele Bits und Bytes für
+die jeweilige Information verwendt wurde. Andernfalls könnten zu wenige
+oder zuviele Bits gelesen werden, was zu einem falschen Ergebnis führen
+würde. Oder noch schlimmer: Datenoperationen überlappen, das heisst das
+Speichern einer Information überschreibt (ggf. auch nur teilweise) eine
+andere Information.</p>
+<p>Um dies zu vermeiden und die Datenintegrität zu gewährleisten, wurden
+Standards festgelegt, welche die Anzahl der Bits und Bytes für
+verschiedene Datentypen festlegen. Hier ein paar Beispiele:</p>
+<ul>
+<li>
+<strong>int</strong> (Integer): 4 Bytes (32 Bit)</li>
+<li>
+<strong>long</strong> (Long Integer): 8 Bytes (64 Bit)</li>
+<li>
+<strong>char</strong> (Character): 1 Byte (8 Bit)</li>
+<li>
+<strong>float</strong>: 4 Bytes (32 Bit) - für Gleitkommazahlen</li>
+<li>
+<strong>double</strong>: 8 Bytes (64 Bit) - für
+Gleitkommazahlen</li>
+</ul>
+<p>Um <strong>negative Zahlen</strong> darstellen zu können, wird in der
+Regel das erste Bit als Vorzeichenbit verwendet. Dieses schränkt die
+Anzahl der darstellbaren Zahlen ein, da nur noch 7 Bit (bzw. 1 Bit
+weniger) für die eigentliche Zahlenrepräsentation zur Verfügung
+stehen.</p>
 <div id="überlaufproblem" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1200,12 +1228,52 @@ Probleme zu vermeiden.</p>
 <a class="anchor" aria-label="anchor" href="#zeit"></a>
 </h2>
 <hr class="half-width">
-<p>Die Zeit wird in Computern als <strong>Anzahl von Sekunden seit einem
-festgelegten Zeitpunkt</strong> gespeichert. Dieser Zeitpunkt ist in der
-Regel der 1. Januar 1970 um 00:00:00 Uhr (UTC), auch als
-<strong>Unix-Zeit</strong> bekannt. Diese Darstellung hat den Vorteil,
-dass die Zeit als Ganzzahl gespeichert werden kann, was die Speicherung
-und Verarbeitung vereinfacht und Rundungsfehler vermeidet.</p>
+<p>Die Zeit wird in Computern als <strong>Anzahl von (Milli)Sekunden
+seit einem festgelegten Zeitpunkt</strong> gespeichert.</p>
+<p>Dieser Zeitpunkt ist in der Regel der 1. Januar 1970 um 00:00:00 Uhr
+(UTC), auch als <strong>Unix-Zeit</strong> bekannt. Diese Darstellung
+hat den Vorteil, dass die Zeit als Ganzzahl gespeichert werden kann, was
+die Speicherung und Verarbeitung vereinfacht und Rundungsfehler
+vermeidet.</p>
+<div id="jahr-2038-problem" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="jahr-2038-problem" class="callout-inner">
+<h3 class="callout-title">Jahr-2038-Problem<a class="anchor" aria-label="anchor" href="#jahr-2038-problem"></a>
+</h3>
+<div class="callout-content">
+<p>Ein Problem bei der Speicherung von Zeit als Ganzzahl ist das
+<strong>Jahr-2038-Problem</strong>. Lesen sie diesen <a href="https://de.wikipedia.org/wiki/Jahr-2038-Problem" class="external-link">Wikipedia-Artikel</a>
+und erklären sie, warum es auftritt und welche Auswirkungen es haben
+könnte.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5"> Antwort </h4>
+</button>
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div class="accordion-body">
+<p>Das Jahr-2038-Problem tritt auf, weil die Unix-Zeit als
+<em>vorzeichenbehaftete</em> 32-Bit-Ganzzahl gespeichert wird.</p>
+<p>Das heisst nicht alle 32 Bit sind für die Zahl selbst reserviert,
+sondern das erste Bit gibt das Vorzeichen an. Da die Unix-Zeit den 1.
+Januar 1970 als Nullpunkt hat, wird die Zeit in Sekunden seit diesem
+Zeitpunkt gespeichert. Da eine 32-Bit-Ganzzahl nur 2^32 = 4.294.967.296
+verschiedene Werte speichern kann, wird die Unix-Zeit am 19. Januar 2038
+um 03:14:07 Uhr UTC den Wert 2.147.483.647 erreichen. Da die Unix-Zeit
+als vorzeichenbehaftete Ganzzahl gespeichert wird, wird der Wert am 19.
+Januar 2038 um 03:14:07 Uhr UTC auf -2.147.483.648 springen, was zu
+einem <strong>Überlauf</strong> führt. Dieser Überlauf führt dazu, dass
+die Zeit wieder bei -2.147.483.648 beginnt, was dem 13. Dezember 1901 um
+20:45:52 Uhr UTC entspricht.</p>
+</div>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="farben">Farben<a class="anchor" aria-label="anchor" href="#farben"></a>
 <a class="anchor" aria-label="anchor" href="#farben"></a>
 </h2>
@@ -1243,12 +1311,12 @@ nicht weiß, sondern ein Braunton. Warum ist das so?</p>
 </div>
 </div>
 </div>
-<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
+<div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
-  <h4 class="accordion-header" id="headingSolution5"> Antwort </h4>
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
+  <h4 class="accordion-header" id="headingSolution6"> Antwort </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <p>Die Farben im Farbkasten sind Pigmente, die das Licht absorbieren und
 nur bestimmte Farben reflektieren. Wenn sie Rot, Grün und Blau mischen,
@@ -1295,15 +1363,27 @@ Zeitpunkt</li>
 <ul>
 <li>dabei in 2er-Potenzen zerlegt</li>
 <li>Interpretation analog zu Dezimalzahlen (rechts nach links, …)</li>
-<li>“Ziffer” ist ein Bit (0 oder 1)</li>
+<li>Bit = eine “Ziffer” einer Binärzahl (0 oder 1)</li>
 <li>8 Bit = 1 Byte</li>
+<li>Anzahl der Bits bestimmt die maximal darstellbare Zahl
+(Überlaufproblem)</li>
 </ul>
 </li>
-<li>Gebrochene Zahlen können als Gleitkommazahlen gespeichert werden
+<li>Probleme digitaler Informationsrepräsentation
 <ul>
-<li>hierbei kann es zu Rundungsfehlern kommen</li>
-<li>Sprachabhängige Darstellung von Zahlen kann zu Importproblemen
-führen</li>
+<li>Überlaufproblem bei zu großen Zahlen</li>
+<li>Diskretisierung von kontinuierlichen Größen
+<ul>
+<li>Rundungsfehler bei Gleitkommazahlen</li>
+<li>Verlust von Genauigkeit bei zu kleinen/großen Zahlen</li>
+</ul>
+</li>
+<li>Kodierungsprobleme bei Textimport
+<ul>
+<li>Sprachabhängige Darstellung von Zahlen</li>
+<li>Unterschiedliche Zeichenencodings</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
