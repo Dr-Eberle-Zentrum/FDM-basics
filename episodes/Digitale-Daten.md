@@ -37,7 +37,7 @@ Im Folgenden werden wir uns mit den verschiedenen Arten von Information und dere
 
 Text ist die einfachste Form von digitalen Daten.
 Text wird in Computern in Form von **Zeichenketten** gespeichert, das heißt einer Abfolge von Zeichen.
-Jedes Zeichen wird dabei durch eine Zahl repräsentiert, wobei die Zuordnung von Zeichen zu Zahlen durch eine **ZeichenKodierung** festgelegt wird.
+Jedes Zeichen wird dabei durch eine Zahl repräsentiert, wobei die Zuordnung von Zeichen zu Zahlen durch eine **Zeichenkodierung** festgelegt wird.
 Letztere ist eine Tabelle, die jedem Zeichen eine Zahl zuordnet.
 
 Die bekannteste und eine der ersten ist die **ASCII**-Kodierung (American Standard Code for Information Interchange), welche 128 Zeichen umfasst und im Folgenden dargestellt ist.
@@ -69,6 +69,8 @@ Diese Kodierung wird auch von den meisten neueren Betriebssystemen und Anwendung
 *Was kann passieren, wenn ein Text mit **latin1**-Kodierung abgespeichert wird (also in Zahlen umgewandelt wird) und anschliessend mit **latin2**-Kodierung gelesen wird (also die Zahlen wieder mit Buchstaben ersetzt werden)?*
 
 :::::::::: solution
+
+# Antwort
 
 Es werden falsche Zeichen angezeigt, da die Zahlen-Buchstaben-Zuordnung nicht übereinstimmt.
 
