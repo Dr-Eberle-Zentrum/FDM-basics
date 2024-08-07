@@ -47,6 +47,6 @@ Nun sollten die Daten korrekt importiert sein und die Mietpreisindex-Spalte als 
 ### Aufgabe 3 - Speichern
 
 - Speichern sie die Arbeitsmappe in ihrem Abgabeordner ab
-- **Dateiname:** "mietpreisindex.destatis.xlsx"
+- **Dateiname:** `mietpreisindex.destatis.xlsx`
 
 
