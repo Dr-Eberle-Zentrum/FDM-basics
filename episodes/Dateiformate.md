@@ -96,7 +96,9 @@ Im Folgenden werden wir einige der gängigsten Dateiformate für den Datenaustau
 
 
 
-## Markdown - `.md`
+## Markdown
+
+**Dateiendungen**: `.md`, `.markdown`
 
 Markdown ist eine einfache Auszeichnungssprache für Textdateien. 
 Das heisst, einzelne Textabschnitte können mit speziellen Zeichen oder Schlagworten versehen werden, um ihre Formattierung zu bestimmen.
@@ -139,7 +141,7 @@ Die Skripte werden in einer *Programmiersprache* geschrieben, die speziell für 
 Zur Dokumentation und Weitergabe von (Forschungs)Daten ist es daher häufig wichtig, auch die verwendeten Programmierskripte zu speichern und zu teilen.
 Daher sollten sie gängige Programmiersprachen und -skripte kennen, um derartige Dateien identifizieren zu können.
 
-Einige wichtige Dateiendungen für Programmierskripte sind:
+Einige wichtige **Dateiendungen** für Programmierskripte sind:
 
 - `.py` - Python
 - `.R` - R
@@ -161,9 +163,23 @@ Zudem können sie in verschiedene Formate exportiert werden, z.B. als HTML, PDF 
 Auch hier gilt, dass ggf. nicht nur das erzeugte finale Dokument, sondern auch das ursprüngliche Notebook gespeichert und geteilt werden sollte, um die Nachvollziehbarkeit und Reproduzierbarkeit der Analyse zu gewährleisten.
 
 
+## Tabellen
+
+**Dateiendungen**: 
+- textbasierte Formate, z.B.
+  - `.csv` - Comma Separated Values
+  - `.tsv` - Tab Separated Values
+- binäre Formate, z.B.
+  - `.xls`, `.xlsx` - MS Excel
+  - `.ods` - Open Document Spreadsheet
 
 
+## Hierarchische Daten
 
+**Dateiendungen**:
+- `.json` - JavaScript Object Notation
+- `.xml` - Extensible Markup Language
+- `.yaml` - YAML Ain't Markup Language
 
 
 
