@@ -57,13 +57,40 @@ Bitte auch die dortigen *Wissenstests* an den Seitenenden durchführen!
 ## Zusammenfassung
 
 :::::: keypoints
+
 - Forschungsdaten sind in speziellen Repositorien und Datenbanken abgelegt, i.d.R. öffentlich zugänglich.
 - Es gibt fachspezifische und allgemeine Repositorien.
 - Aufgrund der Vielzahl an Repositorien und Datenbanken ist die Suche nach Forschungsdaten nicht immer einfach und verlangt eine ausdauernde Recherche.
 - Vorliegende Datenformate und vorhandene Software(kenntnisse) müssen geprüft werden, um eine Wiederverwendung zu ermöglichen.
 - Lizenzen müssen die Wiederverwendung erlauben.
 - Korrekte Zitation ist zentral in wissenschaftlicher Praxis.
+
 ::::::::::::::::::::
+
+
+:::::::::: challenge
+
+# Einordnung im Datenlebenszyklus
+
+![*In welchen Phasen im Datenlebenszyklus sehen sie obige Punkte als besonders wichtig an?*](https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png){width=40%}
+
+
+::: solution
+
+## Antwort
+
+Datenrecherche und Zitation sind vorrangig zu Beginn und am Ende des Datenlebenszyklus wichtig.
+
+- **Planung**: Schlagworte etc. für spätere Suche festlegen
+- **Erhebung**: Wiederverwendung von Daten
+- **Publikation**: Zitation von verwendeten Daten
+- **Archivierung**: Festlegung von Metadaten, Identifiern und Lizenzen, um Wiederverwendung zu ermöglichen
+- **Nachnutzung**: Daten/Quellen identifizieren, bewerten und einordnen
+
+:::
+
+::::::::::::::::::::
+
 
 
 :::::::::::::::: instructor

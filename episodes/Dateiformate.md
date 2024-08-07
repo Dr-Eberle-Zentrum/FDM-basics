@@ -64,15 +64,15 @@ Dies ist *mit jeder Datei möglich*, unabhhängig von der Dateiendung oder dem D
 Wenn die Datei text-basiert ist, können Sie den Inhalt lesen und bearbeiten.
 Falls nicht, wird der Inhalt der Datei als unleserlicher Text oder als Zeichenfolge von Sonderzeichen angezeigt, wie in folgendem Beispiel.
 
-![JPEG Bilddatei in einem Texteditor geöffnet zeigt nur wirre Sonderzeichen. Dies deutet auf ein binäres Dateiformat hin.](fig/jpeg-in-texteditor.png){width=50%}
+![JPEG Bilddatei in einem Texteditor geöffnet zeigt nur wirre Sonderzeichen. Dies deutet auf ein binäres Dateiformat hin.](fig/jpeg-in-texteditor.png){width=70%}
 
 :::::::::::::::::::
 
 ::::::: challenge
 
-## Los gehts ..
+## Sie sind dran ..
 
-Nun sind sie dran! Öffnen Sie in einem Texteditor ihrer Wahl eine MS Excel Datei und eine PDF Datei.
+Öffnen Sie in einem Texteditor ihrer Wahl eine MS Excel Datei und eine PDF Datei.
 
 *Was sehen Sie? Sind die Dateiformate binär oder textbasiert?*
 
@@ -98,11 +98,11 @@ Im Folgenden werden wir einige der gängigsten Dateiformate für den Datenaustau
 
 ## Markdown - `.md`
 
-Markdown ist eine einfache Auszeichnungssprache für einfache Textdateien. 
-Das heisst, einzelne Textabschnitte können mit speziellen Zeichen versehen werden, um sie ihre Formattierung zu bestimmen.
+Markdown ist eine einfache Auszeichnungssprache für Textdateien. 
+Das heisst, einzelne Textabschnitte können mit speziellen Zeichen oder Schlagworten versehen werden, um ihre Formattierung zu bestimmen.
 Die Formatierung selbst geschieht in einem nachfolgenden Verarbeitungsschritt, bei dem der formatierte Text in einem geeigneten Format, z.B. HTML, PDF, .., abgespeichert wird.
 
-Studieren sie folgende Webseite, in der Markdown und seine Anwendung erklärt wird:
+Studieren sie folgende Webseite, in der Markdown und seine Anwendungen erklär werden:
 
 - [Markdown Guide - Get Started](https://www.markdownguide.org/getting-started/) (Englisch)
   - oder [in Deutsch via google.translate](https://www-markdownguide-org.translate.goog/getting-started/?_x_tr_sl=en&_x_tr_tl=de&_x_tr_hl=de&_x_tr_pto=wapp) (mit einigen lustigen Übersetzungsartefakten ...)
@@ -133,7 +133,7 @@ Sie können daher [dillinger.io](https://dillinger.io) schon direkt zu ihren Les
 
 ## Programmierskripte
 
-Neben reinen Textdateien werden auch *Programmierskripte* in Textdateien abgelegt.
+Neben reiner Textinformation werden auch *Programmierskripte* in Textdateien abgelegt.
 Diese enthalten Anweisungen und Befehle, die von einem Computer ausgeführt werden können, um bestimmte Aufgaben zu erledigen.
 Die Skripte werden in einer *Programmiersprache* geschrieben, die speziell für die Erstellung von Programmen und Skripten entwickelt wurde.
 Zur Dokumentation und Weitergabe von (Forschungs)Daten ist es daher häufig wichtig, auch die verwendeten Programmierskripte zu speichern und zu teilen.
@@ -173,3 +173,38 @@ Auch hier gilt, dass ggf. nicht nur das erzeugte finale Dokument, sondern auch d
 - Markdown - Dokumentation und einfach formatierte Texte
 
 ::::::::::::::::::::
+
+
+
+:::::::::: challenge
+
+# Einordnung im Datenlebenszyklus
+
+![*In welchen Phasen im Datenlebenszyklus sehen sie obige Punkte als besonders wichtig an?*](https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png){width=40%}
+
+::: solution
+
+## Antwort
+
+Die richtige Wahl des Dateiformats ist in allen Phasen des Datenlebenszyklus wichtig:
+
+- **Planung**: Auswahl geeigneter Formate für die Datenerhebung, -analyse und -publikation
+- **Erhebung**: Speicherung und Dokumentation der Daten
+- **Analyse**: Verwendung von geeigneten Formaten für die Analyse (Skripte) und von Zwischenergebnissen (ggf. proprietäre Formate)
+- **Publikation**: Bereitstellung der Daten in geeigneten Formaten
+- **Archivierung**: Langzeitarchivierung in geeigneten Standardformaten
+- **Nachnutzung**: Dokumentation; Auswahl von Formaten, die die eigene Nachnutzung erleichtern
+
+:::
+
+::::::::::::::::::::
+
+
+
+::::: instructor
+
+TODO link zu Aufgabe
+
+::::::::::::::
+
+
