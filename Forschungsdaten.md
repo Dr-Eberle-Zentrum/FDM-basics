@@ -145,8 +145,36 @@ Ohne oder bei eingeschränkter Dokumentation können folgende Fragen nicht beant
 ## Zusammenfassung
 
 :::::: keypoints
+
 - Forschungsdaten sind nicht nur Rohdaten, sondern auch Metadaten, Dokumentation und Software.
 - Forschungsdaten sollten geteilt werden.
 - Die F.A.I.R.-Prinzipien unterstützen das Teilen von Daten.
 - Dokumentation ist zentral für die Nachvollziehbarkeit und Wiederverwendbarkeit von Daten.
+
 ::::::::::::::::::::
+
+:::::::::: challenge
+
+# Einordnung im Datenlebenszyklus
+
+![*In welchen Phasen im Datenlebenszyklus sehen sie obige Punkte als besonders wichtig an?*](https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png){width=40%}
+
+
+::: solution
+
+## Antwort
+
+Eigentlich in allen Phasen, da eine gute Dokumentation und Strukturierung der Daten die Nachvollziehbarkeit und Wiederverwendbarkeit in allen Phasen des Lebenszyklus unterstützt.
+
+- **Planung**: Dokumentation der Forschungsfrage und der zu verwendenden Daten/Quellen
+- **Erhebung**: Dokumentation der Rahmenbedingungen und der Datenerhebung
+- **Analyse**: Dokumentation der Analyse und der Software
+- **Publikation**: Teilen der Daten und Dokumentation
+- **Archivierung**: Langfristige Sicherung und Zugänglichkeit der Daten
+- **Nachnutzung**: Nachvollziehbarkeit und Wiederverwendbarkeit der Daten
+
+:::
+
+::::::::::::::::::::
+
+
