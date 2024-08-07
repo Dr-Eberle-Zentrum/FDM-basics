@@ -1,5 +1,5 @@
 ---
-title: Basics Forschungsdatenmanagement
+title: FDM Basics
 site: sandpaper::sandpaper_site
 ---
 
@@ -11,9 +11,9 @@ Der Fokus liegt hierbei auf Recherche, Dokumentation, Organisation und Wiederver
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- Forschungsdaten?
+- Daten?
 - Finden?
-- Wiederverwenden?
+- Nachnutzung?
 - Organisieren?
 
 
