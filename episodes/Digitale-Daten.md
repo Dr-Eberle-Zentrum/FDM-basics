@@ -42,7 +42,9 @@ Letztere ist eine Tabelle, die jedem Zeichen eine Zahl zuordnet.
 
 Die bekannteste und eine der ersten ist die **ASCII**-Kodierung (American Standard Code for Information Interchange), welche 128 Zeichen umfasst und im Folgenden dargestellt ist.
 
-![ASCII](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/ASCII-Table-wide.svg/800px-ASCII-Table-wide.svg.png){alt='ASCII'}
+![ASCII-Kodiertabelle. Nichtsichtbare Steuerzeichen sind in eckigen Klammern angegeben.[^1]](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/ASCII-Table-wide.svg/800px-ASCII-Table-wide.svg.png){alt='ASCII'}
+
+[^1]: Quelle: [Wikimedia Commons](https://simple.m.wikipedia.org/wiki/File:ASCII-Table-wide.svg) - 07.08.2024
 
 Wenn wir die Tabelle betrachten, fällt uns auf, dass nicht nur Buchstaben oder Ziffern, sondern auch Sonderzeichen und Steuerzeichen (z.B. Zeilenumbruch) enthalten sind.
 Zudem fehlen Umlaute und Sonderzeichen, die in anderen Sprachen verwendet werden.
@@ -264,6 +266,11 @@ Der Trick ist nun, dass *sowohl Mantisse als auch Exponent als Ganzzahlen* gespe
 
 Dies funktioniert sehr gut für Zahlen, die sich als Potenzen von 10 darstellen lassen, wie 0,0012 = 1.2 * 10^-3.
 Für Zahlen, die sich nicht als Potenzen von 10 darstellen lassen, wie 1/3 = 0.3333333333333333..., kann es zu **Rundungsfehlern** kommen, da der Computer nur eine begrenzte Anzahl von Stellen für die Mantisse und den Exponenten speichern kann, da  beide als Ganzzahl gespeichert werden.
+Dieses Problem ist in folgender Grafik verdeutlicht, indem verschiedene sehr kurze Mantissenlängen dargestellt sind.
+
+![Genauigkeit von Gleitkommazahlen hängt sehr stark von der Mantissenlänge (Anzahl Bits) ab und sinkt mit steigendem Abstand zu 0.[^2] ](https://upload.wikimedia.org/wikipedia/commons/8/8f/Exakt_darstellbare_Gleitkommazahlen.png){width=50%}
+
+[^2]: Quelle: [Roland Illig - Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Exakt_darstellbare_Gleitkommazahlen.png) - 07.08.2024
 
 ::::::::::::::::: callout
 
