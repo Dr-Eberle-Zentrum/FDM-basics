@@ -243,7 +243,9 @@
 
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
-        <ul><li><a href="#markdown">Markdown</a></li>
+        <ul><li><a href="#bin%C3%A4r-vs.-text">Binär vs. Text</a></li>
+<li><a href="#markdown---.md">Markdown - <code>.md</code></a></li>
+<li><a href="#programmierskripte">Programmierskripte</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -308,7 +310,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Dateiformate</h1>
-        <p>Last updated on 2024-08-06 |
+        <p>Last updated on 2024-08-07 |
 
         <a href="https://github.com/Dr-Eberle-Zentrum/FDM-basics/edit/main/episodes/Dateiformate.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -348,12 +350,129 @@ sind</li>
 </div>
 </div>
 </div>
-<section><h2 class="section-heading" id="markdown">Markdown<a class="anchor" aria-label="anchor" href="#markdown"></a>
-<a class="anchor" aria-label="anchor" href="#markdown"></a></h2>
-<hr class="half-width"><p>Markdown ist ein einfaches Auszeichnungssprache, die in der Regel in
-Textdateien verwendet wird. Das heisst, einzelne Textabschnitte können
-mit speziellen Zeichen versehen werden, um sie ihre Formattierung zu
-bestimmen. Die Formatierung selbst geschieht in einem nachfolgenden
+<p>Um Daten zu speichern oder weitergeben zu können, müssen sie in einer
+Datei abgelegt werden. Damit die Daten auch später wieder gelesen und
+verarbeitet werden können, muss dies in einer festgelegten Art und Weise
+geschehen, was durch das <strong>Dateiformat</strong> bestimmt wird.
+Damit man später noch weiss, welches Dateiformat verwendet wurde, wird
+dieses durch eine entsprechende <strong>Dateiendung</strong> (engl.
+<em>file extension</em>) hinterlegt. Die Dateiendung ist also lediglich
+ein Hinweis darauf, in welchem Format die Daten abgelegt sind, hat
+darüber hinaus aber keine weitere Bedeutung.</p>
+<section><h2 class="section-heading" id="binär-vs--text">Binär vs. Text<a class="anchor" aria-label="anchor" href="#bin%C3%A4r-vs.-text"></a>
+<a class="anchor" aria-label="anchor" href="#bin%C3%A4r-vs--text"></a></h2>
+<hr class="half-width"><p>Dateien können entweder in <strong>binärer</strong> oder
+<strong>Textform</strong> abgelegt werden. Dazu müssen wir uns erinnern,
+dass jedwede Information in einem Computer als Ganzzahl kodiert und
+diese in Binärzahlen, also einer Abfolge von <strong>Bits</strong> (0
+und 1), repräsentiert und verwaltet werden.</p>
+<p>Nun gibt es zwei Möglichkeiten, wie diese computerinterne
+Datenrepräsentation in einer Datei abgelegt werden kann.</p>
+<p>Am kompaktesten und effizientesten ist es, die interne
+Binärdatendarstellung direkt als Binärdaten in einer Datei abzulegen,
+also als eine Abfolge von 0 und 1. Dieses wird als sogenannte
+<strong>binäre Datei</strong> bezeichnet. Dies hat den Vorteil, dass die
+Daten sehr <em>schnell und effizient</em> gelesen und geschrieben werden
+können, da keine Umwandlung notwendig ist. Allerdings sind binäre
+Dateien <em>für Menschen nicht lesbar</em>, da sie nur aus einer Abfolge
+von 0 und 1 bestehen, sodass keine Interpretation oder Inspektion der
+Daten möglich ist. Zudem sind binäre Dateien <em>nicht oder nur bedingt
+portabel</em>, da sie von der internen Datenrepräsentation des Computers
+und des verwendeten Anwendungsprogramms abhängen und daher nicht ohne
+weiteres auf anderen Systemen oder mit anderer Software gelesen werden
+können.</p>
+<p>Daher werden binäre Dateiformate in der Regel nur für spezielle
+Anwendungen verwendet, bei denen es auf Geschwindigkeit und Effizienz
+ankommt, oder wenn die Daten nicht von Menschen gelesen werden müssen.
+Zudem sind binäre Dateiformate in der Regel <em>spezialisiert</em> und
+<em>proprietär</em><a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>, d.h. sie sind nur für bestimmte
+Anwendungen oder Programme geeignet und können nicht ohne weiteres von
+anderen Programmen gelesen oder verarbeitet werden.</p>
+<p>Aufgrund dessen sind binäre Dateiformate in der Regel <em>nicht für
+den allgemeinen Datenaustausch oder die Langzeitarchivierung</em>
+geeignet.</p>
+<p>Stattdessen werden Daten, die ausgetauscht oder archiviert werden
+sollen, in der Regel in <strong>Textform</strong> abgelegt. Hierbei
+werden die internen Binärdaten in eine <em>menschlich lesbare</em> Form
+umgewandelt, z.B. in Buchstaben, Zahlen oder Sonderzeichen, und als
+<em>Text</em> in einer Datei abgelegt. Dieser muss nicht zwingend in
+einer menschenlesbaren Form sein, sondern kann auch in einer
+<em>maschinenlesbaren</em> Form abgelegt werden, z.B. als strukturierte
+Daten oder in einer speziellen Syntax.</p>
+<p>Grundlegend ist aufgrund der Textform jedoch gesichert, dass die
+Daten in einer Form abgelegt sind, die unabhängig von der
+computerinternen Datenrepräsentation ist und daher <em>portabel</em> und
+<em>unabhängig</em> von der verwendeten Software oder dem Betriebssystem
+ist.</p>
+<div id="ist-das-binär-oder-textbasiert" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="ist-das-binär-oder-textbasiert" class="callout-inner">
+<h3 class="callout-title">Ist das binär oder textbasiert?<a class="anchor" aria-label="anchor" href="#ist-das-bin%C3%A4r-oder-textbasiert"></a>
+</h3>
+<div class="callout-content">
+<p>Um zu überprüfen, ob eine Datei binär oder textbasiert ist, können
+Sie die Datei einfach mit einem Texteditor öffnen. Dies ist <em>mit
+jeder Datei möglich</em>, unabhhängig von der Dateiendung oder dem
+Dateiformat!</p>
+<p>Wenn die Datei text-basiert ist, können Sie den Inhalt lesen und
+bearbeiten. Falls nicht, wird der Inhalt der Datei als unleserlicher
+Text oder als Zeichenfolge von Sonderzeichen angezeigt, wie in folgendem
+Beispiel.</p>
+<figure><img src="../fig/jpeg-in-texteditor.png" style="width:50.0%" alt="JPEG Bilddatei in einem Texteditor geöffnet zeigt nur wirre Sonderzeichen. Dies deutet auf ein binäres Dateiformat hin." class="figure mx-auto d-block"><div class="figcaption">JPEG Bilddatei in einem Texteditor geöffnet
+zeigt nur wirre Sonderzeichen. Dies deutet auf ein binäres Dateiformat
+hin.</div>
+</figure></div>
+</div>
+</div>
+<div id="los-gehts-.." class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<div id="los-gehts-.." class="callout-inner">
+<h3 class="callout-title">Los gehts ..<a class="anchor" aria-label="anchor" href="#los-gehts-.."></a>
+</h3>
+<div class="callout-content">
+<p>Nun sind sie dran! Öffnen Sie in einem Texteditor ihrer Wahl eine MS
+Excel Datei und eine PDF Datei.</p>
+<p><em>Was sehen Sie? Sind die Dateiformate binär oder
+textbasiert?</em></p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  Antwort
+  </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+<p>Die Excel-Datei wird als unleserlicher Text oder als Zeichenfolge von
+Sonderzeichen angezeigt, da sie im binären XLSX-Format gespeichert ist.
+Letzteres ist eigentlich ein komprimiertes ZIP-Archiv, das verschiedene
+Dateien und Ordner enthält, die die Tabellenkalkulation und die Daten
+enthalten.</p>
+<p>Die PDF-Datei wird je nach Inhalt als Mix aus lesbarem Text und
+Sonderzeichen angezeigt. Das PDF-Format ist ein Hybridformat, in dem
+bestimmte Inhalte (wie Bilder) in einem binären Format gespeichert sind,
+während der Text z.T. in einer menschenlesbaren Form abgelegt ist.</p>
+<p>Doch dazu später mehr…</p>
+</div>
+</div>
+</div>
+</div>
+<p>Im Folgenden werden wir einige der gängigsten Dateiformate für den
+Datenaustausch und die Langzeitarchivierung vorstellen und ihre
+Verwendungszwecke und Eigenschaften erläutern.</p>
+</section><section><h2 class="section-heading" id="markdown----md">Markdown - <code>.md</code><a class="anchor" aria-label="anchor" href="#markdown---.md"></a>
+<a class="anchor" aria-label="anchor" href="#markdown----md"></a></h2>
+<hr class="half-width"><p>Markdown ist eine einfache Auszeichnungssprache für einfache
+Textdateien. Das heisst, einzelne Textabschnitte können mit speziellen
+Zeichen versehen werden, um sie ihre Formattierung zu bestimmen. Die
+Formatierung selbst geschieht in einem nachfolgenden
 Verarbeitungsschritt, bei dem der formatierte Text in einem geeigneten
 Format, z.B. HTML, PDF, .., abgespeichert wird.</p>
 <p>Studieren sie folgende Webseite, in der Markdown und seine Anwendung
@@ -404,6 +523,49 @@ schon direkt zu ihren Lesezeichen im Browser hinzufügen.</p>
 </div>
 </div>
 </div>
+</section><section><h2 class="section-heading" id="programmierskripte">Programmierskripte<a class="anchor" aria-label="anchor" href="#programmierskripte"></a>
+<a class="anchor" aria-label="anchor" href="#programmierskripte"></a></h2>
+<hr class="half-width"><p>Neben reinen Textdateien werden auch <em>Programmierskripte</em> in
+Textdateien abgelegt. Diese enthalten Anweisungen und Befehle, die von
+einem Computer ausgeführt werden können, um bestimmte Aufgaben zu
+erledigen. Die Skripte werden in einer <em>Programmiersprache</em>
+geschrieben, die speziell für die Erstellung von Programmen und Skripten
+entwickelt wurde. Zur Dokumentation und Weitergabe von (Forschungs)Daten
+ist es daher häufig wichtig, auch die verwendeten Programmierskripte zu
+speichern und zu teilen. Daher sollten sie gängige Programmiersprachen
+und -skripte kennen, um derartige Dateien identifizieren zu können.</p>
+<p>Einige wichtige Dateiendungen für Programmierskripte sind:</p>
+<ul><li>
+<code>.py</code> - Python</li>
+<li>
+<code>.R</code> - R</li>
+<li>
+<code>.js</code> - Javascript</li>
+<li>
+<code>.sh</code> - Shell - Linux/MacOS Kommandozeile</li>
+<li>
+<code>.bat</code> - Batchskripte - MS DOS/Windows Kommandozeile</li>
+<li>
+<code>.ps1</code> - Powershellskripte - erweiterte MS Windows
+Kommandozeile</li>
+</ul><p>Markdown wird auch sehr häufig in Verbindung mit Programmiersprachen
+verwendet, um Codebeispiele und Dokumentationen zu erstellen. Zudem
+wurden “Hybridformate” entwickelt, die sowohl Markdown für
+Beschreibungen als auch direkt auszuführende Programmieranweisungen
+enthalten. Beispiele hierfür sind:</p>
+<ul><li>Jupyter Notebooks (<code>.ipynb</code>),</li>
+<li>R Markdown (<code>.Rmd</code>) oder R Notebooks
+(<code>.Rnb</code>).</li>
+</ul><p>Diese Formate ermöglichen es, Code und Dokumentation bzw.
+Interpretation in einem Dokument zu kombinieren und interaktiv
+auszuführen, was sie besonders für die Datenanalyse und -visualisierung
+geeignet macht. Zudem können sie in verschiedene Formate exportiert
+werden, z.B. als HTML, PDF oder Präsentation, was sie <em>für die
+Veröffentlichung und den Austausch von Ergebnissen</em> nützlich macht.
+Auch hier gilt, dass ggf. nicht nur das erzeugte finale Dokument,
+sondern auch das ursprüngliche Notebook gespeichert und geteilt werden
+sollte, um die Nachvollziehbarkeit und Reproduzierbarkeit der Analyse zu
+gewährleisten.</p>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -420,7 +582,16 @@ schon direkt zu ihren Lesezeichen im Browser hinzufügen.</p>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</section></div> <!-- / div.lesson-content -->
+</section><div class="footnotes footnotes-end-of-document">
+<hr><ol><li id="fn1"><p>Proprietär bedeutet, dass das Dateiformat von einem
+bestimmten Hersteller oder für dessen Programm entwickelt wurde und
+daher nur von diesem Programm oder von Programmen, die das Format kennen
+und unterstützen, gelesen oder verarbeitet werden können.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol></div>
+
+
+
+      </div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/Digitale-Daten.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
         <a class="chapter-link float-end" href="../instructor/index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
@@ -478,7 +649,7 @@ any links that you are not going to use.
   "url": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/instructor/Dateiformate.html",
   "identifier": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/instructor/Dateiformate.html",
   "dateCreated": "2024-08-01",
-  "dateModified": "2024-08-06",
+  "dateModified": "2024-08-07",
   "datePublished": "2024-08-07"
 }
 
