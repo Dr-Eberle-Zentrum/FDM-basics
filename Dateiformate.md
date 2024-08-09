@@ -94,15 +94,30 @@ Doch dazu später mehr...
 
 Im Folgenden werden wir einige der gängigsten Dateiformate für den Datenaustausch und die Langzeitarchivierung vorstellen und ihre Verwendungszwecke und Eigenschaften erläutern.
 
+## Nur Text
 
+Die einfachste Möglichkeit beliebige Information zu speichern ist in Form von *unformatierten Textdateien*.
+Diese enthalten nur eine texttuelle Repräsentation der Information in Form von Buchstaben, Zahlen und Sonderzeichen, und haben darüber hinaus keine spezielle Struktur oder Formatierung.
 
-## Markdown
+Derartige Dateien werden i.d.R. mit der **Dateiendung** `.txt` versehen und können mit jedem *Texteditor* geöffnet und bearbeitet werden.
+Hierbei ist zu beachten, das MS Word oder andere Text*verarbeitungs*programme nicht als Texteditor geeignet sind, da sie zusätzliche Formatierungen und Metadaten in die Datei schreiben, die den reinen Textinhalt verfälschen.
+Geeignete Texteditoren sind z.B. MS Windows Editor, Notepad++ (Windows), TextEdit (Mac) oder gedit (Linux).
+
+Wenn die Textdatei in einer *strukturierten Form* vorliegt, d.h. wenn die Information in *Zeilen und Spalten* organisiert oder durch spezielle *Schlüsselwörter* oder *Trennzeichen* strukturiert ist, dann spricht man von einem **textbasiertem Dateiformat**.
+
+## Formattierter Text
+
+### Markdown
 
 **Dateiendungen**: `.md`, `.markdown`
 
 Markdown ist eine einfache Auszeichnungssprache für Textdateien. 
 Das heisst, einzelne Textabschnitte können mit speziellen Zeichen oder Schlagworten versehen werden, um ihre Formattierung zu bestimmen.
 Die Formatierung selbst geschieht in einem nachfolgenden Verarbeitungsschritt, bei dem der formatierte Text in einem geeigneten Format, z.B. HTML, PDF, .., abgespeichert wird.
+
+![Beispiel einer Markdown-Datei (links) und einer gerenderten Ausgabe (rechts).[^md]](fig/md-rendering.png){width=60%}
+
+[^md]: Quelle - [B.K. Nielsen - Freron](https://blog.freron.com/2011/thoughts-on-writing-emails-using-markdown/) - 07.08.2024
 
 Studieren sie folgende Webseite, in der Markdown und seine Anwendungen erklär werden:
 
@@ -132,6 +147,88 @@ Sie können daher [dillinger.io](https://dillinger.io) schon direkt zu ihren Les
 :::::::::::::::::::::::
 
 
+### HTML
+
+**Dateiendungen**: `.html`, `.htm`
+
+Ähnlich wie Markdown ist auch HTML (HyperText Markup Language) eine Auszeichnungssprache, die zur Strukturierung von Texten in Webseiten verwendet wird.
+Im Gegensatz zu Markdown ist HTML jedoch deutlich komplexer und ermöglicht eine detaillierte Strukturierung und Formatierung von Texten und zusätzlichen Inhalten (z.B. Bilder, Videos, ...).
+HTML-Dateien können mit jedem Texteditor geöffnet und bearbeitet werden, jedoch ist zur Anzeige der Formatierung ein **Webbrowser** erforderlich.
+Das heißt, analog wie bei Markdown, muss der HTML-Code erst durch ein Programm (i.d.R. dem Browser) interpretiert und dargestellt werden.
+
+![Beispiel für eine einfache Webseite. Links der HTML-Code, rechts die dargestellte Webseite.[^html]](fig/html-rendering.png){width=60%}
+
+[^html]: Quelle [Chris Spann - Lumar](https://www.lumar.io/blog/best-practice/clientside-vs-serverside-js-rendering-hamburger-analogy/) - 07.08.2024
+
+Webseiten bestehen aus einer Kombination von HTML, CSS und Javascript, wobei 
+
+- HTML die *Struktur* und den Inhalt der Seite definiert, 
+- CSS das *Aussehen* und die Formatierung steuert und 
+- Javascript die *Interaktivität und Funktionalität* hinzufügt.
+
+Webseiten werden häufig *zur Präsentation, Publikation oder Dokumentation* von Forschung und deren Daten verwendet.
+
+Aufgrund der zugrundeliegenden Struktur von HTML-Dateien, kann man teilweise auch direkt aus Webseiten die präsentierten Daten extrahieren. Dies nennt sich *Web Scraping*.
+Allerdings ist eine zusätzliche Bereitstellung der Daten in einem datenfokussierten Dateiformat (z.B. CSV, JSON) meist sinnvoller und empfohlen.
+
+
+### PDF
+
+Das **Portable Document Format** (PDF) ist ein Dateiformat, das entwickelt wurde, um Dokumente unabḧängig von Anwendungen, Betriebssystemen oder Hardwareplattformen *anzuzeigen* und *auszudrucken*.
+Damit ist es möglich, Dokumente so zu speichern, dass sie auf jedem Gerät gleich aussehen, was bei Markdown und HTML nicht der Fall ist.
+
+PDF-Dateien können Text, Bilder, Links, Formulare, Audio- und Videodateien enthalten und sind daher ein weit verbreitetes Format für die *Präsentation und den Austausch* von Dokumenten.
+Auch ist es möglich, die Bearbeitung, Druckbarkeit, ... von PDF-Dateien zu *beschränken*, um die Integrität und Authentizität von Dokumenten zu gewährleisten.
+Allerdings sind diese Sicherheitsfeature nur bedingt wirksam und können durchaus umgangen werden.
+
+PDF Dateien sollten für *"Endprodukte"* verwendet werden, die nicht mehr verändert werden sollen, z.B. für Berichte, Präsentationen, Publikationen, etc.
+Sie sind wenig geeignet für die *Zusammenarbeit* und *Weiterverarbeitung* von Daten, da sie nicht so einfach zu bearbeiten sind wie Textdateien oder textbasierte Dateiformate.
+
+Grundlegend kann (fast) jedes PDF-Dokument mit einem entsprechenden Editor (z.B. Adobe Acrobat oder verschiedenen Onlinetools) bearbeitet werden.
+Allerdings erfolgt die Bearbeitung in der Regel nicht im Quellcode, sondern in einer grafischen Benutzeroberfläche, da das PDF-Format einen Mix aus Text- und Binärinformationen enthalten kann.
+
+:::::::: challenge
+
+## PDF editieren
+
+Nehmen sie ein beliebiges PDF-Dokument und versuchen sie es mit einem PDF-Editor zu bearbeiten. Hierfür finden sich auch zahlreiche kostenlose Online-Tools.
+
+::::::::::::::::::
+
+### DOCX, ODT, ...
+
+Um formatierte Texte zu schreiben und zu speichern werden häufig Textverarbeitungsprogramme wie Microsoft Word, Google Docs oder LibreOffice Writer verwendet.
+
+Häufige Dateiendungen für derartige Textverarbeitungsdateien sind:
+
+- `.docx` - Microsoft Word (von Microsoft entwickelter Standard)
+- `.odt` - OpenDocument Text (quelloffener freier Standard)
+
+Diese Dateiformate enthalten neben dem reinen Text auch Informationen zur Formatierung, Schriftart, Farben, Autor, ... und können daher nicht direkt in einem Texteditor geöffnet und bearbeitet werden.
+Allerdings können sie in Textdateien (z.B. Markdown) oder PDF-Dateien konvertiert werden, um sie einfacher zu teilen oder zu archivieren.
+
+Da diese Dateiformate proprietär sind, kann es zu Kompatibilitätsproblemen kommen, wenn sie von verschiedenen Programmen oder Versionen geöffnet werden.
+Das heißt, dass die Formatierung oder der Inhalt der Datei möglicherweise nicht korrekt angezeigt wird, wenn sie in einem anderen Programm geöffnet wird.
+
+Daher wird empfohlen, für Dokumentationen und Texte, die geteilt oder archiviert werden sollen, stattdessen reine Textdateien, textbasierte Dateiformate oder PDF-Dateien zu verwenden.
+
+::::::::::::: challenge
+
+# Dokumentation in .md oder .docx?
+
+Warum ist es besser, Dokumentationen und beschreibende Texte in Markdown-Dateien statt in Word-Dokumenten zu speichern?
+
+:::::: solution
+
+# Mögliche Punkte
+
+- **Plattformunabhängigkeit**: Markdown-Dateien können auf jedem Betriebssystem und mit jedem Texteditor geöffnet und bearbeitet werden, während Word-Dokumente ein entsprechendes Textverarbeitungsprogramm benötigen.
+- **Versionierung**: Markdown-Dateien können leichter in einem Versionskontrollsystem (z.B. Git) gespeichert und lokale Änderungen dokumentiert werden.
+- **Flexibilität**: Markdown-Dateien können einfacher (automatisiert) in beliebige Formate (z.B. HTML, PDF) oder auch Präsentationsformen (Webseite, Buch, ...) konvertiert werden.
+
+:::::::::::::::
+
+:::::::::::::::::::::::::
 
 ## Programmierskripte
 
@@ -166,23 +263,235 @@ Auch hier gilt, dass ggf. nicht nur das erzeugte finale Dokument, sondern auch d
 ## Tabellen
 
 **Dateiendungen**: 
+
 - textbasierte Formate, z.B.
   - `.csv` - Comma Separated Values
   - `.tsv` - Tab Separated Values
 - binäre Formate, z.B.
   - `.xls`, `.xlsx` - MS Excel
-  - `.ods` - Open Document Spreadsheet
+  - `.ods` - OpenDocument Spreadsheet
+
+Bei der Datenerhebung, -verarbeitung oder zur -archivierung werden Daten häufig in tabellarischer Form gespeichert.
+Hierbei werden die Daten in Zeilen und Spalten organisiert, wobei in einzelnen Spalten nur Informationen der gleichen Form (Zahl, Text, ..) gelistet werden.
+
+![Tabellarische Daten sind die häufigste Form der Datenerhebung.](fig/table.data.png){width=30%}
+
+Tabellen können in textbasierten Formaten (z.B. CSV) oder binären Formaten (z.B. XSLX) digital gespeichert werden.
+Textbasierte Formate sind plattformunabhängig und können in jedem Texteditor geöffnet und bearbeitet werden, während binäre Formate spezifische Programme erfordern und ggf. zu Kompatibilitätsproblemen führen können.
+Zudem werden zur Verarbeitung von binären Formaten in Programmiersprachen häufig zusätzliche Funktionalitäten (Pakete) benötigt, was die Verwendung und Nachnutzung erschweren kann.
+
+Eine der häufigsten Formen der tabellarischen Daten ist das *CSV-Format* (Comma Separated Values), bei dem die Daten durch Kommas getrennt in einer Textdatei gespeichert werden.
+Eine mögliche CSV-Repräsentation der obigen Tabelle ist wie folgt.
+
+```plaintext
+Nr,Tag,Wo
+1,Mo,Zoom
+8,Di,?
+```
+
+:::::::::::: challenge
+
+# Problematisch ...
+
+Welche Probleme sehen sie mit der obigen CSV-Kodierung der Tabelle?
+Was kann problematisch werden?
+
+:::::: solution
+
+# Mögliche Probleme
+
+- **Spaltentrennzeichen**: Da es sich um einen deutschsprachigen Datensatz mit Zahlen handelt, kann es zu Problemen mit dem Spaltentrennzeichen "," kommen, falls Dezimalzahlen z.B. "2,34" im Datensatz auftreten. In diesem Fall wäre es nicht eindeutig, ob das Komma ein Spalten- oder Dezimaltrennzeichen ist. Das gleiche Problem ergibt sich, wenn komplette Sätze (die potentiell Kommas enthalten) gespeichert werden. Daher hat sich im westeuropäischen Raum das Semikolon ";" als Trennzeichen etabliert (welches auch als CSV2-Format bezeichnet wird). Alternativ kann auch das TSV-Format verwendet werden, das Tabulatoren als Spaltentrenner verwendet.
+- **Fehlende Daten**: Hier wurden fehlende Daten mit "`?`" vermerkt. Während dies für menschliche Augen ein hilfreicher Hinweis sein kann, ist er für die automatische Datenverarbeitung schlecht geeignet. Wenn einzelne Daten fehlen, sollte in der jeweiligen Spalte einfach keine Information angegeben werden. In diesem Falle also besser "`8,Di,`". - **Textkodierung**: Da der Datensatz Text enthält, können beim Import Probleme mit der Zeichenkodierung auftreten. Aktuell wird empfohlen UTF-8 zu verwenden.
+
+::::::
+
+::::::::::::::
+
+
+::::::::: callout
+
+# Kommentare und Metadaten
+
+CSV sieht i.d.R. keine Kommentare, Metadaten, etc. vor.
+Daher sollten diese Informationen in einer separaten Datei oder in einem anderen Format gespeichert werden.
+Falls unbedingt nötig, werden Kommentare in CSV-Dateien i.d.R. in den ersten Zeilen gelistet und durch spezielle Zeichen (z.B. `#`) am Anfang der Kommentarzeilen markiert.
+Damit ist es möglich, diese beim Import zu überspringen oder zu ignorieren
+
+::::::::::::::
 
 
 ## Hierarchische Daten
 
 **Dateiendungen**:
+
 - `.json` - JavaScript Object Notation
 - `.xml` - Extensible Markup Language
 - `.yaml` - YAML Ain't Markup Language
 
+Eine Alternative zur tabellarischen Datenspeicherung bieten hierarchische Datenformate, die Informationen in einer verschachtelten Struktur speichern.
+Hierbei können Daten in beliebiger Tiefe und Komplexität organisiert werden, was sie besonders für die Speicherung von Metadaten oder strukturierten Daten geeignet macht.
+Zudem liefert diese Form der Datenrepräsentation direkt die Möglichkeit, Zusammenhänge und Beziehungen zwischen den Daten zu speichern.
+
+### JSON
+
+JSON (JavaScript Object Notation) ist, wie der Name schon sagt, ein auf JavaScript basierendes Format, das Daten in einem hierarchischen Format speichert.
+Einzelne Datensätze werden wie folgt repräsentiert:
+
+```json
+{
+  "Nr": 1,
+  "Tag": "Mo",
+  "Ort": "Zoom"
+}
+```
+
+Hierbei werden die Daten in **Schlüssel-Wert-Paaren** gespeichert, wobei die Werte beliebige Datentypen annehmen können (Zahlen, Text, Listen, ...).
+Datensätze selbst werden durch geschweifte Klammern `{}` begrenzt, wobei die einzelnen Schlüssel-Wert-Paare durch Kommas getrennt werden.
+Diese Struktur kann beliebig tief verschachtelt werden, um komplexe Datenstrukturen abzubilden.
+In unserem Beispiel können wir die Informationen für mehrere Treffen wie folgt speichern:
+
+```json
+{
+  "Termine" : [
+    {
+      "Nr": 1,
+      "Tag": "Mo",
+      "Ort": "Zoom"
+    },
+    {
+      "Nr": 8,
+      "Tag": "Di",
+      "Ort": null
+    }
+  ]
+}
+```
+
+Hierbei werden die einzelnen Treffen in einer Liste `Termine` mit eckigen Klammern `[]` zusammengefaßt, welche wiederum die einzelnen Treffen als JSON-Objekte enthält.
+Wichtig: die Liste selbst ist auch wieder ein JSON-Objekt, das in geschweiften Klammern `{}` eingebettet wird (die "äußeren" Klammern umfassen den Datensatz).
+Einrückung, Zeilenumbrüche und Leerzeichen sind rein zur besseren Lesbarkeit erlaubt, können aber weggelassen werden.
+Letzteres ist insbesondere bei großen Datenmengen sinnvoll, um die Dateigröße zu reduzieren.
+
+Beachten sie, dass es hier (im Gegensatz zu CSV) keine Probleme mit dem Komma als Trennzeichen gibt, da die Daten in einem strukturierten Format gespeichert sind.
+Zudem werden fehlende Daten durch `null` repräsentiert, was der eindeutigen Information über fehlende Daten in JavaScript Notation entspricht.
+Allerdings müssen, wie in JavaScript, Textinformationen (sowie "Datennamen") immer in Anführungszeichen gesetzt werden, was die Lesbarkeit im Vergleich zu CSV etwas erschwert.
+
+JSON ist ein weit verbreitetes Format, das in vielen Programmiersprachen unterstützt wird und sich gut für den Datenaustausch zwischen verschiedenen Systemen eignet.
+Allerdings eignet es sich nur bedingt für die manuelle Bearbeitung durch Menschen, da es aufgrund der kompakten Strukturierung und der Anführungszeichen schnell unübersichtlich werden kann.
+Daher wird es i.d.R. automatisiert erzeugt oder in Kombination mit einem Editor oder einer speziellen Software verwendet, die die Strukturierung und Lesbarkeit der Daten verbessert, was wir im Folgenden ausprobieren werden.
+
+:::::::::::: challenge
+
+# JSON-Beispiel
+
+- Öffnen sie den [JSON-Onlineeditor von  tutorialspoint](https://www.tutorialspoint.com/online_json_editor.htm)
+- Kopieren sie den JSON-Code in das Editorfenster (links)
+- Studieren sie die angezeigte Baumhierarchie des Datensatzes (rechts)
+  - Sie können die einzelnen Knoten aufklappen und schließen, um die Hierarchie zu erkunden
+
+*Welche Rückschlüsse können sie aus den GRAUEN Infos an den einzelnen Knoten ziehen?*
+
+::::: solution
+
+## Antwort
+
+- in geschweiften Klammern werden die Anzahl der Schlüssel-Wert-Paare angezeigt, also die Anzahl der Einzelinformationen im entsprechenden (Teil)Datensatz
+- in eckigen Klammern wird die Anzahl der Elemente in einer Liste angezeigt
+
+:::::::::
+
+::::::::::::::
 
 
+### XML
+
+Die Extensible Markup Language (XML) ist ein weiteres hierarchisches Datenformat, das für die Repräsentation von strukturieren, hierarchischen Daten geeignet ist.
+Ähnlich wie in HTML werden Informationen in sogenannten **Tags** gespeichert, wobei in XML die Schlagwörter frei festgelegt werden können.
+So könnten wir unseren JSON Datensatz wie folgt in XML ablegen.
+
+```xml
+<?xml version="1.0"?>
+<termine>
+  <termin>
+    <Nr>1</Nr>
+    <Tag>Mo</Tag>
+    <Ort>Zoom</Ort>
+  </termin>
+  <termin>
+    <Nr>8</Nr>
+    <Tag>Di</Tag>
+    <Ort></Ort>
+  </termin>
+</termine>
+```
+
+Im Gegensatz zu JSON gibt es somit keine "unbenannten" Daten, da alle Information in Tags eingeschlossen werden muss, die durch spitze Klammern `<>` gekennzeichnet sind.
+Die führende Zeile `<?xml version="1.0"?>` gibt die Version des XML-Formats an, die in diesem Fall 1.0 ist, und zeigt beispielhaft, wie in XML Metadaten etc. eingebettet werden können.
+
+Da jede Information auch wieder mit einem schließenden Tag beendet werden muss, sind XML Kodierungen meist umfangreicher als JSON, was die Lesbarkeit und die Dateigröße beeinflußt.
+Allerdings erlaubt XML auch die Definition von **Attributen**, die zusätzliche Informationen zu den Tags enthalten können.
+Dies kann insbesondere bei der Speicherung von Metadaten oder anderen Informationen hilfreich sein, die nicht direkt in den Tags gespeichert werden sollen.
+
+Vordefinierte Schemata wie DTD (Document Type Definition) oder XSD (XML Schema Definition) können verwendet werden, um die Struktur der XML-Datei festzulegen, die Validierung zu erleichtern und einheitliche Standards zum Datenaustausch zu ermöglichen.
+Ein Beispiel hierfür ist der [TEI (Text Encoding Initiative)](https://tei-c.org/) Standard für Textrepräsentation.
+
+::::::::: challenge
+
+# Versuchs mal ...
+
+Es gibt auch einen [XML-Onlineeditor von tutorialspoint](https://www.tutorialspoint.com/online_xml_editor.htm).
+Öffnen sie diesen und kopieren sie das obige XML in die linke Editormaske.
+
+*Was unterscheidet das XML Rendering (rechts) vom JSON Rendering aus der letzten Aufgabe oben?*
+
+::: solution
+
+# Antwort
+
+- es gibt keine explizite Unterscheidung in Datensätze und Listen
+- alle Informationen werden gleich (als Text) behandelt und angezeigt (bei JSON gab es unterschiedliche Darstellungen)
+- Textinformation (zwischen einschließenden Tags) wird nicht "gequotet", d.h. es sind *keine* Anführungszeichen nötig! Ausnahme sind "Attribute" der Tags, wie die Versionsinformation im Beispiel. Tauschen sie mal `<termine>` durch `<termine info="meine Liste">` aus...
+
+::::::::::
+
+:::::::::::::::::
+
+Auch für XML gilt, dass dieses i.d.R. automatisiert als Datenformat erzeugt wird und nur in seltenen Fällen komplett manuell erfaßt wird.
+Allerdings ist es, im Vergleich zu JSON, einfacher menschenlesbar, da alle Elemente eindeutig mit Tags benannt und begrenzt sind.
+
+
+## Bilder und Grafiken
+
+Neben Text- und Tabellendaten sind auch Bilder und Grafiken wichtige Bestandteile von Forschungsdaten.
+Hierbei wird grundlegend in zwei Arten von Bildinformationen unterschieden, die sich in ihrer Darstellung und Verwendung wesentlich unterscheiden.
+
+- **Rastergrafiken** bestehen aus einer "Tabelle" von Pixeln, die Farbinformationen enthalten und sind insbesondere für Fotos und Bilder geeignet, die eher eine diffuse Farbgebung oder Detailgestaltung haben.
+- **Vektorgrafiken** hingegen sind eher "Malanleitungen", die beschreiben wo welche Bildelemente mit welcher Farbe, Form, etc. gezeichnet werden soll. Dies ist insbesondere für technische Zeichnungen, Diagramme und Schaubilder geeignet, da diese Form der Bildkodierung verlustfrei skaliert ("gezoomt") werden kann.
+
+### Rastergrafiken
+
+**Dateiendungen**:
+
+- `.jpg` oder `.jpeg` : JPEG (Joint Photographic Experts Group) - weit verbreitetes Format für Fotos und Bilder. *ACHTUNG:* verlustbehaftet, d.h. Abwägung zwischen Datenverlust und Dateigröße!
+- `.png` : Portable Network Graphics - verlustfreies Format für Bilder, Diagramme und Grafiken
+- `.gif` : Graphics Interchange Format - verlustfreies Format für Animationen und einfache Grafiken
+- `.tif` oder `.tiff` : Tagged Image File Format - verlustfreies Format für hochauflösende Bilder und Scans (vor allem für hochqualitativen Druck)
+
+Der zentralen Unterschied zwischen diesen Formaten ist die Art der Kompression und die damit verbundene Qualität der Bilder.
+Während JPEG-Dateien eine verlustbehaftete Kompression verwenden, die die Dateigröße reduziert, aber auch die Bildqualität beeinträchtigen kann, sind PNG- und TIFF-Dateien verlustfrei und eignen sich daher besser für die Speicherung von Bildern, bei denen die Qualität erhalten bleiben soll.
+
+![Allen Formaten gemein ist, dass die Bildinformation *gerastert* wird, d.h. durch eine Tabelle von Pixeln dargestellt wird.
+Hierbei wird die Farbinformation für jeden Pixel gespeichert, was die Dateigröße von Bildern stark beeinflusst.
+Die Anzahl der Pixel wird *Auflösung* oder Punktdichte genannt.
+Die verwendete Farbtiefe (Anzahl möglicher Farben) beeinflusst ebenfalls die Dateigröße.[^pixelgraphic]](https://upload.wikimedia.org/wikipedia/de/thumb/4/49/Punktdichte%2BFarbtiefe.svg/800px-Punktdichte%2BFarbtiefe.svg.png?20111016165836){width=50%}
+
+[^pixelgraphic]: Quelle [F. Graf - wikipedia.de](https://de.wikipedia.org/wiki/Datei:Punktdichte+Farbtiefe.svg) - 09.08.2024
+
+
+### Vektorgrafiken
+
+
+## Zusammenfassung
 
 ::::::::::: keypoints
 
