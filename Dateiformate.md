@@ -499,11 +499,14 @@ Hierbei wird grundlegend in zwei Arten von Bildinformationen unterschieden, die 
 
 - `.jpg` oder `.jpeg` : JPEG (Joint Photographic Experts Group) - weit verbreitetes Format für Fotos und Bilder. *ACHTUNG:* verlustbehaftet, d.h. Abwägung zwischen Datenverlust und Dateigröße!
 - `.png` : Portable Network Graphics - verlustfreies Format für Bilder, Diagramme und Grafiken
-- `.gif` : Graphics Interchange Format - verlustfreies Format für Animationen und einfache Grafiken
 - `.tif` oder `.tiff` : Tagged Image File Format - verlustfreies Format für hochauflösende Bilder und Scans (vor allem für hochqualitativen Druck)
+- `.gif` : Graphics Interchange Format - verlustfreies Format für Animationen und einfache Grafiken
 
 Der zentralen Unterschied zwischen diesen Formaten ist die Art der Kompression und die damit verbundene Qualität der Bilder.
-Während JPEG-Dateien eine verlustbehaftete Kompression verwenden, die die Dateigröße reduziert, aber auch die Bildqualität beeinträchtigen kann, sind PNG- und TIFF-Dateien verlustfrei und eignen sich daher besser für die Speicherung von Bildern, bei denen die Qualität erhalten bleiben soll.
+Während *JPEG-Dateien* eine verlustbehaftete Kompression verwenden, die die Dateigröße reduziert, aber auch die *Bildqualität beeinträchtigen* kann, sind *PNG- und TIFF-Dateien verlustfrei* und eignen sich daher besser für die Speicherung von Bildern, bei denen die Qualität erhalten bleiben soll.
+
+Daher sollte die Wahl des Dateiformats von der Art des Bildes und der beabsichtigten Verwendung abhängen.
+Für Fotos und Bilder, die auf Webseiten oder in Präsentationen verwendet werden, ist JPEG oft ausreichend, während PNG oder TIFF für hochwertige Drucke oder Grafiken bevorzugt werden sollten.
 
 ![Allen Formaten gemein ist, dass die Bildinformation *gerastert* wird, d.h. durch eine Tabelle von Pixeln dargestellt wird.
 Hierbei wird die Farbinformation für jeden Pixel gespeichert, was die Dateigröße von Bildern stark beeinflusst.
@@ -567,8 +570,18 @@ Bei sehr komplexen Vektorgrafiken mit sehr vielen (überlappenden) Elementen kan
 
 ::::::::::: keypoints
 
-- Markdown - Dokumentation und einfach formatierte Texte
-[TODO]
+- Standardisierte Dateiformate erleichtern den Datenaustausch und die Archivierung von Daten.
+  - für Rohdaten und Publikation
+  - für Austausch mit Kollegen und der Öffentlichkeit
+  - i.d.R. textbasierte Formate (z.B. CSV, JSON, XML)
+- Proprietäre Dateiformate für internen Gebrauch und spezielle Anwendungen/Software
+  - ermöglichen i.d.R. umfangreichere Informationsspeicherung und -darstellung
+  - können (für Austausch) in offene Formate konvertiert werden
+- Wahl des Dateiformats u.a. abhängig von
+  - Art der Daten (z.B. Text, Bild, Video, Audio, ..)
+  - Verwendungszweck (z.B. Analyse, Publikation, Archivierung)
+  - Kompatibilität mit Software und Plattformen
+
 
 ::::::::::::::::::::
 
