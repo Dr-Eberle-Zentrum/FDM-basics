@@ -313,7 +313,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Digitale Daten</h1>
-        <p>Last updated on 2024-08-07 |
+        <p>Last updated on 2024-09-12 |
 
         <a href="https://github.com/Dr-Eberle-Zentrum/FDM-basics/edit/main/episodes/Digitale-Daten.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -651,11 +651,11 @@ tritt auf, wenn das Ergebnis einer Berechnung mehr Stellen benötigt als
 die maximale Anzahl an Bits, die zur Speicherung zur Verfügung stehen.
 Hierbei werden die führenden Stellen einfach abgeschnitten, was zu einem
 falschen Ergebnis führt.</p>
-<pre class="plaintext"><code>Beispiel unter der Annahme von 4 Bit Zahlendarstellung:
+<pre class="plaintext"><code>Beispiel unter der Annahme von 3 Bit Zahlendarstellung:
 
-10 = 7 + 3 = 0111 + 0011 = 11010 (5 Bit = Überlauf)
-                         =  1010 (4 Bit Speicherdarstellung)
-                         = 2 (Dezimalzahl, falsches Ergebnis)</code></pre>
+ 7 + 3 = 111 + 011 = (1)010 (Dezimalzahl 10, aber 4 Bit nötig und nur 3 vorhanden &gt; Überlauf)
+                   = 010 (auf letzte 3 Bit reduzierte Speicherdarstellung)
+                   = 2 (entsprechende Dezimalzahl, falsches Ergebnis)</code></pre>
 <p>Diese Problem ist heutzutage jedoch durch die Verwendung von 32 oder
 64 Bit Zahlen in modernen Computern nur noch selten relevant.</p>
 </div>
@@ -669,7 +669,7 @@ werden, z.B.</p>
 <ul><li>als Bruch 12/10000</li>
 <li>als Dezimalzahl 0,0012</li>
 <li>als wissenschaftliche Notation <em>1.2e-3</em> oder
-<em>1.2E-2</em>
+<em>1.2E-3</em>
 </li>
 </ul><p>Die wissenschaftliche Notation kann auf zwei Arten interpretiert
 werden. Zum einen als mathematische Formel “1,2 * 10^-3 = 1,2 * 0,001 =
@@ -878,6 +878,31 @@ erscheint.</p>
 </div>
 </div>
 </div>
+<p>In folgendem Bild sehen sie, dass die unterschiedlichen Farbmodelle
+nur Teile des vom Menschen sichtbaren Farbraums abdecken.</p>
+<figure><img src="https://aufkleberdrucker24.de/customers_pics/655/4c5b308039adc9c2a7a9c105721f8dc4.jpg" alt="Darstellbare Farben im RGB- (gelb) und CMYK-Farbraum (blau) im Vergleich zum sichtbaren Bereich des Menschen ." class="figure mx-auto d-block"><div class="figcaption">Darstellbare Farben im RGB- (gelb) und
+CMYK-Farbraum (blau) im Vergleich zum sichtbaren Bereich des Menschen <a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>.</div>
+</figure><div id="testimonial5" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div class="callout-inner">
+<h3 class="callout-title">Testimonial</h3>
+<div class="callout-content">
+<p>Die Diskretisierung der Farbwerte kann zu
+<strong>Farbverlust</strong> führen, wenn die Farben in einem anderen
+Farbmodell gespeichert und wieder in RGB umgewandelt werden.</p>
+<div class="section level1">
+<h1 id="hinweis-4">Hinweis<a class="anchor" aria-label="anchor" href="#hinweis-4"></a></h1>
+<p>Daher sollte die Umwandlung zwischen den Farbmodellen nur dann
+erfolgen, wenn es unbedingt notwendig ist, am besten <em>nach</em> der
+Bildbearbeitung.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Für weiterführende Informationen rund um die Farbmodelle RGB und
+CMYK, ihrer Unterschiede und Umwandlung empfehlen wir folgende <a href="https://aufkleberdrucker24.de/was-ist-der-unterschied-zwischen-rgb-und-cmyk.htm" class="external-link">Seite</a>.</p>
 </section><section><h2 class="section-heading" id="audio">Audio<a class="anchor" aria-label="anchor" href="#audio"></a></h2>
 <hr class="half-width"><p>Auch <strong>Audiodaten</strong> werden als Zahlen gespeichert, wobei
 die Amplitude des Schallsignals als Zahl gespeichert wird. Die Amplitude
@@ -970,6 +995,7 @@ any links that you are not going to use.
 Commons</a> - 07.08.2024<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
 <li id="fn2"><p>Quelle: <a href="https://commons.wikimedia.org/wiki/File:Exakt_darstellbare_Gleitkommazahlen.png" class="external-link">Roland
 Illig - Wikimedia Commons</a> - 07.08.2024<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Quelle: <a href="https://aufkleberdrucker24.de/was-ist-der-unterschied-zwischen-rgb-und-cmyk.htm" class="external-link">aufkleberdrucker24.de</a><a href="#fnref3" class="footnote-back">↩︎</a></p></li>
 </ol></div>
 
 
@@ -1032,8 +1058,8 @@ Illig - Wikimedia Commons</a> - 07.08.2024<a href="#fnref2" class="footnote-back
   "url": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/Digitale-Daten.html",
   "identifier": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/Digitale-Daten.html",
   "dateCreated": "2024-08-01",
-  "dateModified": "2024-08-07",
-  "datePublished": "2024-09-10"
+  "dateModified": "2024-09-12",
+  "datePublished": "2024-09-12"
 }
 
   </script><script>
