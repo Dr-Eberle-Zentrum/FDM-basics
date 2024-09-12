@@ -490,7 +490,7 @@ Allerdings ist es, im Vergleich zu JSON, einfacher menschenlesbar, da alle Eleme
 Neben Text- und Tabellendaten sind auch Bilder und Grafiken wichtige Bestandteile von Forschungsdaten.
 Hierbei wird grundlegend in zwei Arten von Bildinformationen unterschieden, die sich in ihrer Darstellung und Verwendung wesentlich unterscheiden.
 
-- **Rastergrafiken** bestehen aus einer "Tabelle" von Pixeln, die Farbinformationen enthalten und sind insbesondere für Fotos und Bilder geeignet, die eher eine diffuse Farbgebung oder Detailgestaltung haben.
+- **Rastergrafiken** bestehen aus einer "Tabelle" von Pixeln, d.h. Farbinformationen pro Bildposition, und sind insbesondere für Fotos und Bilder geeignet, die eher eine diffuse Farbgebung oder Detailgestaltung haben.
 - **Vektorgrafiken** hingegen sind eher "Malanleitungen", die beschreiben wo welche Bildelemente mit welcher Farbe, Form, etc. gezeichnet werden soll. Dies ist insbesondere für technische Zeichnungen, Diagramme und Schaubilder geeignet, da diese Form der Bildkodierung verlustfrei skaliert ("gezoomt") werden kann.
 
 ### Rastergrafiken
@@ -515,12 +515,60 @@ Die verwendete Farbtiefe (Anzahl möglicher Farben) beeinflusst ebenfalls die Da
 
 ### Vektorgrafiken
 
+**Dateiendungen**:
+
+- `.svg` : Scalable Vector Graphics - XML Format für Grafiken und Diagramme (z.B. für Webseiten)
+- `.pdf` : Portable Document Format - für Dokumente, kann aber auch Vektorgrafiken enthalten (z.B. für wissenschaftliche Publikationen)
+- `.eps` : Encapsulated PostScript - für Druckgrafiken und technische Zeichnungen (eher veraltet)
+- `.ai` : Adobe Illustrator (proprietär)
+- `.cdr` : Corel Draw (proprietär)
+
+Im Gegensatz zu Rastergrafiken wird in Vektorgrafiken nicht das finale Bild gespeichert, sondern eine Anleitung, wie das Bild zu zeichnen ist.
+Daher eigenen sich Vektorgrafiken besonders für technische Zeichnungen, Diagramme und Schaubilder, die klar definierte Formen und Linien haben und i.d.R. einheitliche Farbflächen verwenden.
+Jedem Bildelement (z.B. Linie, Kreis, Text) wird eine mathematische Formel zugewiesen, die die Position, Form des Elements beschreibt.
+Zudem kann für jedes einzelne Element die Farbe, Linienstärke, Füllung, etc. definiert werden, was eine hohe Flexibilität bei der Darstellung ermöglicht.
+
+Da Vektorgrafiken nicht aus Pixeln bestehen, sondern aus mathematischen Formeln, können sie verlustfrei skaliert werden, d.h. sie können ohne Qualitätsverlust vergrößert oder verkleinert werden.
+Auch ermöglichen Vektorgrafiken häufig eine bessere Komprimierung, da die mathematischen Formeln weniger Speicherplatz benötigen als die Pixelinformationen von Rastergrafiken, sodass die Dateigröße von (einfachen) Vektorgrafiken i.d.R. kleiner ist.
+Auch ist es möglich, nur Ausschnitte von Vektorgrafiken zu verwenden, ohne dass die Qualität leidet.
+
+Da Vektorgrafiken in der Regel in speziellen Programmen erstellt werden, sind die Dateiformate häufig proprietär und können nicht ohne weiteres von anderen Programmen geöffnet oder bearbeitet werden.
+Eine Ausnahme bildet das *SVG-Format*, das auf XML basiert und daher auch von anderen Programmen gelesen und bearbeitet werden kann.
+Das SVG-Format wurde speziell *für das Web entwickelt* und ist daher besonders für Webseiten geeignet.
+Hierbei können Vektorgrafiken direkt in den HTML-Code eingebunden werden und sind daher besonders für interaktive Grafiken und Diagramme geeignet, die mit Hilfe von JavaScript dynamisch verändert werden können (inhaltlich wie auch optisch).
+Aufgrund seiner Verbreitung und Flexibilität ist das SVG-Format *sehr gut für den Datenaustausch und die Archivierung* von Grafiken geeignet.
+
+Für die *Publikation von wissenschaftlichen Ergebnissen* ist das *PDF-Format* besonders geeignet, da es sowohl Text als auch Vektorgrafiken und Rasterbilder enthalten kann, auf nahezu jedem Gerät geöffnet werden kann und für die *einheitliche Darstellung auf allen Geräten* entwickelt wurde.
+Zudem können PDF-Dateien mit Metadaten versehen werden, die Informationen über den Autor, das Erstellungsdatum, die Lizenz, etc. enthalten.
+Dies ist besonders wichtig für die Nachvollziehbarkeit und Zitierbarkeit von wissenschaftlichen Ergebnissen.
+
+:::::::: testimonial
+
+# Schwierigkeiten mit digitalen Bildern
+
+Rastergrafiken haben den Nachteil, dass sie bei der Vergrößerung an Qualität verlieren, da die Pixelinformationen interpoliert werden müssen, d.h. die Software muss die fehlenden Pixel "erraten" oder Zwischenwerte berechnen.
+Dies führt zu Unschärfe und Verzerrungen, insbesondere bei starken Vergrößerungen.
+Auch die Farbtiefe und Auflösung der Bilder beeinflussen die Qualität und Dateigröße, sodass eine Abwägung zwischen Qualität und Speicherplatzbedarf getroffen werden muss.
+
+![Beispiele für Pastergrafikdarstellung mit und ohne Kantenglättung (Anti-Aliasing) [^aa].](fig/anti-aliasing.png)
+
+[^aa]: Quelle - [selfhtml.org](https://wiki.selfhtml.org/wiki/Grafik/Grundbegriffe/Anti-Aliasing) - 12.09.2024
+
+Vektorgrafiken sind hingegen nicht für alle Arten von Bildern geeignet, insbesondere für Fotos und Bilder mit komplexen Farbverläufen und Texturen.
+Hier sind Rastergrafiken besser geeignet, da sie die feinen Details und Farbnuancen besser darstellen können.
+Zudem werden Vektorgrafiken bei der Konvertierung in Rastergrafiken (z.B. für den Druck) in der Regel gerastert, d.h. in Pixel umgewandelt, was zu Qualitätsverlusten führen kann.
+Bei sehr komplexen Vektorgrafiken mit sehr vielen (überlappenden) Elementen kann die Dateigröße auch größer sein als bei vergleichbaren Rastergrafiken, da die mathematischen Formeln und die Vielzahl der Einzelelemente mehr Speicherplatz benötigen.
+
+
+::::::::::::::::::::
+
 
 ## Zusammenfassung
 
 ::::::::::: keypoints
 
 - Markdown - Dokumentation und einfach formatierte Texte
+[TODO]
 
 ::::::::::::::::::::
 
