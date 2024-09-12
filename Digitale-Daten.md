@@ -237,11 +237,11 @@ Ein Überlauf tritt auf, wenn das Ergebnis einer Berechnung mehr Stellen benöti
 Hierbei werden die führenden Stellen einfach abgeschnitten, was zu einem falschen Ergebnis führt.
 
 ```plaintext
-Beispiel unter der Annahme von 4 Bit Zahlendarstellung:
+Beispiel unter der Annahme von 3 Bit Zahlendarstellung:
 
-10 = 7 + 3 = 0111 + 0011 = 11010 (5 Bit = Überlauf)
-                         =  1010 (4 Bit Speicherdarstellung)
-                         = 2 (Dezimalzahl, falsches Ergebnis)
+ 7 + 3 = 111 + 011 = (1)010 (Dezimalzahl 10, aber 4 Bit nötig und nur 3 vorhanden > Überlauf)
+                   = 010 (auf letzte 3 Bit reduzierte Speicherdarstellung)
+                   = 2 (entsprechende Dezimalzahl, falsches Ergebnis)
 ```
 
 Diese Problem ist heutzutage jedoch durch die Verwendung von 32 oder 64 Bit Zahlen in modernen Computern nur noch selten relevant.
@@ -255,7 +255,7 @@ Kommazahlen wie 0,0012 können auf verschiedene Arten geschrieben werden, z.B.
 
 - als Bruch 12/10000
 - als Dezimalzahl 0,0012
-- als wissenschaftliche Notation *1.2e-3* oder *1.2E-2*
+- als wissenschaftliche Notation *1.2e-3* oder *1.2E-3*
 
 Die wissenschaftliche Notation kann auf zwei Arten interpretiert werden.
 Zum einen als mathematische Formel "1,2 * 10^-3 = 1,2 * 0,001 = 0,0012".
@@ -392,6 +392,25 @@ Wenn sie Rot, Grün und Blau mischen, absorbieren sie fast alles Licht, sodass d
 ::::::::::::
 
 ::::::::::::::::::
+
+
+In folgendem Bild sehen sie, dass die unterschiedlichen Farbmodelle nur Teile des vom Menschen sichtbaren Farbraums abdecken.
+
+![Darstellbare Farben im RGB- (gelb) und CMYK-Farbraum (blau) im Vergleich zum sichtbaren Bereich des Menschen [^rgbcymk].](https://aufkleberdrucker24.de/customers_pics/655/4c5b308039adc9c2a7a9c105721f8dc4.jpg)
+
+[^rgbcymk]: Quelle: [aufkleberdrucker24.de](https://aufkleberdrucker24.de/was-ist-der-unterschied-zwischen-rgb-und-cmyk.htm)
+
+::::::::::: testimonial
+
+Die Diskretisierung der Farbwerte kann zu **Farbverlust** führen, wenn die Farben in einem anderen Farbmodell gespeichert und wieder in RGB umgewandelt werden.
+
+# Hinweis
+
+Daher sollte die Umwandlung zwischen den Farbmodellen nur dann erfolgen, wenn es unbedingt notwendig ist, am besten *nach* der Bildbearbeitung.
+
+::::::::::::::::::::::
+
+Für weiterführende Informationen rund um die Farbmodelle RGB und CMYK, ihrer Unterschiede und Umwandlung empfehlen wir folgende [Seite](https://aufkleberdrucker24.de/was-ist-der-unterschied-zwischen-rgb-und-cmyk.htm).
 
 
 ## Audio
