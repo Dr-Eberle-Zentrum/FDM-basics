@@ -92,6 +92,24 @@ Doch dazu später mehr...
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+::::::::::: testimonial
+
+# Standard vs. Spezialformat
+
+Die Wahl des Dateiformats hängt stark von der Art der Daten und ihrer Verwendung ab.
+Für den allgemeinen Datenaustausch und die Langzeitarchivierung sind Textformate in der Regel besser geeignet, da sie portabel, unabhhängig und zukunftssicher sind.
+Für den internen Gebrauch oder spezielle Anwendungen können jedoch auch binäre Formate sinnvoll sein, da sie schneller und effizienter sind und spezielle Funktionen oder Eigenschaften bieten können.
+
+Daher sollten *Rohdaten und Metadaten* in einem *Standardformat* abgelegt werden, das von verschiedenen Programmen und Systemen gelesen und verarbeitet werden kann.
+Zudem sollten *am Ende des Forschungsprozesses zur Publikation* die finalen, verarbeiteten Daten in Standardformaten abgelegt werden, um die Nachnutzung und Langzeitarchivierung zu erleichtern.
+
+*Während des Forschungsprozesses* können jedoch auch spezielle oder proprietäre Formate verwendet werden, um die *volle Leistungsfähigkeit und Funktionalität der verwendeten Software auszuschöpfen*.
+
+:::::::::::::::::::::
+
+
+
 Im Folgenden werden wir einige der gängigsten Dateiformate für den Datenaustausch und die Langzeitarchivierung vorstellen und ihre Verwendungszwecke und Eigenschaften erläutern.
 
 ## Nur Text
