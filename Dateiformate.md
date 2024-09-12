@@ -92,6 +92,24 @@ Doch dazu später mehr...
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+
+::::::::::: testimonial
+
+# Standard vs. Spezialformat
+
+Die Wahl des Dateiformats hängt stark von der Art der Daten und ihrer Verwendung ab.
+Für den allgemeinen Datenaustausch und die Langzeitarchivierung sind Textformate in der Regel besser geeignet, da sie portabel, unabhhängig und zukunftssicher sind.
+Für den internen Gebrauch oder spezielle Anwendungen können jedoch auch binäre Formate sinnvoll sein, da sie schneller und effizienter sind und spezielle Funktionen oder Eigenschaften bieten können.
+
+Daher sollten *Rohdaten und Metadaten* in einem *Standardformat* abgelegt werden, das von verschiedenen Programmen und Systemen gelesen und verarbeitet werden kann.
+Zudem sollten *am Ende des Forschungsprozesses zur Publikation* die finalen, verarbeiteten Daten in Standardformaten abgelegt werden, um die Nachnutzung und Langzeitarchivierung zu erleichtern.
+
+*Während des Forschungsprozesses* können jedoch auch spezielle oder proprietäre Formate verwendet werden, um die *volle Leistungsfähigkeit und Funktionalität der verwendeten Software auszuschöpfen*.
+
+:::::::::::::::::::::
+
+
+
 Im Folgenden werden wir einige der gängigsten Dateiformate für den Datenaustausch und die Langzeitarchivierung vorstellen und ihre Verwendungszwecke und Eigenschaften erläutern.
 
 ## Nur Text
@@ -101,7 +119,13 @@ Diese enthalten nur eine texttuelle Repräsentation der Information in Form von 
 
 Derartige Dateien werden i.d.R. mit der **Dateiendung** `.txt` versehen und können mit jedem *Texteditor* geöffnet und bearbeitet werden.
 Hierbei ist zu beachten, das MS Word oder andere Text*verarbeitungs*programme nicht als Texteditor geeignet sind, da sie zusätzliche Formatierungen und Metadaten in die Datei schreiben, die den reinen Textinhalt verfälschen.
-Geeignete Texteditoren sind z.B. MS Windows Editor, Notepad++ (Windows), TextEdit (Mac) oder gedit (Linux).
+
+**Geeignete Texteditoren** sind z.B. 
+
+- Notepad++ (Windows), 
+- TextEdit (Mac), 
+- gedit (Linux) oder 
+- Microsoft Windows Editor. 
 
 Wenn die Textdatei in einer *strukturierten Form* vorliegt, d.h. wenn die Information in *Zeilen und Spalten* organisiert oder durch spezielle *Schlüsselwörter* oder *Trennzeichen* strukturiert ist, dann spricht man von einem **textbasiertem Dateiformat**.
 
@@ -158,7 +182,7 @@ Das heißt, analog wie bei Markdown, muss der HTML-Code erst durch ein Programm 
 
 ![Beispiel für eine einfache Webseite. Links der HTML-Code, rechts die dargestellte Webseite.[^html]](fig/html-rendering.png){width=60%}
 
-[^html]: Quelle [Chris Spann - Lumar](https://www.lumar.io/blog/best-practice/clientside-vs-serverside-js-rendering-hamburger-analogy/) - 07.08.2024
+[^html]: Quelle - [Chris Spann - Lumar](https://www.lumar.io/blog/best-practice/clientside-vs-serverside-js-rendering-hamburger-analogy/) - 07.08.2024
 
 Webseiten bestehen aus einer Kombination von HTML, CSS und Javascript, wobei 
 
@@ -301,7 +325,8 @@ Was kann problematisch werden?
 # Mögliche Probleme
 
 - **Spaltentrennzeichen**: Da es sich um einen deutschsprachigen Datensatz mit Zahlen handelt, kann es zu Problemen mit dem Spaltentrennzeichen "," kommen, falls Dezimalzahlen z.B. "2,34" im Datensatz auftreten. In diesem Fall wäre es nicht eindeutig, ob das Komma ein Spalten- oder Dezimaltrennzeichen ist. Das gleiche Problem ergibt sich, wenn komplette Sätze (die potentiell Kommas enthalten) gespeichert werden. Daher hat sich im westeuropäischen Raum das Semikolon ";" als Trennzeichen etabliert (welches auch als CSV2-Format bezeichnet wird). Alternativ kann auch das TSV-Format verwendet werden, das Tabulatoren als Spaltentrenner verwendet.
-- **Fehlende Daten**: Hier wurden fehlende Daten mit "`?`" vermerkt. Während dies für menschliche Augen ein hilfreicher Hinweis sein kann, ist er für die automatische Datenverarbeitung schlecht geeignet. Wenn einzelne Daten fehlen, sollte in der jeweiligen Spalte einfach keine Information angegeben werden. In diesem Falle also besser "`8,Di,`". - **Textkodierung**: Da der Datensatz Text enthält, können beim Import Probleme mit der Zeichenkodierung auftreten. Aktuell wird empfohlen UTF-8 zu verwenden.
+- **Fehlende Daten**: Hier wurden fehlende Daten mit "`?`" vermerkt. Während dies für menschliche Augen ein hilfreicher Hinweis sein kann, ist er für die automatische Datenverarbeitung schlecht geeignet. Wenn einzelne Daten fehlen, sollte in der jeweiligen Spalte einfach keine Information angegeben werden. In diesem Falle also besser "`8,Di,`". 
+- **Textkodierung**: Da der Datensatz Text enthält, können beim Import Probleme mit der Zeichenkodierung auftreten. Aktuell wird empfohlen UTF-8 zu verwenden.
 
 ::::::
 
@@ -334,7 +359,7 @@ Zudem liefert diese Form der Datenrepräsentation direkt die Möglichkeit, Zusam
 
 ### JSON
 
-JSON (JavaScript Object Notation) ist, wie der Name schon sagt, ein auf JavaScript basierendes Format, das Daten in einem hierarchischen Format speichert.
+JSON (JavaScript Object Notation) ist, wie der Name schon sagt, ein auf der Programmiersprache JavaScript basierendes Format, das Daten in einem hierarchischen Format speichert.
 Einzelne Datensätze werden wie folgt repräsentiert:
 
 ```json
@@ -345,7 +370,7 @@ Einzelne Datensätze werden wie folgt repräsentiert:
 }
 ```
 
-Hierbei werden die Daten in **Schlüssel-Wert-Paaren** gespeichert, wobei die Werte beliebige Datentypen annehmen können (Zahlen, Text, Listen, ...).
+Hierbei werden die Daten in Doppelpunkt-getrennten **Schlüssel-Wert-Paaren** gespeichert, wobei die Werte beliebige Datentypen annehmen können (Zahlen, Text, Listen, ...).
 Datensätze selbst werden durch geschweifte Klammern `{}` begrenzt, wobei die einzelnen Schlüssel-Wert-Paare durch Kommas getrennt werden.
 Diese Struktur kann beliebig tief verschachtelt werden, um komplexe Datenstrukturen abzubilden.
 In unserem Beispiel können wir die Informationen für mehrere Treffen wie folgt speichern:
@@ -385,7 +410,7 @@ Daher wird es i.d.R. automatisiert erzeugt oder in Kombination mit einem Editor 
 # JSON-Beispiel
 
 - Öffnen sie den [JSON-Onlineeditor von  tutorialspoint](https://www.tutorialspoint.com/online_json_editor.htm)
-- Kopieren sie den JSON-Code in das Editorfenster (links)
+- Kopieren sie den JSON-Code vom obigen Beispiel in das Editorfenster (links)
 - Studieren sie die angezeigte Baumhierarchie des Datensatzes (rechts)
   - Sie können die einzelnen Knoten aufklappen und schließen, um die Hierarchie zu erkunden
 
@@ -465,7 +490,7 @@ Allerdings ist es, im Vergleich zu JSON, einfacher menschenlesbar, da alle Eleme
 Neben Text- und Tabellendaten sind auch Bilder und Grafiken wichtige Bestandteile von Forschungsdaten.
 Hierbei wird grundlegend in zwei Arten von Bildinformationen unterschieden, die sich in ihrer Darstellung und Verwendung wesentlich unterscheiden.
 
-- **Rastergrafiken** bestehen aus einer "Tabelle" von Pixeln, die Farbinformationen enthalten und sind insbesondere für Fotos und Bilder geeignet, die eher eine diffuse Farbgebung oder Detailgestaltung haben.
+- **Rastergrafiken** bestehen aus einer "Tabelle" von Pixeln, d.h. Farbinformationen pro Bildposition, und sind insbesondere für Fotos und Bilder geeignet, die eher eine diffuse Farbgebung oder Detailgestaltung haben.
 - **Vektorgrafiken** hingegen sind eher "Malanleitungen", die beschreiben wo welche Bildelemente mit welcher Farbe, Form, etc. gezeichnet werden soll. Dies ist insbesondere für technische Zeichnungen, Diagramme und Schaubilder geeignet, da diese Form der Bildkodierung verlustfrei skaliert ("gezoomt") werden kann.
 
 ### Rastergrafiken
@@ -485,10 +510,57 @@ Hierbei wird die Farbinformation für jeden Pixel gespeichert, was die Dateigrö
 Die Anzahl der Pixel wird *Auflösung* oder Punktdichte genannt.
 Die verwendete Farbtiefe (Anzahl möglicher Farben) beeinflusst ebenfalls die Dateigröße.[^pixelgraphic]](https://upload.wikimedia.org/wikipedia/de/thumb/4/49/Punktdichte%2BFarbtiefe.svg/800px-Punktdichte%2BFarbtiefe.svg.png?20111016165836){width=50%}
 
-[^pixelgraphic]: Quelle [F. Graf - wikipedia.de](https://de.wikipedia.org/wiki/Datei:Punktdichte+Farbtiefe.svg) - 09.08.2024
+[^pixelgraphic]: Quelle - [F. Graf - wikipedia.de](https://de.wikipedia.org/wiki/Datei:Punktdichte+Farbtiefe.svg) - 09.08.2024
 
 
 ### Vektorgrafiken
+
+**Dateiendungen**:
+
+- `.svg` : Scalable Vector Graphics - XML Format für Grafiken und Diagramme (z.B. für Webseiten)
+- `.pdf` : Portable Document Format - für Dokumente, kann aber auch Vektorgrafiken enthalten (z.B. für wissenschaftliche Publikationen)
+- `.eps` : Encapsulated PostScript - für Druckgrafiken und technische Zeichnungen (eher veraltet)
+- `.ai` : Adobe Illustrator (proprietär)
+- `.cdr` : Corel Draw (proprietär)
+
+Im Gegensatz zu Rastergrafiken wird in Vektorgrafiken nicht das finale Bild gespeichert, sondern eine Anleitung, wie das Bild zu zeichnen ist.
+Daher eigenen sich Vektorgrafiken besonders für technische Zeichnungen, Diagramme und Schaubilder, die klar definierte Formen und Linien haben und i.d.R. einheitliche Farbflächen verwenden.
+Jedem Bildelement (z.B. Linie, Kreis, Text) wird eine mathematische Formel zugewiesen, die die Position, Form des Elements beschreibt.
+Zudem kann für jedes einzelne Element die Farbe, Linienstärke, Füllung, etc. definiert werden, was eine hohe Flexibilität bei der Darstellung ermöglicht.
+
+Da Vektorgrafiken nicht aus Pixeln bestehen, sondern aus mathematischen Formeln, können sie verlustfrei skaliert werden, d.h. sie können ohne Qualitätsverlust vergrößert oder verkleinert werden.
+Auch ermöglichen Vektorgrafiken häufig eine bessere Komprimierung, da die mathematischen Formeln weniger Speicherplatz benötigen als die Pixelinformationen von Rastergrafiken, sodass die Dateigröße von (einfachen) Vektorgrafiken i.d.R. kleiner ist.
+Auch ist es möglich, nur Ausschnitte von Vektorgrafiken zu verwenden, ohne dass die Qualität leidet.
+
+Da Vektorgrafiken in der Regel in speziellen Programmen erstellt werden, sind die Dateiformate häufig proprietär und können nicht ohne weiteres von anderen Programmen geöffnet oder bearbeitet werden.
+Eine Ausnahme bildet das *SVG-Format*, das auf XML basiert und daher auch von anderen Programmen gelesen und bearbeitet werden kann.
+Das SVG-Format wurde speziell *für das Web entwickelt* und ist daher besonders für Webseiten geeignet.
+Hierbei können Vektorgrafiken direkt in den HTML-Code eingebunden werden und sind daher besonders für interaktive Grafiken und Diagramme geeignet, die mit Hilfe von JavaScript dynamisch verändert werden können (inhaltlich wie auch optisch).
+Aufgrund seiner Verbreitung und Flexibilität ist das SVG-Format *sehr gut für den Datenaustausch und die Archivierung* von Grafiken geeignet.
+
+Für die *Publikation von wissenschaftlichen Ergebnissen* ist das *PDF-Format* besonders geeignet, da es sowohl Text als auch Vektorgrafiken und Rasterbilder enthalten kann, auf nahezu jedem Gerät geöffnet werden kann und für die *einheitliche Darstellung auf allen Geräten* entwickelt wurde.
+Zudem können PDF-Dateien mit Metadaten versehen werden, die Informationen über den Autor, das Erstellungsdatum, die Lizenz, etc. enthalten.
+Dies ist besonders wichtig für die Nachvollziehbarkeit und Zitierbarkeit von wissenschaftlichen Ergebnissen.
+
+:::::::: testimonial
+
+# Schwierigkeiten mit digitalen Bildern
+
+Rastergrafiken haben den Nachteil, dass sie bei der Vergrößerung an Qualität verlieren, da die Pixelinformationen interpoliert werden müssen, d.h. die Software muss die fehlenden Pixel "erraten" oder Zwischenwerte berechnen.
+Dies führt zu Unschärfe und Verzerrungen, insbesondere bei starken Vergrößerungen.
+Auch die Farbtiefe und Auflösung der Bilder beeinflussen die Qualität und Dateigröße, sodass eine Abwägung zwischen Qualität und Speicherplatzbedarf getroffen werden muss.
+
+![Beispiele für Pastergrafikdarstellung mit und ohne Kantenglättung (Anti-Aliasing) [^aa].](fig/anti-aliasing.png)
+
+[^aa]: Quelle - [selfhtml.org](https://wiki.selfhtml.org/wiki/Grafik/Grundbegriffe/Anti-Aliasing) - 12.09.2024
+
+Vektorgrafiken sind hingegen nicht für alle Arten von Bildern geeignet, insbesondere für Fotos und Bilder mit komplexen Farbverläufen und Texturen.
+Hier sind Rastergrafiken besser geeignet, da sie die feinen Details und Farbnuancen besser darstellen können.
+Zudem werden Vektorgrafiken bei der Konvertierung in Rastergrafiken (z.B. für den Druck) in der Regel gerastert, d.h. in Pixel umgewandelt, was zu Qualitätsverlusten führen kann.
+Bei sehr komplexen Vektorgrafiken mit sehr vielen (überlappenden) Elementen kann die Dateigröße auch größer sein als bei vergleichbaren Rastergrafiken, da die mathematischen Formeln und die Vielzahl der Einzelelemente mehr Speicherplatz benötigen.
+
+
+::::::::::::::::::::
 
 
 ## Zusammenfassung
@@ -496,6 +568,7 @@ Die verwendete Farbtiefe (Anzahl möglicher Farben) beeinflusst ebenfalls die Da
 ::::::::::: keypoints
 
 - Markdown - Dokumentation und einfach formatierte Texte
+[TODO]
 
 ::::::::::::::::::::
 
