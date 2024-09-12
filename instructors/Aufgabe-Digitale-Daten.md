@@ -38,15 +38,28 @@ Für die folgende Aufgabe verwenden sie bitte die Datei, die *NICHT* der in ihre
         - Dezimaltrennzeichen auf "." bzw. "," setzen (je nach Datei) und 1000er-Trennzeichen auf " " setzen
       - "Fertigstellen"
 
-Nun sollten die Daten korrekt importiert sein und die Mietpreisindex-Spalte als Zahlen erkannt sein.
-
-### Aufgabe 2 - Dokumentation
-
-- Dokumentieren sie Herkunft und Import der Daten in einem kurzen Text in einem weiteren Arbeitsblatt namens "README"
-
-### Aufgabe 3 - Speichern
+### Aufgabe 2 - Speichern
 
 - Speichern sie die Arbeitsmappe in ihrem Abgabeordner ab
-- **Dateiname:** `mietpreisindex.destatis.xlsx`
+  - **Dateiname:** `mietpreisindex.destatis.xlsx`
+
+Nun sollten die Daten korrekt importiert sein und die Mietpreisindex-Spalte als Zahlen erkannt sein.
+
+### Aufgabe 3 - Dokumentation mit Markdown
+
+- Dokumentieren sie Herkunft und Import der Daten in einem kurzen Text
+- Verwenden sie dazu ein neues Markdown-Dokument in ihrem Abgabeordner
+  - **Dateiname:** `mietpreisindex.destatis.README.md`
+- Verwenden sie die folgenden Abschnitte:
+  - **Herkunft der Daten**
+    - Beschreibung der Datenquelle
+    - Link zur Datenquelle
+    - Linzenz? Überlegen sie, ob und in welchem Rahmen sie die Daten verwenden dürfen
+  - **Import in MS Excel**
+    - Beschreibung der Importschritte (in eigenen Stichpunkten)
+    - Verwendete Datei
+    - Verwendete Einstellungen
+  - **Speicherung**
+    - Dateiname der gespeicherten Arbeitsmappe
 
 
