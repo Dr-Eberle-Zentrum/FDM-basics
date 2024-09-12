@@ -315,7 +315,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Dateiformate</h1>
-        <p>Last updated on 2024-08-09 |
+        <p>Last updated on 2024-09-12 |
 
         <a href="https://github.com/Dr-Eberle-Zentrum/FDM-basics/edit/main/episodes/Dateiformate.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -448,7 +448,7 @@ textbasiert?</em></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Antwort </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Die Excel-Datei wird als unleserlicher Text oder als Zeichenfolge von
 Sonderzeichen angezeigt, da sie im binären XLSX-Format gespeichert ist.
@@ -461,6 +461,33 @@ bestimmte Inhalte (wie Bilder) in einem binären Format gespeichert sind,
 während der Text z.T. in einer menschenlesbaren Form abgelegt ist.</p>
 <p>Doch dazu später mehr…</p>
 </div>
+</div>
+</div>
+</div>
+<div id="standard-vs.-spezialformat" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="standard-vs.-spezialformat" class="callout-inner">
+<h3 class="callout-title">Standard vs. Spezialformat</h3>
+<div class="callout-content">
+<p>Die Wahl des Dateiformats hängt stark von der Art der Daten und ihrer
+Verwendung ab. Für den allgemeinen Datenaustausch und die
+Langzeitarchivierung sind Textformate in der Regel besser geeignet, da
+sie portabel, unabhhängig und zukunftssicher sind. Für den internen
+Gebrauch oder spezielle Anwendungen können jedoch auch binäre Formate
+sinnvoll sein, da sie schneller und effizienter sind und spezielle
+Funktionen oder Eigenschaften bieten können.</p>
+<p>Daher sollten <em>Rohdaten und Metadaten</em> in einem
+<em>Standardformat</em> abgelegt werden, das von verschiedenen
+Programmen und Systemen gelesen und verarbeitet werden kann. Zudem
+sollten <em>am Ende des Forschungsprozesses zur Publikation</em> die
+finalen, verarbeiteten Daten in Standardformaten abgelegt werden, um die
+Nachnutzung und Langzeitarchivierung zu erleichtern.</p>
+<p><em>Während des Forschungsprozesses</em> können jedoch auch spezielle
+oder proprietäre Formate verwendet werden, um die <em>volle
+Leistungsfähigkeit und Funktionalität der verwendeten Software
+auszuschöpfen</em>.</p>
 </div>
 </div>
 </div>
@@ -478,10 +505,13 @@ oder Formatierung.</p>
 geöffnet und bearbeitet werden. Hierbei ist zu beachten, das MS Word
 oder andere Text<em>verarbeitungs</em>programme nicht als Texteditor
 geeignet sind, da sie zusätzliche Formatierungen und Metadaten in die
-Datei schreiben, die den reinen Textinhalt verfälschen. Geeignete
-Texteditoren sind z.B. MS Windows Editor, Notepad++ (Windows), TextEdit
-(Mac) oder gedit (Linux).</p>
-<p>Wenn die Textdatei in einer <em>strukturierten Form</em> vorliegt,
+Datei schreiben, die den reinen Textinhalt verfälschen.</p>
+<p><strong>Geeignete Texteditoren</strong> sind z.B.</p>
+<ul><li>Notepad++ (Windows),</li>
+<li>TextEdit (Mac),</li>
+<li>gedit (Linux) oder</li>
+<li>Microsoft Windows Editor.</li>
+</ul><p>Wenn die Textdatei in einer <em>strukturierten Form</em> vorliegt,
 d.h. wenn die Information in <em>Zeilen und Spalten</em> organisiert
 oder durch spezielle <em>Schlüsselwörter</em> oder <em>Trennzeichen</em>
 strukturiert ist, dann spricht man von einem <strong>textbasiertem
@@ -529,7 +559,7 @@ Basic Syntax</a> vorgestellt werden.</p>
 </div>
 </div>
 </div>
-<div id="testimonial1" class="callout testimonial">
+<div id="testimonial2" class="callout testimonial">
 <div class="callout-square">
 <i class="callout-icon" data-feather="heart"></i>
 </div>
@@ -662,7 +692,7 @@ Markdown-Dateien statt in Word-Dokumenten zu speichern?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Mögliche Punkte </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul><li>
 <strong>Plattformunabhängigkeit</strong>: Markdown-Dateien können
@@ -777,7 +807,7 @@ Was kann problematisch werden?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Mögliche Probleme </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <ul><li>
 <strong>Spaltentrennzeichen</strong>: Da es sich um einen
@@ -796,10 +826,11 @@ das Tabulatoren als Spaltentrenner verwendet.</li>
 hilfreicher Hinweis sein kann, ist er für die automatische
 Datenverarbeitung schlecht geeignet. Wenn einzelne Daten fehlen, sollte
 in der jeweiligen Spalte einfach keine Information angegeben werden. In
-diesem Falle also besser “<code>8,Di,</code>”. -
-<strong>Textkodierung</strong>: Da der Datensatz Text enthält, können
-beim Import Probleme mit der Zeichenkodierung auftreten. Aktuell wird
-empfohlen UTF-8 zu verwenden.</li>
+diesem Falle also besser “<code>8,Di,</code>”.</li>
+<li>
+<strong>Textkodierung</strong>: Da der Datensatz Text enthält,
+können beim Import Probleme mit der Zeichenkodierung auftreten. Aktuell
+wird empfohlen UTF-8 zu verwenden.</li>
 </ul></div>
 </div>
 </div>
@@ -839,9 +870,9 @@ und Beziehungen zwischen den Daten zu speichern.</p>
 <div class="section level3">
 <h3 id="json">JSON<a class="anchor" aria-label="anchor" href="#json"></a></h3>
 <p>JSON (JavaScript Object Notation) ist, wie der Name schon sagt, ein
-auf JavaScript basierendes Format, das Daten in einem hierarchischen
-Format speichert. Einzelne Datensätze werden wie folgt
-repräsentiert:</p>
+auf der Programmiersprache JavaScript basierendes Format, das Daten in
+einem hierarchischen Format speichert. Einzelne Datensätze werden wie
+folgt repräsentiert:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -851,14 +882,14 @@ repräsentiert:</p>
 <span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a>  <span class="dt">"Ort"</span><span class="fu">:</span> <span class="st">"Zoom"</span></span>
 <span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a><span class="fu">}</span></span></code></pre>
 </div>
-<p>Hierbei werden die Daten in <strong>Schlüssel-Wert-Paaren</strong>
-gespeichert, wobei die Werte beliebige Datentypen annehmen können
-(Zahlen, Text, Listen, …). Datensätze selbst werden durch geschweifte
-Klammern <code>{}</code> begrenzt, wobei die einzelnen
-Schlüssel-Wert-Paare durch Kommas getrennt werden. Diese Struktur kann
-beliebig tief verschachtelt werden, um komplexe Datenstrukturen
-abzubilden. In unserem Beispiel können wir die Informationen für mehrere
-Treffen wie folgt speichern:</p>
+<p>Hierbei werden die Daten in Doppelpunkt-getrennten
+<strong>Schlüssel-Wert-Paaren</strong> gespeichert, wobei die Werte
+beliebige Datentypen annehmen können (Zahlen, Text, Listen, …).
+Datensätze selbst werden durch geschweifte Klammern <code>{}</code>
+begrenzt, wobei die einzelnen Schlüssel-Wert-Paare durch Kommas getrennt
+werden. Diese Struktur kann beliebig tief verschachtelt werden, um
+komplexe Datenstrukturen abzubilden. In unserem Beispiel können wir die
+Informationen für mehrere Treffen wie folgt speichern:</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">JSON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -913,7 +944,8 @@ was wir im Folgenden ausprobieren werden.</p>
 <ul><li>Öffnen sie den <a href="https://www.tutorialspoint.com/online_json_editor.htm" class="external-link">JSON-Onlineeditor
 von tutorialspoint</a>
 </li>
-<li>Kopieren sie den JSON-Code in das Editorfenster (links)</li>
+<li>Kopieren sie den JSON-Code vom obigen Beispiel in das Editorfenster
+(links)</li>
 <li>Studieren sie die angezeigte Baumhierarchie des Datensatzes (rechts)
 <ul><li>Sie können die einzelnen Knoten aufklappen und schließen, um die
 Hierarchie zu erkunden</li>
@@ -928,7 +960,7 @@ einzelnen Knoten ziehen?</em></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Antwort </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <ul><li>in geschweiften Klammern werden die Anzahl der Schlüssel-Wert-Paare
 angezeigt, also die Anzahl der Einzelinformationen im entsprechenden
@@ -1004,7 +1036,7 @@ aus der letzten Aufgabe oben?</em></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Antwort </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <ul><li>es gibt keine explizite Unterscheidung in Datensätze und Listen</li>
 <li>alle Informationen werden gleich (als Text) behandelt und angezeigt
@@ -1030,8 +1062,8 @@ von Bildinformationen unterschieden, die sich in ihrer Darstellung und
 Verwendung wesentlich unterscheiden.</p>
 <ul><li>
 <strong>Rastergrafiken</strong> bestehen aus einer “Tabelle” von
-Pixeln, die Farbinformationen enthalten und sind insbesondere für Fotos
-und Bilder geeignet, die eher eine diffuse Farbgebung oder
+Pixeln, d.h. Farbinformationen pro Bildposition, und sind insbesondere
+für Fotos und Bilder geeignet, die eher eine diffuse Farbgebung oder
 Detailgestaltung haben.</li>
 <li>
 <strong>Vektorgrafiken</strong> hingegen sind eher “Malanleitungen”,
@@ -1075,6 +1107,93 @@ Dateigröße.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>
 </figure></div>
 <div class="section level3">
 <h3 id="vektorgrafiken">Vektorgrafiken<a class="anchor" aria-label="anchor" href="#vektorgrafiken"></a></h3>
+<p><strong>Dateiendungen</strong>:</p>
+<ul><li>
+<code>.svg</code> : Scalable Vector Graphics - XML Format für
+Grafiken und Diagramme (z.B. für Webseiten)</li>
+<li>
+<code>.pdf</code> : Portable Document Format - für Dokumente, kann
+aber auch Vektorgrafiken enthalten (z.B. für wissenschaftliche
+Publikationen)</li>
+<li>
+<code>.eps</code> : Encapsulated PostScript - für Druckgrafiken und
+technische Zeichnungen (eher veraltet)</li>
+<li>
+<code>.ai</code> : Adobe Illustrator (proprietär)</li>
+<li>
+<code>.cdr</code> : Corel Draw (proprietär)</li>
+</ul><p>Im Gegensatz zu Rastergrafiken wird in Vektorgrafiken nicht das
+finale Bild gespeichert, sondern eine Anleitung, wie das Bild zu
+zeichnen ist. Daher eigenen sich Vektorgrafiken besonders für technische
+Zeichnungen, Diagramme und Schaubilder, die klar definierte Formen und
+Linien haben und i.d.R. einheitliche Farbflächen verwenden. Jedem
+Bildelement (z.B. Linie, Kreis, Text) wird eine mathematische Formel
+zugewiesen, die die Position, Form des Elements beschreibt. Zudem kann
+für jedes einzelne Element die Farbe, Linienstärke, Füllung, etc.
+definiert werden, was eine hohe Flexibilität bei der Darstellung
+ermöglicht.</p>
+<p>Da Vektorgrafiken nicht aus Pixeln bestehen, sondern aus
+mathematischen Formeln, können sie verlustfrei skaliert werden, d.h. sie
+können ohne Qualitätsverlust vergrößert oder verkleinert werden. Auch
+ermöglichen Vektorgrafiken häufig eine bessere Komprimierung, da die
+mathematischen Formeln weniger Speicherplatz benötigen als die
+Pixelinformationen von Rastergrafiken, sodass die Dateigröße von
+(einfachen) Vektorgrafiken i.d.R. kleiner ist. Auch ist es möglich, nur
+Ausschnitte von Vektorgrafiken zu verwenden, ohne dass die Qualität
+leidet.</p>
+<p>Da Vektorgrafiken in der Regel in speziellen Programmen erstellt
+werden, sind die Dateiformate häufig proprietär und können nicht ohne
+weiteres von anderen Programmen geöffnet oder bearbeitet werden. Eine
+Ausnahme bildet das <em>SVG-Format</em>, das auf XML basiert und daher
+auch von anderen Programmen gelesen und bearbeitet werden kann. Das
+SVG-Format wurde speziell <em>für das Web entwickelt</em> und ist daher
+besonders für Webseiten geeignet. Hierbei können Vektorgrafiken direkt
+in den HTML-Code eingebunden werden und sind daher besonders für
+interaktive Grafiken und Diagramme geeignet, die mit Hilfe von
+JavaScript dynamisch verändert werden können (inhaltlich wie auch
+optisch). Aufgrund seiner Verbreitung und Flexibilität ist das
+SVG-Format <em>sehr gut für den Datenaustausch und die Archivierung</em>
+von Grafiken geeignet.</p>
+<p>Für die <em>Publikation von wissenschaftlichen Ergebnissen</em> ist
+das <em>PDF-Format</em> besonders geeignet, da es sowohl Text als auch
+Vektorgrafiken und Rasterbilder enthalten kann, auf nahezu jedem Gerät
+geöffnet werden kann und für die <em>einheitliche Darstellung auf allen
+Geräten</em> entwickelt wurde. Zudem können PDF-Dateien mit Metadaten
+versehen werden, die Informationen über den Autor, das Erstellungsdatum,
+die Lizenz, etc. enthalten. Dies ist besonders wichtig für die
+Nachvollziehbarkeit und Zitierbarkeit von wissenschaftlichen
+Ergebnissen.</p>
+<div id="schwierigkeiten-mit-digitalen-bildern" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="schwierigkeiten-mit-digitalen-bildern" class="callout-inner">
+<h3 class="callout-title">Schwierigkeiten mit digitalen Bildern</h3>
+<div class="callout-content">
+<p>Rastergrafiken haben den Nachteil, dass sie bei der Vergrößerung an
+Qualität verlieren, da die Pixelinformationen interpoliert werden
+müssen, d.h. die Software muss die fehlenden Pixel “erraten” oder
+Zwischenwerte berechnen. Dies führt zu Unschärfe und Verzerrungen,
+insbesondere bei starken Vergrößerungen. Auch die Farbtiefe und
+Auflösung der Bilder beeinflussen die Qualität und Dateigröße, sodass
+eine Abwägung zwischen Qualität und Speicherplatzbedarf getroffen werden
+muss.</p>
+<figure><img src="../fig/anti-aliasing.png" alt="Beispiele für Pastergrafikdarstellung mit und ohne Kantenglättung (Anti-Aliasing) ." class="figure mx-auto d-block"><div class="figcaption">Beispiele für Pastergrafikdarstellung mit und
+ohne Kantenglättung (Anti-Aliasing) <a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>.</div>
+</figure><p>Vektorgrafiken sind hingegen nicht für alle Arten von Bildern
+geeignet, insbesondere für Fotos und Bilder mit komplexen Farbverläufen
+und Texturen. Hier sind Rastergrafiken besser geeignet, da sie die
+feinen Details und Farbnuancen besser darstellen können. Zudem werden
+Vektorgrafiken bei der Konvertierung in Rastergrafiken (z.B. für den
+Druck) in der Regel gerastert, d.h. in Pixel umgewandelt, was zu
+Qualitätsverlusten führen kann. Bei sehr komplexen Vektorgrafiken mit
+sehr vielen (überlappenden) Elementen kann die Dateigröße auch größer
+sein als bei vergleichbaren Rastergrafiken, da die mathematischen
+Formeln und die Vielzahl der Einzelelemente mehr Speicherplatz
+benötigen.</p>
+</div>
+</div>
+</div>
 </div>
 </section><section><h2 class="section-heading" id="zusammenfassung">Zusammenfassung<a class="anchor" aria-label="anchor" href="#zusammenfassung"></a></h2>
 <hr class="half-width"><div id="keypoints1" class="callout keypoints">
@@ -1084,7 +1203,7 @@ Dateigröße.<a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>
 <div class="callout-inner">
 <h3 class="callout-title">Key Points</h3>
 <div class="callout-content">
-<ul><li>Markdown - Dokumentation und einfach formatierte Texte</li>
+<ul><li>Markdown - Dokumentation und einfach formatierte Texte [TODO]</li>
 </ul></div>
 </div>
 </div>
@@ -1105,7 +1224,7 @@ sie obige Punkte als besonders wichtig an?</em></div>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
   <h4 class="accordion-header" id="headingSolution6"> Antwort </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <p>Die richtige Wahl des Dateiformats ist in allen Phasen des
 Datenlebenszyklus wichtig:</p>
@@ -1137,7 +1256,7 @@ die die eigene Nachnutzung erleichtern</li>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Instructor Note </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <p>TODO link zu Aufgabe</p>
 </div>
@@ -1155,10 +1274,12 @@ daher nur von diesem Programm oder von Programmen, die das Format kennen
 und unterstützen, gelesen oder verarbeitet werden können.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
 <li id="fn2"><p>Quelle - <a href="https://blog.freron.com/2011/thoughts-on-writing-emails-using-markdown/" class="external-link">B.K.
 Nielsen - Freron</a> - 07.08.2024<a href="#fnref2" class="footnote-back">↩︎</a></p></li>
-<li id="fn3"><p>Quelle <a href="https://www.lumar.io/blog/best-practice/clientside-vs-serverside-js-rendering-hamburger-analogy/" class="external-link">Chris
+<li id="fn3"><p>Quelle - <a href="https://www.lumar.io/blog/best-practice/clientside-vs-serverside-js-rendering-hamburger-analogy/" class="external-link">Chris
 Spann - Lumar</a> - 07.08.2024<a href="#fnref3" class="footnote-back">↩︎</a></p></li>
-<li id="fn4"><p>Quelle <a href="https://de.wikipedia.org/wiki/Datei:Punktdichte+Farbtiefe.svg" class="external-link">F.
+<li id="fn4"><p>Quelle - <a href="https://de.wikipedia.org/wiki/Datei:Punktdichte+Farbtiefe.svg" class="external-link">F.
 Graf - wikipedia.de</a> - 09.08.2024<a href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Quelle - <a href="https://wiki.selfhtml.org/wiki/Grafik/Grundbegriffe/Anti-Aliasing" class="external-link">selfhtml.org</a>
+- 12.09.2024<a href="#fnref5" class="footnote-back">↩︎</a></p></li>
 </ol></div>
 
 
@@ -1221,7 +1342,7 @@ Graf - wikipedia.de</a> - 09.08.2024<a href="#fnref4" class="footnote-back">↩�
   "url": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/instructor/Dateiformate.html",
   "identifier": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/instructor/Dateiformate.html",
   "dateCreated": "2024-08-01",
-  "dateModified": "2024-08-09",
+  "dateModified": "2024-09-12",
   "datePublished": "2024-09-12"
 }
 
