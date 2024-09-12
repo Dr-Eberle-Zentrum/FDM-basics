@@ -237,11 +237,11 @@ Ein Überlauf tritt auf, wenn das Ergebnis einer Berechnung mehr Stellen benöti
 Hierbei werden die führenden Stellen einfach abgeschnitten, was zu einem falschen Ergebnis führt.
 
 ```plaintext
-Beispiel unter der Annahme von 4 Bit Zahlendarstellung:
+Beispiel unter der Annahme von 3 Bit Zahlendarstellung:
 
-10 = 7 + 3 = 0111 + 0011 = 11010 (5 Bit = Überlauf)
-                         =  1010 (4 Bit Speicherdarstellung)
-                         = 2 (Dezimalzahl, falsches Ergebnis)
+ 7 + 3 = 111 + 011 = (1)010 (Dezimalzahl 10, aber 4 Bit nötig und nur 3 vorhanden > Überlauf)
+                   = 010 (auf letzte 3 Bit reduzierte Speicherdarstellung)
+                   = 2 (entsprechende Dezimalzahl, falsches Ergebnis)
 ```
 
 Diese Problem ist heutzutage jedoch durch die Verwendung von 32 oder 64 Bit Zahlen in modernen Computern nur noch selten relevant.
