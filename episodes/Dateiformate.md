@@ -101,7 +101,13 @@ Diese enthalten nur eine texttuelle Repräsentation der Information in Form von 
 
 Derartige Dateien werden i.d.R. mit der **Dateiendung** `.txt` versehen und können mit jedem *Texteditor* geöffnet und bearbeitet werden.
 Hierbei ist zu beachten, das MS Word oder andere Text*verarbeitungs*programme nicht als Texteditor geeignet sind, da sie zusätzliche Formatierungen und Metadaten in die Datei schreiben, die den reinen Textinhalt verfälschen.
-Geeignete Texteditoren sind z.B. MS Windows Editor, Notepad++ (Windows), TextEdit (Mac) oder gedit (Linux).
+
+**Geeignete Texteditoren** sind z.B. 
+
+- Notepad++ (Windows), 
+- TextEdit (Mac), 
+- gedit (Linux) oder 
+- Microsoft Windows Editor. 
 
 Wenn die Textdatei in einer *strukturierten Form* vorliegt, d.h. wenn die Information in *Zeilen und Spalten* organisiert oder durch spezielle *Schlüsselwörter* oder *Trennzeichen* strukturiert ist, dann spricht man von einem **textbasiertem Dateiformat**.
 
