@@ -1,7 +1,7 @@
 ---
 title: "Digitale Daten"
 teaching: 40
-exercises: 0
+exercises: 20
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 

@@ -21,7 +21,7 @@ Final sollen sie sich für einen Download entscheiden und diesen entsprechend do
 - Inspizieren sie alle heruntergeladenen Dateien und entscheiden sie, welche sie für die Weiterverarbeitung wählen würden
 - Schreiben sie eine Dokumentationsdatei im Format ihrer Wahl
   - **Dateiname:** `strompreise.destatis.README.[DATEIENDUNG]`
-  - wichtige Punkte: *Quelle, Zitat, Downloadzeit, vorgenommene Anpassungen, ...*
+  - wichtige Punkte: *Dateiname, Quelle, Zitat, Downloadzeit, vorgenommene Anpassungen, ...*
   - kurze Diskussion mit mindestens *3 Gründen*, warum sie dieses *Dateiformat* gewählt haben
 - Speichern der Dateien in ihrem persönlichen Abgabeordner
 
