@@ -164,7 +164,7 @@ Das heißt, analog wie bei Markdown, muss der HTML-Code erst durch ein Programm 
 
 ![Beispiel für eine einfache Webseite. Links der HTML-Code, rechts die dargestellte Webseite.[^html]](fig/html-rendering.png){width=60%}
 
-[^html]: Quelle [Chris Spann - Lumar](https://www.lumar.io/blog/best-practice/clientside-vs-serverside-js-rendering-hamburger-analogy/) - 07.08.2024
+[^html]: Quelle - [Chris Spann - Lumar](https://www.lumar.io/blog/best-practice/clientside-vs-serverside-js-rendering-hamburger-analogy/) - 07.08.2024
 
 Webseiten bestehen aus einer Kombination von HTML, CSS und Javascript, wobei 
 
@@ -307,7 +307,8 @@ Was kann problematisch werden?
 # Mögliche Probleme
 
 - **Spaltentrennzeichen**: Da es sich um einen deutschsprachigen Datensatz mit Zahlen handelt, kann es zu Problemen mit dem Spaltentrennzeichen "," kommen, falls Dezimalzahlen z.B. "2,34" im Datensatz auftreten. In diesem Fall wäre es nicht eindeutig, ob das Komma ein Spalten- oder Dezimaltrennzeichen ist. Das gleiche Problem ergibt sich, wenn komplette Sätze (die potentiell Kommas enthalten) gespeichert werden. Daher hat sich im westeuropäischen Raum das Semikolon ";" als Trennzeichen etabliert (welches auch als CSV2-Format bezeichnet wird). Alternativ kann auch das TSV-Format verwendet werden, das Tabulatoren als Spaltentrenner verwendet.
-- **Fehlende Daten**: Hier wurden fehlende Daten mit "`?`" vermerkt. Während dies für menschliche Augen ein hilfreicher Hinweis sein kann, ist er für die automatische Datenverarbeitung schlecht geeignet. Wenn einzelne Daten fehlen, sollte in der jeweiligen Spalte einfach keine Information angegeben werden. In diesem Falle also besser "`8,Di,`". - **Textkodierung**: Da der Datensatz Text enthält, können beim Import Probleme mit der Zeichenkodierung auftreten. Aktuell wird empfohlen UTF-8 zu verwenden.
+- **Fehlende Daten**: Hier wurden fehlende Daten mit "`?`" vermerkt. Während dies für menschliche Augen ein hilfreicher Hinweis sein kann, ist er für die automatische Datenverarbeitung schlecht geeignet. Wenn einzelne Daten fehlen, sollte in der jeweiligen Spalte einfach keine Information angegeben werden. In diesem Falle also besser "`8,Di,`". 
+- **Textkodierung**: Da der Datensatz Text enthält, können beim Import Probleme mit der Zeichenkodierung auftreten. Aktuell wird empfohlen UTF-8 zu verwenden.
 
 ::::::
 
@@ -340,7 +341,7 @@ Zudem liefert diese Form der Datenrepräsentation direkt die Möglichkeit, Zusam
 
 ### JSON
 
-JSON (JavaScript Object Notation) ist, wie der Name schon sagt, ein auf JavaScript basierendes Format, das Daten in einem hierarchischen Format speichert.
+JSON (JavaScript Object Notation) ist, wie der Name schon sagt, ein auf der Programmiersprache JavaScript basierendes Format, das Daten in einem hierarchischen Format speichert.
 Einzelne Datensätze werden wie folgt repräsentiert:
 
 ```json
@@ -351,7 +352,7 @@ Einzelne Datensätze werden wie folgt repräsentiert:
 }
 ```
 
-Hierbei werden die Daten in **Schlüssel-Wert-Paaren** gespeichert, wobei die Werte beliebige Datentypen annehmen können (Zahlen, Text, Listen, ...).
+Hierbei werden die Daten in Doppelpunkt-getrennten **Schlüssel-Wert-Paaren** gespeichert, wobei die Werte beliebige Datentypen annehmen können (Zahlen, Text, Listen, ...).
 Datensätze selbst werden durch geschweifte Klammern `{}` begrenzt, wobei die einzelnen Schlüssel-Wert-Paare durch Kommas getrennt werden.
 Diese Struktur kann beliebig tief verschachtelt werden, um komplexe Datenstrukturen abzubilden.
 In unserem Beispiel können wir die Informationen für mehrere Treffen wie folgt speichern:
@@ -391,7 +392,7 @@ Daher wird es i.d.R. automatisiert erzeugt oder in Kombination mit einem Editor 
 # JSON-Beispiel
 
 - Öffnen sie den [JSON-Onlineeditor von  tutorialspoint](https://www.tutorialspoint.com/online_json_editor.htm)
-- Kopieren sie den JSON-Code in das Editorfenster (links)
+- Kopieren sie den JSON-Code vom obigen Beispiel in das Editorfenster (links)
 - Studieren sie die angezeigte Baumhierarchie des Datensatzes (rechts)
   - Sie können die einzelnen Knoten aufklappen und schließen, um die Hierarchie zu erkunden
 
@@ -491,7 +492,7 @@ Hierbei wird die Farbinformation für jeden Pixel gespeichert, was die Dateigrö
 Die Anzahl der Pixel wird *Auflösung* oder Punktdichte genannt.
 Die verwendete Farbtiefe (Anzahl möglicher Farben) beeinflusst ebenfalls die Dateigröße.[^pixelgraphic]](https://upload.wikimedia.org/wikipedia/de/thumb/4/49/Punktdichte%2BFarbtiefe.svg/800px-Punktdichte%2BFarbtiefe.svg.png?20111016165836){width=50%}
 
-[^pixelgraphic]: Quelle [F. Graf - wikipedia.de](https://de.wikipedia.org/wiki/Datei:Punktdichte+Farbtiefe.svg) - 09.08.2024
+[^pixelgraphic]: Quelle - [F. Graf - wikipedia.de](https://de.wikipedia.org/wiki/Datei:Punktdichte+Farbtiefe.svg) - 09.08.2024
 
 
 ### Vektorgrafiken

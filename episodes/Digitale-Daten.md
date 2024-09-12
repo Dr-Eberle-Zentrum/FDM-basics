@@ -44,7 +44,7 @@ Die bekannteste und eine der ersten ist die **ASCII**-Kodierung (American Standa
 
 ![ASCII-Kodiertabelle. Nichtsichtbare Steuerzeichen sind in eckigen Klammern angegeben.[^1]](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/ASCII-Table-wide.svg/800px-ASCII-Table-wide.svg.png){alt='ASCII'}
 
-[^1]: Quelle: [Wikimedia Commons](https://simple.m.wikipedia.org/wiki/File:ASCII-Table-wide.svg) - 07.08.2024
+[^1]: Quelle - [Wikimedia Commons](https://simple.m.wikipedia.org/wiki/File:ASCII-Table-wide.svg) - 07.08.2024
 
 Wenn wir die Tabelle betrachten, fällt uns auf, dass nicht nur Buchstaben oder Ziffern, sondern auch Sonderzeichen und Steuerzeichen (z.B. Zeilenumbruch) enthalten sind.
 Zudem fehlen Umlaute und Sonderzeichen, die in anderen Sprachen verwendet werden.
@@ -272,7 +272,7 @@ Dieses Problem ist in folgender Grafik verdeutlicht, indem verschiedene sehr kur
 
 ![Genauigkeit von Gleitkommazahlen hängt sehr stark von der Mantissenlänge (Anzahl Bits) ab und sinkt mit steigendem Abstand zu 0.[^2] ](https://upload.wikimedia.org/wikipedia/commons/8/8f/Exakt_darstellbare_Gleitkommazahlen.png){width=50%}
 
-[^2]: Quelle: [Roland Illig - Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Exakt_darstellbare_Gleitkommazahlen.png) - 07.08.2024
+[^2]: Quelle - [Roland Illig - Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Exakt_darstellbare_Gleitkommazahlen.png) - 07.08.2024
 
 ::::::::::::::::: callout
 
@@ -398,7 +398,7 @@ In folgendem Bild sehen sie, dass die unterschiedlichen Farbmodelle nur Teile de
 
 ![Darstellbare Farben im RGB- (gelb) und CMYK-Farbraum (blau) im Vergleich zum sichtbaren Bereich des Menschen [^rgbcymk].](https://aufkleberdrucker24.de/customers_pics/655/4c5b308039adc9c2a7a9c105721f8dc4.jpg)
 
-[^rgbcymk]: Quelle: [aufkleberdrucker24.de](https://aufkleberdrucker24.de/was-ist-der-unterschied-zwischen-rgb-und-cmyk.htm)
+[^rgbcymk]: Quelle - [aufkleberdrucker24.de](https://aufkleberdrucker24.de/was-ist-der-unterschied-zwischen-rgb-und-cmyk.htm) - 12.09.2024
 
 ::::::::::: testimonial
 
