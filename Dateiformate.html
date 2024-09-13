@@ -118,11 +118,11 @@
   Basics Forschungsdatenmanagement
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 78%" class="percentage">
-    78%
+<aside class="col-md-12 lesson-progress"><div style="width: 62%" class="percentage">
+    62%
   </div>
   <div class="progress data">
-    <div class="progress-bar data" role="progressbar" style="width: 78%" aria-valuenow="78" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar data" role="progressbar" style="width: 62%" aria-valuenow="62" aria-label="Lesson Progress" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -257,6 +257,15 @@
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
 
+<div class="accordion accordion-flush" id="accordionFlush6">
+  <div class="accordion-item">
+    <div class="accordion-header" id="flush-heading6">
+        <a href="RegEx.html">5. Reguläre Ausdrücke</a>
+    </div><!--/div.accordion-header-->
+
+  </div><!--/div.accordion-item-->
+</div><!--/div.accordion-flush-->
+
                 </div>
               </div>
             </div>
@@ -300,7 +309,7 @@
   <div class="col-xl-8 col-lg-12 primary-content">
     <nav class="lesson-content mx-md-4" aria-label="Previous and Next Chapter"><!-- content for small screens --><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="Digitale-Daten.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="RegEx.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -308,8 +317,8 @@
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Previous: Digitale Daten
         </a>
-        <a class="chapter-link float-end" href="index.html" rel="next">
-          Next: FDM Basics...
+        <a class="chapter-link float-end" href="RegEx.html" rel="next">
+          Next: Reguläre Ausdrücke...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
@@ -421,7 +430,7 @@ Dateiformat!</p>
 bearbeiten. Falls nicht, wird der Inhalt der Datei als unleserlicher
 Text oder als Zeichenfolge von Sonderzeichen angezeigt, wie in folgendem
 Beispiel.</p>
-<figure><img src="fig/jpeg-in-texteditor.png" style="width:70.0%" alt="JPEG Bilddatei in einem Texteditor geöffnet zeigt nur wirre Sonderzeichen. Dies deutet auf ein binäres Dateiformat hin." class="figure mx-auto d-block"><div class="figcaption">JPEG Bilddatei in einem Texteditor geöffnet
+<figure><img src="fig/jpeg-in-texteditor.png" alt="Binärdatei im Texteditor" class="figure mx-auto d-block"><div class="figcaption">JPEG Bilddatei in einem Texteditor geöffnet
 zeigt nur wirre Sonderzeichen. Dies deutet auf ein binäres Dateiformat
 hin.</div>
 </figure></div>
@@ -446,7 +455,7 @@ textbasiert?</em></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Antwort </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>Die Excel-Datei wird als unleserlicher Text oder als Zeichenfolge von
 Sonderzeichen angezeigt, da sie im binären XLSX-Format gespeichert ist.
@@ -525,7 +534,7 @@ Schlagworten versehen werden, um ihre Formattierung zu bestimmen. Die
 Formatierung selbst geschieht in einem nachfolgenden
 Verarbeitungsschritt, bei dem der formatierte Text in einem geeigneten
 Format, z.B. HTML, PDF, .., abgespeichert wird.</p>
-<figure><img src="fig/md-rendering.png" style="width:60.0%" alt="Beispiel einer Markdown-Datei (links) und einer gerenderten Ausgabe (rechts)." class="figure mx-auto d-block"><div class="figcaption">Beispiel einer Markdown-Datei (links) und einer
+<figure><img src="fig/md-rendering.png" alt="Markdownbeispiel" class="figure mx-auto d-block"><div class="figcaption">Beispiel einer Markdown-Datei (links) und einer
 gerenderten Ausgabe (rechts).<a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a>
 </div>
 </figure><p>Studieren sie folgende Webseite, in der Markdown und seine
@@ -589,7 +598,7 @@ werden, jedoch ist zur Anzeige der Formatierung ein
 <strong>Webbrowser</strong> erforderlich. Das heißt, analog wie bei
 Markdown, muss der HTML-Code erst durch ein Programm (i.d.R. dem
 Browser) interpretiert und dargestellt werden.</p>
-<figure><img src="fig/html-rendering.png" style="width:60.0%" alt="Beispiel für eine einfache Webseite. Links der HTML-Code, rechts die dargestellte Webseite." class="figure mx-auto d-block"><div class="figcaption">Beispiel für eine einfache Webseite. Links der
+<figure><img src="fig/html-rendering.png" alt="HTML-Beispiel" class="figure mx-auto d-block"><div class="figcaption">Beispiel für eine einfache Webseite. Links der
 HTML-Code, rechts die dargestellte Webseite.<a href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a>
 </div>
 </figure><p>Webseiten bestehen aus einer Kombination von HTML, CSS und
@@ -690,7 +699,7 @@ Markdown-Dateien statt in Word-Dokumenten zu speichern?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Mögliche Punkte </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <ul><li>
 <strong>Plattformunabhängigkeit</strong>: Markdown-Dateien können
@@ -771,7 +780,7 @@ gewährleisten.</p>
 Daten häufig in tabellarischer Form gespeichert. Hierbei werden die
 Daten in Zeilen und Spalten organisiert, wobei in einzelnen Spalten nur
 Informationen der gleichen Form (Zahl, Text, ..) gelistet werden.</p>
-<figure><img src="fig/table.data.png" style="width:30.0%" alt="Tabellarische Daten sind die häufigste Form der Datenerhebung." class="figure mx-auto d-block"><div class="figcaption">Tabellarische Daten sind die häufigste Form der
+<figure><img src="fig/table.data.png" alt="Beispiel tabellarischer Daten" class="figure mx-auto d-block"><div class="figcaption">Tabellarische Daten sind die häufigste Form der
 Datenerhebung.</div>
 </figure><p>Tabellen können in textbasierten Formaten (z.B. CSV) oder binären
 Formaten (z.B. XSLX) digital gespeichert werden. Textbasierte Formate
@@ -805,7 +814,7 @@ Was kann problematisch werden?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Mögliche Probleme </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <ul><li>
 <strong>Spaltentrennzeichen</strong>: Da es sich um einen
@@ -958,7 +967,7 @@ einzelnen Knoten ziehen?</em></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Antwort </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
 <ul><li>in geschweiften Klammern werden die Anzahl der Schlüssel-Wert-Paare
 angezeigt, also die Anzahl der Einzelinformationen im entsprechenden
@@ -1034,7 +1043,7 @@ aus der letzten Aufgabe oben?</em></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Antwort </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
 <ul><li>es gibt keine explizite Unterscheidung in Datensätze und Listen</li>
 <li>alle Informationen werden gleich (als Text) behandelt und angezeigt
@@ -1099,7 +1108,7 @@ beabsichtigten Verwendung abhängen. Für Fotos und Bilder, die auf
 Webseiten oder in Präsentationen verwendet werden, ist JPEG oft
 ausreichend, während PNG oder TIFF für hochwertige Drucke oder Grafiken
 bevorzugt werden sollten.</p>
-<figure><img src="https://upload.wikimedia.org/wikipedia/de/thumb/4/49/Punktdichte%2BFarbtiefe.svg/800px-Punktdichte%2BFarbtiefe.svg.png?20111016165836" style="width:50.0%" alt="Allen Formaten gemein ist, dass die Bildinformation gerastert wird, d.h. durch eine Tabelle von Pixeln dargestellt wird. Hierbei wird die Farbinformation für jeden Pixel gespeichert, was die Dateigröße von Bildern stark beeinflusst. Die Anzahl der Pixel wird Auflösung oder Punktdichte genannt. Die verwendete Farbtiefe (Anzahl möglicher Farben) beeinflusst ebenfalls die Dateigröße." class="figure mx-auto d-block"><div class="figcaption">Allen Formaten gemein ist, dass die
+<figure><img src="https://upload.wikimedia.org/wikipedia/de/thumb/4/49/Punktdichte%2BFarbtiefe.svg/800px-Punktdichte%2BFarbtiefe.svg.png?20111016165836" alt="Punktdichte und Farbtiefe in Rastergrafiken" class="figure mx-auto d-block"><div class="figcaption">Allen Formaten gemein ist, dass die
 Bildinformation <em>gerastert</em> wird, d.h. durch eine Tabelle von
 Pixeln dargestellt wird. Hierbei wird die Farbinformation für jeden
 Pixel gespeichert, was die Dateigröße von Bildern stark beeinflusst. Die
@@ -1181,7 +1190,7 @@ insbesondere bei starken Vergrößerungen. Auch die Farbtiefe und
 Auflösung der Bilder beeinflussen die Qualität und Dateigröße, sodass
 eine Abwägung zwischen Qualität und Speicherplatzbedarf getroffen werden
 muss.</p>
-<figure><img src="fig/anti-aliasing.png" alt="Beispiele für Pastergrafikdarstellung mit und ohne Kantenglättung (Anti-Aliasing) ." class="figure mx-auto d-block"><div class="figcaption">Beispiele für Pastergrafikdarstellung mit und
+<figure><img src="fig/anti-aliasing.png" alt="Beispiele fuer Kantenglaettung" class="figure mx-auto d-block"><div class="figcaption">Beispiele für Pastergrafikdarstellung mit und
 ohne Kantenglättung (Anti-Aliasing) <a href="#fn5" class="footnote-ref" id="fnref5"><sup>5</sup></a>.</div>
 </figure><p>Vektorgrafiken sind hingegen nicht für alle Arten von Bildern
 geeignet, insbesondere für Fotos und Bilder mit komplexen Farbverläufen
@@ -1233,9 +1242,8 @@ Anwendungen/Software
 <div id="einordnung-im-datenlebenszyklus" class="callout-inner">
 <h3 class="callout-title">Einordnung im Datenlebenszyklus</h3>
 <div class="callout-content">
-<figure><img src="https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png" style="width:40.0%" alt="In welchen Phasen im Datenlebenszyklus sehen sie obige Punkte als besonders wichtig an?" class="figure mx-auto d-block"><div class="figcaption"><em>In welchen Phasen im Datenlebenszyklus sehen
-sie obige Punkte als besonders wichtig an?</em></div>
-</figure></div>
+<p><img src="https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png" alt="Datenlebenszyklus" class="figure">}</p>
+</div>
 </div>
 </div>
 <div id="accordionSolution6" class="accordion challenge-accordion accordion-flush">
@@ -1243,7 +1251,7 @@ sie obige Punkte als besonders wichtig an?</em></div>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
   <h4 class="accordion-header" id="headingSolution6"> Antwort </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
 <div class="accordion-body">
 <p>Die richtige Wahl des Dateiformats ist in allen Phasen des
 Datenlebenszyklus wichtig:</p>
@@ -1295,7 +1303,7 @@ Graf - wikipedia.de</a> - 09.08.2024<a href="#fnref4" class="footnote-back">↩�
       </div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="Digitale-Daten.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
-        <a class="chapter-link float-end" href="index.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
+        <a class="chapter-link float-end" href="RegEx.html">Next<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
       </div>
       <!-- content for large screens -->
       <div class="d-none d-sm-none d-md-block">
@@ -1303,8 +1311,8 @@ Graf - wikipedia.de</a> - 09.08.2024<a href="#fnref4" class="footnote-back">↩�
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>
           Previous: Digitale Daten
         </a>
-        <a class="chapter-link float-end" href="index.html" rel="next">
-          Next: FDM Basics...
+        <a class="chapter-link float-end" href="RegEx.html" rel="next">
+          Next: Reguläre Ausdrücke...
           <i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i>
         </a>
       </div>
