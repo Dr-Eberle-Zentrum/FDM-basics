@@ -41,7 +41,7 @@ Im Laufe des Kurses durchlaufen die Teilnehmenden alle Schritte des Forschungsda
 Die wichtigsten Schritte im Lebenszyklus von Forschungsdaten sind in folgender Grafik der Informationsseite ["Was ist Forschungsdatenmanagement (FDM)?"](https://uni-tuebingen.de/de/240762) der Universität Tübingen zusammengefasst.
 
 ![Wissenschaftliche Forschung ist ein iterativer Prozess, der aus verschiedenen Phasen besteht.
-Der Lebenszyklus von Forschungsdaten beginnt mit der Planung eines Forschungsprojekts und endet mit der Archivierung, welche die Wiederverwendung von Forschungsdaten in einem neuen Zyklus ermöglicht.](https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png){width=60%, alt="Datenlebenszyklus"}}
+Der Lebenszyklus von Forschungsdaten beginnt mit der Planung eines Forschungsprojekts und endet mit der Archivierung, welche die Wiederverwendung von Forschungsdaten in einem neuen Zyklus ermöglicht.](https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png){width=60% alt="Datenlebenszyklus"}}
 
 Wir werden uns in den nun folgenden Kapiteln mit den verschiedenen Aspekten von Forschungsdaten beschäftigen und diese immer wieder in Bezug zum Lebenszyklus von Forschungsdaten setzen.
 

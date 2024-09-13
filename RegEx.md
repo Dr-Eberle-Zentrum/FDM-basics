@@ -192,7 +192,7 @@ Bis zu welchem Level kommen sie? 😎
 ## CheatSheet
 
 
-[![Überblick über die Elemente von Regulären Ausdrücken](fig/regular-expressions-cheat-sheet-v2_600_0.png){width=60%, alt="RegEx Cheatsheet"}}](fig/regular-expressions-cheat-sheet-v2_600_0.png)
+[![Überblick über die Elemente von Regulären Ausdrücken](fig/regular-expressions-cheat-sheet-v2_600_0.png){width=60% alt="RegEx Cheatsheet"}}](fig/regular-expressions-cheat-sheet-v2_600_0.png)
 
 
 
@@ -216,7 +216,8 @@ Bis zu welchem Level kommen sie? 😎
 
 # Einordnung im Datenlebenszyklus
 
-![*In welchen Phasen im Datenlebenszyklus sehen sie obige Punkte als besonders wichtig an?*](https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png){width=40%, alt="Datenlebenszyklus"}
+![*In welchen Phasen im Datenlebenszyklus sehen sie obige Punkte als besonders wichtig an?*](https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png){width=40% alt="Datenlebenszyklus"}
+
 
 ::: solution
 
