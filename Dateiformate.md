@@ -64,7 +64,7 @@ Dies ist *mit jeder Datei möglich*, unabhhängig von der Dateiendung oder dem D
 Wenn die Datei text-basiert ist, können Sie den Inhalt lesen und bearbeiten.
 Falls nicht, wird der Inhalt der Datei als unleserlicher Text oder als Zeichenfolge von Sonderzeichen angezeigt, wie in folgendem Beispiel.
 
-![JPEG Bilddatei in einem Texteditor geöffnet zeigt nur wirre Sonderzeichen. Dies deutet auf ein binäres Dateiformat hin.](fig/jpeg-in-texteditor.png){width=70%}
+![JPEG Bilddatei in einem Texteditor geöffnet zeigt nur wirre Sonderzeichen. Dies deutet auf ein binäres Dateiformat hin.](fig/jpeg-in-texteditor.png){width=70%, alt="Binärdatei im Texteditor"}
 
 :::::::::::::::::::
 
@@ -139,7 +139,7 @@ Markdown ist eine einfache Auszeichnungssprache für Textdateien.
 Das heisst, einzelne Textabschnitte können mit speziellen Zeichen oder Schlagworten versehen werden, um ihre Formattierung zu bestimmen.
 Die Formatierung selbst geschieht in einem nachfolgenden Verarbeitungsschritt, bei dem der formatierte Text in einem geeigneten Format, z.B. HTML, PDF, .., abgespeichert wird.
 
-![Beispiel einer Markdown-Datei (links) und einer gerenderten Ausgabe (rechts).[^md]](fig/md-rendering.png){width=60%}
+![Beispiel einer Markdown-Datei (links) und einer gerenderten Ausgabe (rechts).[^md]](fig/md-rendering.png){width=60%, alt="Markdownbeispiel"}
 
 [^md]: Quelle - [B.K. Nielsen - Freron](https://blog.freron.com/2011/thoughts-on-writing-emails-using-markdown/) - 07.08.2024
 
@@ -180,7 +180,7 @@ Im Gegensatz zu Markdown ist HTML jedoch deutlich komplexer und ermöglicht eine
 HTML-Dateien können mit jedem Texteditor geöffnet und bearbeitet werden, jedoch ist zur Anzeige der Formatierung ein **Webbrowser** erforderlich.
 Das heißt, analog wie bei Markdown, muss der HTML-Code erst durch ein Programm (i.d.R. dem Browser) interpretiert und dargestellt werden.
 
-![Beispiel für eine einfache Webseite. Links der HTML-Code, rechts die dargestellte Webseite.[^html]](fig/html-rendering.png){width=60%}
+![Beispiel für eine einfache Webseite. Links der HTML-Code, rechts die dargestellte Webseite.[^html]](fig/html-rendering.png){width=60%, alt="HTML-Beispiel"}
 
 [^html]: Quelle - [Chris Spann - Lumar](https://www.lumar.io/blog/best-practice/clientside-vs-serverside-js-rendering-hamburger-analogy/) - 07.08.2024
 
@@ -298,7 +298,7 @@ Auch hier gilt, dass ggf. nicht nur das erzeugte finale Dokument, sondern auch d
 Bei der Datenerhebung, -verarbeitung oder zur -archivierung werden Daten häufig in tabellarischer Form gespeichert.
 Hierbei werden die Daten in Zeilen und Spalten organisiert, wobei in einzelnen Spalten nur Informationen der gleichen Form (Zahl, Text, ..) gelistet werden.
 
-![Tabellarische Daten sind die häufigste Form der Datenerhebung.](fig/table.data.png){width=30%}
+![Tabellarische Daten sind die häufigste Form der Datenerhebung.](fig/table.data.png){width=30%, alt="Beispiel tabellarischer Daten"}
 
 Tabellen können in textbasierten Formaten (z.B. CSV) oder binären Formaten (z.B. XSLX) digital gespeichert werden.
 Textbasierte Formate sind plattformunabhängig und können in jedem Texteditor geöffnet und bearbeitet werden, während binäre Formate spezifische Programme erfordern und ggf. zu Kompatibilitätsproblemen führen können.
@@ -511,7 +511,7 @@ Für Fotos und Bilder, die auf Webseiten oder in Präsentationen verwendet werde
 ![Allen Formaten gemein ist, dass die Bildinformation *gerastert* wird, d.h. durch eine Tabelle von Pixeln dargestellt wird.
 Hierbei wird die Farbinformation für jeden Pixel gespeichert, was die Dateigröße von Bildern stark beeinflusst.
 Die Anzahl der Pixel wird *Auflösung* oder Punktdichte genannt.
-Die verwendete Farbtiefe (Anzahl möglicher Farben) beeinflusst ebenfalls die Dateigröße.[^pixelgraphic]](https://upload.wikimedia.org/wikipedia/de/thumb/4/49/Punktdichte%2BFarbtiefe.svg/800px-Punktdichte%2BFarbtiefe.svg.png?20111016165836){width=50%}
+Die verwendete Farbtiefe (Anzahl möglicher Farben) beeinflusst ebenfalls die Dateigröße.[^pixelgraphic]](https://upload.wikimedia.org/wikipedia/de/thumb/4/49/Punktdichte%2BFarbtiefe.svg/800px-Punktdichte%2BFarbtiefe.svg.png?20111016165836){width=50%, alt="Punktdichte und Farbtiefe in Rastergrafiken"}
 
 [^pixelgraphic]: Quelle - [F. Graf - wikipedia.de](https://de.wikipedia.org/wiki/Datei:Punktdichte+Farbtiefe.svg) - 09.08.2024
 
@@ -553,7 +553,7 @@ Rastergrafiken haben den Nachteil, dass sie bei der Vergrößerung an Qualität 
 Dies führt zu Unschärfe und Verzerrungen, insbesondere bei starken Vergrößerungen.
 Auch die Farbtiefe und Auflösung der Bilder beeinflussen die Qualität und Dateigröße, sodass eine Abwägung zwischen Qualität und Speicherplatzbedarf getroffen werden muss.
 
-![Beispiele für Pastergrafikdarstellung mit und ohne Kantenglättung (Anti-Aliasing) [^aa].](fig/anti-aliasing.png)
+![Beispiele für Pastergrafikdarstellung mit und ohne Kantenglättung (Anti-Aliasing) [^aa].](fig/anti-aliasing.png){alt="Beispiele fuer Kantenglaettung"}
 
 [^aa]: Quelle - [selfhtml.org](https://wiki.selfhtml.org/wiki/Grafik/Grundbegriffe/Anti-Aliasing) - 12.09.2024
 
@@ -591,7 +591,7 @@ Bei sehr komplexen Vektorgrafiken mit sehr vielen (überlappenden) Elementen kan
 
 # Einordnung im Datenlebenszyklus
 
-![*In welchen Phasen im Datenlebenszyklus sehen sie obige Punkte als besonders wichtig an?*](https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png){width=40%}
+![*In welchen Phasen im Datenlebenszyklus sehen sie obige Punkte als besonders wichtig an?*](https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png){width=40%, alt="Datenlebenszyklus"}}
 
 ::: solution
 
@@ -616,7 +616,6 @@ Die richtige Wahl des Dateiformats ist in allen Phasen des Datenlebenszyklus wic
 :::::::::::::::: instructor
 
 [Sitzungsaufgabe zu "Datenextraktion aus Bildern"](Aufgabe-PNG2CSV.md)
-[Sitzungsaufgabe zu "Manuelle Datenbereinigung"](Aufgabe-Datenbereinigung-manuell.md)
 
 :::::::::::::::::::::::::::
 
