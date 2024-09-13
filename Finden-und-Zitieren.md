@@ -95,6 +95,6 @@ Datenrecherche und Zitation sind vorrangig zu Beginn und am Ende des Datenlebens
 
 :::::::::::::::: instructor
 
-[Sitzungsaufgabe](Aufgabe-Finden-und-Zitieren.md)
+[Sitzungsaufgabe zu "Finden und Zitieren"](Aufgabe-Finden-und-Zitieren.md)
 
 :::::::::::::::::::::::::::
