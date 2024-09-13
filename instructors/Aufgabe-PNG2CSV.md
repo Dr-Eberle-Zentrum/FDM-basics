@@ -7,7 +7,7 @@ title: 'Aufgabe zu "Datenextraktion aus Diagrammbildern"'
 Manchmal sind Daten nur in Form von Bildern verfügbar, z.B. in Diagrammen oder Tabellen, die nicht als Text vorliegen. 
 Zum Beispiel haben wir das folgende Liniendiagramm aus einem PDF-Dokument extrahiert und als Bild gespeichert.
 
-![Mitpreise Tübingen](fig/mietpreise-tuebingen.png)
+![Mietpreise Tübingen](fig/mietpreise.tuebingen.png){alt='Diagramm Mietpreise Tübingen'}
 
 Die Datei [`mietpreise-tuebingen.png`](https://raw.githubusercontent.com/Dr-Eberle-Zentrum/FDM-basics/main/instructors/figs/mietpreise-tuebingen.png) enthält die Mietpreise für Tübingen in den Jahren 2011 bis 2023 für drei Kategorien von Wohnungsgrößen (bis 30, 50 oder 100 m²).
 
