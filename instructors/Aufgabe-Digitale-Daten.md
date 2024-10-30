@@ -12,6 +12,8 @@ Wir haben hierfür eine Datei mit einem Mietpreisindex für Deutschland vom Bund
   - für Import in englischsprachigem MS Excel
 - [mietindex.destatis.us.txt](https://raw.githubusercontent.com/Dr-Eberle-Zentrum/FDM-basics/main/instructors/data/mietindex.destatis.us.txt) - mit amerikanischem Dezimaltrennzeichen
   - für Import in deutschsprachigem MS Excel (bzw. einer westeuropäischen Sprache)
+  
+Die Tabellen enthalten die Nettokaltmieten-Indexwerte (Referenzjahr 2020) für Baden-Württemberg aus der Tabelle 61111-0020 der GENESIS-Online Datenbank des Statistischen Bundesamtes.
 
 Für die folgende Aufgabe verwenden sie bitte die Datei, die *NICHT* der in ihrem Microsoft Excel eingestellten Sprache (bzw. dem entsprechenden Zahlentrennzeichensystem) entspricht, um die Probleme zu simulieren, die durch unterschiedliche Dezimaltrennzeichen entstehen können.
 
@@ -55,7 +57,7 @@ Nun sollten die Daten korrekt importiert sein und die Mietpreisindex-Spalte als 
     - Listen
     - ggf. Fett- oder Kursivschrift
 - Verwenden sie die folgenden Abschnitte:
-  - **Herkunft der Daten**
+  - **Herkunft der Daten** (Datenzitation)
     - Beschreibung der Datenquelle
     - Link zur Datenquelle
     - Linzenz? Überlegen sie, ob und in welchem Rahmen sie die Daten verwenden dürfen. Begründen sie ihre Aussagen.
@@ -74,7 +76,7 @@ Um die Dokumentation in ihrem Projekt einheitlich zu halten, sollen sie nun eine
 Konkret:
 
 - Erstellen sie eine Markdown-Datei mit dem Namen `strompreise.destatis.README.md`
-- Kopieren sie den Inhalt der alten Datei hinein
-- Überarbeiten sie den Inhalt so, dass er zu den neuen Anforderungen aus Aufgabe 2 passt (fügen sie ggf. neue Abschnitte hinzu)
+- Kopieren sie den Inhalt der alten Datei hinein (*Die alte Datei soll im Ablageordner verbleiben!*)
+- Überarbeiten sie den Inhalt so, dass er zu den neuen Anforderungen aus Aufgabe 2 passt (*fügen sie ggf. neue Abschnitte hinzu, die sie für ihre Dokumentation benötigen.*)
 - Speichern sie die Datei in ihrem Abgabeordner ab
 
