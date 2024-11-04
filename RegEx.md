@@ -144,11 +144,11 @@ Grundlegend unterscheidet man bei regulären Ausdrücken folgende Elemente:
   - `.` = jedwedes Zeichen
   - `[xyz]` = explizite Zeichenliste, hier "x", "y" und "z"
     -  auch Reihen möglich, z.B. `[3-7]` = 3,4,5,6,7
-  - `\s` = whitespaces = Leerzeichen, Tabulator, ...
+  - `\s` = whitespaces = alle unsichtbaren Zeichen, z.B. Leerzeichen, Tabulator, ...
   - `\d` = digits = Zahlen = [0-9]
   - `\w` = (english) word = [A-Za-z0-9_] (keine Umlaute etc.!)
   - *Negation*:
-    - Grossschreibung `\S`, `\D`, .. = alles "ausser" der entsprechenden Kleinschreibung
+    - Grossschreibung `\S`, `\D`, .. = alles "ausser" den Zeichen der entsprechenden "kleinen Klasse" `\s`, `\d`, ...
     - `[^xyz]` = das `^` negiert die explizite Liste (alles ausser x,y,z)
 - **Quantifikatoren**, d.h. wie häufig soll das vorangehende Zeichen gematcht werden, z.B.
   - `?` = ein oder kein mal
@@ -165,6 +165,18 @@ Grundlegend unterscheidet man bei regulären Ausdrücken folgende Elemente:
   - `\1` **Rückreferenzierung** auf 1., 2., ... vorangehende Gruppe
     - z.B. `(.).\1` matcht aha, oho, ana, d.h. erster und letzter Buchstabe gleich
     
+Neben den oben genannten RegEx-spezifischen `\..`-Elementen gibt es auch immer noch einige Sonderzeichen für die auch Escapes notwendig sind, z.B. 
+
+- `\t` für Tabulator
+- `\n` für Zeilenumbruch
+
+Ausserdem müssen Zeichen, die in RegEx eine spezielle Bedeutung haben, auch escaped werden z.B.
+
+- `\[` für das normale `[`-Zeichen
+- `\\` für das normale `\`-Zeichen
+- `\.` für das normale `.`-Zeichen
+- `\+` für das normale `+`-Zeichen
+- ...
     
 ## Tutorials
 
