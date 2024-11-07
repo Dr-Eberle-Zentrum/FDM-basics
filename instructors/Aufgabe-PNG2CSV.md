@@ -9,7 +9,7 @@ Zum Beispiel haben wir das folgende Liniendiagramm aus einem PDF-Dokument extrah
 
 ![Mietpreise Tübingen](fig/mietpreise.tuebingen.png){alt='Diagramm Mietpreise Tübingen'}
 
-Die Datei [`mietpreise-tuebingen.png`](https://raw.githubusercontent.com/Dr-Eberle-Zentrum/FDM-basics/main/instructors/fig/mietpreise-tuebingen.png) enthält die Mietpreise für Tübingen in den Jahren 2011 bis 2023 für drei Kategorien von Wohnungsgrößen (bis 30, 50 oder 100 m²).
+Die Datei [`mietpreise-tuebingen.png`](https://raw.githubusercontent.com/Dr-Eberle-Zentrum/FDM-basics/main/instructors/fig/mietpreise-tuebingen.png) enthält die Mietpreise für Tübingen in den Jahren 2011 bis 2023 für drei Kategorien von Wohnungsgrößen (bis 30, 60 oder 100 m²).
 
 Ziel der Aufgabe ist es, die Daten aus dem Diagramm zu extrahieren und in einer CSV-Datei zu speichern.
 
@@ -26,14 +26,14 @@ Zur Extraktion der Daten verwenden wir das frei verfügbare Version 4 des Online
   - Tragen sie entsprechende Werte für die ausgewählten Bildpunkte ein.
 - Benennen sie den **Datensatz in "30qm"** um und setzen sie die Datensatzfarbe auf dunkelrot (linkes Menü).
 - Verwenden sie im rechten Menü "Add Point" und klicken sie auf die Mitte aller roten-orangenen Linienpunkte, um entsprechende Datenpunkte zu erstellen (sollten am Ende 13 Stück sein, siehe links unter dem Menü)
-- Um den nächsten Datensatz zu erstellen, klicken sie links auf "Datasets" -> "Add Dataset" und erstellen sie Datensätze für "50qm" (dunkelgelb) und "100qm" (dunkelgrün).
+- Um den nächsten Datensatz zu erstellen, klicken sie links auf "Datasets" -> "Add Dataset" und erstellen sie Datensätze für "60qm" (dunkelgelb) und "100qm" (dunkelgrün).
   - Achten sie darauf die Namen und Farben anzupassen!
 - Als nächstes wollen wir für den **Datensatz "100qm"** die automatische Detektion der Bildwerte austesten. 
   - Datensatz auswählen (links oben)
   - rechts im Menü auf das Farbfelder der "Foreground Color" klicken, dann auf "Color Picker" und im Bild auf einen Punkt der grünen Linie klicken. "Done"
   - rechts den "Algorithm" auf "X Step" setzen, da wir ja nur an Werten den Jahresmarken interessiert sind, und die Achsengrenzen entsprechend einstellen.
   - "Run" sollte nun die Werte der grünen Linie automatisch erkennen.
-- Versuchen sie nun die Werte des **"50qm" Datensatzes** zu bestimmen.
+- Versuchen sie nun die Werte des **"60qm" Datensatzes** zu bestimmen.
   - links Datensatz auswählen!
   - können die Punkte automatisch erkannt werden, oder müssen sie manuell gesetzt werden?
 - Wenn alle der Datensätze erfasst sind, können sie die Daten exportieren.
@@ -42,7 +42,7 @@ Zur Extraktion der Daten verwenden wir das frei verfügbare Version 4 des Online
 Prüfen sie den Inhalt der Datei! Sie sollte ungefähr so aussehen und 15 Zeilen haben:
 
 ```csv
-30qm,,50qm,,100qm,
+30qm,,60qm,,100qm,
 X,Y,X,Y,X,Y
 2010.993894993895,10.893854748603355,2010.993894993895,9.664804469273744,2011,8.714344396976669
 2012,11.173184357541901,2012,9.301675977653634,2012,9.68230364771607
