@@ -62,7 +62,7 @@ Ersinnen sie REGULÄRE AUSDRÜCKE für die folgenden Aufgaben und dokumentieren 
 - Kopieren sie die Daten in die Zwischenablage
 - Öffnen sie einen TEXTEDITOR und fügen sie die Daten ein
 - Bereinigen sie die Daten manuell
-  - Verwenden sie [vertikale Markierung](https://www.pctipp.ch/praxis/zubehoer/kleines-maus-trickli-fuer-word-writer-2012970.html) ([MacOs](https://www.macwelt.de/article/934976/textedit-beliebig-markieren.html)) spaltenweise zu markieren und zu löschen
+  - Verwenden sie [vertikale Markierung](https://www.pctipp.ch/praxis/zubehoer/kleines-maus-trickli-fuer-word-writer-2012970.html) ([MacOs](https://www.macwelt.de/article/934976/textedit-beliebig-markieren.html)), um spaltenweise zu markieren und zu löschen
   - Verwenden sie "Suchen und Ersetzen", um ein Semikolon als Spaltentrenner zwischen den zwei Zielspalten einzufügen
   - Reduzieren sie die erste Spalte auf die Jahreszahlen (vertikale Markierung oder Suchen-und-Ersetzen)
   - Fügen sie eine Überschriftszeile `Jahr;Verbraucherpreisindex` ein
