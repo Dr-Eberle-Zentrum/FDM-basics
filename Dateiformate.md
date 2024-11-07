@@ -171,6 +171,28 @@ Sie können daher [dillinger.io](https://dillinger.io) schon direkt zu ihren Les
 :::::::::::::::::::::::
 
 
+::::::::: challenge
+
+## `.md` Dateiendung mit Texteditor verknüpfen
+
+Dateiendungen dienen vorrangig dazu, dass das Betriebsystem automatisch erkennt, mit welchem Programm eine ausgewählte Datei geöffnet werden soll.
+Für Markdowndateien mit der Dateiendung `.md` ist in den meisten Betriebssystemen keine solche Assoziation mit einem "Standardprogramm" direkt vorhanden.
+Daher sollte diese eingerichtet werden, wenn man häufiger, wie in diesem Kurs, mit Markdown Dateien arbeiten möchte.
+
+### Aufgabe:
+
+- Exportieren sie ihre Markdown-Spielerei aus der letzten Aufgabe aus [dillinger.io](https://dillinger.io) heraus
+  - dazu oben rechts "Export as" > "Markdown" auswählen
+- Speichern sie die Datei auf ihrem Computer an einem Ort ihrer Wahl (den sie wiederfinden...)
+- *Setzen sie als Standardprogramm zum Öffnen von Markdown-Dateien ihren Texteditor*
+    - Anleitung für [Windows](https://www.pcwelt.de/article/1096138/windows-standard-programm-waehlen.html) oder für [MacOS](https://www.macwelt.de/article/2343402/standardprogramm-zum-offnen-auf-dem-mac-andern-so-gehts.html)
+- Versuchen sie nun die heruntergeladene Datei zu öffnen (z.B. via Doppelklick)
+  - *Ziel ist es, das nun ihr installierter Texteditor die Markdown-Datei anzeigt*
+
+:::::::::::::::::::
+
+
+
 ### HTML
 
 **Dateiendungen**: `.html`, `.htm`
@@ -581,7 +603,11 @@ Bei sehr komplexen Vektorgrafiken mit sehr vielen (überlappenden) Elementen kan
   - Art der Daten (z.B. Text, Bild, Video, Audio, ..)
   - Verwendungszweck (z.B. Analyse, Publikation, Archivierung)
   - Kompatibilität mit Software und Plattformen
-
+- Dateiendungen
+  - sind nur ein Teil des Namens ohne weitere Auswirkungen
+  - ermöglichen dem Betriebssystem das richtige Programm zum Öffnen auszuwählen
+    - Programmassoziation kann geändert werden!
+  
 
 ::::::::::::::::::::
 
