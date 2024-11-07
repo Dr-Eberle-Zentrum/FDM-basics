@@ -63,7 +63,7 @@ X,Y,X,Y,X,Y
 
 Erstellen sie eine Markdown-Datei `mietpreise-tuebingen.README.md` und dokumentieren sie darin die Schritte, die sie zur Extraktion der Daten durchgeführt haben.
 
-Dokumentieren sie auch das verwendete Tool, dessen Version, Zugriffszeit und welche Datensätze sie manuell oder automatisch erstellt haben.
+Dokumentieren sie auch das verwendete Tool, dessen Version, Zugriffszeit und welche Datensätze sie manuell oder automatisch (Funktionalität + Einstellungen) erstellt haben.
 
 
 
