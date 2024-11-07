@@ -9,7 +9,7 @@ Zum Beispiel haben wir das folgende Liniendiagramm aus einem PDF-Dokument extrah
 
 ![Mietpreise Tübingen](fig/mietpreise.tuebingen.png){alt='Diagramm Mietpreise Tübingen'}
 
-Die Datei [`mietpreise-tuebingen.png`](https://raw.githubusercontent.com/Dr-Eberle-Zentrum/FDM-basics/main/instructors/figs/mietpreise-tuebingen.png) enthält die Mietpreise für Tübingen in den Jahren 2011 bis 2023 für drei Kategorien von Wohnungsgrößen (bis 30, 50 oder 100 m²).
+Die Datei [`mietpreise-tuebingen.png`](https://raw.githubusercontent.com/Dr-Eberle-Zentrum/FDM-basics/main/instructors/fig/mietpreise-tuebingen.png) enthält die Mietpreise für Tübingen in den Jahren 2011 bis 2023 für drei Kategorien von Wohnungsgrößen (bis 30, 50 oder 100 m²).
 
 Ziel der Aufgabe ist es, die Daten aus dem Diagramm zu extrahieren und in einer CSV-Datei zu speichern.
 
@@ -30,7 +30,7 @@ Zur Extraktion der Daten verwenden wir das frei verfügbare Version 4 des Online
   - Achten sie darauf die Namen und Farben anzupassen!
 - Als nächstes wollen wir für den **Datensatz "100qm"** die automatische Detektion der Bildwerte austesten. 
   - Datensatz auswählen (links oben)
-  - rechts im Menü auf das Farbfelder der "Forground Color" klicken, dann auf "Color Picker" und im Bild auf einen Punkt der grünen Linie klicken. "Done"
+  - rechts im Menü auf das Farbfelder der "Foreground Color" klicken, dann auf "Color Picker" und im Bild auf einen Punkt der grünen Linie klicken. "Done"
   - rechts den "Algorithm" auf "X Step" setzen, da wir ja nur an Werten den Jahresmarken interessiert sind, und die Achsengrenzen entsprechend einstellen.
   - "Run" sollte nun die Werte der grünen Linie automatisch erkennen.
 - Versuchen sie nun die Werte des **"50qm" Datensatzes** zu bestimmen.
