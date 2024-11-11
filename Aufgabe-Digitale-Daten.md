@@ -60,7 +60,9 @@ Nun sollten die Daten korrekt importiert sein und die Mietpreisindex-Spalte als 
   - **Herkunft der Daten** (Datenzitation)
     - Beschreibung der Datenquelle
     - Link zur Datenquelle
-    - Linzenz? Überlegen sie, ob und in welchem Rahmen sie die Daten verwenden dürfen. Begründen sie ihre Aussagen.
+  - **Verwendbarkeit**
+    - Überlegen sie, ob und in welchem Rahmen sie die Daten verwenden dürfen. Begründen sie ihre Aussagen.
+    - Nennen und bewerten sie mindestens 3 Verwendungsbeispiele (auch über den Kurs hinaus)
   - **Import in MS Excel**
     - Beschreibung der Importschritte (in eigenen Stichpunkten)
     - Verwendete Datei
