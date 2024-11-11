@@ -38,7 +38,7 @@ Zur Extraktion der Daten verwenden wir das frei verfügbare Version 4 des Online
   - können die Punkte automatisch erkannt werden, oder müssen sie manuell gesetzt werden?
 - Wenn alle der Datensätze erfasst sind, können sie die Daten exportieren.
   - links auf "Datasets" -> "Export All Data" -> "Download .CSV"
-  - **Dateiname: `mietpreise-tuebingen.csv`**
+  - **Dateiname:** `mietpreise-tuebingen.csv`
   
 Prüfen sie den Inhalt der Datei! Sie sollte ungefähr so aussehen und 15 Zeilen haben:
 

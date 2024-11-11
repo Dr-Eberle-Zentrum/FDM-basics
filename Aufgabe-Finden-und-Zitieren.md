@@ -31,19 +31,24 @@ Final sollen sie sich für einen Download entscheiden und diesen entsprechend do
 ## Datenrecherche und -zitation
 
 Soweit haben wir Daten für die Preisentwicklung von Strom in Deutschland gefunden und heruntergeladen. 
-Wir haben aber noch keine Ahnung, wieviel Strom verbraucht wird und wie sich das in den letzten Jahren entwickelt hat.
+Wir haben aber noch *keine Ahnung, wieviel Strom verbraucht wird* und wie sich das in den letzten Jahren entwickelt hat.
 
-Hierzu sollen sie nun eine Datenrecherche machen.
+Hierzu sollen sie nun eine Datenrecherche machen. Konkret suchen wir:
+
+- Stromverbrauchswerte deutscher Haushalte
+- mindestens 8 fortlaufende Jahre im Zeitraum 2000-2024, um Entwicklung nachzuvollziehen
+- Daten sollten für Verwendung in akademischem Kontext geeignet sein (z.B. Abschlussarbeit)
+
 Wichtig hierbei ist, einzuschätzen, ob die Daten *vertrauenswürdig* und *aktuell* sind, d.h. ob diese in einer wissenschaftlichen Arbeit verwendet werden sollten/könnten.
 Sie sollen ihren Recherchevorgang dokumentieren und *auch solche Datenquellen aufzeigen, die sie nicht verwenden würden*.
 
 Konkret sollen sie:
 
-- *3-4 Datenquellen recherchieren*, die Daten zur Stromverbrauchsentwicklung in Deutschland enthalten und dokumentieren sie
+1. *3-4 Datenquellen recherchieren*, die Daten zur Stromverbrauchsentwicklung in Deutschland enthalten und dokumentieren sie
   - Quelle, Zitat, Zugriffszeit
-  - Datenformat: Wie werden die Daten bereitgestellt?
+  - Datenformat: Wie werden die Daten bereitgestellt? Grafisch? Tabellarisch? Dateiformate? ...
   - *mindestens 4* pro und/oder contra Argumente für die Verwendung der Datenquelle
-- Schreiben sie eine kurze *Zusammenfassung*, wie sie vorgegangen sind, welche Suchmaschinen/LLMs, Suchbegriffe/prompts, Datenbanken, Filter, etc. sie verwendet haben
+2. Schreiben sie eine kurze *Zusammenfassung*, wie sie vorgegangen sind, welche Suchmaschinen/LLMs, Suchbegriffe/prompts, Datenbanken, Filter, etc. sie verwendet haben
 
 Schreiben sie eine Dokumentationsdatei ihrer Recherche im Format ihrer Wahl, welche die obigen Punkte (3-4 Quelleneinschätzungen und Zusammenfassung) enthält, und laden sie diese in ihren persönlichen Abgabeordner.
 
