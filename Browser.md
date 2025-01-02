@@ -184,6 +184,8 @@ Die Folgende Grafik von [javacript.info](https://javascript.info) fasst die vers
 
 ::::::::::: testimonial
 
+# Weiterführende Informationen
+
 Weiterführende Informationen zu JavaScript und seinen Möglichkeiten und Einschränkungen finden Sie auf der Webseite [javascript.info](https://javascript.info).
 
 :::::::::::::::::::::::
@@ -297,6 +299,8 @@ Für eine gegebene Suchanfrage werden dann die relevantesten Ergebnisse aus dies
 Hierfür werden sogenannte **Ranking-Algorithmen** verwendet, die die Relevanz der Ergebnisse anhand verschiedener Kriterien bewerten und sortieren.
 Dies geschieht in der Regel in Bruchteilen von Sekunden und ermöglicht es den Benutzern, schnell und effizient Informationen zu finden.
 
+![Grundlegender Prozess der Suchmaschinenfunktionalität (Quelle: [XOVI](https://www.xovi.de/seokompass/seo-basics/funktion-suchmaschinen/))](fig/Infografik-wie-funktioniert-eine-Suchmaschine.jpg){width=100%, alt="Grundlegender Prozess der Suchmaschinenfunktionalität"}
+
 ::::::::::::::: testimonial
 
 # Weiterführende Informationen
@@ -366,6 +370,7 @@ Im Gegensatz zur klassischen Suchmaschine, welche relevante Dokumente von Dritte
 Dies kann dazu beitragen, dass Benutzer schnell und effizient Informationen finden und komplexe Fragen beantwortet bekommen, ohne auf mehrere Suchergebnisse klicken zu müssen.
 
 Einige der **Vorteile** von GPTs und LLMs als Suchmaschinen sind:
+
 - **Natürliche Sprachverarbeitung**: Die Fähigkeit, natürliche Sprache zu verstehen und zu generieren, ermöglicht es Benutzern, komplexe Fragen zu stellen und direkte Antworten zu erhalten.
 - **Effizienz**: Durch die direkte Beantwortung von Fragen können Benutzer schnell und effizient Informationen finden, ohne auf mehrere Suchergebnisse klicken zu müssen.
 - **Personalisierung**: Durch das Verständnis der Benutzeranfragen können GPTs und LLMs personalisierte Antworten und Empfehlungen liefern, die auf den individuellen Bedürfnissen und Interessen der Benutzer basieren.
