@@ -33,7 +33,7 @@ Derartige Browser sind heute noch im Einsatz, z.B. `lynx` oder `w3m`, und werden
 Diese Browser sind sehr schnell und ressourcenschonend, da sie keine Grafiken oder JavaScript ausführen können, und können daher auch bei sehr langsamen Internetverbindungen eingesetzt werden.
 Im Folgenden ist das Darstellen der Google-Startseite in `w3m` dargestellt:
 
-![Google Startseite im `w3m` Textbrowser](fig/w3m-google.png){width=80% alt="w3m-google"}
+![Google Startseite im `w3m` Textbrowser](fig/w3m-google.png){width=90% alt="w3m-google"}
 
 Seit den 1990er Jahren sind Browser in der Lage, auch Grafiken und andere Medien anzuzeigen.
 Die ersten Browser, die dies ermöglichten, waren Netscape Navigator und Microsoft Internet Explorer.
@@ -41,7 +41,7 @@ Die "Browserkriege" der 1990er Jahre führten zu einer Vielzahl von proprietäre
 Gegen Ende der 1990er Jahre hatte Microsoft eine marktbeherrschende Stellung erreicht, die erst in den 2000er Jahren durch den Aufstieg von Mozilla Firefox und später Google Chrome gebrochen wurde.
 Die Entwicklung ist in der folgenden Grarik dargestellt.
 
-![Marktanteile von Browsern. Quellen [csmonitor.com](https://www.csmonitor.com/Technology/Tech/2008/0131/p25s01-stct.html) und [statcounter.com](https://gs.statcounter.com/browser-market-share) (Dez. 2024)](fig/browser-timeline.png){width=80% alt="Browser-Marktanteile"}
+![Marktanteile von Browsern. Quellen [csmonitor.com](https://www.csmonitor.com/Technology/Tech/2008/0131/p25s01-stct.html) und [statcounter.com](https://gs.statcounter.com/browser-market-share) (Dez. 2024)](fig/browser-timeline.png){width=100% alt="Browser-Marktanteile"}
 
 Mit der Einführung von Google Chrome im Jahr 2008 begann eine neue Ära der Browserentwicklung.
 Chrome war der erste Browser, der auf der JavaScript-Engine V8 basierte, die deutlich schneller war als die Konkurrenz.
@@ -84,7 +84,7 @@ Browser haben verschiedene Aufgaben, darunter:
 - Unterstützung von Webstandards (HTML, CSS, JavaScript)
 - Sicherheit (Sandboxing, HTTPS, Passwörter, Content Security Policy)
 - Barrierefreiheit (Screenreader, Tastaturnavigation)
-- Datenschutz (Verschlüsselung, Do Not Track, Cookie-Verwaltung)
+- Datenschutz (Verschlüsselung, Do Not Track)
 - Erweiterbarkeit (Plugins, Addons)
 - ...
 
@@ -112,7 +112,7 @@ Bevor wir uns damit beschäftigen, was alles geschehen muss, damit eine Webseite
 
 Im Folgenden werden die wichtigsten **Bestandteile einer Webseite** zergliedert dargestellt.
 
-![Bestandteile einer Webseite. Um eine Webseite anzuzeigen (oben mittig), müssen verschiedene Ressourcen geladen werden: HTML, CSS, JavaScript, Bilder, Schriftarten, etc., die i.d.R. in verschiedenen Dateien vorliegen.](fig/webpage-Bestandteile.png){width=80% alt="Bestandteile einer Webseite"}
+![Bestandteile einer Webseite. Um eine Webseite anzuzeigen (oben mittig), müssen verschiedene Ressourcen geladen werden: HTML, CSS, JavaScript, Bilder, Schriftarten, etc., die i.d.R. in verschiedenen Dateien vorliegen.](fig/webseite-Bestandteile.png){width=100% alt="Bestandteile einer Webseite"}
 
 Zentral für eine Webseite ist die **HTML**-Datei, die den strukturellen Aufbau der Seite definiert.
 In dieser Datei werden die verschiedenen Elemente der Seite (Überschriften, Absätze, Links, Bilder, etc.) definiert und miteinander verknüpft bzw. deren Anordnung festgelegt.
@@ -159,7 +159,7 @@ Dies dient dazu, die Sicherheit des Benutzers und seiner Daten zu gewährleisten
 
 Die Folgende Grafik von [javacript.info](https://javascript.info) fasst die verschiedenen Möglichkeiten und Einschränkungen von JavaScript im Browser zusammen.
 
-![Möglichkeiten und Einschränkungen von JavaScript im Browser](https://raw.githubusercontent.com/javascript-tutorial/en.javascript.info/refs/heads/master/1-js/01-getting-started/1-intro/limitations.svg){width=40% alt="Möglichkeiten und Einschränkungen von JavaScript im Browser"}
+![Möglichkeiten und Einschränkungen von JavaScript im Browser](https://raw.githubusercontent.com/javascript-tutorial/en.javascript.info/refs/heads/master/1-js/01-getting-started/1-intro/limitations.svg){width=60% alt="Möglichkeiten und Einschränkungen von JavaScript im Browser"}
 
 *Gleichen sie die Punkte aus der obigen Tabelle mit den Elementen der Grafik ab.*
 
@@ -212,7 +212,7 @@ Hierfür werden **Drittanbieter-Cookies** (Third-Party-Cookies) verwendet, die b
 Hierdurch können Drittanbieter Informationen über das Verhalten des Benutzers auf verschiedenen Webseiten sammeln und personalisierte Werbung webseitenübergreifend anzeigen.
 Die Idee ist in folgender Grafik dargestellt.
 
-![Tracking mit Drittanbieter-Cookies](fig/third-party-cookie.png){width=80% alt="Tracking mit Drittanbieter-Cookies"}
+![Tracking mit Drittanbieter-Cookies](fig/third-party-cookie.png){width=90% alt="Tracking mit Drittanbieter-Cookies"}
 
 
 ### Datenschutz und Sicherheit
@@ -240,7 +240,7 @@ Im Folgenden sollen sie sich ein Bild machen, wieviele Cookies und welche Inform
 - Öffnen sie die Cookie-Informationen ihres Browsers
   - Google Chrome: Tastenkombination `F12` und dann `Speicher` >> `Cookies`
   - Mozilla Firefox: Tastenkombination `UMSCHALT`+`F9`
-  - Microsoft Edge: Tastenkombination `F12` und dann `Speicher` -> `Cookies`
+  - Microsoft Edge: Tastenkombination `F12` und dann `Speicher` >> `Cookies`
 - Öffnen sie die Cookie-Details von `www.google.de` an
 
 *Bis wann sind die Cookies gültig?*
@@ -274,9 +274,112 @@ Dies zeigt, dass **Cookies eine lange Lebensdauer haben** können, da mit ihrer 
 
 :::::::::: testimonial
 
+# WICHTIG
+
 **AUCH AUF DEM HANDY !!!**
 
 :::::::::::::::::::::::
+
+
+
+## Suchmaschinen
+
+Aufgrund der Vielzahl von Webseiten und der Menge an Informationen, die im Internet verfügbar sind, sind Suchmaschinen ein unverzichtbares Werkzeug für die Navigation im Internet.
+Hierbei werden dem Benutzer anhand von gegebenen Schlagworten oder Suchbegriffen relevante Webseiten vorgeschlagen und z.T. Informationen aus diesen direkt angezeigt.
+Um dies zu ermöglichen, müssen Suchmaschinen das Internet durchsuchen und indexieren, d.h. die Inhalte von Webseiten analysieren und in einer Datenbank speichern.
+
+
+Der Prozess der Suche und Indexierung wird von speziellen Programmen, sogenannten **Crawlern** oder **Spidern**, durchgeführt, die das Internet nach neuen Inhalten durchsuchen und diese in die Datenbank der Suchmaschine aufnehmen.
+Hierbei werden bereits bekannte Webseiten regelmäßig auf Änderungen überprüft und neue Webseiten (z.B. aufgrund von Links von bekannten Webseiten) hinzugefügt, um sicherzustellen, dass die Datenbank aktuell und vollständig ist.
+Dies geschieht in der Regel automatisch und kontinuierlich, um sicherzustellen, dass die Suchergebnisse immer auf dem neuesten Stand sind.
+
+Für eine gegebene Suchanfrage werden dann die relevantesten Ergebnisse aus dieser Datenbank zurückgegeben.
+Hierfür werden sogenannte **Ranking-Algorithmen** verwendet, die die Relevanz der Ergebnisse anhand verschiedener Kriterien bewerten und sortieren.
+Dies geschieht in der Regel in Bruchteilen von Sekunden und ermöglicht es den Benutzern, schnell und effizient Informationen zu finden.
+
+::::::::::::::: testimonial
+
+# Weiterführende Informationen
+
+Weitere Details zu Suchmaschinen und im speziellen wissenswertes zur Google Suchmaschine findet sich auf der Seite [Wie funktioniert eine Suchmaschine](https://www.xovi.de/seokompass/seo-basics/funktion-suchmaschinen/) von XOVI.
+
+:::::::::::::::::::::::::::
+
+
+### Meta-Suchmaschinen
+
+Meta-Suchmaschinen sind Suchmaschinen, die die Ergebnisse mehrerer Suchmaschinen kombinieren und dem Benutzer eine umfassendere und vielfältigere Auswahl an Ergebnissen bieten.
+Dies kann dazu beitragen, dass der Benutzer eine breitere Palette von Informationen erhält und nicht nur auf die Ergebnisse einer einzelnen Suchmaschine beschränkt ist.
+
+
+## Marktanteile von Suchmaschinen
+
+Historisch gesehen gab es vor 2000 eine Vielzahl von Suchmaschinen, die um Marktanteile konkurrierten.
+
+![Zeitverlauf von Suchmaschinen-Marktanteilen. (Quelle: [B. Stoffel - Motley](https://www.fool.com/investing/general/2013/05/20/google-stock-buy-it-and-hold-it-for-life.aspx)) ](fig/searchengines-timeline.png){width=50% alt="Zeitverlauf von Suchmaschinen-Marktanteilen"}
+
+Mit dem Aufstieg von Google in den 2000er Jahren hat sich der Markt jedoch stark konsolidiert, und Google hat heute einen Marktanteil von über 90% in vielen Ländern.
+Dies hat dazu geführt, dass Google zu einer der dominantesten und einflussreichsten Suchmaschinen der Welt geworden ist und einen erheblichen Einfluss auf die Art und Weise hat, wie Menschen Informationen im Internet finden und welche sie konsumieren.
+
+![Marktanteile von Suchmaschinen nach Land. (Quelle: [Alphametic - Global Search Engine Market Share](https://alphametic.com/global-search-engine-market-share)) ](fig/StatCounter-SearchEngines-2024.png){width=100% alt="Marktanteile von Suchmaschinen"}
+
+
+
+### Mögliche Probleme
+
+Grundlegend müssen Suchmaschinen mit Bedacht und Vorsicht genutzt werden, um die Qualität und Relevanz der Ergebnisse zu gewährleisten und die eigenen Daten und Privatsphäre zu schützen.
+Hinter (fast) jeder Suchmaschine steht ein Unternehmen und somit ein Geschäftsmodell, das darauf abzielt, die Suche bzw. Suchergebnisse zu monetarisieren und die Benutzerdaten zu nutzen, um personalisierte Werbung zu schalten oder andere Dienste anzubieten.
+
+Getreu dem Motto "No free lunch", sollte man immer darüber nachdenken, wie sich scheinbar kostenlose Services (wie Suchmaschinen) eigentlich finanzieren. 
+Denn die **kontinuierliche Verbesserung und Bereitstellung einer Suchmaschine ist mit erheblichen Kosten verbunden** (STROM, Hardware, Personal, ...), die irgendwie gedeckt werden müssen.
+Somit zahlt man bei Benutzung ggf. nicht direkt mit Geld, sondern mit seinen Daten und seiner Aufmerksamkeit bzw. wird gezielt zu Produkten/Dienstleistungen von Dritten geleitet, die mit dem Suchmaschinenbetreiber kooperieren.
+
+Daher sind die Hauptrisiken und Probleme bei der Nutzung von Suchmaschinen:
+
+- **Filterblase**: Suchergebnisse werden z.T. eingeschränkt und "personalisiert", dass Benutzer nur Informationen sehen, die ihren Interessen und Ansichten entsprechen, was zu einer "Filterblase" und einseitiger Informationsgewinnung führen kann.
+- **Datenschutz**: Suchmaschinen können Informationen über das Suchverhalten der Benutzer sammeln und speichern, was Datenschutzbedenken aufwirft.
+- **Zensur**: Suchmaschinen können Ergebnisse filtern oder zensieren, was zu einer eingeschränkten Informationsfreiheit führen kann.
+- **Manipulation**: Suchmaschinen können Ergebnisse manipulieren oder beeinflussen, um bestimmte Interessen zu fördern oder zu unterdrücken.
+
+
+:::::::::: testimonial
+
+# Geht's auch ohne Google?
+
+Mit dieser Frage beschäftigen sich die Autoren der Plattform "Digital Courage" in ihrem Artikel
+
+- [Suchmaschinen: Alternativen zu Google](https://digitalcourage.de/digitale-selbstverteidigung/suchmaschinen).
+
+::::::::::::::::::::::
+
+
+### GPTs und LLMs als Suchmaschinen
+
+In den letzten Jahren haben sich auch **neue Ansätze** für die Suche und das Auffinden von Informationen im Internet entwickelt, die auf **künstlicher Intelligenz** und **maschinellem Lernen** basieren.
+Ein Beispiel hierfür sind **Generative Pre-trained Transformer (GPT)**-Modelle und **Large Language Models (LLM)**, die darauf abzielen, natürliche Sprache zu verstehen und zu generieren und komplexe Suchanfragen zu verarbeiten.
+Beispiele hierfür sind **OpenAI's CHatGPT** oder **Google's BERT**.
+
+Um dies zu ermöglichen, werden riesige Mengen an Textdaten verwendet, um die Modelle zu trainieren und ihnen beizubringen, natürliche Sprache zu verstehen und zu generieren.
+Dies umfasst Texte aus dem Internet, Büchern, Artikeln, Foren, sozialen Medien und anderen Quellen, um ein umfassendes Verständnis der menschlichen Sprache und des Wissens zu entwickeln.
+
+Im Gegensatz zur klassischen Suchmaschine, welche relevante Dokumente von Dritten zu einer Suchanfrage liefert, zielen GPTs und LLMs darauf ab, **direkte Antworten** auf komplexe Fragen zu liefern und **natürliche Dialoge** mit den Benutzern zu führen.
+Dies kann dazu beitragen, dass Benutzer schnell und effizient Informationen finden und komplexe Fragen beantwortet bekommen, ohne auf mehrere Suchergebnisse klicken zu müssen.
+
+Einige der **Vorteile** von GPTs und LLMs als Suchmaschinen sind:
+- **Natürliche Sprachverarbeitung**: Die Fähigkeit, natürliche Sprache zu verstehen und zu generieren, ermöglicht es Benutzern, komplexe Fragen zu stellen und direkte Antworten zu erhalten.
+- **Effizienz**: Durch die direkte Beantwortung von Fragen können Benutzer schnell und effizient Informationen finden, ohne auf mehrere Suchergebnisse klicken zu müssen.
+- **Personalisierung**: Durch das Verständnis der Benutzeranfragen können GPTs und LLMs personalisierte Antworten und Empfehlungen liefern, die auf den individuellen Bedürfnissen und Interessen der Benutzer basieren.
+
+#### ABER ...
+
+Gerade die Personalisierung und die direkte Beantwortung von Fragen durch GPTs und LLMs kann auch zu **Problemen** führen:
+
+- **Einseitige Informationsgewinnung**: Durch die direkte Beantwortung von Fragen können Benutzer nur eine begrenzte Auswahl an Informationen erhalten, was zu einer einseitigen Informationsgewinnung führen kann. Der Effekt einer **Filterblase** (wie bei Suchmaschinen) kann hierdurch noch verstärkt werden.
+- **Fehlinformationen**: Da die Modelle auf riesigen Textdaten trainiert werden, können sie auch Fehlinformationen und Vorurteile enthalten und weiterverbreiten.
+- **Manipulation**: Die Modelle können auch (durch Selektivität bei der Zusammenstellung der Trainingsdaten) manipuliert oder beeinflusst werden, um bestimmte Interessen zu fördern oder zu unterdrücken.
+- **Datenschutz**: Die Verwendung von GPTs und LLMs erfordert z.T. (je nach Aufgabe) den Upload von Informationen und Daten, was Datenschutzbedenken aufwerfen kann.
+- **Abhängigkeit von großen Unternehmen**: Die Modelle werden von großen Unternehmen wie OpenAI oder Google entwickelt und betrieben, was zu einer Abhängigkeit von diesen Unternehmen führen kann.
+- **Begrenzte Aktualität**: Die Qualität und vor allem Aktualität der Antworten hängt stark von den Trainingsdaten ab, was zu Problemen führen kann, wenn die Daten veraltet sind oder nicht aktualisiert werden.
 
 
 
