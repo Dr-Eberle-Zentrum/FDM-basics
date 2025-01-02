@@ -325,7 +325,7 @@ Historisch gesehen gab es vor 2000 eine Vielzahl von Suchmaschinen, die um Markt
 Mit dem Aufstieg von Google in den 2000er Jahren hat sich der Markt jedoch stark konsolidiert, und Google hat heute einen Marktanteil von über 90% in vielen Ländern.
 Dies hat dazu geführt, dass Google zu einer der dominantesten und einflussreichsten Suchmaschinen der Welt geworden ist und einen erheblichen Einfluss auf die Art und Weise hat, wie Menschen Informationen im Internet finden und welche sie konsumieren.
 
-![Marktanteile von Suchmaschinen nach Land. (Quelle: [Alphametic - Global Search Engine Market Share](https://alphametic.com/global-search-engine-market-share)) ](fig/StatCounter-SearchEngines-2024.png){width=100% alt="Marktanteile von Suchmaschinen"}
+![Marktanteile von Suchmaschinen nach Land. (Quelle: [Alphametic](https://alphametic.com/global-search-engine-market-share)) ](fig/StatCounter-SearchEngines-2024.png){width=100% alt="Marktanteile von Suchmaschinen"}
 
 
 
@@ -392,7 +392,12 @@ Gerade die Personalisierung und die direkte Beantwortung von Fragen durch GPTs u
 
 :::::: keypoints
 
-- 
+- Browser sind komplexe Programme, die viele Funktionen und Dienste integrieren, um Benutzern das Surfen im Internet zu ermöglichen.
+- Webseiten bestehen aus HTML, CSS und JavaScript, welche die Struktur, das Design und die Interaktivität der Seiten definieren.
+- Cookies speichern webseitenspezifisch Informationen auf dem Gerät des Benutzers, um Einstellungen und Präferenzen zu speichern.
+- Mit Hilfe von Cookies, JavaScript und anderen Technologien können Webseiten Benutzerdaten sammeln und verarbeiten.
+- Suchmaschinen sind spezialisierte Dienste, die Benutzern helfen, Informationen im Internet zu finden, indem sie relevante Dokumente zu einer Suchanfrage liefern.
+- Einseitige Informationen (durch Personalisierung), Datenschutz, Zensur und Manipulation sind Hauptrisiken und Probleme bei der Nutzung des Internets.
 
 ::::::::::::::::::::
 
@@ -407,7 +412,10 @@ Gerade die Personalisierung und die direkte Beantwortung von Fragen durch GPTs u
 
 ## Antwort
 
-TODO
+Browser und das Suchen und Finden von Informationen im Internet sind eng mit allen Phasen des Datenlebenszyklus verknüpft.
+
+Einen besonderen Einfluss haben sie jedoch in den Phasen **Planning und Generating**, denn bei der Planung und Generierung/Sammlung von Daten und Informationen spielen Browser und Suchmaschinen eine wichtige Rolle.
+Eine unvollständige oder einseitige Datenbasis kann zu Verzerrungen und Fehlern in den späteren Phasen führen.
 
 
 :::
