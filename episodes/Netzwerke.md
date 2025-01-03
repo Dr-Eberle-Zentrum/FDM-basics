@@ -46,7 +46,7 @@ Da Satelit, Funk und andere drahtlose Verbindungen eine (relativ) geringere Band
 Zwischen den Knotenpunkten werden in der Regel Glasfaserleitungen verwendet, die eine hohe Bandbreite und Geschwindigkeit haben.
 Um die Kommunikation zwischen Kontinenten und Ländern zu ermöglichen, werden unterseeische Kabel verwendet, welche im Folgenden visualisiert sind.
 
-![Unterseeische Kabel verbinden Kontinente und Inseln (Quelle: [TeleGeography](https://www.submarinecablemap.com/))](fig/submarinecablemap.png){width=100%, alt="Unterseeische Kabel"}
+[![Unterseeische Kabel verbinden Kontinente und Inseln (Quelle: [TeleGeography](https://www.submarinecablemap.com/))](fig/submarinecablemap.png){width=100%, alt="Unterseeische Kabel"}](https://www.submarinecablemap.com/)
 
 ::::: testimonial
 
