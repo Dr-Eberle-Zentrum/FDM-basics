@@ -361,7 +361,7 @@ Mit dieser Frage beschäftigen sich die Autoren der Plattform "Digital Courage" 
 
 In den letzten Jahren haben sich auch **neue Ansätze** für die Suche und das Auffinden von Informationen im Internet entwickelt, die auf **künstlicher Intelligenz** und **maschinellem Lernen** basieren.
 Ein Beispiel hierfür sind **Generative Pre-trained Transformer (GPT)**-Modelle und **Large Language Models (LLM)**, die darauf abzielen, natürliche Sprache zu verstehen und zu generieren und komplexe Suchanfragen zu verarbeiten.
-Beispiele hierfür sind **OpenAI's CHatGPT** oder **Google's BERT**.
+Beispiele hierfür sind **OpenAI's ChatGPT** oder **Google's BERT**.
 
 Um dies zu ermöglichen, werden riesige Mengen an Textdaten verwendet, um die Modelle zu trainieren und ihnen beizubringen, natürliche Sprache zu verstehen und zu generieren.
 Dies umfasst Texte aus dem Internet, Büchern, Artikeln, Foren, sozialen Medien und anderen Quellen, um ein umfassendes Verständnis der menschlichen Sprache und des Wissens zu entwickeln.
