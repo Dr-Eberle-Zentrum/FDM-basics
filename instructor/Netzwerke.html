@@ -274,7 +274,6 @@
 <li><a href="#https-verschl%C3%BCsselung">HTTPS-Verschlüsselung</a></li>
 <li><a href="#wer-sieht-was">Wer sieht was?</a></li>
 <li><a href="#vpn">VPN</a></li>
-<li><a href="#ports-und-firewalls">Ports und Firewalls</a></li>
 <li><a href="#zusammenfassung">Zusammenfassung</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
@@ -418,12 +417,12 @@ Kontinenten und Ländern zu ermöglichen, werden unterseeische Kabel
 verwendet, welche im Folgenden visualisiert sind.</p>
 <figure><img src="../fig/submarinecablemap.png" alt="Unterseeische Kabel" class="figure mx-auto d-block"><div class="figcaption">Unterseeische Kabel verbinden Kontinente und
 Inseln (Quelle: <a href="https://www.submarinecablemap.com/" class="external-link">TeleGeography</a>)</div>
-</figure><div id="testimonial1" class="callout testimonial">
+</figure><div id="lebensadern-des-internets" class="callout testimonial">
 <div class="callout-square">
 <i class="callout-icon" data-feather="heart"></i>
 </div>
-<div class="callout-inner">
-<h3 class="callout-title">Referenz</h3>
+<div id="lebensadern-des-internets" class="callout-inner">
+<h3 class="callout-title">Lebensadern des Internets</h3>
 <div class="callout-content">
 <p>Unterseeische Kabel sind die Lebensadern des Internets. Das diese
 dennoch anfällig sind, zeigt der Schiffsankerschaden 2019 und der
@@ -445,8 +444,10 @@ Punkten besteht. Zum Beispiel hat der Server (Computer), der die
 Webseite der Universität Tübingen bereitstellt, die IP-Adresse
 <code>134.2.5.1</code>. Allerdings gibt es mehr Geräte im Internet als
 es IP-Adressen gibt, sodass die IP-Adressen in der Regel dynamisch
-vergeben werden bzw. innerhalb eines Netzwerkes lokal sind.</p>
-<p>Um sich dies vorzustellen, hier eine kleine Analogie:</p>
+vergeben werden (sich also immer wieder ändern) bzw. innerhalb eines
+Netzwerkes lokal sind.</p>
+<p>Um sich den Kommunikationsprozess und die IP-Lokalität vorzustellen,
+hier eine kleine Analogie:</p>
 <ul><li>Sie machen Urlaub in einem Hotel im Zimmer Nummer 5.</li>
 <li>Wenn Sie eine Postkarte verschicken möchten, schreiben Sie die
 Zieladresse auf die Postkarte.</li>
@@ -467,22 +468,27 @@ lokale Briefträger, …).</p>
 <p>Wenn sie nun Post empfangen möchten, sehen sie an obiger Analogie,
 dass es nicht reicht, dass die Antwort an sie an Zimmer Nummer 5
 adressiert wird. Ohne die Hoteladresse wird sie die Antwort nicht
-erreichen. Zudem bedarf es des Portiers, der die Postkarte in Zimmer 1
-entgegennimmt und an sie weiterleitet.</p>
-<p>Ähnliches gilt auch für das Internet. - Ihr Computer, an dem sie eine
-Nachricht schreiben, hat eine IP-Adresse (Zimmernummer) innerhalb ihres
-lokalen Netzwerkes (Hotel). - Um eine Nachricht ins Internet zu senden,
-benötigen sie einen Router (Portier), der die Nachricht an den nächsten
-Knotenpunkt weiterleitet. - Hierzu muss der Router sich mit dem Internet
-verbinden (Hotel verlassen). Diese Verbindung wird durch einen Internet
-Service Provider (ISP) bereitgestellt, der ihrem Router eine IP-Adresse
-zuweist (Hoteladresse). - Diese ist eine andere als die IP-Adresse des
-Routers innerhalb ihres lokalen Netzwerkes! Der Portier lebt also in
-zwei Welten und hat zwei Adressen: eine innerhalb des Hotels, um für
-Gäste erreichbar zu sein (Zimmer 1), und eine außerhalb des Hotels
-(Hoteladresse), um die Post des Hotels zentral entgegen nehmen zu
-können.</p>
-<div id="wie-funktioniert-das-internet" class="callout testimonial">
+erreichen. Je nach Distanz bedarf es auch noch der Information über die
+Stadt oder sogar das Land, in dem das Hotel liegt. Zudem bedarf es des
+lokalen Portiers, der die Postkarte in Zimmer 1 entgegennimmt und an sie
+ins Zimmer 5 weiterleitet.</p>
+<p>Ähnliches gilt auch für das Internet:</p>
+<ul><li>Ihr Computer, an dem sie eine Nachricht verschicken, hat eine
+IP-Adresse (Zimmernummer) innerhalb ihres lokalen Netzwerkes
+(Hotel).</li>
+<li>Um eine Nachricht ins Internet zu senden, benötigen sie einen Router
+(Portier), der die Nachricht an den nächsten Knotenpunkt
+weiterleitet.</li>
+<li>Hierzu muss der Router sich mit dem Internet verbinden (Hotel
+verlassen). Diese Verbindung wird durch einen Internet Service Provider
+(ISP) bereitgestellt, der ihrem Router eine IP-Adresse zuweist
+(Hoteladresse).</li>
+<li>Diese ist eine andere als die IP-Adresse des Routers innerhalb ihres
+lokalen Netzwerkes! Der Portier lebt also in zwei Welten und hat zwei
+Adressen: eine innerhalb des Hotels, um für Gäste erreichbar zu sein
+(Zimmer 1), und eine außerhalb des Hotels (Hoteladresse), um die Post
+des Hotels zentral entgegen nehmen zu können.</li>
+</ul><div id="wie-funktioniert-das-internet" class="callout testimonial">
 <div class="callout-square">
 <i class="callout-icon" data-feather="heart"></i>
 </div>
@@ -565,9 +571,9 @@ ablesen?</em></p>
 <div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Zeige mir die Lösung </h4>
+  <h4 class="accordion-header" id="headingSolution1"> Möglichkeiten … </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul><li>Was ist ihre Bank?</li>
 <li>Wo kaufen sie ein?</li>
@@ -612,14 +618,21 @@ welche Webseiten besucht werden.</p>
 <div class="section level3">
 <h3 id="aber-1">ABER …<a class="anchor" aria-label="anchor" href="#aber-1"></a></h3>
 <p>Aber der VPN-Anbieter kann die Metadaten der Datenpakete sehen und
-auswerten. Auch der Internetprovider des VPN-Anbieters kann die
-Metadaten der Datenpakete sehen und auswerten.</p>
+auswertenm, da er diese ja für sie weiterleitet und entgegennimmt. Auch
+der Internetprovider des VPN-Anbieters kann die Metadaten der
+Datenpakete sehen und auswerten, auch wenn diesem die Zuordnung zu ihnen
+nicht bekannt ist.</p>
 <p>VPN schützt also vor lokalen Schnüfflern, aber nicht vor dem
 VPN-Anbieter und dessen Internetprovider. Somit sollten sie sich gut
 überlegen, welchem VPN-Anbieter sie vertrauen.</p>
+<p>Ein weiterer Nachteil von VPN ist, dass die Datenpakete über den
+VPN-Server geleitet werden, was zu einer Verlangsamung der Verbindung
+führen kann. Allerdings bieten VPN-Anbieter auch Server in verschiedenen
+Ländern an, so dass sie z.B. über eine IP-Adresse aus einem anderen Land
+(die des VPN Servers) mit dem Internet kommunizieren, um z.B. <a href="https://de.wikipedia.org/wiki/Geoblocking" class="external-link">Geoblocking</a> oder
+lokalisierte Werbung zu umgehen.</p>
 </div>
-</section><section><h2 class="section-heading" id="ports-und-firewalls">Ports und Firewalls<a class="anchor" aria-label="anchor" href="#ports-und-firewalls"></a></h2>
-<hr class="half-width"></section><section><h2 class="section-heading" id="zusammenfassung">Zusammenfassung<a class="anchor" aria-label="anchor" href="#zusammenfassung"></a></h2>
+</section><section><h2 class="section-heading" id="zusammenfassung">Zusammenfassung<a class="anchor" aria-label="anchor" href="#zusammenfassung"></a></h2>
 <hr class="half-width"><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -627,8 +640,17 @@ VPN-Anbieter und dessen Internetprovider. Somit sollten sie sich gut
 <div class="callout-inner">
 <h3 class="callout-title">Hauptpunkte</h3>
 <div class="callout-content">
-<ul><li>
-</li></ul></div>
+<ul><li>Jeder Computer ist über seine IP-Adresse (im Internet)
+identifizierbar.</li>
+<li>Zertifikate bestätigen die Identität von Webservern.</li>
+<li>Datenpakete zwischen Computern werden “von Knoten zu Knoten”
+weitergeleitet.</li>
+<li>HTTPS verschlüsselt die Datenpakete.</li>
+<li>Metadaten der Datenpakete können von lokalen Routern, ISPs,
+WLAN-Anbietern, … eingesehen werden.</li>
+<li>VPN schützt vor lokalen Schnüfflern, aber nicht vor dem
+VPN-Anbieter.</li>
+</ul></div>
 </div>
 </div>
 <div id="einordnung-im-datenlebenszyklus" class="callout challenge">
@@ -648,9 +670,16 @@ sie obige Punkte als besonders wichtig an?</em></div>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Antwort </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
-<p>TODO</p>
+<p>Das Wissen um Netzwerkkommunikation und Verschlüsselung ist in allen
+Phasen des Datenlebenszyklus wichtig. Kenntnisse darum erleichtern uns,
+Probleme und Ursachen zu erkennen und zu lösen, die im Zusammenhang mit
+der Kommunikation von Daten auftreten können.</p>
+<p>Immer dann, wenn wir auf fremde Rechner zugreifen oder mit diesen
+interagieren, sollte uns bewusst sein, dass wir dabei Spuren
+hinterlassen und dass diese Spuren auch von anderen eingesehen werden
+können.</p>
 </div>
 </div>
 </div>
@@ -660,7 +689,7 @@ sie obige Punkte als besonders wichtig an?</em></div>
 <button class="accordion-button instructor-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseInstructor1" aria-expanded="false" aria-controls="collapseInstructor1">
   <h3 class="accordion-header" id="headingInstructor1">  <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="edit-2"></i></div> Hinweis für den Dozenten </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 
 </div>
