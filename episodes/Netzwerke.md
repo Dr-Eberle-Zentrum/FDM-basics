@@ -50,6 +50,8 @@ Um die Kommunikation zwischen Kontinenten und Ländern zu ermöglichen, werden u
 
 ::::: testimonial
 
+# Lebensadern des Internets
+
 Unterseeische Kabel sind die Lebensadern des Internets.
 Das diese dennoch anfällig sind, zeigt der Schiffsankerschaden 2019 und der Vulkansausbruch 2022 in Tonga, welche die Kommunikation des Inselstaates mit der Außenwelt unterbrachen.
 
@@ -64,9 +66,9 @@ Die folgenden beiden Artikel geben exemplarisch einen kurzen Einblick in die Bed
 Damit die Datenpakete ihren Weg durch das Netzwerk finden, benötigen sie eine Adresse, die den Weg durch das Netzwerk beschreibt.
 Diese Adresse ist die IP-Adresse, die aus einer Kombination von Zahlen und Punkten besteht.
 Zum Beispiel hat der Server (Computer), der die Webseite der Universität Tübingen bereitstellt, die IP-Adresse `134.2.5.1`.
-Allerdings gibt es mehr Geräte im Internet als es IP-Adressen gibt, sodass die IP-Adressen in der Regel dynamisch vergeben werden bzw. innerhalb eines Netzwerkes lokal sind.
+Allerdings gibt es mehr Geräte im Internet als es IP-Adressen gibt, sodass die IP-Adressen in der Regel dynamisch vergeben werden (sich also immer wieder ändern) bzw. innerhalb eines Netzwerkes lokal sind.
 
-Um sich dies vorzustellen, hier eine kleine Analogie:
+Um sich den Kommunikationsprozess und die IP-Lokalität vorzustellen, hier eine kleine Analogie:
 
 - Sie machen Urlaub in einem Hotel im Zimmer Nummer 5.
 - Wenn Sie eine Postkarte verschicken möchten, schreiben Sie die Zieladresse auf die Postkarte.
@@ -79,10 +81,12 @@ Das bedeutet, dass für die Weiterleitung der Postkarte mehrere Personen und Ein
 
 Wenn sie nun Post empfangen möchten, sehen sie an obiger Analogie, dass es nicht reicht, dass die Antwort an sie an Zimmer Nummer 5 adressiert wird.
 Ohne die Hoteladresse wird sie die Antwort nicht erreichen.
-Zudem bedarf es des Portiers, der die Postkarte in Zimmer 1 entgegennimmt und an sie weiterleitet.
+Je nach Distanz bedarf es auch noch der Information über die Stadt oder sogar das Land, in dem das Hotel liegt.
+Zudem bedarf es des lokalen Portiers, der die Postkarte in Zimmer 1 entgegennimmt und an sie ins Zimmer 5 weiterleitet.
 
-Ähnliches gilt auch für das Internet.
-- Ihr Computer, an dem sie eine Nachricht schreiben, hat eine IP-Adresse (Zimmernummer) innerhalb ihres lokalen Netzwerkes (Hotel).
+Ähnliches gilt auch für das Internet:
+
+- Ihr Computer, an dem sie eine Nachricht verschicken, hat eine IP-Adresse (Zimmernummer) innerhalb ihres lokalen Netzwerkes (Hotel).
 - Um eine Nachricht ins Internet zu senden, benötigen sie einen Router (Portier), der die Nachricht an den nächsten Knotenpunkt weiterleitet.
 - Hierzu muss der Router sich mit dem Internet verbinden (Hotel verlassen).
 Diese Verbindung wird durch einen Internet Service Provider (ISP) bereitgestellt, der ihrem Router eine IP-Adresse zuweist (Hoteladresse).
@@ -95,7 +99,7 @@ Der Portier lebt also in zwei Welten und hat zwei Adressen: eine innerhalb des H
 
 Die Idee ist in folgender Grafik dargestellt, die in Blogbeitrag [Wie funktioniert das Internet?](https://www.dr-datenschutz.de/wie-funktioniert-das-internet/) näher beschrieben wird.
 
-![Routing und IP-Adressen im Internet (Quelle: [Dr. Datenschutz](https://www.dr-datenschutz.de/wie-funktioniert-das-internet/))](fig/internet-funktionsweise.jpg){width=80%, alt="Routing und IP-Adressen im Internet"}
+![Routing und IP-Adressen im Internet (Quelle: [Dr. Datenschutz](https://www.dr-datenschutz.de/wie-funktioniert-das-internet/))](fig/internet-funktionsweise.jpg){width=50%, alt="Routing und IP-Adressen im Internet"}
 
 :::::::::::::::::::::::
 
@@ -151,6 +155,8 @@ Denken sie kurz über die folgende Frage nach:
 
 ::: solution
 
+# Möglichkeiten ...
+
 - Was ist ihre Bank?
 - Wo kaufen sie ein?
 - Welche Nachrichtenseiten lesen sie?
@@ -177,7 +183,7 @@ Und wenn sie sich auf einer Webseite registrieren und eingeloggt sind, dann kann
 Eine VPN-Verbindung (Virtual Private Network) kann helfen, ihre Daten vor neugierigen Blicken zu schützen.
 Hierbei wird eine verschlüsselte Verbindung zu einem VPN-Server aufgebaut, der dann die Datenpakete weiterleitet.
 
-![Kommuniation mit und ohne VPN-Verbindung (Quelle: [top10vpn.com](https://www.top10vpn.com/what-is-a-vpn/does-vpn-use-data/))](fig/vpn.png){width=80%, alt="VPN-Verbindung"}
+![Kommuniation mit und ohne VPN-Verbindung (Quelle: [top10vpn.com](https://www.top10vpn.com/what-is-a-vpn/does-vpn-use-data/))](fig/vpn.png){width=70%, alt="VPN-Verbindung"}
 
 Der Datenverkehr zwischen ihrem Computer und dem VPN-Server ist verschlüsselt, so dass niemand die Datenpakete lesen kann.
 Erst der VPN-Server entschlüsselt die Datenpakete und stellt die Verbindung zum Zielserver her.
@@ -188,22 +194,27 @@ Somit können lokale Router, ISPs, WLAN-Anbieter, ... nicht mehr sehen, welche W
 
 ### ABER ...
 
-Aber der VPN-Anbieter kann die Metadaten der Datenpakete sehen und auswerten.
-Auch der Internetprovider des VPN-Anbieters kann die Metadaten der Datenpakete sehen und auswerten.
+Aber der VPN-Anbieter kann die Metadaten der Datenpakete sehen und auswertenm, da er diese ja für sie weiterleitet und entgegennimmt.
+Auch der Internetprovider des VPN-Anbieters kann die Metadaten der Datenpakete sehen und auswerten, auch wenn diesem die Zuordnung zu ihnen nicht bekannt ist.
 
 VPN schützt also vor lokalen Schnüfflern, aber nicht vor dem VPN-Anbieter und dessen Internetprovider.
 Somit sollten sie sich gut überlegen, welchem VPN-Anbieter sie vertrauen.
 
-
-## Ports und Firewalls
-
+Ein weiterer Nachteil von VPN ist, dass die Datenpakete über den VPN-Server geleitet werden, was zu einer Verlangsamung der Verbindung führen kann.
+Allerdings bieten VPN-Anbieter auch Server in verschiedenen Ländern an, so dass sie z.B. über eine IP-Adresse aus einem anderen Land (die des VPN Servers) mit dem Internet kommunizieren, um z.B.  [Geoblocking](https://de.wikipedia.org/wiki/Geoblocking) oder lokalisierte Werbung zu umgehen.
 
 
 ## Zusammenfassung
 
 :::::: keypoints
 
-- 
+- Jeder Computer ist über seine IP-Adresse (im Internet) identifizierbar.
+- Zertifikate bestätigen die Identität von Webservern.
+- Datenpakete zwischen Computern werden "von Knoten zu Knoten" weitergeleitet.
+- HTTPS verschlüsselt die Datenpakete.
+- Metadaten der Datenpakete können von lokalen Routern, ISPs, WLAN-Anbietern, ... eingesehen werden.
+- VPN schützt vor lokalen Schnüfflern, aber nicht vor dem VPN-Anbieter.
+
 
 ::::::::::::::::::::
 
@@ -218,7 +229,10 @@ Somit sollten sie sich gut überlegen, welchem VPN-Anbieter sie vertrauen.
 
 ## Antwort
 
-TODO
+Das Wissen um Netzwerkkommunikation und Verschlüsselung ist in allen Phasen des Datenlebenszyklus wichtig.
+Kenntnisse darum erleichtern uns, Probleme und Ursachen zu erkennen und zu lösen, die im Zusammenhang mit der Kommunikation von Daten auftreten können.
+
+Immer dann, wenn wir auf fremde Rechner zugreifen oder mit diesen interagieren, sollte uns bewusst sein, dass wir dabei Spuren hinterlassen und dass diese Spuren auch von anderen eingesehen werden können.
 
 
 :::
