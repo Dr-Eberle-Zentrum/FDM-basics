@@ -274,7 +274,7 @@ So führt z.B. die Teil-URL `https://ovidius.uni-tuebingen.de/ilias3/` zur gleic
 
 Bevor sie auf URLs klicken (in Webseiten, Suchmaschinen, Emails, Messenger, PDF, ..), sollten sie sich immer kurz die URL ansehen und überlegen, ob sie wirklich auf die gewünschte Webseite führt.
 
-Das geht schnell und verhindert schon einen Großteil der Phishing-Attacken.
+Das geht schnell und verhindert schon einen Großteil möglicher Phishing-Attacken.
 
 Das ist wie am Fussgängerüberweg: Auch wenn sie Vorrang haben, schauen sie kurz nach links und rechts, ob wirklich alle anhalten.
 
