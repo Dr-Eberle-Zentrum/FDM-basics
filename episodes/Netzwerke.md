@@ -332,5 +332,6 @@ Immer dann, wenn wir auf fremde Rechner zugreifen oder mit diesen interagieren, 
 
 :::::::::::::::: instructor
 
+[Sitzungsaufgabe zu "Netzwerke"](Aufgabe-Netzwerke.md)
 
 :::::::::::::::::::::::::::
