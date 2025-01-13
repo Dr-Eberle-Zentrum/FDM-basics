@@ -226,7 +226,7 @@ Allerdings sollten sie sich auch hier gut überlegen, welchem DNS-Server (Anbiet
 
 ## URL
 
-Der "Name" einer Webseite wird in der URL (Uniform Resource Locator) angegeben.
+Der "Name" einer Webseite wird in mittels einer URL (Uniform Resource Locator) angegeben.
 Die URL besteht aus mehreren Teilen, die die Adresse des Webservers und den Pfad zur gewünschten Ressource (Webseite, Bild, ...) beschreiben.
 Hier als Beispiel die URL der Login-Seite für den ILIAS Server der Universität Tübingen:
 
@@ -258,8 +258,8 @@ So kann man bereits durch einen kurzen Blick auf die URL einiges erkennen, z.B.
 - ob die Webseite überhaupt auf einem Server der gewünschten Organisation liegt (hier `uni-tuebingen.de`).
 Der Name des Webservers ist i.d.R. rückwärts zu lesen, d.h. von der allgemeinen Domain (hier `uni-tuebingen.de`) zum spezifischen Server (hier `ovidius`).
 Das heißt, dass der Webserver `ovidius` zu den Servern der Domäne `uni-tuebingen.de` gehört.
-Hierdurch lassen sich auch Subdomains (z.B. `www.uni-tuebingen.de`) und spezielle Dienste (z.B. `ovidius.uni-tuebingen.de`) unterscheiden.
-Es sollte darauf geachtet werden, dass die URL auch wirklich zur gewünschten Organisation gehört, da es z.B. [Phishing-Seiten](https://de.wikipedia.org/wiki/Phishing) gibt, die im Link zwar den Namen einer bekannten Organisation verwenden, um Nutzer zu täuschen, aber auf einen anderen Server verweisen.
+Hierdurch lassen sich auch Subdomains (z.B. `www.uni-tuebingen.de` ist der Webserver) und spezielle Dienste (z.B. `ovidius.uni-tuebingen.de` als Name für den ILIAS Server) unterscheiden.
+Es sollte darauf geachtet werden, dass die URL auch wirklich zur gewünschten Organisation gehört, da es z.B. [Phishing-Seiten](https://de.wikipedia.org/wiki/Phishing) gibt, die im Link zwar den Namen einer bekannten Organisation verwenden, um Nutzer zu täuschen, aber auf einen anderen Server verweisen (Beispiel kommt gleich).
 - Durch Argumente in der URL können z.B. Parameter an die Webseite übergeben werden, die dann in der Darstellung oder Funktionalität der Webseite berücksichtigt werden.
 In obigem Beispiel wird die Sprache der Webseite auf Englisch gesetzt und ein erzwungener Login durchgeführt.
 Online-Shops, wie z.B. Amazon, verwenden die Argumente in der URL, um unabhängig von Cookies etc. die Session des Benutzers zu identifizieren und den Warenkorb zu speichern.
@@ -273,8 +273,18 @@ So führt z.B. die Teil-URL `https://ovidius.uni-tuebingen.de/ilias3/` zur gleic
 ## Link-Check vor jedem Klick
 
 Bevor sie auf URLs klicken (in Webseiten, Suchmaschinen, Emails, Messenger, PDF, ..), sollten sie sich immer kurz die URL ansehen und überlegen, ob sie wirklich auf die gewünschte Webseite führt.
+Hierbei ist vor allem **der hintere Teil des Servernames** (z.B. `uni-tuebingen.de`) wichtig, da dieser den Server identifiziert.
+Der vordere Teil kann vom Serveradministrator beliebig gesetzt werden und wird oft für Phishing-Attacken missbraucht.
+Ein mögliches Phishing-Beispiel wäre z.B. 
 
-Das geht schnell und verhindert schon einen Großteil möglicher Phishing-Attacken.
+```txt
+        |   beliebig setzbar!  | |   Servername    |
+https://ovidius.uni-tuebingen.de.phishing-server.com/ilias3/
+```
+
+wobei hier der Servername `phishing-server.com` ist und nicht `uni-tuebingen.de`.
+
+So ein Check geht schnell und verhindert schon einen Großteil möglicher Phishing-Attacken.
 
 Das ist wie am Fussgängerüberweg: Auch wenn sie Vorrang haben, schauen sie kurz nach links und rechts, ob wirklich alle anhalten.
 
