@@ -204,6 +204,83 @@ Ein weiterer Nachteil von VPN ist, dass die Datenpakete über den VPN-Server gel
 Allerdings bieten VPN-Anbieter auch Server in verschiedenen Ländern an, so dass sie z.B. über eine IP-Adresse aus einem anderen Land (die des VPN Servers) mit dem Internet kommunizieren, um z.B.  [Geoblocking](https://de.wikipedia.org/wiki/Geoblocking) oder lokalisierte Werbung zu umgehen.
 
 
+## DNS
+
+Soweit haben wir uns nur mit der Kommunikation zwischen ihrem Computer und dem Webserver beschäftigt, welche auf der Adressierung über IP-Adressen basiert.
+Allerdings werden IP-Adressen i.d.R. nur bei automatisierten Prozessen verwendet und direkt eingegeben.
+Wenn sie eine Webseite besuchen, dann geben sie zumeist den Namen einer Webseite ein (z.B. `www.uni-tuebingen.de`) und nicht die IP-Adresse des dazu gehörigen Webservers.
+
+Die Übersetzung von Namen in IP-Adressen wird über das Domain Name System (DNS) realisiert.
+Hierfür gibt es spezielle DNS-Server, die die Namen in IP-Adressen übersetzen.
+Sprich bevor ihr Computer eine Anfrage an den Webserver sendet, fragt er zuerst einen DNS-Server nach der IP-Adresse des Webservers.
+
+In den meisten Fällen wird der DNS-Server von ihrem Internetprovider genutzt.
+Hier eine mögliche Liste von [deutschen DNS Servern](https://public-dns.info/nameserver/de.html).
+Falls sie eine VPN-Verbindung nutzen, dann erfolgt die DNS-Anfrage über den VPN-Server (bzw. wird von diesem zu dessen DNS-Server weitergeleitet).
+In beiden Fällen kann der DNS-Server sehen, welche Webseiten besucht werden, da er ja die Anfragen nach den IP-Adressen der Webserver erhält.
+
+Zudem kann auch eine [Zensur durch DNS-Server](https://www.ccc.de/de/censorship/dns-howto) erfolgen, indem der DNS-Server die Anfrage nach bestimmten Webseiten verweigert und ihnen keine oder eine andere IP-Adresse zurückliefert..
+Allerdings können sie auch [manuell einen anderen DNS-Server einstellen](https://digitalcourage.de/support/zensurfreier-dns-server), um z.B. derartige Einschränkungen zu umgehen.
+Allerdings sollten sie sich auch hier gut überlegen, welchem DNS-Server (Anbieter) sie vertrauen.
+
+
+## URL
+
+Der "Name" einer Webseite wird in der URL (Uniform Resource Locator) angegeben.
+Die URL besteht aus mehreren Teilen, die die Adresse des Webservers und den Pfad zur gewünschten Ressource (Webseite, Bild, ...) beschreiben.
+Hier als Beispiel die URL der Login-Seite für den ILIAS Server der Universität Tübingen:
+
+
+```txt
+
+Markierung
+     Protokollende              Serverende    Zielende  Argumenttrenner
+     |||                        |                |       |
+https://ovidius.uni-tuebingen.de/ilias3/login.php?lang=en&cmd=force_login
+|       |                        |      |         |       
+|       |                        |      |         +--- Argumente (&-getrennte key-value Paare)
+|       |                        |      |              hier: Sprache der Webseite & erzwungener Login
+|       |                        |      +--- Name der Ressource (i.d.R. Datei auf dem Webserver)
+|       |                        |           hier: dynamische Webseite
+|       |                        +--- Pfad zur Ressource 
+|       |                             = virtuelle Ordnerstruktur
+|       +--- Name des Webservers (oder IP-Adresse)
+|            hierfür muss IP-Adresse über DNS aufgelöst werden
++--- Übertragungsprotokoll
+     hier: "verschlüsselte Webseite"
+     
+```
+
+Die URL wird in der Regel in der Adresszeile des Browsers angezeigt und kann auch manuell eingegeben werden.
+So kann man bereits durch einen kurzen Blick auf die URL einiges erkennen, z.B.
+
+- ob die Verbindung verschlüsselt ist (hier durch das `https://`).
+- ob die Webseite überhaupt auf einem Server der gewünschten Organisation liegt (hier `uni-tuebingen.de`).
+Der Name des Webservers ist i.d.R. rückwärts zu lesen, d.h. von der allgemeinen Domain (hier `uni-tuebingen.de`) zum spezifischen Server (hier `ovidius`).
+Das heißt, dass der Webserver `ovidius` zu den Servern der Domäne `uni-tuebingen.de` gehört.
+Hierdurch lassen sich auch Subdomains (z.B. `www.uni-tuebingen.de`) und spezielle Dienste (z.B. `ovidius.uni-tuebingen.de`) unterscheiden.
+Es sollte darauf geachtet werden, dass die URL auch wirklich zur gewünschten Organisation gehört, da es z.B. [Phishing-Seiten](https://de.wikipedia.org/wiki/Phishing) gibt, die im Link zwar den Namen einer bekannten Organisation verwenden, um Nutzer zu täuschen, aber auf einen anderen Server verweisen.
+- Durch Argumente in der URL können z.B. Parameter an die Webseite übergeben werden, die dann in der Darstellung oder Funktionalität der Webseite berücksichtigt werden.
+In obigem Beispiel wird die Sprache der Webseite auf Englisch gesetzt und ein erzwungener Login durchgeführt.
+Online-Shops, wie z.B. Amazon, verwenden die Argumente in der URL, um unabhängig von Cookies etc. die Session des Benutzers zu identifizieren und den Warenkorb zu speichern.
+
+Der Name der Resource (hier `login.php`) sowie die Webseitenargumente (hier `lang=en&cmd=force_login`) sind bei vielen Webanfragen optional und werden i.d.R. vom Webserver interpretiert.
+Das heisst der Webserver entschiedet, welche (Standard)Ressource zurückgegeben wird und wie die Argumente verarbeitet werden.
+So führt z.B. die Teil-URL `https://ovidius.uni-tuebingen.de/ilias3/` zur gleichen Resource wie das obige Beispiel.
+
+::::::: testimonial
+
+## Link-Check vor jedem Klick
+
+Bevor sie auf URLs klicken (in Webseiten, Suchmaschinen, Emails, Messenger, PDF, ..), sollten sie sich immer kurz die URL ansehen und überlegen, ob sie wirklich auf die gewünschte Webseite führt.
+
+Das geht schnell und verhindert schon einen Großteil der Phishing-Attacken.
+
+Das ist wie am Fussgängerüberweg: Auch wenn sie Vorrang haben, schauen sie kurz nach links und rechts, ob wirklich alle anhalten.
+
+:::::::::::::::::::
+
+
 ## Zusammenfassung
 
 :::::: keypoints
@@ -214,6 +291,8 @@ Allerdings bieten VPN-Anbieter auch Server in verschiedenen Ländern an, so dass
 - HTTPS verschlüsselt die Datenpakete.
 - Metadaten der Datenpakete können von lokalen Routern, ISPs, WLAN-Anbietern, ... eingesehen werden.
 - VPN schützt vor lokalen Schnüfflern, aber nicht vor dem VPN-Anbieter.
+- URLs beschreiben das Zieldokument inklusive des Namens des Webservers etc.
+- Webservernamen werden durch DNS-Server in IP-Adressen aufgelöst
 
 
 ::::::::::::::::::::
