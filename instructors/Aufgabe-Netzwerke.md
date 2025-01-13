@@ -16,7 +16,7 @@ Ein solches Tool ist z.B. [https://www.digwebinterface.com/](https://www.digwebi
 
 *Unter welchen IP-Adressen ist die Webseite der Vereinten Nationen erreichbar?*
 
-Speichere deine Ergebnisse in der Datei **UNO.md** in einem entsprechenden Abschnitt mit Überschrift etc.
+- (!) Speichere deine Ergebnisse in der Datei **UNO.md** in einem entsprechenden Abschnitt mit Überschrift etc.
 
 
 ### Schritt 2
@@ -42,12 +42,10 @@ Hierzu können wir uns eines anderen Geolocation online Tools bedienen, welches 
 - (!) Kopieren sie sich die Ortsangaben der besuchten Netzwerkknoten und speichern sie diese als Tabelle in der Datei **UNO.md**.
 - (!) Wiederholen sie den Vorgang bis sie Angaben zu allen IPs haben.
 
+### Ergebnis
 
+- Datei **UNO.md** mit
+  - IP-Adressen der Webseite der Vereinten Nationen
+  - IP-Liste der Netzwerkknoten, die beim Aufruf der Webseite durchlaufen wurden
+  - Tabelle mit Ortsangaben der Netzwerkknoten
 
-
-
-
-
-
-https://www.iplocation.net/bulk-ip-lookup
- >> IP2Location Provider
