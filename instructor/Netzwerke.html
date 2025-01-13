@@ -663,10 +663,10 @@ einen anderen DNS-Server einstellen</a>, um z.B. derartige
 Einschränkungen zu umgehen. Allerdings sollten sie sich auch hier gut
 überlegen, welchem DNS-Server (Anbieter) sie vertrauen.</p>
 </section><section><h2 class="section-heading" id="url">URL<a class="anchor" aria-label="anchor" href="#url"></a></h2>
-<hr class="half-width"><p>Der “Name” einer Webseite wird in der URL (Uniform Resource Locator)
-angegeben. Die URL besteht aus mehreren Teilen, die die Adresse des
-Webservers und den Pfad zur gewünschten Ressource (Webseite, Bild, …)
-beschreiben. Hier als Beispiel die URL der Login-Seite für den ILIAS
+<hr class="half-width"><p>Der “Name” einer Webseite wird in mittels einer URL (Uniform Resource
+Locator) angegeben. Die URL besteht aus mehreren Teilen, die die Adresse
+des Webservers und den Pfad zur gewünschten Ressource (Webseite, Bild,
+…) beschreiben. Hier als Beispiel die URL der Login-Seite für den ILIAS
 Server der Universität Tübingen:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">TXT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -701,12 +701,14 @@ Domain (hier <code>uni-tuebingen.de</code>) zum spezifischen Server
 (hier <code>ovidius</code>). Das heißt, dass der Webserver
 <code>ovidius</code> zu den Servern der Domäne
 <code>uni-tuebingen.de</code> gehört. Hierdurch lassen sich auch
-Subdomains (z.B. <code>www.uni-tuebingen.de</code>) und spezielle
-Dienste (z.B. <code>ovidius.uni-tuebingen.de</code>) unterscheiden. Es
-sollte darauf geachtet werden, dass die URL auch wirklich zur
-gewünschten Organisation gehört, da es z.B. <a href="https://de.wikipedia.org/wiki/Phishing" class="external-link">Phishing-Seiten</a> gibt,
+Subdomains (z.B. <code>www.uni-tuebingen.de</code> ist der Webserver)
+und spezielle Dienste (z.B. <code>ovidius.uni-tuebingen.de</code> als
+Name für den ILIAS Server) unterscheiden. Es sollte darauf geachtet
+werden, dass die URL auch wirklich zur gewünschten Organisation gehört,
+da es z.B. <a href="https://de.wikipedia.org/wiki/Phishing" class="external-link">Phishing-Seiten</a> gibt,
 die im Link zwar den Namen einer bekannten Organisation verwenden, um
-Nutzer zu täuschen, aber auf einen anderen Server verweisen.</li>
+Nutzer zu täuschen, aber auf einen anderen Server verweisen (Beispiel
+kommt gleich).</li>
 <li>Durch Argumente in der URL können z.B. Parameter an die Webseite
 übergeben werden, die dann in der Darstellung oder Funktionalität der
 Webseite berücksichtigt werden. In obigem Beispiel wird die Sprache der
@@ -731,9 +733,22 @@ Resource wie das obige Beispiel.</p>
 <div class="callout-content">
 <p>Bevor sie auf URLs klicken (in Webseiten, Suchmaschinen, Emails,
 Messenger, PDF, ..), sollten sie sich immer kurz die URL ansehen und
-überlegen, ob sie wirklich auf die gewünschte Webseite führt.</p>
-<p>Das geht schnell und verhindert schon einen Großteil möglicher
-Phishing-Attacken.</p>
+überlegen, ob sie wirklich auf die gewünschte Webseite führt. Hierbei
+ist vor allem <strong>der hintere Teil des Servernames</strong> (z.B.
+<code>uni-tuebingen.de</code>) wichtig, da dieser den Server
+identifiziert. Der vordere Teil kann vom Serveradministrator beliebig
+gesetzt werden und wird oft für Phishing-Attacken missbraucht. Ein
+mögliches Phishing-Beispiel wäre z.B.</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">TXT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode txt" tabindex="0"><code class="sourceCode default"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a>        |   beliebig setzbar!  | |   Servername    |</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a>https://ovidius.uni-tuebingen.de.phishing-server.com/ilias3/</span></code></pre>
+</div>
+<p>wobei hier der Servername <code>phishing-server.com</code> ist und
+nicht <code>uni-tuebingen.de</code>.</p>
+<p>So ein Check geht schnell und verhindert schon einen Großteil
+möglicher Phishing-Attacken.</p>
 <p>Das ist wie am Fussgängerüberweg: Auch wenn sie Vorrang haben,
 schauen sie kurz nach links und rechts, ob wirklich alle anhalten.</p>
 </div>
