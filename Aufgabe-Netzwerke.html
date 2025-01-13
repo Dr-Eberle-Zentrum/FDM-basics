@@ -336,55 +336,58 @@
 
         
 <section><h2 class="section-heading" id="aufgabe---netzwerkroute">Aufgabe - Netzwerkroute<a class="anchor" aria-label="anchor" href="#aufgabe---netzwerkroute"></a></h2>
-<hr class="half-width"><p>Wir möchten wissen, über welche Netzwerkknoten wir die Webseite der
-Vereinten Nationen (UNO) erreichen und in welchen Städten/Ländern die
+<hr class="half-width"><p>Wir möchten wissen, über welche Netzwerkknoten wir die englische
+Wikpedia Webseite erreichen und in welchen Städten/Ländern die
 jeweiligen Server denn konkret stehen.</p>
 <div class="section level3">
 <h3 id="schritt-1">Schritt 1<a class="anchor" aria-label="anchor" href="#schritt-1"></a></h3>
-<p>Als erstes möchten wir die IP-Adresse der Webseite der Vereinten
-Nationen herausfinden.</p>
+<p>Als erstes möchten wir die IP-Adresse der englischen Wikipedia
+Webseite <code>en.wikipedia.org</code> herausfinden.</p>
 <p>Dazu können wir uns eines online DNS Tools bedienen. Ein solches Tool
 ist z.B. <a href="https://www.digwebinterface.com/" class="external-link">https://www.digwebinterface.com/</a>
 oder <a href="https://dnschecker.org" class="external-link">https://dnschecker.org</a>.</p>
-<p><em>Unter welchen IP-Adressen ist die Webseite der Vereinten Nationen
-erreichbar?</em></p>
-<ul><li>(!) Speichere deine Ergebnisse in der Datei <strong>UNO.md</strong>
-in einem entsprechenden Abschnitt mit Überschrift etc.</li>
+<p><em>Unter welcher IP-Adresse ist die Webseite erreichbar?</em></p>
+<ul><li>(!) Speichere deine Ergebnisse in der Datei
+<strong>en.wikipedia.org.md</strong> in einem entsprechenden Abschnitt
+mit Überschrift etc.</li>
 </ul></div>
 <div class="section level3">
 <h3 id="schritt-2">Schritt 2<a class="anchor" aria-label="anchor" href="#schritt-2"></a></h3>
 <p>Nun möchten wir wissen, über welche Netzwerkknoten wir die Webseite
-der Vereinten Nationen erreichen.</p>
-<p>Hierzu können wir uns eines online Tools bedienen, welches uns die
-Netzwerkroute anzeigt. Ein solches Tool ist z.B. <a href="https://gsuite.tools/de/traceroute" class="external-link">https://gsuite.tools/de/traceroute</a>.</p>
-<p><em>Verwenden sie die obige Webseite und geben sie die URL (!) der
-Webseite ein!</em></p>
-<ul><li>(?) Auf welcher Server IP sind sie gelandet? Ist diese in ihrer
+erreichen.</p>
+<p><em>Hierzu müssen wir uns auf die Kommandozeile begeben.</em></p>
+<ul><li>Microsoft Windows:
+<ul><li>Öffnen sie eine “PowerShell”</li>
+<li>geben sie <code>tracert en.wikipedia.org</code> ein</li>
+</ul></li>
+<li>Linux/MacOS:
+<ul><li>Öffnen sie ein Terminal (Bash)</li>
+<li>geben sie <code>traceroute en.wikipedia.org</code> ein</li>
+</ul></li>
+<li>(?) Auf welcher Server IP sind sie gelandet? Ist diese in ihrer
 Liste aus Schritt 1?</li>
 <li>(!) Kopieren sie sich die IP-Liste der besuchten Netzwerkknoten und
-speichern sie diese in der Datei <strong>UNO.md</strong> in einem
-entsprechenden Abschnitt.</li>
+speichern sie diese in der Datei <strong>en.wikipedia.org.md</strong> in
+einem entsprechenden Abschnitt.</li>
 </ul></div>
 <div class="section level3">
 <h3 id="schritt-3">Schritt 3<a class="anchor" aria-label="anchor" href="#schritt-3"></a></h3>
-<p>Die Ortsangaben der obigen Webseite war nur für einige Knoten
-verfügbar. Daher möchten wir nun die Ortsangaben für alle Knoten
-herausfinden. Hierzu können wir uns eines anderen Geolocation online
-Tools bedienen, welches uns die Ortsangaben zu einer IP-Adresse anzeigt,
-konkret <a href="https://www.iplocation.net/bulk-ip-lookup" class="external-link">https://www.iplocation.net/bulk-ip-lookup</a>.</p>
+<p>Nun möchten wir die Ortsangaben für alle Knoten herausfinden. Hierzu
+können wir uns eines anderen Geolocation online Tools bedienen, welches
+uns die Ortsangaben zu einer IP-Adresse anzeigt, konkret <a href="https://www.iplocation.net/bulk-ip-lookup" class="external-link">https://www.iplocation.net/bulk-ip-lookup</a>.</p>
 <p><em>Kopieren sie die IPs in 10er Blöcken (maximale Eingabelänge) in
 die Webseite und wählen sie als “Provider” <code>IP2Location</code>
 aus.</em></p>
 <ul><li>(!) Kopieren sie sich die Ortsangaben der besuchten Netzwerkknoten
 und speichern sie diese als Tabelle in der Datei
-<strong>UNO.md</strong>.</li>
-<li>(!) Wiederholen sie den Vorgang bis sie Angaben zu allen IPs
+<strong>en.wikipedia.org.md.md</strong>.</li>
+<li>(!) Wiederholen sie ggf. den Vorgang bis sie Angaben zu allen IPs
 haben.</li>
 </ul></div>
 <div class="section level3">
 <h3 id="ergebnis">Ergebnis<a class="anchor" aria-label="anchor" href="#ergebnis"></a></h3>
-<ul><li>Datei <strong>UNO.md</strong> mit
-<ul><li>IP-Adressen der Webseite der Vereinten Nationen</li>
+<ul><li>Datei <strong>en.wikipedia.org.md</strong> mit
+<ul><li>IP-Adresse(n) des Webservers der englischen Wikipedia Seite</li>
 <li>IP-Liste der Netzwerkknoten, die beim Aufruf der Webseite
 durchlaufen wurden</li>
 <li>Tabelle mit Ortsangaben der Netzwerkknoten</li>
