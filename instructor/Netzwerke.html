@@ -274,6 +274,8 @@
 <li><a href="#https-verschl%C3%BCsselung">HTTPS-Verschlüsselung</a></li>
 <li><a href="#wer-sieht-was">Wer sieht was?</a></li>
 <li><a href="#vpn">VPN</a></li>
+<li><a href="#dns">DNS</a></li>
+<li><a href="#url">URL</a></li>
 <li><a href="#zusammenfassung">Zusammenfassung</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
@@ -339,7 +341,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Netzwerke</h1>
-        <p>Zuletzt aktualisiert am 2025-01-03 |
+        <p>Zuletzt aktualisiert am 2025-01-13 |
 
         <a href="https://github.com/Dr-Eberle-Zentrum/FDM-basics/edit/main/episodes/Netzwerke.md" class="external-link">Diese Seite bearbeiten <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -633,6 +635,110 @@ Ländern an, so dass sie z.B. über eine IP-Adresse aus einem anderen Land
 (die des VPN Servers) mit dem Internet kommunizieren, um z.B. <a href="https://de.wikipedia.org/wiki/Geoblocking" class="external-link">Geoblocking</a> oder
 lokalisierte Werbung zu umgehen.</p>
 </div>
+</section><section><h2 class="section-heading" id="dns">DNS<a class="anchor" aria-label="anchor" href="#dns"></a></h2>
+<hr class="half-width"><p>Soweit haben wir uns nur mit der Kommunikation zwischen ihrem
+Computer und dem Webserver beschäftigt, welche auf der Adressierung über
+IP-Adressen basiert. Allerdings werden IP-Adressen i.d.R. nur bei
+automatisierten Prozessen verwendet und direkt eingegeben. Wenn sie eine
+Webseite besuchen, dann geben sie zumeist den Namen einer Webseite ein
+(z.B. <code>www.uni-tuebingen.de</code>) und nicht die IP-Adresse des
+dazu gehörigen Webservers.</p>
+<p>Die Übersetzung von Namen in IP-Adressen wird über das Domain Name
+System (DNS) realisiert. Hierfür gibt es spezielle DNS-Server, die die
+Namen in IP-Adressen übersetzen. Sprich bevor ihr Computer eine Anfrage
+an den Webserver sendet, fragt er zuerst einen DNS-Server nach der
+IP-Adresse des Webservers.</p>
+<p>In den meisten Fällen wird der DNS-Server von ihrem Internetprovider
+genutzt. Hier eine mögliche Liste von <a href="https://public-dns.info/nameserver/de.html" class="external-link">deutschen DNS
+Servern</a>. Falls sie eine VPN-Verbindung nutzen, dann erfolgt die
+DNS-Anfrage über den VPN-Server (bzw. wird von diesem zu dessen
+DNS-Server weitergeleitet). In beiden Fällen kann der DNS-Server sehen,
+welche Webseiten besucht werden, da er ja die Anfragen nach den
+IP-Adressen der Webserver erhält.</p>
+<p>Zudem kann auch eine <a href="https://www.ccc.de/de/censorship/dns-howto" class="external-link">Zensur durch
+DNS-Server</a> erfolgen, indem der DNS-Server die Anfrage nach
+bestimmten Webseiten verweigert und ihnen keine oder eine andere
+IP-Adresse zurückliefert.. Allerdings können sie auch <a href="https://digitalcourage.de/support/zensurfreier-dns-server" class="external-link">manuell
+einen anderen DNS-Server einstellen</a>, um z.B. derartige
+Einschränkungen zu umgehen. Allerdings sollten sie sich auch hier gut
+überlegen, welchem DNS-Server (Anbieter) sie vertrauen.</p>
+</section><section><h2 class="section-heading" id="url">URL<a class="anchor" aria-label="anchor" href="#url"></a></h2>
+<hr class="half-width"><p>Der “Name” einer Webseite wird in der URL (Uniform Resource Locator)
+angegeben. Die URL besteht aus mehreren Teilen, die die Adresse des
+Webservers und den Pfad zur gewünschten Ressource (Webseite, Bild, …)
+beschreiben. Hier als Beispiel die URL der Login-Seite für den ILIAS
+Server der Universität Tübingen:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">TXT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode txt" tabindex="0"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>Markierung</span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a>     Protokollende              Serverende    Zielende  Argumenttrenner</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a>     |||                        |                |       |</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a>https://ovidius.uni-tuebingen.de/ilias3/login.php?lang=en&amp;cmd=force_login</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a>|       |                        |      |         |       </span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a>|       |                        |      |         +--- Argumente (&amp;-getrennte key-value Paare)</span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a>|       |                        |      |              hier: Sprache der Webseite &amp; erzwungener Login</span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a>|       |                        |      +--- Name der Ressource (i.d.R. Datei auf dem Webserver)</span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a>|       |                        |           hier: dynamische Webseite</span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a>|       |                        +--- Pfad zur Ressource </span>
+<span id="cb1-12"><a href="#cb1-12" tabindex="-1"></a>|       |                             = virtuelle Ordnerstruktur</span>
+<span id="cb1-13"><a href="#cb1-13" tabindex="-1"></a>|       +--- Name des Webservers (oder IP-Adresse)</span>
+<span id="cb1-14"><a href="#cb1-14" tabindex="-1"></a>|            hierfür muss IP-Adresse über DNS aufgelöst werden</span>
+<span id="cb1-15"><a href="#cb1-15" tabindex="-1"></a>+--- Übertragungsprotokoll</span>
+<span id="cb1-16"><a href="#cb1-16" tabindex="-1"></a>     hier: "verschlüsselte Webseite"</span>
+<span id="cb1-17"><a href="#cb1-17" tabindex="-1"></a>     </span></code></pre>
+</div>
+<p>Die URL wird in der Regel in der Adresszeile des Browsers angezeigt
+und kann auch manuell eingegeben werden. So kann man bereits durch einen
+kurzen Blick auf die URL einiges erkennen, z.B.</p>
+<ul><li>ob die Verbindung verschlüsselt ist (hier durch das
+<code>https://</code>).</li>
+<li>ob die Webseite überhaupt auf einem Server der gewünschten
+Organisation liegt (hier <code>uni-tuebingen.de</code>). Der Name des
+Webservers ist i.d.R. rückwärts zu lesen, d.h. von der allgemeinen
+Domain (hier <code>uni-tuebingen.de</code>) zum spezifischen Server
+(hier <code>ovidius</code>). Das heißt, dass der Webserver
+<code>ovidius</code> zu den Servern der Domäne
+<code>uni-tuebingen.de</code> gehört. Hierdurch lassen sich auch
+Subdomains (z.B. <code>www.uni-tuebingen.de</code>) und spezielle
+Dienste (z.B. <code>ovidius.uni-tuebingen.de</code>) unterscheiden. Es
+sollte darauf geachtet werden, dass die URL auch wirklich zur
+gewünschten Organisation gehört, da es z.B. <a href="https://de.wikipedia.org/wiki/Phishing" class="external-link">Phishing-Seiten</a> gibt,
+die im Link zwar den Namen einer bekannten Organisation verwenden, um
+Nutzer zu täuschen, aber auf einen anderen Server verweisen.</li>
+<li>Durch Argumente in der URL können z.B. Parameter an die Webseite
+übergeben werden, die dann in der Darstellung oder Funktionalität der
+Webseite berücksichtigt werden. In obigem Beispiel wird die Sprache der
+Webseite auf Englisch gesetzt und ein erzwungener Login durchgeführt.
+Online-Shops, wie z.B. Amazon, verwenden die Argumente in der URL, um
+unabhängig von Cookies etc. die Session des Benutzers zu identifizieren
+und den Warenkorb zu speichern.</li>
+</ul><p>Der Name der Resource (hier <code>login.php</code>) sowie die
+Webseitenargumente (hier <code>lang=en&amp;cmd=force_login</code>) sind
+bei vielen Webanfragen optional und werden i.d.R. vom Webserver
+interpretiert. Das heisst der Webserver entschiedet, welche
+(Standard)Ressource zurückgegeben wird und wie die Argumente verarbeitet
+werden. So führt z.B. die Teil-URL
+<code>https://ovidius.uni-tuebingen.de/ilias3/</code> zur gleichen
+Resource wie das obige Beispiel.</p>
+<div id="link-check-vor-jedem-klick" class="callout testimonial">
+<div class="callout-square">
+<i class="callout-icon" data-feather="heart"></i>
+</div>
+<div id="link-check-vor-jedem-klick" class="callout-inner">
+<h3 class="callout-title">Link-Check vor jedem Klick</h3>
+<div class="callout-content">
+<p>Bevor sie auf URLs klicken (in Webseiten, Suchmaschinen, Emails,
+Messenger, PDF, ..), sollten sie sich immer kurz die URL ansehen und
+überlegen, ob sie wirklich auf die gewünschte Webseite führt.</p>
+<p>Das geht schnell und verhindert schon einen Großteil möglicher
+Phishing-Attacken.</p>
+<p>Das ist wie am Fussgängerüberweg: Auch wenn sie Vorrang haben,
+schauen sie kurz nach links und rechts, ob wirklich alle anhalten.</p>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="zusammenfassung">Zusammenfassung<a class="anchor" aria-label="anchor" href="#zusammenfassung"></a></h2>
 <hr class="half-width"><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
@@ -651,6 +757,9 @@ weitergeleitet.</li>
 WLAN-Anbietern, … eingesehen werden.</li>
 <li>VPN schützt vor lokalen Schnüfflern, aber nicht vor dem
 VPN-Anbieter.</li>
+<li>URLs beschreiben das Zieldokument inklusive des Namens des
+Webservers etc.</li>
+<li>Webservernamen werden durch DNS-Server in IP-Adressen aufgelöst</li>
 </ul></div>
 </div>
 </div>
@@ -759,8 +868,8 @@ any links that you are not going to use.
   "url": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/instructor/Netzwerke.html",
   "identifier": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/instructor/Netzwerke.html",
   "dateCreated": "2024-08-01",
-  "dateModified": "2025-01-03",
-  "datePublished": "2025-01-07"
+  "dateModified": "2025-01-13",
+  "datePublished": "2025-01-13"
 }
 
   </script><script>
