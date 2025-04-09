@@ -267,12 +267,13 @@ Die Mantisse enthält die eigentliche Zahl, also 1.5, 3.14159, oder 42.0, und de
 Der Trick ist nun, dass *sowohl Mantisse als auch Exponent als Ganzzahlen* gespeichert werden können, für die wir schon eine Umrechnung in Binärzahlen kennen.
 
 Dies funktioniert sehr gut für Zahlen, die sich als Potenzen von 10 darstellen lassen, wie 0,0012 = 1.2 * 10^-3.
-Für Zahlen, die sich nicht als Potenzen von 10 darstellen lassen, wie 1/3 = 0.3333333333333333..., kann es zu **Rundungsfehlern** kommen, da der Computer nur eine begrenzte Anzahl von Stellen für die Mantisse und den Exponenten speichern kann, da  beide als Ganzzahl gespeichert werden.
-Dieses Problem ist in folgender Grafik verdeutlicht, indem verschiedene sehr kurze Mantissenlängen dargestellt sind.
+Für Zahlen, die sich nicht als Potenzen von 10 darstellen lassen, wie 1/3 = 0.3333333333333333..., kann es zu **Rundungsfehlern** kommen, da der Computer nur eine begrenzte Anzahl von Stellen für die Mantisse und den Exponenten speichern kann, da  beide als Ganzzahl mit festen Bit-Anzahlen gespeichert werden.
+Dadurch ergeben sich Rundungsfehler, da nicht jede Zahl exakt als Gleitkommazahl darstellbar ist.
+Diese anfängs ggf. sehr kleinen Fehler können sich in nachfolgenden Rechenschritten stark bemerkbar machen, sodass man diese kennen sollte.
 
-![Genauigkeit von Gleitkommazahlen hängt sehr stark von der Mantissenlänge (Anzahl Bits) ab und sinkt mit steigendem Abstand zu 0.[^2] ](https://upload.wikimedia.org/wikipedia/commons/8/8f/Exakt_darstellbare_Gleitkommazahlen.png){width=50% alt="floating point precission"}
+Für weitere Details empfehlen wir die Seite [Gleitkommadarstellung / Gleitkommazahlen](https://www.elektronik-kompendium.de/sites/dig/1807231.htm) aus dem [Elektronik Kompendium](https://www.elektronik-kompendium.de).
 
-[^2]: Quelle - [Roland Illig - Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Exakt_darstellbare_Gleitkommazahlen.png) - 07.08.2024
+
 
 ::::::::::::::::: callout
 
