@@ -144,7 +144,7 @@ Grundlegend unterscheidet man bei regulären Ausdrücken folgende Elemente:
   - `.` = jedwedes Zeichen
   - `[xyz]` = explizite Zeichenliste, hier "x", "y" und "z"
     -  auch Reihen möglich, z.B. `[3-7]` = 3,4,5,6,7
-  - `\s` = whitespaces = alle unsichtbaren Zeichen, z.B. Leerzeichen, Tabulator, ...
+  - `\s` = whitespaces = Platzhalter für *alle* unsichtbaren Zeichen, z.B. Leerzeichen, Tabulator, ...
   - `\d` = digits = Zahlen = [0-9]
   - `\w` = (english) word = [A-Za-z0-9_] (keine Umlaute etc.!)
   - *Negation*:
@@ -167,7 +167,7 @@ Grundlegend unterscheidet man bei regulären Ausdrücken folgende Elemente:
     
 Neben den oben genannten RegEx-spezifischen `\..`-Elementen gibt es auch immer noch einige Sonderzeichen für die auch Escapes notwendig sind, z.B. 
 
-- `\t` für Tabulator
+- `\t` für einen Tabulator
 - `\n` für Zeilenumbruch
 
 Ausserdem müssen Zeichen, die in RegEx eine spezielle Bedeutung haben, auch escaped werden z.B.
@@ -180,7 +180,7 @@ Ausserdem müssen Zeichen, die in RegEx eine spezielle Bedeutung haben, auch esc
     
 ## Tutorials
 
-Wem das jetzt zu schnell oder kompakt war, oder wer noch etwas bei regulären Ausdrücken ins Schwimmern gerät, dem seien folgende Tutorials ans Herz gelegt:
+Wem das jetzt zu schnell oder kompakt war, oder wer noch etwas bei regulären Ausdrücken ins Schwimmen gerät, dem seien folgende Tutorials ans Herz gelegt:
 
 - [step-by-step Tutorial zu regulären Ausdrücken](https://regexone.com/) von regexone.com
 
