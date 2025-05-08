@@ -575,7 +575,7 @@ Rastergrafiken haben den Nachteil, dass sie bei der Vergrößerung an Qualität 
 Dies führt zu Unschärfe und Verzerrungen, insbesondere bei starken Vergrößerungen.
 Auch die Farbtiefe und Auflösung der Bilder beeinflussen die Qualität und Dateigröße, sodass eine Abwägung zwischen Qualität und Speicherplatzbedarf getroffen werden muss.
 
-![Beispiele für Pastergrafikdarstellung mit und ohne Kantenglättung (Anti-Aliasing) [^aa].](fig/anti-aliasing.png){alt="Beispiele fuer Kantenglaettung"}
+![Beispiele für Rastergrafikdarstellung mit und ohne Kantenglättung (Anti-Aliasing)[^aa].](fig/anti-aliasing.png){alt="Beispiele fuer Kantenglaettung"}
 
 [^aa]: Quelle - [selfhtml.org](https://wiki.selfhtml.org/wiki/Grafik/Grundbegriffe/Anti-Aliasing) - 12.09.2024
 
