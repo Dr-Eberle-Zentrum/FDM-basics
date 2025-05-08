@@ -16,8 +16,9 @@ Bevor sie diese weiterverarbeiten können, müssen sie erst prüfen, ob das Date
 Die Datei hat die Endung `.tsv`, was auf text-basierte, tabulator-getrennte tabellarische Daten schließen läßt.
 Das einfachste Mittel zur Überprüfung, ob dies tatsächlich stimmt, besteht im Öffnen der Datei in einem Texteditor.
 
-1. Öffnen sie die Datei in einem Texteditor ihrer Wahl (z.B. Notepad++)
-2. Prüfen sie die folgenden Punkte:
+1. Speichern sie die Datei in ihrem Abgabeordner
+2. Öffnen sie die Datei in einem Texteditor ihrer Wahl (z.B. Notepad++)
+3. Prüfen sie die folgenden Punkte:
    - Stimmt die Dateistruktur, d.h. Dateiendung und erwarteter Aufbau der Daten passen zusammen?
    - Welche Textkodierung wird verwendet? Überlegen sie, wie sei prüfen könnten, ob die Textanzeige stimmt...
    - Welche Zahlenkodierung wird verwendet?
@@ -28,7 +29,7 @@ Um ihre Entdeckungen zu einem späteren Zeitpunkt festzuhalten, möchten/sollen 
 
 - Verwenden sie dazu ein neues **Markdown**-Dokument in ihrem Abgabeordner
   - dieses können sie z.B. mit dem [dillinger.io Editor](https://dillinger.io/) online erstellen und testen
-- **Dateiname:** `turkish.md`
+- **Dateiname:** `turkish.md` (im Abgabeordner)
 - Verwenden sie in ihrem Markdowndokument
   - Überschriften
   - Links
