@@ -39,6 +39,7 @@ Um ihre Entdeckungen zu einem späteren Zeitpunkt festzuhalten, möchten/sollen 
   - Name der Datei um die es geht
   - Quelle (GitHub Link) und Zugriffszeitpunkt
   - Eigenschaften (siehe Aufgabe 1)
+  - Aufbau (Welche Spalten gibt es und welcher Datentyp ist dort jeweils erwartet)
 
 
 ### Aufgabe 3 - Dokumentation überarbeiten und vereinheitlichen
