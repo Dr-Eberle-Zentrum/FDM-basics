@@ -403,9 +403,9 @@ In folgendem Bild sehen sie, dass die unterschiedlichen Farbmodelle nur Teile de
 
 ::::::::::: testimonial
 
-Die Diskretisierung der Farbwerte kann zu **Farbverlust** führen, wenn die Farben in einem anderen Farbmodell gespeichert und wieder in RGB umgewandelt werden.
-
 # Hinweis
+
+Die Diskretisierung der Farbwerte kann zu **Farbverlust** führen, wenn die Farben in einem anderen Farbmodell gespeichert und wieder in RGB umgewandelt werden.
 
 Daher sollte die Umwandlung zwischen den Farbmodellen nur dann erfolgen, wenn es unbedingt notwendig ist, am besten *nach* der Bildbearbeitung.
 
