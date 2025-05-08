@@ -50,6 +50,6 @@ Konkret:
 
 - Erstellen sie eine Markdown-Datei mit dem Namen `strompreise.destatis.README.md`
 - Kopieren sie den Inhalt der alten Datei hinein (*Die alte Datei soll im Ablageordner verbleiben!*)
-- Überarbeiten sie den Inhalt so, dass er zu den neuen Anforderungen aus Aufgabe 2 passt (*fügen sie ggf. neue Abschnitte hinzu, die sie für ihre Dokumentation benötigen.*)
+- Überarbeiten sie den Inhalt so, dass er zu den neuen Anforderungen aus Aufgabe 2 passt (verschiedene Strukturelemente, Abschnitte, ...)
 - Speichern sie die Datei in ihrem Abgabeordner ab
 
