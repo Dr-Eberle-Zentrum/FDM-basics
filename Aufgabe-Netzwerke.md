@@ -27,7 +27,7 @@ Nun möchten wir wissen, über welche Netzwerkknoten wir die Webseite erreichen.
 
 - Microsoft Windows:
   - Öffnen sie eine "PowerShell"
-  - geben sie `tracert en.wikipedia.org` ein
+  - geben sie `tracert -4 en.wikipedia.org` ein
 - Linux/MacOS:
   - Öffnen sie ein Terminal (Bash)
   - geben sie `traceroute en.wikipedia.org` ein
