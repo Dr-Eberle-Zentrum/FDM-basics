@@ -481,6 +481,9 @@ Das Wissen um die **digitale Repräsentation von Informationen** ist immer dann 
 
 - [Sitzungsaufgabe "Daten vs. Information"](Aufgabe-Daten-vs-Information.md)
 - [Sitzungsaufgabe "Datenextraktion aus Bildern"](Aufgabe-PNG2CSV.md)
+  - Lösung: 
+    - [mietpreise-tuebingen.csv](data/mietpreise-tuebingen.csv)
+    - [mietpreise-tuebingen.README.txt](data/mietpreise-tuebingen.README.txt)
 
 ### Zur Nachbereitung und als Anwendung
 

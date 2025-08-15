@@ -6,6 +6,10 @@ keywords: "keywords"
 tags: "tags"
 ---
 
+:::::::::::::::: instructor
+Aufgabe zu "Digitale Daten"'
+:::::::::::::::::::::::::::
+
 ## Datenextraktion aus Bildern
 
 Manchmal sind Daten nur in Form von Bildern verfügbar, z.B. in Diagrammen oder Tabellen, die nicht als Text vorliegen. 
