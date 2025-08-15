@@ -62,9 +62,10 @@ X,Y,X,Y,X,Y
 
 ### Aufgabe 2 - Dokumentation
 
-Erstellen sie eine Markdown-Datei `mietpreise-tuebingen.README.md` und dokumentieren sie darin die Schritte, die sie zur Extraktion der Daten durchgeführt haben.
+Erstellen sie eine TEXT-Datei `mietpreise-tuebingen.README.txt` und dokumentieren sie darin die Schritte, die sie zur Extraktion der Daten durchgeführt haben.
 
-Dokumentieren sie auch das verwendete Tool, dessen Version, Zugriffszeit und welche Datensätze sie manuell oder automatisch (Funktionalität + Einstellungen) erstellt haben.
+Dokumentieren sie auch das verwendete Tool, dessen Version, Zugriffszeit und welche Datensätze sie manuell oder automatisch (mit welcher Funktionalität + Einstellung) erstellt haben.
 
+Listen sie auch ihre eigenen Autoreninformationen (ihren Namen bzw. alle Namen aus ihrem Team) und das Bearbeitungsdatum.
 
 
