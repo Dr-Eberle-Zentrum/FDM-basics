@@ -51,7 +51,7 @@ Um ihre Entdeckungen zu einem späteren Zeitpunkt festzuhalten, möchten/sollen 
 
 ## Musterlösung
 
-- [turkish.md](data/turkish.md)
+- [turkish.md](data/turkish.md.txt)
 
 ::::::::::
 

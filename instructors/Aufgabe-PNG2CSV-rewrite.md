@@ -41,7 +41,7 @@ Konkret:
 
 ## Musterlösung
 
-- [mietpreise-tuebingen.README.md](files/mietpreise-tuebingen.README.md)
+- [mietpreise-tuebingen.README.md](files/mietpreise-tuebingen.README.md.txt)
 
 ::::::::::
 
