@@ -648,6 +648,12 @@ Die richtige Wahl des Dateiformats ist in allen Phasen des Datenlebenszyklus wic
 - [Sitzungsaufgabe "Strukturcheck von Dateien"](Aufgabe-Dateiformat-Strukturcheck.md)
 - [Sitzungsaufgabe "Einheitliche Dokumentation"](Aufgabe-PNG2CSV-rewrite.md)
 
+### Sitzungsfragen
+
+- Wie werden Daten im Computer verwaltet und warum gehts immer um diese Nullen und Einsen?
+- Was unterscheidet die textbasierte von der binären Datenspeicherung?
+- Welche Probleme treten häufig beim textbasierten Datenimport auf?
+- Welche Dateiformate sollten für was verwendet werden?
 
 :::::::::::::::::::::::::::
 
