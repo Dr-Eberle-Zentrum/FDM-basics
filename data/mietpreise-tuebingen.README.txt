@@ -1,0 +1,28 @@
+
+Autor: Max Mustermann
+
+Aufgabe "Datenextraktion aus Diagrammbildern"
+
+Folgende Arbeitsschritte habe ich umgesetzt
+
+Tool:
+- WebPlotDigitizer Version 4.8
+- Zugriffszeit: 21.05.2025, 21:02
+
+Schritte:
+1. Downloaden der Mietpreise Tübingen .png Datei
+2. Hochladen der Datei in den WebPlotDigitizer Version 4.8
+3. Choose Plot Type: 2D (X-Y) Plot
+4. Auswählen von vier bekannten Werten, um die Achsen zu kalibrieren
+5. Rename Dataset: 30qm, Display Color -> Dunkelrot
+6. Add point: Manuelles Hinzufügen der 13 Werte, der 30qm Kurve
+7. Add Dataset: Erstellen der Datensätze für die Kurven 60qm (Gelb) und 100qm (Grün)
+8. Automatische Detektion der Bildwerte des Datensatzes 100qm:
+    - Automatic Extraction -> Anklicken der Farbe, Color picker -> Anklicken der Kurvenfarbe (grün)
+    - Algorithm: X-Step
+    - Datenwerte: X_min=2011, ΔX Step=0.1, X_max=2023, Y_min=8, Y_max=18, Line width=30
+9. Wiederholen des Schritts für 60qm: Fehlerhafte Werte werden erkannt
+10. Manuelle Setzung der Werte für 60qm
+11. Exportieren der Daten: “Datasets” -> “Export All Data” -> “Download.CSV”
+12. Umbenennen der Datei in: mietpreise-tuebingen.csv
+

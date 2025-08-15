@@ -648,6 +648,10 @@ Die richtige Wahl des Dateiformats ist in allen Phasen des Datenlebenszyklus wic
 
 - [Sitzungsaufgabe "Strukturcheck von Dateien"](Aufgabe-Dateiformat-Strukturcheck.md)
   - Lösungsbeispiel [turkish.md](https://raw.githubusercontent.com/Dr-Eberle-Zentrum/FDM-basics/main/instructors/data/turkish.md)
+- [Sitzungsaufgabe "Einheitliche Dokumentation"](Aufgabe-PNG2CSV-rewrite.md)
+  - Lösung: [mietpreise-tuebingen.README.md](data/mietpreise-tuebingen.README.md)
+
+
 
 :::::::::::::::::::::::::::
 
