@@ -34,13 +34,13 @@
   <div class="container-fluid top-nav-container">
     <div class="col-md-8">
       <div class="large-logo">
-        <img id="UT-logo" alt="Universität Tübingen" src="assets/images/UT-logo.svg"><span class="badge text-bg-danger">
-          <abbr title="Diese Lektion befindet sich in der Pre-Alpha-Phase, was bedeutet, dass sie sich in einer frühen Entwicklungsphase befindet, aber noch nicht unterrichtet wurde.">
-            <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#early-development-pre-alpha-through-alpha" class="external-link alert-link">
-              <i aria-hidden="true" class="icon" data-feather="alert-octagon" style="border-radius: 5px"></i>
-              Pre-Alpha
+        <img id="UT-logo" alt="Universität Tübingen" src="assets/images/UT-logo.svg"><span class="badge text-bg-info">
+          <abbr title="Diese Lektion befindet sich in der Beta-Phase, was bedeutet, dass sie bereit für den Unterricht durch Dozenten außerhalb des ursprünglichen Autorenteams ist.">
+            <a href="https://cdh.carpentries.org/the-lesson-life-cycle.html#polishing-beta-stage" class="external-link alert-link">
+              <i aria-hidden="true" class="icon" data-feather="alert-circle" style="border-radius: 5px"></i>
+              Beta
             </a>
-            <span class="visually-hidden">Diese Lektion befindet sich in der Pre-Alpha-Phase, was bedeutet, dass sie sich in einer frühen Entwicklungsphase befindet, aber noch nicht unterrichtet wurde.</span>
+            <span class="visually-hidden">Diese Lektion befindet sich in der Beta-Phase, was bedeutet, dass sie bereit für den Unterricht durch Dozenten außerhalb des ursprünglichen Autorenteams ist.</span>
           </abbr>
         </span>
 
@@ -243,7 +243,7 @@
 <div class="accordion accordion-flush" id="accordionFlush2">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading2">
-        <a href="Forschungsdaten.html">1. Forschungsdaten</a>
+        <a href="Digitale-Daten.html">Digitale Daten</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -255,7 +255,7 @@
 <div class="accordion accordion-flush" id="accordionFlush3">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading3">
-        <a href="Finden-und-Zitieren.html">2. Finden und Zitieren</a>
+        <a href="Dateiformate.html">Dateiformate</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -267,7 +267,7 @@
 <div class="accordion accordion-flush" id="accordionFlush4">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading4">
-        <a href="Digitale-Daten.html">3. Digitale Daten</a>
+        <a href="Forschungsdaten.html">Forschungsdaten</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -279,7 +279,7 @@
 <div class="accordion accordion-flush" id="accordionFlush5">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading5">
-        <a href="Dateiformate.html">4. Dateiformate</a>
+        <a href="Finden-und-Zitieren.html">Finden und Zitieren</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -291,7 +291,7 @@
 <div class="accordion accordion-flush" id="accordionFlush6">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading6">
-        <a href="Netzwerke.html">5. Netzwerke</a>
+        <a href="Netzwerke.html">Netzwerke</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -303,7 +303,7 @@
 <div class="accordion accordion-flush" id="accordionFlush7">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading7">
-        <a href="Browser.html">6. Browser</a>
+        <a href="Browser.html">Browser</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -315,7 +315,7 @@
 <div class="accordion accordion-flush" id="accordionFlush8">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-heading8">
-        <a href="RegEx.html">7. Reguläre Ausdrücke</a>
+        <a href="RegEx.html">Reguläre Ausdrücke</a>
     </div>
 <!--/div.accordion-header-->
 
@@ -378,493 +378,7 @@
     <main id="main-content" class="main-content"><div class="container lesson-content">
         
         
-<section id="aio-Forschungsdaten"><p>Content from <a href="Forschungsdaten.html">Forschungsdaten</a></p>
-<hr>
-<p>Zuletzt aktualisiert am 2025-04-24 |
-
-        <a href="https://github.com/Dr-Eberle-Zentrum/FDM-basics/edit/main/episodes/Forschungsdaten.md" class="external-link">Diese Seite bearbeiten <i aria-hidden="true" data-feather="edit"></i></a></p>
-<div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Alle Lösungen anzeigen " data-collapse="Alle Lösungen ausblenden "> Alle Lösungen anzeigen <i aria-hidden="true" data-feather="plus"></i></button>
-        </div>
-<div class="overview card">
-<h2 class="card-header">Übersicht</h2>
-<div class="row g-0">
-<div class="col-md-4">
-<div class="card-body">
-<div class="inner">
-<h3 class="card-title">Fragen</h3>
-<ul>
-<li>Forschungsdaten?</li>
-<li>Teilen?</li>
-<li>F.A.I.R.?</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="col-md-8">
-<div class="card-body">
-<div class="inner bordered">
-<h3 class="card-title">Ziele</h3>
-<ul>
-<li>Eingrenzen was Forschungsdaten sind</li>
-<li>Reflektieren warum Forschungsdaten geteilt werden sollten</li>
-<li>Einführung in die F.A.I.R.-Prinzipien</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<section><h2 class="section-heading" id="was-ist-das">Was ist das?<a class="anchor" aria-label="anchor" href="#was-ist-das"></a>
-</h2>
-<hr class="half-width">
-<p>Forschungsdaten sind die Grundlage wissenschaftlicher Erkenntnisse
-und können in unterschiedlichen Formen vorliegen.</p>
-<p>Im Folgenden werden wir auf einige externe Seiten verweisen, die
-Ihnen einen Überblick über Forschungsdaten und deren Management
-geben.</p>
-<div id="was-zählt-zu-forschungsdaten" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<span class="callout-header">Wichtig</span>
-<div id="was-zählt-zu-forschungsdaten" class="callout-inner">
-<h3 class="callout-title">Was zählt zu Forschungsdaten?</h3>
-<div class="callout-content">
-<p>Studieren sie folgende Seite von <em>Forschungsdaten.info</em> und
-machen sie sich Notizen.</p>
-<ul>
-<li><a href="https://forschungsdaten.info/themen/informieren-und-planen/was-sind-forschungsdaten/" class="external-link">Was
-sind Forschungsdaten?</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div id="sind-das-schon-forschungsdaten" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Aufgabe</span>
-<div id="sind-das-schon-forschungsdaten" class="callout-inner">
-<h3 class="callout-title">Sind das schon Forschungsdaten?</h3>
-<div class="callout-content">
-<p>Reflektieren sie kurz über die folgende Frage:</p>
-<p><em>Was macht eine Datei zu Forschungsdaten?</em></p>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1">
-  Antwort
-  </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
-<div class="accordion-body">
-<p>Üblicherweise handelt es sich bei Forschungsdaten um
-<em>Rohdaten</em>, denn das Filtern, Verarbeiten und Interpretieren der
-Daten im Rahmen einer Forschungsfrage beeinflusst die Daten und macht
-sie zu Ergebnisdaten. Zudem sollten die Daten <em>strukturiert</em> und
-<em>dokumentiert</em> sein, um sie für (sich selbst und) andere
-Forschende <em>nachvollziehbar</em> zu machen. Eine lose Textdatei mit
-Notizen oder eine Präsentation sind daher i.d.R. keine Forschungsdaten,
-sondern eher Ergebnisse oder Dokumentationen. Ob die Daten in einem
-nachnutzbaren Format vorliegen, ist zentral für die Wiederverwendbarkeit
-und wird durch die F.A.I.R.-Prinzipien adressiert, die wir bald
-kennenlernen werden.</p>
-</div>
-</div>
-</div>
-</div>
-<p>Das heißt, Forschungsdaten sind nicht nur die Rohdaten, sondern auch
-die Metadaten, die Dokumentation und die Software, die zur Erhebung und
-Analyse der Daten verwendet wurde.</p>
-</section><section><h2 class="section-heading" id="warum-teilen">Warum teilen?<a class="anchor" aria-label="anchor" href="#warum-teilen"></a>
-</h2>
-<hr class="half-width">
-<p>In der Vergangenheit wurden Forschungsdaten i.d.R. nicht publiziert,
-sondern nur die Ergebnisse der Forschung. Das hat sich in den letzten
-Jahren geändert, und es wird immer wichtiger, auch die Daten zu
-publizieren, um die Nachvollziehbarkeit und Wiederverwendbarkeit der
-Forschung zu gewährleisten.</p>
-<div id="warum-sollten-forschungsdaten-geteilt-werden" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<span class="callout-header">Wichtig</span>
-<div id="warum-sollten-forschungsdaten-geteilt-werden" class="callout-inner">
-<h3 class="callout-title">Warum sollten Forschungsdaten geteilt
-werden?</h3>
-<div class="callout-content">
-<p>Die folgende Seite von <em>Forschungsdaten.info</em> diskutiert</p>
-<ul>
-<li>
-<a href="https://forschungsdaten.info/themen/veroeffentlichen-und-archivieren/daten-publizieren/" class="external-link">Vorteile
-einer Datenpublikation</a> (nur erster Teil der Seite!!!)</li>
-</ul>
-</div>
-</div>
-</div>
-<div id="und-was-hab-ich-davon" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Aufgabe</span>
-<div id="und-was-hab-ich-davon" class="callout-inner">
-<h3 class="callout-title">Und was hab ich davon?</h3>
-<div class="callout-content">
-<p>Überlegen sie sich 3-4 Punkte, die für sie persönlich aus der
-Publikation von Forschungsdaten resultieren (könnten).</p>
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2">
-  Möglichkeiten (nachdem sie nachgedacht haben..)
-  </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
-<div class="accordion-body">
-<p>Die folgenden Punkte betreffen sowohl ihre eigene Forschung als auch
-die Forschung/Daten anderer.</p>
-<ul>
-<li>
-<strong>Nachvollziehbarkeit</strong>: Forschungsergebnisse können
-überprüft werden</li>
-<li>
-<strong>Wiederverwendbarkeit</strong>: Neue Forschung kann auf
-bestehenden Daten aufbauen</li>
-<li>
-<strong>Vergleichbarkeit</strong>: Daten können mit anderen Daten
-verglichen werden</li>
-<li>
-<strong>Nachhaltigkeit</strong>: Daten werden ggf. nicht doppelt
-erhoben</li>
-<li>
-<strong>Sichtbarkeit</strong>: Forschung wird bekannter und
-Erhebungsaufwand wertschätzbar</li>
-<li>
-<strong>Kollaboration</strong>: Kontakt zu anderen Forschenden, die
-an ähnlichen Themen arbeiten</li>
-<li>
-<strong>Reputation</strong>: Wissenschaftliche Zitierbarkeit und
-Anerkennung von Datenerhebung</li>
-<li>
-<strong>Förderung</strong>: Einige Fördergeber*innen verlangen die
-Publikation von Daten</li>
-<li>
-<strong>Lehre</strong>: Daten können in der Lehre verwendet
-werden</li>
-<li>
-<strong>Open Science</strong>: Beitrag zur offenen Wissenschaft und
-Wissenschaftskommunikation</li>
-<li>…</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="f-a-i-r--prinzipien">F.A.I.R.-Prinzipien<a class="anchor" aria-label="anchor" href="#f-a-i-r--prinzipien"></a>
-</h2>
-<hr class="half-width">
-<p>Das Teilen von Daten wird durch die F.A.I.R.-Prinzipien unterstützt,
-die die Auffindbarkeit, Zugänglichkeit, Interoperabilität und
-Wiederverwendbarkeit von Daten fördern. Dies betrifft sowohl den eigenen
-Zugriff auf schon geteilte Daten als auch die Veröffentlichung eigener
-Daten.</p>
-<div id="und-was-sind-faire-daten" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<span class="callout-header">Wichtig</span>
-<div id="und-was-sind-faire-daten" class="callout-inner">
-<h3 class="callout-title">Und was sind FAIRe Daten?</h3>
-<div class="callout-content">
-<p>Auch dazu gibt es von <em>Forschungsdaten.info</em> eine schöne
-Seite.</p>
-<ul>
-<li><a href="https://forschungsdaten.info/themen/veroeffentlichen-und-archivieren/faire-daten/" class="external-link">FAIRe
-Daten</a></li>
-</ul>
-</div>
-</div>
-</div>
-<div id="dokumentation-dokumentation-dokumentation" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Aufgabe</span>
-<div id="dokumentation-dokumentation-dokumentation" class="callout-inner">
-<h3 class="callout-title">Dokumentation, Dokumentation,
-Dokumentation</h3>
-<div class="callout-content">
-<p>Warum nimmt Dokumentation bei Daten eine so große Rolle ein?</p>
-<p><em>Formulieren sie 3-4 Fragen, die sie sich stellen würden, wenn sie
-Daten von jemand anderem erhalten und die ohne Dokumentation nicht zu
-beantworten wären!</em></p>
-</div>
-</div>
-</div>
-<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3">
-  Mögliche Fragen …
-  </h4>
-</button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
-<div class="accordion-body">
-<p>Ohne oder bei eingeschränkter Dokumentation können folgende Fragen
-nicht beantwortet werden.</p>
-<ul>
-<li>Welche Bedeutung haben die Daten/Werte/…?</li>
-<li>Wurden die Daten verändert, gefiltert, nachbearbeitet?</li>
-<li>Welche Rahmenbedingungen gab es bei der Datenerhebung?</li>
-<li>Welche Software wurde zur Analyse verwendet?</li>
-<li>Darf ich die Daten weiterverwenden?</li>
-<li>Wie kann ich die Daten zitieren?</li>
-<li>Wen kann ich bei Fragen kontaktieren?</li>
-<li>…</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="zusammenfassung">Zusammenfassung<a class="anchor" aria-label="anchor" href="#zusammenfassung"></a>
-</h2>
-<hr class="half-width">
-<div id="keypoints1" class="callout keypoints">
-<div class="callout-square">
-<i class="callout-icon" data-feather="key"></i>
-</div>
-<span class="callout-header">Hauptpunkte</span>
-<div class="callout-inner">
-<div class="callout-content">
-<ul>
-<li>Forschungsdaten sind nicht nur Rohdaten, sondern auch Metadaten,
-Dokumentation und Software.</li>
-<li>Forschungsdaten sollten geteilt werden.</li>
-<li>Die F.A.I.R.-Prinzipien unterstützen das Teilen von Daten.</li>
-<li>Dokumentation ist zentral für die Nachvollziehbarkeit und
-Wiederverwendbarkeit von Daten.</li>
-</ul>
-</div>
-</div>
-</div>
-<div id="einordnung-im-datenlebenszyklus" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Aufgabe</span>
-<div id="einordnung-im-datenlebenszyklus" class="callout-inner">
-<h3 class="callout-title">Einordnung im Datenlebenszyklus</h3>
-<div class="callout-content">
-<figure><img src="https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png" style="width:40.0%" alt="Datenlebenszyklus" class="figure mx-auto d-block"><div class="figcaption"><em>In welchen Phasen im Datenlebenszyklus sehen
-sie obige Punkte als besonders wichtig an?</em></div>
-</figure>
-</div>
-</div>
-</div>
-<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
-  <h4 class="accordion-header" id="headingSolution4">
-  Antwort
-  </h4>
-</button>
-<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
-<div class="accordion-body">
-<p>Eigentlich in allen Phasen, da eine gute Dokumentation und
-Strukturierung der Daten die Nachvollziehbarkeit und
-Wiederverwendbarkeit in allen Phasen des Lebenszyklus unterstützt.</p>
-<ul>
-<li>
-<strong>Planung</strong>: Dokumentation der Forschungsfrage und der
-zu verwendenden Daten/Quellen</li>
-<li>
-<strong>Erhebung</strong>: Dokumentation der Rahmenbedingungen und
-der Datenerhebung</li>
-<li>
-<strong>Analyse</strong>: Dokumentation der Analyse und der
-Software</li>
-<li>
-<strong>Publikation</strong>: Teilen der Daten und
-Dokumentation</li>
-<li>
-<strong>Archivierung</strong>: Langfristige Sicherung und
-Zugänglichkeit der Daten</li>
-<li>
-<strong>Nachnutzung</strong>: Nachvollziehbarkeit und
-Wiederverwendbarkeit der Daten</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
-</section></section><section id="aio-Finden-und-Zitieren"><p>Content from <a href="Finden-und-Zitieren.html">Finden und Zitieren</a></p>
-<hr>
-<p>Zuletzt aktualisiert am 2025-04-24 |
-
-        <a href="https://github.com/Dr-Eberle-Zentrum/FDM-basics/edit/main/episodes/Finden-und-Zitieren.md" class="external-link">Diese Seite bearbeiten <i aria-hidden="true" data-feather="edit"></i></a></p>
-<div class="text-end">
-          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Alle Lösungen anzeigen " data-collapse="Alle Lösungen ausblenden "> Alle Lösungen anzeigen <i aria-hidden="true" data-feather="plus"></i></button>
-        </div>
-<div class="overview card">
-<h2 class="card-header">Übersicht</h2>
-<div class="row g-0">
-<div class="col-md-4">
-<div class="card-body">
-<div class="inner">
-<h3 class="card-title">Fragen</h3>
-<ul>
-<li>Wo?</li>
-<li>Wie?</li>
-<li>Wer?</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="col-md-8">
-<div class="card-body">
-<div class="inner bordered">
-<h3 class="card-title">Ziele</h3>
-<ul>
-<li>Öffentliche Repositorien für Forschungsdaten</li>
-<li>Gezielte Suche nach Forschungsdaten</li>
-<li>Zitieren von Forschungsdaten</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p>Um Forschungsdaten findbar und zugänglich zu machen, werden diese in
-speziellen Repositorien und Datenbanken abgelegt. Hierbei wird
-unterschieden in fachspezifische und allgemeine Repositorien. Die
-Datenbanken und Repositorien sind in der Regel öffentlich zugänglich und
-bieten die Möglichkeit, Daten zu suchen, zu finden und
-herunterzuladen.</p>
-<p>Das Suchen und Finden von Forschungsdaten ist jedoch nicht immer so
-einfach, wie es klingt. Daher gibt es einige Tipps und Tricks, die die
-Suche erleichtern können.</p>
-<p>Zudem muss geprüft werden, ob die Daten in einer Form vorliegen, die
-eine Wiederverwendung ermöglicht. Auch Lizenzfragen sind zu klären.</p>
-<p>Final ist es wichtig, die gefundenen Daten korrekt zu zitieren, um
-die Quelle zu kennzeichnen und Wiederverwendung sichtbar zu machen.</p>
-<p>All diese Punkte werden in einem Lernmodul der
-Friedrich-Alexander-Universität Erlangen-Nürnberg näher beleuchtet,
-welches im Folgenden durchgearbeitet werden soll</p>
-<div id="lernmodul-forschungsdaten-suchen-nachnutzen" class="callout">
-<div class="callout-square">
-<i class="callout-icon" data-feather="bell"></i>
-</div>
-<span class="callout-header">Wichtig</span>
-<div id="lernmodul-forschungsdaten-suchen-nachnutzen" class="callout-inner">
-<h3 class="callout-title">Lernmodul “Forschungsdaten suchen &amp;
-nachnutzen”</h3>
-<div class="callout-content">
-<p>Arbeiten sie sich durch das Lernmodul der
-Friedrich-Alexander-Universität Erlangen-Nürnberg.</p>
-<ul>
-<li><a href="https://www.studon.fau.de/pg709111_2994018.html" class="external-link">Organisation und
-Lerninhalte</a></li>
-<li><a href="https://www.studon.fau.de/pg560777_2994018.html" class="external-link">Repositorien und
-Suchmaschinen</a></li>
-<li><a href="https://www.studon.fau.de/pg560779_2994018.html" class="external-link">Recherchestrategien</a></li>
-<li><a href="https://www.studon.fau.de/pg560785_2994018.html" class="external-link">Technische
-Nachnutzbarkeit</a></li>
-<li><a href="https://www.studon.fau.de/pg560784_2994018.html" class="external-link">Qualität
-der Datendokumentation</a></li>
-<li><a href="https://www.studon.fau.de/pg560788_2994018.html" class="external-link">Rechtliche
-Rahmenbedingungen</a></li>
-<li><a href="https://www.studon.fau.de/pg560787_2994018.html" class="external-link">Prinzipien
-der Datenzitierung</a></li>
-</ul>
-<p>Bitte auch die dortigen <em>Wissenstests</em> an den Seitenenden
-durchführen!</p>
-</div>
-</div>
-</div>
-<section><h2 class="section-heading" id="zusammenfassung">Zusammenfassung<a class="anchor" aria-label="anchor" href="#zusammenfassung"></a>
-</h2>
-<hr class="half-width">
-<div id="keypoints1" class="callout keypoints">
-<div class="callout-square">
-<i class="callout-icon" data-feather="key"></i>
-</div>
-<span class="callout-header">Hauptpunkte</span>
-<div class="callout-inner">
-<div class="callout-content">
-<ul>
-<li>Forschungsdaten sind in speziellen Repositorien und Datenbanken
-abgelegt, i.d.R. öffentlich zugänglich.</li>
-<li>Es gibt fachspezifische und allgemeine Repositorien.</li>
-<li>Aufgrund der Vielzahl an Repositorien und Datenbanken ist die Suche
-nach Forschungsdaten nicht immer einfach und verlangt eine ausdauernde
-Recherche.</li>
-<li>Vorliegende Datenformate und vorhandene Software(kenntnisse) müssen
-geprüft werden, um eine Wiederverwendung zu ermöglichen.</li>
-<li>Lizenzen müssen die Wiederverwendung erlauben.</li>
-<li>Korrekte Zitation ist zentral in wissenschaftlicher Praxis.</li>
-</ul>
-</div>
-</div>
-</div>
-<div id="einordnung-im-datenlebenszyklus" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Aufgabe</span>
-<div id="einordnung-im-datenlebenszyklus" class="callout-inner">
-<h3 class="callout-title">Einordnung im Datenlebenszyklus</h3>
-<div class="callout-content">
-<figure><img src="https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png" style="width:40.0%" alt="Datenlebenszyklus" class="figure mx-auto d-block"><div class="figcaption"><em>In welchen Phasen im Datenlebenszyklus sehen
-sie obige Punkte als besonders wichtig an?</em></div>
-</figure>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Antwort </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
-<div class="accordion-body">
-<p>Datenrecherche und Zitation sind vorrangig zu Beginn und am Ende des
-Datenlebenszyklus wichtig.</p>
-<ul>
-<li>
-<strong>Planung</strong>: Schlagworte etc. für spätere Suche
-festlegen</li>
-<li>
-<strong>Erhebung</strong>: Wiederverwendung von Daten</li>
-<li>
-<strong>Publikation</strong>: Zitation von verwendeten Daten</li>
-<li>
-<strong>Archivierung</strong>: Festlegung von Metadaten, Identifiern
-und Lizenzen, um Wiederverwendung zu ermöglichen</li>
-<li>
-<strong>Nachnutzung</strong>: Daten/Quellen identifizieren, bewerten
-und einordnen</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-
-<!--
-Place links that you need to refer to multiple times across pages here. Delete
-any links that you are not going to use.
- -->
-</section></section><section id="aio-Digitale-Daten"><p>Content from <a href="Digitale-Daten.html">Digitale Daten</a></p>
+<section id="aio-Digitale-Daten"><p>Content from <a href="Digitale-Daten.html">Digitale Daten</a></p>
 <hr>
 <p>Zuletzt aktualisiert am 2025-05-08 |
 
@@ -987,7 +501,7 @@ mit Buchstaben ersetzt werden)?</em></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Antwort </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>Es werden falsche Zeichen angezeigt, da die
 Zahlen-Buchstaben-Zuordnung nicht übereinstimmt.</p>
@@ -1140,7 +654,7 @@ Verarbeitung von Zahlen</em> in Computern bildet.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Hinweis </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Die 2er-Potenzen sind</p>
 <ul>
@@ -1158,7 +672,7 @@ Verarbeitung von Zahlen</em> in Computern bildet.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3"> Antwort </h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>Die Binärzahl 1011 entspricht der Dezimalzahl 10, da</p>
 <pre class="plaintext"><code><span><span class="fl">1</span><span class="op">*</span><span class="fl">2</span><span class="op">^</span><span class="fl">3</span> <span class="op">+</span> <span class="fl">0</span><span class="op">*</span><span class="fl">2</span><span class="op">^</span><span class="fl">2</span> <span class="op">+</span> <span class="fl">1</span><span class="op">*</span><span class="fl">2</span><span class="op">^</span><span class="fl">1</span> <span class="op">+</span> <span class="fl">0</span><span class="op">*</span><span class="fl">2</span><span class="op">^</span><span class="fl">0</span> <span class="op">=</span> <span class="fl">8</span> <span class="op">+</span> <span class="fl">0</span> <span class="op">+</span> <span class="fl">2</span> <span class="op">+</span> <span class="fl">0</span> <span class="op">=</span> <span class="fl">10.</span></span></code></pre>
@@ -1315,7 +829,7 @@ werden sollte.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
   <h4 class="accordion-header" id="headingSolution4"> Antwort </h4>
 </button>
-<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
 <div class="accordion-body">
 <p>Ein Beispiel für ein Problem, bei dem Rundungsfehler zu Problemen
 führen können, ist die Berechnung von Zinsen.</p>
@@ -1398,7 +912,7 @@ könnte.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
   <h4 class="accordion-header" id="headingSolution5"> Antwort </h4>
 </button>
-<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div id="collapseSolution5" class="accordion-collapse collapse" aria-labelledby="headingSolution5" data-bs-parent="#accordionSolution5">
 <div class="accordion-body">
 <p>Das Jahr-2038-Problem tritt auf, weil die Unix-Zeit als
 <em>vorzeichenbehaftete</em> 32-Bit-Ganzzahl gespeichert wird.</p>
@@ -1458,7 +972,7 @@ nicht weiß, sondern ein Braunton. Warum ist das so?</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution6" aria-expanded="false" aria-controls="collapseSolution6">
   <h4 class="accordion-header" id="headingSolution6"> Antwort </h4>
 </button>
-<div id="collapseSolution6" class="accordion-collapse collapse" data-bs-parent="#accordionSolution6" aria-labelledby="headingSolution6">
+<div id="collapseSolution6" class="accordion-collapse collapse" aria-labelledby="headingSolution6" data-bs-parent="#accordionSolution6">
 <div class="accordion-body">
 <p>Die Farben im Farbkasten sind Pigmente, die das Licht absorbieren und
 nur bestimmte Farben reflektieren. Wenn sie Rot, Grün und Blau mischen,
@@ -1571,7 +1085,7 @@ sie obige Punkte als besonders wichtig an?</em></div>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution7" aria-expanded="false" aria-controls="collapseSolution7">
   <h4 class="accordion-header" id="headingSolution7"> Antwort </h4>
 </button>
-<div id="collapseSolution7" class="accordion-collapse collapse" data-bs-parent="#accordionSolution7" aria-labelledby="headingSolution7">
+<div id="collapseSolution7" class="accordion-collapse collapse" aria-labelledby="headingSolution7" data-bs-parent="#accordionSolution7">
 <div class="accordion-body">
 <p>Das Wissen um die <strong>digitale Repräsentation von
 Informationen</strong> ist immer dann zentral, wenn Daten importiert
@@ -2732,7 +2246,493 @@ Graf - wikipedia.de</a> - 09.08.2024<a href="#fnref4" class="footnote-back">↩�
 <li id="fn5"><p>Quelle - <a href="https://wiki.selfhtml.org/wiki/Grafik/Grundbegriffe/Anti-Aliasing" class="external-link">selfhtml.org</a>
 - 12.09.2024<a href="#fnref5" class="footnote-back">↩︎</a></p></li>
 </ol>
-</div></section><section id="aio-Netzwerke"><p>Content from <a href="Netzwerke.html">Netzwerke</a></p>
+</div></section><section id="aio-Forschungsdaten"><p>Content from <a href="Forschungsdaten.html">Forschungsdaten</a></p>
+<hr>
+<p>Zuletzt aktualisiert am 2025-04-24 |
+
+        <a href="https://github.com/Dr-Eberle-Zentrum/FDM-basics/edit/main/episodes/Forschungsdaten.md" class="external-link">Diese Seite bearbeiten <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Alle Lösungen anzeigen " data-collapse="Alle Lösungen ausblenden "> Alle Lösungen anzeigen <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Übersicht</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Fragen</h3>
+<ul>
+<li>Forschungsdaten?</li>
+<li>Teilen?</li>
+<li>F.A.I.R.?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Ziele</h3>
+<ul>
+<li>Eingrenzen was Forschungsdaten sind</li>
+<li>Reflektieren warum Forschungsdaten geteilt werden sollten</li>
+<li>Einführung in die F.A.I.R.-Prinzipien</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="was-ist-das">Was ist das?<a class="anchor" aria-label="anchor" href="#was-ist-das"></a>
+</h2>
+<hr class="half-width">
+<p>Forschungsdaten sind die Grundlage wissenschaftlicher Erkenntnisse
+und können in unterschiedlichen Formen vorliegen.</p>
+<p>Im Folgenden werden wir auf einige externe Seiten verweisen, die
+Ihnen einen Überblick über Forschungsdaten und deren Management
+geben.</p>
+<div id="was-zählt-zu-forschungsdaten" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Wichtig</span>
+<div id="was-zählt-zu-forschungsdaten" class="callout-inner">
+<h3 class="callout-title">Was zählt zu Forschungsdaten?</h3>
+<div class="callout-content">
+<p>Studieren sie folgende Seite von <em>Forschungsdaten.info</em> und
+machen sie sich Notizen.</p>
+<ul>
+<li><a href="https://forschungsdaten.info/themen/informieren-und-planen/was-sind-forschungsdaten/" class="external-link">Was
+sind Forschungsdaten?</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="sind-das-schon-forschungsdaten" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Aufgabe</span>
+<div id="sind-das-schon-forschungsdaten" class="callout-inner">
+<h3 class="callout-title">Sind das schon Forschungsdaten?</h3>
+<div class="callout-content">
+<p>Reflektieren sie kurz über die folgende Frage:</p>
+<p><em>Was macht eine Datei zu Forschungsdaten?</em></p>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  Antwort
+  </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>Üblicherweise handelt es sich bei Forschungsdaten um
+<em>Rohdaten</em>, denn das Filtern, Verarbeiten und Interpretieren der
+Daten im Rahmen einer Forschungsfrage beeinflusst die Daten und macht
+sie zu Ergebnisdaten. Zudem sollten die Daten <em>strukturiert</em> und
+<em>dokumentiert</em> sein, um sie für (sich selbst und) andere
+Forschende <em>nachvollziehbar</em> zu machen. Eine lose Textdatei mit
+Notizen oder eine Präsentation sind daher i.d.R. keine Forschungsdaten,
+sondern eher Ergebnisse oder Dokumentationen. Ob die Daten in einem
+nachnutzbaren Format vorliegen, ist zentral für die Wiederverwendbarkeit
+und wird durch die F.A.I.R.-Prinzipien adressiert, die wir bald
+kennenlernen werden.</p>
+</div>
+</div>
+</div>
+</div>
+<p>Das heißt, Forschungsdaten sind nicht nur die Rohdaten, sondern auch
+die Metadaten, die Dokumentation und die Software, die zur Erhebung und
+Analyse der Daten verwendet wurde.</p>
+</section><section><h2 class="section-heading" id="warum-teilen">Warum teilen?<a class="anchor" aria-label="anchor" href="#warum-teilen"></a>
+</h2>
+<hr class="half-width">
+<p>In der Vergangenheit wurden Forschungsdaten i.d.R. nicht publiziert,
+sondern nur die Ergebnisse der Forschung. Das hat sich in den letzten
+Jahren geändert, und es wird immer wichtiger, auch die Daten zu
+publizieren, um die Nachvollziehbarkeit und Wiederverwendbarkeit der
+Forschung zu gewährleisten.</p>
+<div id="warum-sollten-forschungsdaten-geteilt-werden" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Wichtig</span>
+<div id="warum-sollten-forschungsdaten-geteilt-werden" class="callout-inner">
+<h3 class="callout-title">Warum sollten Forschungsdaten geteilt
+werden?</h3>
+<div class="callout-content">
+<p>Die folgende Seite von <em>Forschungsdaten.info</em> diskutiert</p>
+<ul>
+<li>
+<a href="https://forschungsdaten.info/themen/veroeffentlichen-und-archivieren/daten-publizieren/" class="external-link">Vorteile
+einer Datenpublikation</a> (nur erster Teil der Seite!!!)</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="und-was-hab-ich-davon" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Aufgabe</span>
+<div id="und-was-hab-ich-davon" class="callout-inner">
+<h3 class="callout-title">Und was hab ich davon?</h3>
+<div class="callout-content">
+<p>Überlegen sie sich 3-4 Punkte, die für sie persönlich aus der
+Publikation von Forschungsdaten resultieren (könnten).</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">
+  Möglichkeiten (nachdem sie nachgedacht haben..)
+  </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div class="accordion-body">
+<p>Die folgenden Punkte betreffen sowohl ihre eigene Forschung als auch
+die Forschung/Daten anderer.</p>
+<ul>
+<li>
+<strong>Nachvollziehbarkeit</strong>: Forschungsergebnisse können
+überprüft werden</li>
+<li>
+<strong>Wiederverwendbarkeit</strong>: Neue Forschung kann auf
+bestehenden Daten aufbauen</li>
+<li>
+<strong>Vergleichbarkeit</strong>: Daten können mit anderen Daten
+verglichen werden</li>
+<li>
+<strong>Nachhaltigkeit</strong>: Daten werden ggf. nicht doppelt
+erhoben</li>
+<li>
+<strong>Sichtbarkeit</strong>: Forschung wird bekannter und
+Erhebungsaufwand wertschätzbar</li>
+<li>
+<strong>Kollaboration</strong>: Kontakt zu anderen Forschenden, die
+an ähnlichen Themen arbeiten</li>
+<li>
+<strong>Reputation</strong>: Wissenschaftliche Zitierbarkeit und
+Anerkennung von Datenerhebung</li>
+<li>
+<strong>Förderung</strong>: Einige Fördergeber*innen verlangen die
+Publikation von Daten</li>
+<li>
+<strong>Lehre</strong>: Daten können in der Lehre verwendet
+werden</li>
+<li>
+<strong>Open Science</strong>: Beitrag zur offenen Wissenschaft und
+Wissenschaftskommunikation</li>
+<li>…</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="f-a-i-r--prinzipien">F.A.I.R.-Prinzipien<a class="anchor" aria-label="anchor" href="#f-a-i-r--prinzipien"></a>
+</h2>
+<hr class="half-width">
+<p>Das Teilen von Daten wird durch die F.A.I.R.-Prinzipien unterstützt,
+die die Auffindbarkeit, Zugänglichkeit, Interoperabilität und
+Wiederverwendbarkeit von Daten fördern. Dies betrifft sowohl den eigenen
+Zugriff auf schon geteilte Daten als auch die Veröffentlichung eigener
+Daten.</p>
+<div id="und-was-sind-faire-daten" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Wichtig</span>
+<div id="und-was-sind-faire-daten" class="callout-inner">
+<h3 class="callout-title">Und was sind FAIRe Daten?</h3>
+<div class="callout-content">
+<p>Auch dazu gibt es von <em>Forschungsdaten.info</em> eine schöne
+Seite.</p>
+<ul>
+<li><a href="https://forschungsdaten.info/themen/veroeffentlichen-und-archivieren/faire-daten/" class="external-link">FAIRe
+Daten</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div id="dokumentation-dokumentation-dokumentation" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Aufgabe</span>
+<div id="dokumentation-dokumentation-dokumentation" class="callout-inner">
+<h3 class="callout-title">Dokumentation, Dokumentation,
+Dokumentation</h3>
+<div class="callout-content">
+<p>Warum nimmt Dokumentation bei Daten eine so große Rolle ein?</p>
+<p><em>Formulieren sie 3-4 Fragen, die sie sich stellen würden, wenn sie
+Daten von jemand anderem erhalten und die ohne Dokumentation nicht zu
+beantworten wären!</em></p>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3">
+  Mögliche Fragen …
+  </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div class="accordion-body">
+<p>Ohne oder bei eingeschränkter Dokumentation können folgende Fragen
+nicht beantwortet werden.</p>
+<ul>
+<li>Welche Bedeutung haben die Daten/Werte/…?</li>
+<li>Wurden die Daten verändert, gefiltert, nachbearbeitet?</li>
+<li>Welche Rahmenbedingungen gab es bei der Datenerhebung?</li>
+<li>Welche Software wurde zur Analyse verwendet?</li>
+<li>Darf ich die Daten weiterverwenden?</li>
+<li>Wie kann ich die Daten zitieren?</li>
+<li>Wen kann ich bei Fragen kontaktieren?</li>
+<li>…</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="zusammenfassung">Zusammenfassung<a class="anchor" aria-label="anchor" href="#zusammenfassung"></a>
+</h2>
+<hr class="half-width">
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Hauptpunkte</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>Forschungsdaten sind nicht nur Rohdaten, sondern auch Metadaten,
+Dokumentation und Software.</li>
+<li>Forschungsdaten sollten geteilt werden.</li>
+<li>Die F.A.I.R.-Prinzipien unterstützen das Teilen von Daten.</li>
+<li>Dokumentation ist zentral für die Nachvollziehbarkeit und
+Wiederverwendbarkeit von Daten.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="einordnung-im-datenlebenszyklus" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Aufgabe</span>
+<div id="einordnung-im-datenlebenszyklus" class="callout-inner">
+<h3 class="callout-title">Einordnung im Datenlebenszyklus</h3>
+<div class="callout-content">
+<figure><img src="https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png" style="width:40.0%" alt="Datenlebenszyklus" class="figure mx-auto d-block"><div class="figcaption"><em>In welchen Phasen im Datenlebenszyklus sehen
+sie obige Punkte als besonders wichtig an?</em></div>
+</figure>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4">
+  Antwort
+  </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div class="accordion-body">
+<p>Eigentlich in allen Phasen, da eine gute Dokumentation und
+Strukturierung der Daten die Nachvollziehbarkeit und
+Wiederverwendbarkeit in allen Phasen des Lebenszyklus unterstützt.</p>
+<ul>
+<li>
+<strong>Planung</strong>: Dokumentation der Forschungsfrage und der
+zu verwendenden Daten/Quellen</li>
+<li>
+<strong>Erhebung</strong>: Dokumentation der Rahmenbedingungen und
+der Datenerhebung</li>
+<li>
+<strong>Analyse</strong>: Dokumentation der Analyse und der
+Software</li>
+<li>
+<strong>Publikation</strong>: Teilen der Daten und
+Dokumentation</li>
+<li>
+<strong>Archivierung</strong>: Langfristige Sicherung und
+Zugänglichkeit der Daten</li>
+<li>
+<strong>Nachnutzung</strong>: Nachvollziehbarkeit und
+Wiederverwendbarkeit der Daten</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section><section id="aio-Finden-und-Zitieren"><p>Content from <a href="Finden-und-Zitieren.html">Finden und Zitieren</a></p>
+<hr>
+<p>Zuletzt aktualisiert am 2025-04-24 |
+
+        <a href="https://github.com/Dr-Eberle-Zentrum/FDM-basics/edit/main/episodes/Finden-und-Zitieren.md" class="external-link">Diese Seite bearbeiten <i aria-hidden="true" data-feather="edit"></i></a></p>
+<div class="text-end">
+          <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right" data-expand="Alle Lösungen anzeigen " data-collapse="Alle Lösungen ausblenden "> Alle Lösungen anzeigen <i aria-hidden="true" data-feather="plus"></i></button>
+        </div>
+<div class="overview card">
+<h2 class="card-header">Übersicht</h2>
+<div class="row g-0">
+<div class="col-md-4">
+<div class="card-body">
+<div class="inner">
+<h3 class="card-title">Fragen</h3>
+<ul>
+<li>Wo?</li>
+<li>Wie?</li>
+<li>Wer?</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="card-body">
+<div class="inner bordered">
+<h3 class="card-title">Ziele</h3>
+<ul>
+<li>Öffentliche Repositorien für Forschungsdaten</li>
+<li>Gezielte Suche nach Forschungsdaten</li>
+<li>Zitieren von Forschungsdaten</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>Um Forschungsdaten findbar und zugänglich zu machen, werden diese in
+speziellen Repositorien und Datenbanken abgelegt. Hierbei wird
+unterschieden in fachspezifische und allgemeine Repositorien. Die
+Datenbanken und Repositorien sind in der Regel öffentlich zugänglich und
+bieten die Möglichkeit, Daten zu suchen, zu finden und
+herunterzuladen.</p>
+<p>Das Suchen und Finden von Forschungsdaten ist jedoch nicht immer so
+einfach, wie es klingt. Daher gibt es einige Tipps und Tricks, die die
+Suche erleichtern können.</p>
+<p>Zudem muss geprüft werden, ob die Daten in einer Form vorliegen, die
+eine Wiederverwendung ermöglicht. Auch Lizenzfragen sind zu klären.</p>
+<p>Final ist es wichtig, die gefundenen Daten korrekt zu zitieren, um
+die Quelle zu kennzeichnen und Wiederverwendung sichtbar zu machen.</p>
+<p>All diese Punkte werden in einem Lernmodul der
+Friedrich-Alexander-Universität Erlangen-Nürnberg näher beleuchtet,
+welches im Folgenden durchgearbeitet werden soll</p>
+<div id="lernmodul-forschungsdaten-suchen-nachnutzen" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Wichtig</span>
+<div id="lernmodul-forschungsdaten-suchen-nachnutzen" class="callout-inner">
+<h3 class="callout-title">Lernmodul “Forschungsdaten suchen &amp;
+nachnutzen”</h3>
+<div class="callout-content">
+<p>Arbeiten sie sich durch das Lernmodul der
+Friedrich-Alexander-Universität Erlangen-Nürnberg.</p>
+<ul>
+<li><a href="https://www.studon.fau.de/pg709111_2994018.html" class="external-link">Organisation und
+Lerninhalte</a></li>
+<li><a href="https://www.studon.fau.de/pg560777_2994018.html" class="external-link">Repositorien und
+Suchmaschinen</a></li>
+<li><a href="https://www.studon.fau.de/pg560779_2994018.html" class="external-link">Recherchestrategien</a></li>
+<li><a href="https://www.studon.fau.de/pg560785_2994018.html" class="external-link">Technische
+Nachnutzbarkeit</a></li>
+<li><a href="https://www.studon.fau.de/pg560784_2994018.html" class="external-link">Qualität
+der Datendokumentation</a></li>
+<li><a href="https://www.studon.fau.de/pg560788_2994018.html" class="external-link">Rechtliche
+Rahmenbedingungen</a></li>
+<li><a href="https://www.studon.fau.de/pg560787_2994018.html" class="external-link">Prinzipien
+der Datenzitierung</a></li>
+</ul>
+<p>Bitte auch die dortigen <em>Wissenstests</em> an den Seitenenden
+durchführen!</p>
+</div>
+</div>
+</div>
+<section><h2 class="section-heading" id="zusammenfassung">Zusammenfassung<a class="anchor" aria-label="anchor" href="#zusammenfassung"></a>
+</h2>
+<hr class="half-width">
+<div id="keypoints1" class="callout keypoints">
+<div class="callout-square">
+<i class="callout-icon" data-feather="key"></i>
+</div>
+<span class="callout-header">Hauptpunkte</span>
+<div class="callout-inner">
+<div class="callout-content">
+<ul>
+<li>Forschungsdaten sind in speziellen Repositorien und Datenbanken
+abgelegt, i.d.R. öffentlich zugänglich.</li>
+<li>Es gibt fachspezifische und allgemeine Repositorien.</li>
+<li>Aufgrund der Vielzahl an Repositorien und Datenbanken ist die Suche
+nach Forschungsdaten nicht immer einfach und verlangt eine ausdauernde
+Recherche.</li>
+<li>Vorliegende Datenformate und vorhandene Software(kenntnisse) müssen
+geprüft werden, um eine Wiederverwendung zu ermöglichen.</li>
+<li>Lizenzen müssen die Wiederverwendung erlauben.</li>
+<li>Korrekte Zitation ist zentral in wissenschaftlicher Praxis.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="einordnung-im-datenlebenszyklus" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Aufgabe</span>
+<div id="einordnung-im-datenlebenszyklus" class="callout-inner">
+<h3 class="callout-title">Einordnung im Datenlebenszyklus</h3>
+<div class="callout-content">
+<figure><img src="https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png" style="width:40.0%" alt="Datenlebenszyklus" class="figure mx-auto d-block"><div class="figcaption"><em>In welchen Phasen im Datenlebenszyklus sehen
+sie obige Punkte als besonders wichtig an?</em></div>
+</figure>
+</div>
+</div>
+</div>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1"> Antwort </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div class="accordion-body">
+<p>Datenrecherche und Zitation sind vorrangig zu Beginn und am Ende des
+Datenlebenszyklus wichtig.</p>
+<ul>
+<li>
+<strong>Planung</strong>: Schlagworte etc. für spätere Suche
+festlegen</li>
+<li>
+<strong>Erhebung</strong>: Wiederverwendung von Daten</li>
+<li>
+<strong>Publikation</strong>: Zitation von verwendeten Daten</li>
+<li>
+<strong>Archivierung</strong>: Festlegung von Metadaten, Identifiern
+und Lizenzen, um Wiederverwendung zu ermöglichen</li>
+<li>
+<strong>Nachnutzung</strong>: Daten/Quellen identifizieren, bewerten
+und einordnen</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<!--
+Place links that you need to refer to multiple times across pages here. Delete
+any links that you are not going to use.
+ -->
+</section></section><section id="aio-Netzwerke"><p>Content from <a href="Netzwerke.html">Netzwerke</a></p>
 <hr>
 <p>Zuletzt aktualisiert am 2025-01-13 |
 
@@ -2982,7 +2982,7 @@ ablesen?</em></p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Möglichkeiten … </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul>
 <li>Was ist ihre Bank?</li>
@@ -3219,7 +3219,7 @@ sie obige Punkte als besonders wichtig an?</em></div>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Antwort </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Das Wissen um Netzwerkkommunikation und Verschlüsselung ist in allen
 Phasen des Datenlebenszyklus wichtig. Kenntnisse darum erleichtern uns,
@@ -4500,14 +4500,14 @@ any links that you are not going to use.
   "inLanguage": "de",
   "dct:conformsTo": "https://bioschemas.org/profiles/LearningResource/1.0-RELEASE",
   "description": "A Carpentries Lesson teaching foundational data and coding skills to researchers worldwide",
-  "keywords": "Forschungsdatenmanagement, lesson, German",
+  "keywords": "Forschungsdatenmanagement, FDM, RDM, basics, Grundlagen, lesson, German",
   "name": "Alles auf einen Blick",
   "creativeWorkStatus": "active",
   "url": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/aio.html",
   "identifier": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/aio.html",
   "dateCreated": "2024-08-01",
-  "dateModified": "2025-08-12",
-  "datePublished": "2025-08-12"
+  "dateModified": "2025-08-15",
+  "datePublished": "2025-08-15"
 }
 
   </script><script>
