@@ -1,5 +1,6 @@
 ---
-title: 'Aufgabe zu "Datenextraktion aus Diagrammbildern"'
+title: 'Aufgabe "Datenextraktion aus Diagrammbildern"'
+subtitle: 'Kapitel "Digitale Daten"'
 ---
 
 ## Datenextraktion aus Bildern

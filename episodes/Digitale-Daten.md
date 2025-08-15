@@ -475,12 +475,12 @@ Das Wissen um die **digitale Repräsentation von Informationen** ist immer dann 
 
 :::::::::::::::: instructor
 
-### Zur Vorbereitung:
+### Zur Vorbereitung und als Einstieg
 
 - [Sitzungsaufgabe zu "Daten vs. Information"](Aufgabe-Daten-vs-Information.md)
 - [Sitzungsaufgabe zu "Datenextraktion aus Bildern"](Aufgabe-PNG2CSV.md)
 
-### Zur Nachbereitung: 
+### Zur Nachbereitung und als Anwendung
 
 - [Sitzungsaufgabe zu "Digitale Daten"](Aufgabe-Digitale-Daten.md)
 
