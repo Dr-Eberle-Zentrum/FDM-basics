@@ -34,4 +34,14 @@ Konkret:
     - **Ergebnis**
       - Dateinamen der erzeugten Dateien
       - Strukturbeschreibung der erzeugten Dateien
-- Speichern sie die Datei in ihrem Abgabeordner ab
+- Speichern sie die Datei `mietpreise-tuebingen.README.md` in ihrem Abgabeordner ab
+
+
+:::: instructor
+
+## Musterlösung
+
+- [mietpreise-tuebingen.README.md](data/mietpreise-tuebingen.README.md)
+
+::::::::::
+

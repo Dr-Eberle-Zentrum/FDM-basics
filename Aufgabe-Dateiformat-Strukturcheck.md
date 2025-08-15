@@ -1,13 +1,17 @@
 ---
-title: 'Aufgabe zu "Strukturcheck von Dateien"'
+title: 'Aufgabe "Strukturcheck von Dateien"'
 ---
+
+:::::::::::::::: instructor
+## Aufgabe zu "Dateiformate"
+:::::::::::::::::::::::::::
 
 
 ## Datenimportvorbereitung
 
 Sie zur Verarbeitung die folgende Datei erhalten
 
-- [turkish.tsv](https://raw.githubusercontent.com/Dr-Eberle-Zentrum/FDM-basics/main/instructors/data/turkish.tsv)
+- [turkish.tsv](data/turkish.tsv)
 
 Bevor sie diese weiterverarbeiten können, müssen sie erst prüfen, ob das Dateiformat korrekt ist, und ob sie irgendwelche Dinge für den Import beachten müssen.
 
@@ -42,14 +46,14 @@ Um ihre Entdeckungen zu einem späteren Zeitpunkt festzuhalten, möchten/sollen 
   - Aufbau (Welche Spalten gibt es und welcher Datentyp ist dort jeweils erwartet)
 
 
-### Aufgabe 3 - Dokumentation überarbeiten und vereinheitlichen
 
-In der letzten Woche haben sie bereites eine Dokumentationsdatei namens `strompreise.destatis.README.[???]` erstellt.
-Um die Dokumentation in ihrem Projekt einheitlich zu halten, sollen sie nun eine überarbeitete Version dieser Datei erstellen.
-Konkret:
+:::: instructor
 
-- Erstellen sie eine Markdown-Datei mit dem Namen `strompreise.destatis.README.md`
-- Kopieren sie den Inhalt der alten Datei hinein (*Die alte Datei soll im Ablageordner verbleiben!*)
-- Überarbeiten sie den Inhalt so, dass er zu den neuen Anforderungen aus Aufgabe 2 passt (verschiedene Strukturelemente, Abschnitte, ...)
-- Speichern sie die Datei in ihrem Abgabeordner ab
+## Musterlösung
+
+- [turkish.md](data/turkish.md)
+
+::::::::::
+
+
 
