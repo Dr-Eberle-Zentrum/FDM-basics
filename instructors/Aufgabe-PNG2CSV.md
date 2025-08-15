@@ -2,7 +2,6 @@
 title: 'Aufgabe "Datenextraktion aus Diagrammbildern"'
 description: 'd Kapitel "Digitale Daten"'
 author: "author"
-abstract:"abstract"
 keywords: "keywords"
 tags: "tags"
 ---
