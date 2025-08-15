@@ -1,7 +1,11 @@
 ---
 title: "CSV-Datenimport in MS Excel"
-subtitle: 'Kapitel "Digitale Daten"'
 ---
+
+
+:::: instructor
+## Aufgabe zu "Digitale Daten"
+:::::::::
 
 
 ## Datenimport in MS Excel
@@ -76,3 +80,16 @@ Nun sollten die Daten korrekt importiert sein und die Mietpreisindex-Spalte als 
 
 
 Laden sie das Markdown-Dokument `mietpreisindex.destatis.README.md` in das entsprechende Abgabe-Verzeichnis hoch.
+
+
+
+:::: instructor
+
+## Musterlösung
+
+- [mietpreisindex.destatis.xlsx](data/mietpreisindex.destatis.xlsx)
+- [mietpreisindex.destatis.README.md](data/mietpreisindex.destatis.README.md)
+
+::::::::::
+
+

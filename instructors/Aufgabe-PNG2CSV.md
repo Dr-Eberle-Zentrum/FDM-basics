@@ -1,14 +1,11 @@
 ---
 title: 'Aufgabe "Datenextraktion aus Diagrammbildern"'
-description: 'd Kapitel "Digitale Daten"'
-author: "author"
-keywords: "keywords"
-tags: "tags"
 ---
 
 :::::::::::::::: instructor
-Aufgabe zu "Digitale Daten"'
+## Aufgabe zu "Digitale Daten"
 :::::::::::::::::::::::::::
+
 
 ## Datenextraktion aus Bildern
 
@@ -86,3 +83,13 @@ Listen sie auch ihre eigenen
 - das Bearbeitungsdatum.
 
 
+
+
+:::: instructor
+
+## Musterlösung
+
+- [mietpreise-tuebingen.csv](data/mietpreise-tuebingen.csv)
+- [mietpreise-tuebingen.README.txt](data/mietpreise-tuebingen.README.txt)
+
+::::::::::

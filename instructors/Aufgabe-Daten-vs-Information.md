@@ -1,7 +1,11 @@
 ---
 title: 'Aufgabe "Daten vs. Information"'
-subtitle: 'Kapitel "Digitale Daten"'
 ---
+
+:::: instructor
+## Aufgabe zu "Digitale Daten"
+:::::::::
+
 
 ## Daten vs. Information
 
