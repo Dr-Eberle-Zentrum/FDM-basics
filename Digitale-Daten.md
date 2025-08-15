@@ -475,6 +475,7 @@ Das Wissen um die **digitale Repräsentation von Informationen** ist immer dann 
 
 :::::::::::::::: instructor
 
+[Sitzungsaufgabe zu "Daten vs. Information"](Aufgabe-Daten-vs-Information.md)
 [Sitzungsaufgabe zu "Digitale Daten"](Aufgabe-Digitale-Daten.md)
 
 :::::::::::::::::::::::::::
