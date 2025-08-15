@@ -641,7 +641,13 @@ Die richtige Wahl des Dateiformats ist in allen Phasen des Datenlebenszyklus wic
 
 :::::::::::::::: instructor
 
-[Sitzungsaufgabe zu "Strukturcheck von Dateien"](Aufgabe-Dateiformat-Strukturcheck.md)
+
+## Aufgaben
+
+### Anwendung
+
+- [Sitzungsaufgabe "Strukturcheck von Dateien"](Aufgabe-Dateiformat-Strukturcheck.md)
+  - Lösungsbeispiel [turkish.md](https://raw.githubusercontent.com/Dr-Eberle-Zentrum/FDM-basics/main/instructors/data/turkish.md)
 
 :::::::::::::::::::::::::::
 

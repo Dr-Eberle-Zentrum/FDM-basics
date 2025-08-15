@@ -1,5 +1,5 @@
 ---
-title: "CSV-Datenimport in Excel"
+title: "CSV-Datenimport in MS Excel"
 subtitle: 'Kapitel "Digitale Daten"'
 ---
 

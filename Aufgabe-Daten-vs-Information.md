@@ -1,5 +1,6 @@
 ---
-title: 'Aufgabe zu "Daten vs. Information"'
+title: 'Aufgabe "Daten vs. Information"'
+subtitle: 'Kapitel "Digitale Daten"'
 ---
 
 ## Daten vs. Information
