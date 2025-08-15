@@ -4,7 +4,7 @@ description: 'd Kapitel "Digitale Daten"'
 author: "author"
 abstract:"abstract"
 keywords: "keywords"
-tags: ["tags"]
+tags: "tags"
 ---
 
 ## Datenextraktion aus Bildern
