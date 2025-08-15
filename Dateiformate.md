@@ -641,7 +641,7 @@ Die richtige Wahl des Dateiformats ist in allen Phasen des Datenlebenszyklus wic
 
 :::::::::::::::: instructor
 
-[Sitzungsaufgabe zu "Datenextraktion aus Bildern"](Aufgabe-PNG2CSV.md)
+[Sitzungsaufgabe zu "Strukturcheck von Dateien"](Aufgabe-Dateiformat-Strukturcheck.md)
 
 :::::::::::::::::::::::::::
 
