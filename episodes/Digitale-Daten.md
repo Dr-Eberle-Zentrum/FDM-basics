@@ -332,6 +332,34 @@ Aber *sie selbst* müssen *daran denken*!
 
 ::::::::::::::::::::::::
 
+### Allgemeine Empfehlungen zur Rundung in wissenschaftlichen Arbeiten
+
+1. **Messgenauigkeit beachten**  
+   Runden sie nicht auf mehr Stellen, als die Messinstrumente oder Datenquellen hergeben.  
+   *Beispiel:* Wenn ein Messgerät nur auf 0,1 genau ist, sollte man nicht auf 0,01 runden.
+
+2. **Typische Rundungen nach Kontext**
+   - **Statistische Kennzahlen (Mittelwert, Standardabweichung):** meist **2 Dezimalstellen**
+   - **Prozentwerte:** oft **1 oder 2 Dezimalstellen**
+   - **Währungsangaben:** **2 Dezimalstellen**
+   - **Physikalische Größen:** abhängig von der Einheit und Genauigkeit, oft **2–3 Dezimalstellen**
+   - **Wissenschaftliche Notation:** z. B. $$3.14 × 10^5$$, oft **3 signifikante Stellen**
+
+3. **Signifikante Stellen statt feste Dezimalstellen**  
+   In vielen naturwissenschaftlichen Bereichen wird nach **signifikanten Stellen** gerundet, nicht nach Dezimalstellen.  
+   *Beispiel:*  
+   - `12345` → wenn 1 signifikante Stelle: $$1 × 10^4$$  
+   - `12345` → wenn 3 signifikante Stellen: $$1.23 × 10^4$$
+   - Signifikanz ergibt sich hierbei aus
+     - der Messgenauigkeit der Datenquelle
+     - der Relevanz für die Analyse
+     - der Konvention im jeweiligen Fachgebiet
+     - der Vergleichbarkeit mit anderen Daten, z.B. bei Daten aus verschiedenen Quellen die gleiche Anzahl an signifikanten Stellen verwenden
+
+4. **Konsistenz ist wichtig**  
+   In Tabellen oder Diagrammen sollten alle Werte gleich gerundet sein, um die Lesbarkeit zu verbessern.
+
+
 
 ## Zeit
 
