@@ -1,11 +1,11 @@
 ---
-title: 'Aufgabe zu "Digitale Daten"'
+title: 'Aufgabe zu "Strukturcheck von Dateien"'
 ---
 
 
 ## Datenimportvorbereitung
 
-Sie haben für ihre aktuelles Projekt die folgende Datei erhalten
+Sie zur Verarbeitung die folgende Datei erhalten
 
 - [turkish.tsv](https://raw.githubusercontent.com/Dr-Eberle-Zentrum/FDM-basics/main/instructors/data/turkish.tsv)
 
@@ -16,11 +16,11 @@ Bevor sie diese weiterverarbeiten können, müssen sie erst prüfen, ob das Date
 Die Datei hat die Endung `.tsv`, was auf text-basierte, tabulator-getrennte tabellarische Daten schließen läßt.
 Das einfachste Mittel zur Überprüfung, ob dies tatsächlich stimmt, besteht im Öffnen der Datei in einem Texteditor.
 
-1. Speichern sie die Datei in ihrem Abgabeordner
+1. Speichern sie die Datei `turkish.tsv` in ihrem Abgabeordner
 2. Öffnen sie die Datei in einem Texteditor ihrer Wahl (z.B. Notepad++)
 3. Prüfen sie die folgenden Punkte:
    - Stimmt die Dateistruktur, d.h. Dateiendung und erwarteter Aufbau der Daten passen zusammen?
-   - Welche Textkodierung wird verwendet? Überlegen sie, wie sei prüfen könnten, ob die Textanzeige stimmt...
+   - Welche Textkodierung wird verwendet? Überlegen sie, wie sie prüfen könnten, ob die Textanzeige stimmt... (und halten sie auch ihre Überlegungen textuell fest)
    - Welche Zahlenkodierung wird verwendet?
    
 ### Aufgabe 2 - Dokumentation
