@@ -88,7 +88,7 @@ Laden sie das Markdown-Dokument `mietpreisindex.destatis.README.md` in das entsp
 ## Musterlösung
 
 - [mietpreisindex.destatis.xlsx](data/mietpreisindex.destatis.xlsx)
-- [mietpreisindex.destatis.README.md](data/mietpreisindex.destatis.README.md)
+- [mietpreisindex.destatis.README.md](data/mietpreisindex.destatis.README.md.txt)
 
 ::::::::::
 
