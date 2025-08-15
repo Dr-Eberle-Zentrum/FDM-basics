@@ -510,6 +510,13 @@ Das Wissen um die **digitale Repräsentation von Informationen** ist immer dann 
 - [Sitzungsaufgabe "Daten vs. Information"](Aufgabe-Daten-vs-Information.md)
 - [Sitzungsaufgabe "Datenextraktion aus Bildern"](Aufgabe-PNG2CSV.md)
 
+### Sitzungsfragen
+
+- Was ist der Unterschied zwischen "Daten" und "Information"?
+- Wobei hilft mir ein Grundverständnis der digitalen Datenrepräsentation?
+- Welche Probleme können bei der digitalen Repräsentation von Daten auftreten?
+
+
 ### Zur Nachbereitung und als Anwendung
 
 - [Sitzungsaufgabe "CSV-Import in MS Excel"](Aufgabe-CSV-Import-Excel.md)
