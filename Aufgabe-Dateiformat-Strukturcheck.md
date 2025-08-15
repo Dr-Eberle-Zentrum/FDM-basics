@@ -45,6 +45,19 @@ Um ihre Entdeckungen zu einem späteren Zeitpunkt festzuhalten, möchten/sollen 
   - Eigenschaften (siehe Aufgabe 1)
   - Aufbau (Welche Spalten gibt es und welcher Datentyp ist dort jeweils erwartet)
 
+### Aufgabe 3 - Textbasierte Zahlenkodierung
+
+Bei der vorliegenden Datei handelt es sich um ein textbasiertes Dateiformat.
+Das heisst, Zahlen sind nicht in ihrer computerinternen binären Darstellung gespeichert, sondern als Text kodiert.
+
+Überlegen sie, welche Probleme oder Konsequenzen hieraus entstehen und welche Vorteile dies haben könnte.
+
+Welche Überlegungen sollte man immer anstellen, bevor man Zahlendaten in textbasierten Dateiformaten abspeichert?
+
+Ergänzen sie ihre Überlegungen in einem gesonderten Abschnitt in der Markdown-Datei aus Aufgabe 2.
+
+Laden sie die Markdown-Datei in ihrem Abgabeordner hoch.
+
 
 
 :::: instructor
