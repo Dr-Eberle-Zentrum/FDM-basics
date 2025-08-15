@@ -170,6 +170,19 @@ Diese haben häufig direkte Auswirkung auf den Dateiaustausch, auch wenn die Dat
 :::::::::::::::::::::::::
 
 
+:::::::  instructor
+
+TODO QUIZ ERSTELLEN
+
+
+1. Welches Dateisystem ist standardmäßig unter Windows im Einsatz?
+2. Was bedeutet „case-sensitive“?
+3. Warum ist exFAT für den Datenaustausch geeignet?
+
+::::::::::::::::::
+
+
+
 
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
