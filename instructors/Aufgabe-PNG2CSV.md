@@ -64,8 +64,17 @@ X,Y,X,Y,X,Y
 
 Erstellen sie eine TEXT-Datei `mietpreise-tuebingen.README.txt` und dokumentieren sie darin die Schritte, die sie zur Extraktion der Daten durchgeführt haben.
 
-Dokumentieren sie auch das verwendete Tool, dessen Version, Zugriffszeit und welche Datensätze sie manuell oder automatisch (mit welcher Funktionalität + Einstellung) erstellt haben.
+Dokumentieren sie auch 
 
-Listen sie auch ihre eigenen Autoreninformationen (ihren Namen bzw. alle Namen aus ihrem Team) und das Bearbeitungsdatum.
+- das verwendete Tool, dessen Version, Zugriffszeit und 
+- welche Arbeitsschritte sie für welche Teildaten manuell 
+- oder automatisch (mit welcher Funktionalität + Einstellung) 
+
+ausgeführt haben.
+
+Listen sie auch ihre eigenen 
+
+- Autoreninformationen (ihren Namen bzw. alle Namen aus ihrem Team) und 
+- das Bearbeitungsdatum.
 
 
