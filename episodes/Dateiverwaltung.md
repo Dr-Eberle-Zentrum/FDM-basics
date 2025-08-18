@@ -6,7 +6,8 @@ exercises: 2
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
-- Windows, MacOS, Linux?
+- USB Stick nicht lesbar?
+- Zugeschickte Datei nicht lesbar?
 - Was wenn ganz viele Dateien?
 - 
 
@@ -15,6 +16,7 @@ exercises: 2
 ::::::::::::::::::::::::::::::::::::: objectives
 
 - Unterschiede der Dateisysteme gängiger Betriebssysteme
+- Best Practices für Dateinamen und Pfade
 - Automatisierung von Dateiverarbeitungsabläufen
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
@@ -50,6 +52,29 @@ Gängige Dateisysteme sind im Folgenden aufgelistet und verglichen.
 
 Man sieht hier deutlich, dass sich Dateisystem u.a. in der maximalen Dateigröße und der Kompatibilität unterscheiden.
 Ein weiteres Unterscheidungsmerkmal ist ihre Unterstützung durch verbreitete Betriebssysteme.
+
+:::::::::: challenge
+
+# Was ist ein EB?
+
+GB steht für "Gigabyte" und somit für $10^9$ Bytes.
+
+Was ist dann ein EB und für welche 10-Potenz steht es?
+
+:::: solution
+
+- kB = Kilobyte = $10^3$ Bytes
+- MB = Megabyte = $10^6$ Bytes
+- GB = Gigabyte = $10^9$ Bytes
+- TB = Terabyte = $10^{12}$ Bytes
+- PB = Petabyte = $10^{15}$ Bytes
+- **EB** = Exabyte = **$10^{18}$ Bytes** ... ganz schön viel! (derzeit...)
+
+
+:::::::::::::
+
+:::::::::::::::::::::
+
 
 ## Was ist ein Betriebssystem?
 
@@ -115,7 +140,7 @@ Die Art und Weise, wie Pfade zu Dateien angegeben werden, variiert zwischen Betr
 | Windows        | `C:\Benutzer\Max\Dokumente` | Backslashes `\` als Trenner     |
 | macOS/Linux    | `/home/max/Dokumente`      | Slashes `/` als Trenner         |
 
-**Windows** verwendet Laufwerksbuchstaben für einzelne Datenträger oder (Teil)festplatten (z. B. `C:`), während **Linux/macOS** ein einheitliches Wurzelverzeichnis (`/`) nutzen.
+**Windows** verwendet Laufwerksbuchstaben für einzelne Datenträger oder (Teil)festplatten (z.B. `C:`), während **Linux/macOS** ein einheitliches Wurzelverzeichnis (`/`) nutzen.
 Das heißt in letzterem sind alle Dateien und Ordner Teil eines einzigen "Zugriffsbaumes", während in Windows jeder Datenträger ein eigenes "Laufwerk" mit eigener Orderhierarchie darstellt.
 Dies ist im Folgenden dargestellt.
 
@@ -123,7 +148,7 @@ Dies ist im Folgenden dargestellt.
 
 [^1]: Quelle - [Franz Fiala](https://clubcomputer.at/2017/04/30/linux/) - 15.08.2025
 
-Zudem sind Pfade unter **Linux/macOS case-sensitive**, d. h. `Datei.txt` ≠ `datei.txt`. Unter **Windows** ist dies meist nicht der Fall.
+Zudem sind Pfade unter **Linux/macOS case-sensitive**, d.h. `Datei.txt` ≠ `datei.txt`. Unter **Windows** ist dies meist nicht der Fall.
 
 
 :::::::::::::::  challenge
