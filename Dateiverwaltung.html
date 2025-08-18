@@ -390,10 +390,12 @@ hinweg zu erleichtern.</p>
 <div class="section level2">
 <h2 id="was-ist-ein-dateisystem">Was ist ein Dateisystem?<a class="anchor" aria-label="anchor" href="#was-ist-ein-dateisystem"></a></h2>
 <p>Ein Dateisystem organisiert Daten auf Speichermedien wie Festplatten,
-SSDs oder USB-Sticks. Es legt fest: - wie Dateien gespeichert und
-gelesen werden, - wie Zugriffsrechte verwaltet werden, - wie Daten
-strukturiert sind (z.B. Laufwerke, Ordner, Pfade, ..).</p>
-<p>Gängige Dateisysteme sind im Folgenden aufgelistet und
+SSDs oder USB-Sticks. Es legt fest:</p>
+<ul><li>wie Dateien gespeichert und gelesen werden,</li>
+<li>wie Zugriffsrechte verwaltet werden,</li>
+<li>wie Daten strukturiert sind (z.B. Laufwerke, Ordner, Pfade,
+..).</li>
+</ul><p>Gängige Dateisysteme sind im Folgenden aufgelistet und
 verglichen.</p>
 <table class="table"><colgroup><col width="19%"><col width="28%"><col width="28%"><col width="23%"></colgroup><thead><tr class="header"><th>Dateisystem</th>
 <th>Betriebssystem(e)</th>
@@ -447,7 +449,7 @@ Betriebssysteme.</p>
 <div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Zeige mir die Lösung </h4>
+  <h4 class="accordion-header" id="headingSolution1"> Antwort </h4>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
@@ -554,7 +556,7 @@ Zugriff, der Verarbeitung oder dem Austausch von Dateien führen.</p>
 <p>Die Art und Weise, wie Pfade zu Dateien angegeben werden, variiert
 zwischen Betriebssystemen. Hier sind die wichtigsten Unterschiede:</p>
 <table class="table"><colgroup><col width="21%"><col width="34%"><col width="44%"></colgroup><thead><tr class="header"><th>Betriebssystem</th>
-<th>Beispielpfad</th>
+<th>Beispielpfad innerhalb des Systems</th>
 <th>Besonderheiten</th>
 </tr></thead><tbody><tr class="odd"><td>Windows</td>
 <td><code>C:\Benutzer\Max\Dokumente</code></td>
@@ -570,8 +572,7 @@ Ordner Teil eines einzigen “Zugriffsbaumes”, während in Windows jeder
 Datenträger ein eigenes “Laufwerk” mit eigener Orderhierarchie
 darstellt. Dies ist im Folgenden dargestellt.</p>
 <figure><img src="fig/linux-struktur.png" alt="Dateiorganisation" class="figure mx-auto d-block"><div class="figcaption">Hierarchische Dateiorganisation in verschiedenen
-Betriebssystemen<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>
-</div>
+Betriebssystemen<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</div>
 </figure><p>Zudem sind Pfade unter <strong>Linux/macOS case-sensitive</strong>,
 d.h. <code>Datei.txt</code> ≠ <code>datei.txt</code>. Unter
 <strong>Windows</strong> ist dies meist nicht der Fall.</p>
@@ -647,6 +648,107 @@ langen Pfaden (&gt;260 Zeichen).</li>
 </div>
 </div>
 
+</div>
+</div>
+<div class="section level1">
+<h1 id="automatisierte-dateiverarbeitung">Automatisierte Dateiverarbeitung<a class="anchor" aria-label="anchor" href="#automatisierte-dateiverarbeitung"></a></h1>
+<p>Wenn man mit einigen wenigen Dateien arbeitet, führt man die nötigen
+Dateiverwaltungsschritte wie Umbenennen, Verschieben, Vergleichen,
+Löschen, etc. zumeist manuell aus. Dies stößt schnell an seine Grenzen,
+wenn die Dateianzahl steigt. Daher ist es sinnvoll, diese Schritte zu
+automatisieren, um Zeit zu sparen und Fehler zu vermeiden.</p>
+<p>Alle Betriebssysteme bieten Möglichkeiten, Dateiverwaltungsschritte
+zu automatisieren, z.B. durch:</p>
+<ul><li>
+<strong>Shell Scripting</strong>: Mit Shell-Skripten (z.B. Bash
+unter Linux/macOS oder PowerShell/Cmd unter Windows) können
+wiederkehrende Aufgaben automatisiert werden.</li>
+<li>
+<strong>Programmiersprachen</strong>: vor allem Skriptsprachen wie
+Python bieten umfangreiche Bibliotheken zur Dateiverwaltung.</li>
+<li>
+<strong>Dateimanager</strong>: Viele Dateimanager bieten Funktionen
+zum Batch-Umbenennen, Verschieben oder Löschen von Dateien.</li>
+</ul><div id="automatisierung" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Aufgabe</span>
+<div id="automatisierung" class="callout-inner">
+<h3 class="callout-title">Automatisierung</h3>
+<div class="callout-content">
+<p>Recherchieren sie eine Lösung für jeden der oben genannten Wege, um
+alle *.txt Textdateien in einem gewählten Verzeichnis umzubenennen,
+indem den Dateinamen ein <code>backup_</code> Präfix vorangestellt
+wird.</p>
+<p>Finden sie Lösungen basierend auf</p>
+<ul><li>einem Shellskript (Bash oder Powershell)</li>
+<li>einem Python-Skript</li>
+<li>einem Dateimanager (Windows Explorer oder Finder)</li>
+</ul></div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4"> Antwort </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
+<div class="accordion-body">
+<p>Ein mögliches Bash Shellskript unter Linux oder macOS:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="cf">for</span> file <span class="kw">in</span> <span class="pp">*</span>.txt<span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>    <span class="fu">mv</span> <span class="st">"</span><span class="va">$file</span><span class="st">"</span> <span class="st">"backup_</span><span class="va">$file</span><span class="st">"</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="cf">done</span></span></code></pre>
+</div>
+<p>PowerShell unter Windows:</p>
+<div class="codewrapper sourceCode" id="cb2">
+<h3 class="code-label">POWERSHELL<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode powershell" tabindex="0"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">Get-ChildItem</span> <span class="op">*.</span><span class="fu">txt</span> <span class="op">|</span> <span class="fu">Rename-Item</span> <span class="op">-</span>NewName <span class="op">{</span> <span class="st">"backup_"</span> <span class="op">+</span> <span class="va">$_</span><span class="op">.</span><span class="fu">Name</span> <span class="op">}</span></span></code></pre>
+</div>
+<p>Ein einfaches Python-Skript:</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="cf">for</span> <span class="bu">file</span> <span class="kw">in</span> os.listdir(<span class="st">'.'</span>):</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">file</span>.endswith(<span class="st">'.txt'</span>):</span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a>        os.rename(<span class="bu">file</span>, <span class="ss">f'backup_</span><span class="sc">{</span><span class="bu">file</span><span class="sc">}</span><span class="ss">'</span>)</span></code></pre>
+</div>
+<p>Im Windows Explorer lassen sich alle <code>.txt</code> Dateien
+auswählen, dann Rechtsklick -&gt; “Umbenennen” und den neuen Namen
+<code>backup_</code> eingeben. Windows wird dann automatisch die
+Nummerierung hinzufügen (z.B. <code>backup_1.txt</code>,
+<code>backup_2.txt</code>, …).</p>
+<p>Analog ist dies im macOS Finder möglich: Alle <code>.txt</code>
+Dateien auswählen, dann Rechtsklick -&gt; “Umbenennen” und den neuen
+Namen <code>backup_</code> eingeben. macOS wird ebenfalls die
+Nummerierung hinzufügen.</p>
+<p><em>Unbedingt beachten: In den beiden letzten Fällen gehen jedoch die
+Ursprungsnamen verloren!</em></p>
+</div>
+</div>
+</div>
+</div>
+<p>Skript- und Programmiersprachen bieten hier den Vorteil, dass sie
+komplexere Logik implementieren können, z.B. um nur bestimmte Dateien
+umzubenennen oder zusätzliche Bedingungen zu prüfen.</p>
+<p>Zudem sichern Skripte und Programme die Reproduzierbarkeit der
+Dateiverwaltungsschritte, da sie jederzeit wiederholt werden können,
+ohne dass manuelle Eingriffe nötig sind. Dies ist vor allem ein
+wichtiger Punkt bei der Prozessierung von Rohdaten. Die verwendeten
+Skripte können (und sollten!) dokumentiert, versioniert und zusammen mit
+den Rohdaten archiviert werden, was die Nachvollziehbarkeit und
+Wartbarkeit erhöht.</p>
+<p>Skriptsprachen sind hierbei häufig die erste Wahl, da sie eine
+einfache Syntax bieten und direkt auf das Dateisystem zugreifen können.
+Zudem sind diese direkt in den meisten Betriebssystemen verfügbar und
+benötigen keine zusätzliche Installation.</p>
+<div class="section level2">
+<h2 id="zusammenfassung">Zusammenfassung<a class="anchor" aria-label="anchor" href="#zusammenfassung"></a></h2>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -654,10 +756,64 @@ langen Pfaden (&gt;260 Zeichen).</li>
 <span class="callout-header">Hauptpunkte</span>
 <div class="callout-inner">
 <div class="callout-content">
+<ul><li>Dateisysteme unterscheiden sich in ihrer Struktur, Kompatibilität
+und maximalen Dateigröße.</li>
+<li>Betriebssysteme nutzen/unterstützen unterschiedliche Dateisysteme
+und Pfadnotationen.</li>
+<li>Dateinamen und Pfade müssen betriebssystemkonform sein, um Probleme
+zu vermeiden.</li>
+<li>Automatisierung von Dateiverwaltungsschritten spart Zeit und
+reduziert Fehler.</li>
+<li>Skriptsprachen sind ideal für die Automatisierung von
+Dateiverwaltungsschritten.</li>
+</ul></div>
+</div>
+</div>
+<div id="einordnung-im-datenlebenszyklus" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Aufgabe</span>
+<div id="einordnung-im-datenlebenszyklus" class="callout-inner">
+<h3 class="callout-title">Einordnung im Datenlebenszyklus</h3>
+<div class="callout-content">
+<figure><img src="https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png" style="width:40.0%" alt="Datenlebenszyklus" class="figure mx-auto d-block"><div class="figcaption"><em>In welchen Phasen im Datenlebenszyklus sehen
+sie obige Punkte als besonders wichtig an?</em></div>
+</figure></div>
+</div>
+</div>
+<div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
+  <h4 class="accordion-header" id="headingSolution5"> Antwort </h4>
+</button>
+<div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
+<div class="accordion-body">
+<p>Das Wissen um die <strong>Dateiverwaltung</strong> ist immer dann
+zentral, wenn Dateien erzeugt, verarbeitet oder gespeichert werden.</p>
 <ul><li>
-</li></ul></div>
+<strong>Planung</strong>: Festlegung von Dateisystemen und
+Dateinamenkonventionen</li>
+<li>
+<strong>Erhebung</strong>: Korrekte Dateinamen und Pfade,
+Automatisierung von Bearbeitungsabläufen</li>
+<li>
+<strong>Analyse</strong>: Automatisierung von
+Verwaltungsschritten</li>
+<li>
+<strong>Publikation</strong>: Dateiaustausch zwischen
+Projektpartnern</li>
+<li>
+<strong>Archivierung</strong>: Sicherung der Dateistruktur und
+-inhalte, Versionierung von Skripten</li>
+<li>
+<strong>Nachnutzung</strong>: Bereitstellung von Daten in
+kompatiblen Formaten, Namen, Organisationen</li>
+</ul></div>
 </div>
 </div>
+</div>
+
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
