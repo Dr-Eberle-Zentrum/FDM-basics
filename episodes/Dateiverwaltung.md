@@ -284,7 +284,12 @@ Zudem sind diese direkt in den meisten Betriebssystemen verfügbar und benötige
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- 
+- Dateisysteme unterscheiden sich in ihrer Struktur, Kompatibilität und maximalen Dateigröße.
+- Betriebssysteme nutzen/unterstützen unterschiedliche Dateisysteme und Pfadnotationen.
+- Dateinamen und Pfade müssen betriebssystemkonform sein, um Probleme zu vermeiden.
+- Automatisierung von Dateiverwaltungsschritten spart Zeit und reduziert Fehler.
+- Skriptsprachen sind ideal für die Automatisierung von Dateiverwaltungsschritten.
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
