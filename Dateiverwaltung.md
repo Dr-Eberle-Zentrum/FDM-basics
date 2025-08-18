@@ -34,6 +34,7 @@ Daher sollte man einen Überblick über die Unterschiede und Eigenheiten der Dat
 ## Was ist ein Dateisystem?
 
 Ein Dateisystem organisiert Daten auf Speichermedien wie Festplatten, SSDs oder USB-Sticks. Es legt fest:
+
 - wie Dateien gespeichert und gelesen werden,
 - wie Zugriffsrechte verwaltet werden,
 - wie Daten strukturiert sind (z.B. Laufwerke, Ordner, Pfade, ..).
@@ -55,13 +56,15 @@ Ein weiteres Unterscheidungsmerkmal ist ihre Unterstützung durch verbreitete Be
 
 :::::::::: challenge
 
-# Was ist ein EB?
+## Was ist ein EB?
 
 GB steht für "Gigabyte" und somit für $10^9$ Bytes.
 
 Was ist dann ein EB und für welche 10-Potenz steht es?
 
 :::: solution
+
+## Antwort
 
 - kB = Kilobyte = $10^3$ Bytes
 - MB = Megabyte = $10^6$ Bytes
@@ -135,7 +138,7 @@ Fehlerhafte Dateinamen oder falsche Pfadangaben können zu Problemen beim Zugrif
 
 Die Art und Weise, wie Pfade zu Dateien angegeben werden, variiert zwischen Betriebssystemen. Hier sind die wichtigsten Unterschiede:
 
-| Betriebssystem | Beispielpfad             | Besonderheiten                  |
+| Betriebssystem | Beispielpfad innerhalb des Systems | Besonderheiten   |
 |----------------|--------------------------|---------------------------------|
 | Windows        | `C:\Benutzer\Max\Dokumente` | Backslashes `\` als Trenner     |
 | macOS/Linux    | `/home/max/Dokumente`      | Slashes `/` als Trenner         |
@@ -144,7 +147,7 @@ Die Art und Weise, wie Pfade zu Dateien angegeben werden, variiert zwischen Betr
 Das heißt in letzterem sind alle Dateien und Ordner Teil eines einzigen "Zugriffsbaumes", während in Windows jeder Datenträger ein eigenes "Laufwerk" mit eigener Orderhierarchie darstellt.
 Dies ist im Folgenden dargestellt.
 
-![Hierarchische Dateiorganisation in verschiedenen Betriebssystemen[^1]](fig/linux-struktur.png){alt='Dateiorganisation'}
+![Hierarchische Dateiorganisation in verschiedenen Betriebssystemen[^1].](fig/linux-struktur.png){alt='Dateiorganisation'}
 
 [^1]: Quelle - [Franz Fiala](https://clubcomputer.at/2017/04/30/linux/) - 15.08.2025
 
@@ -208,11 +211,131 @@ TODO QUIZ ERSTELLEN
 
 
 
+# Automatisierte Dateiverarbeitung
 
+Wenn man mit einigen wenigen Dateien arbeitet, führt man die nötigen Dateiverwaltungsschritte wie Umbenennen, Verschieben, Vergleichen, Löschen, etc. zumeist manuell aus.
+Dies stößt schnell an seine Grenzen, wenn die Dateianzahl steigt.
+Daher ist es sinnvoll, diese Schritte zu automatisieren, um Zeit zu sparen und Fehler zu vermeiden.
+
+Alle Betriebssysteme bieten Möglichkeiten, Dateiverwaltungsschritte zu automatisieren, z.B. durch:
+
+- **Shell Scripting**: Mit Shell-Skripten (z.B. Bash unter Linux/macOS oder PowerShell/Cmd unter Windows) können wiederkehrende Aufgaben automatisiert werden.
+- **Programmiersprachen**: vor allem Skriptsprachen wie Python bieten umfangreiche Bibliotheken zur Dateiverwaltung.
+- **Dateimanager**: Viele Dateimanager bieten Funktionen zum Batch-Umbenennen, Verschieben oder Löschen von Dateien.
+
+
+:::::::::::::::  challenge
+## Automatisierung
+
+Recherchieren sie eine Lösung für jeden der oben genannten Wege, um alle *.txt Textdateien in einem gewählten Verzeichnis umzubenennen, indem den Dateinamen ein `backup_` Präfix vorangestellt wird.
+
+Finden sie Lösungen basierend auf
+
+- einem Shellskript (Bash oder Powershell)
+- einem Python-Skript
+- einem Dateimanager (Windows Explorer oder Finder)
+
+:::::::::: solution
+## Antwort
+
+Ein mögliches Bash Shellskript unter Linux oder macOS:
+
+```bash
+for file in *.txt; do
+    mv "$file" "backup_$file"
+done
+```
+
+PowerShell unter Windows:
+
+```powershell
+Get-ChildItem *.txt | Rename-Item -NewName { "backup_" + $_.Name }
+```
+
+Ein einfaches Python-Skript:
+
+```python
+import os
+for file in os.listdir('.'):
+    if file.endswith('.txt'):
+        os.rename(file, f'backup_{file}')
+```
+
+Im Windows Explorer lassen sich alle `.txt` Dateien auswählen, dann Rechtsklick -> "Umbenennen" und den neuen Namen `backup_` eingeben. Windows wird dann automatisch die Nummerierung hinzufügen (z.B. `backup_1.txt`, `backup_2.txt`, ...).
+
+Analog ist dies im macOS Finder möglich: Alle `.txt` Dateien auswählen, dann Rechtsklick -> "Umbenennen" und den neuen Namen `backup_` eingeben. macOS wird ebenfalls die Nummerierung hinzufügen.
+
+*Unbedingt beachten: In den beiden letzten Fällen gehen jedoch die Ursprungsnamen verloren!*
+
+:::::::::::::::::::::
+
+:::::::::::::::::::::::::
+
+Skript- und Programmiersprachen bieten hier den Vorteil, dass sie komplexere Logik implementieren können, z.B. um nur bestimmte Dateien umzubenennen oder zusätzliche Bedingungen zu prüfen.
+
+Zudem sichern Skripte und Programme die Reproduzierbarkeit der Dateiverwaltungsschritte, da sie jederzeit wiederholt werden können, ohne dass manuelle Eingriffe nötig sind.
+Dies ist vor allem ein wichtiger Punkt bei der Prozessierung von Rohdaten.
+Die verwendeten Skripte können (und sollten!) dokumentiert, versioniert und zusammen mit den Rohdaten archiviert werden, was die Nachvollziehbarkeit und Wartbarkeit erhöht.
+
+Skriptsprachen sind hierbei häufig die erste Wahl, da sie eine einfache Syntax bieten und direkt auf das Dateisystem zugreifen können.
+Zudem sind diese direkt in den meisten Betriebssystemen verfügbar und benötigen keine zusätzliche Installation.
+
+
+
+
+## Zusammenfassung
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
-- 
+- Dateisysteme unterscheiden sich in ihrer Struktur, Kompatibilität und maximalen Dateigröße.
+- Betriebssysteme nutzen/unterstützen unterschiedliche Dateisysteme und Pfadnotationen.
+- Dateinamen und Pfade müssen betriebssystemkonform sein, um Probleme zu vermeiden.
+- Automatisierung von Dateiverwaltungsschritten spart Zeit und reduziert Fehler.
+- Skriptsprachen sind ideal für die Automatisierung von Dateiverwaltungsschritten.
+
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+:::::::::: challenge
+
+# Einordnung im Datenlebenszyklus
+
+![*In welchen Phasen im Datenlebenszyklus sehen sie obige Punkte als besonders wichtig an?*](https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png){width=40% alt="Datenlebenszyklus"}
+
+::: solution
+
+## Antwort
+
+Das Wissen um die **Dateiverwaltung** ist immer dann zentral, 
+wenn Dateien erzeugt, verarbeitet oder gespeichert werden.
+
+- **Planung**: Festlegung von Dateisystemen und Dateinamenkonventionen
+- **Erhebung**: Korrekte Dateinamen und Pfade, Automatisierung von Bearbeitungsabläufen
+- **Analyse**: Automatisierung von Verwaltungsschritten
+- **Publikation**: Dateiaustausch zwischen Projektpartnern
+- **Archivierung**: Sicherung der Dateistruktur und -inhalte, Versionierung von Skripten
+- **Nachnutzung**: Bereitstellung von Daten in kompatiblen Formaten, Namen, Organisationen
+
+:::
+
+::::::::::::::::::::
+
+
+
+:::::::::::::::: instructor
+
+## Aufgaben
+
+### Sitzungsfragen
+
+- Wie sollte ich Dateien besser nicht benennen und warum?
+- Worin unterscheiden sich die Dateiverwaltungen von Windows, Linux und macOS?
+- Welche Dateisysteme sind für den Datenaustausch zwischen Betriebssystemen geeignet?
+- Wie kann ich viele Dateien auf einmal verarbeiten?
+
+
+
+:::::::::::::::::::::::::::
 
