@@ -269,6 +269,8 @@ Analog ist dies im macOS Finder möglich: Alle `.txt` Dateien auswählen, dann R
 
 :::::::::::::::::::::
 
+:::::::::::::::::::::::::
+
 Skript- und Programmiersprachen bieten hier den Vorteil, dass sie komplexere Logik implementieren können, z.B. um nur bestimmte Dateien umzubenennen oder zusätzliche Bedingungen zu prüfen.
 
 Zudem sichern Skripte und Programme die Reproduzierbarkeit der Dateiverwaltungsschritte, da sie jederzeit wiederholt werden können, ohne dass manuelle Eingriffe nötig sind.
@@ -281,6 +283,7 @@ Zudem sind diese direkt in den meisten Betriebssystemen verfügbar und benötige
 
 
 
+## Zusammenfassung
 
 ::::::::::::::::::::::::::::::::::::: keypoints 
 
@@ -292,4 +295,47 @@ Zudem sind diese direkt in den meisten Betriebssystemen verfügbar und benötige
 
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+:::::::::: challenge
+
+# Einordnung im Datenlebenszyklus
+
+![*In welchen Phasen im Datenlebenszyklus sehen sie obige Punkte als besonders wichtig an?*](https://uni-tuebingen.de/fileadmin/_processed_/6/b/csm_FDM_Lebenszyklus_d1353825c4.png){width=40% alt="Datenlebenszyklus"}
+
+::: solution
+
+## Antwort
+
+Das Wissen um die **Dateiverwaltung** ist immer dann zentral, 
+wenn Dateien erzeugt, verarbeitet oder gespeichert werden.
+
+- **Planung**: Festlegung von Dateisystemen und Dateinamenkonventionen
+- **Erhebung**: Korrekte Dateinamen und Pfade, Automatisierung von Bearbeitungsabläufen
+- **Analyse**: Automatisierung von Verwaltungsschritten
+- **Publikation**: Dateiaustausch zwischen Projektpartnern
+- **Archivierung**: Sicherung der Dateistruktur und -inhalte, Versionierung von Skripten
+- **Nachnutzung**: Bereitstellung von Daten in kompatiblen Formaten, Namen, Organisationen
+
+:::
+
+::::::::::::::::::::
+
+
+
+:::::::::::::::: instructor
+
+## Aufgaben
+
+### Sitzungsfragen
+
+- Wie sollte ich Dateien besser nicht benennen und warum?
+- Worin unterscheiden sich die Dateiverwaltungen von Windows, Linux und macOS?
+- Welche Dateisysteme sind für den Datenaustausch zwischen Betriebssystemen geeignet?
+- Wie kann ich viele Dateien auf einmal verarbeiten?
+
+
+
+:::::::::::::::::::::::::::
 
