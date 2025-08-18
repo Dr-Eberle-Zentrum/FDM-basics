@@ -101,7 +101,7 @@ Um Daten zwischen verschiedenen Betriebssystemen auszutauschen, ist es wichtig, 
 
 Falls ein (externer) Datenträger ein Dateisystem verwendet, welches vom genutzten Betriebssystem nicht unterstützt wird, dann kann man in den meisten Fällen auf die enthaltenen Daten nicht zugreifen.
 
-:::::::::::::::  challenge
+::::::::::::::: challenge
 
 ## Welche Dateisysteme nutze ich?
 
@@ -154,7 +154,7 @@ Dies ist im Folgenden dargestellt.
 Zudem sind Pfade unter **Linux/macOS case-sensitive**, d.h. `Datei.txt` ≠ `datei.txt`. Unter **Windows** ist dies meist nicht der Fall.
 
 
-:::::::::::::::  challenge
+::::::::::::::: challenge
 
 ## Laufwerksbuchstaben
 
@@ -198,7 +198,7 @@ Diese haben häufig direkte Auswirkung auf den Dateiaustausch, auch wenn die Dat
 :::::::::::::::::::::::::
 
 
-:::::::  instructor
+::::::: instructor
 
 TODO QUIZ ERSTELLEN
 
@@ -224,7 +224,8 @@ Alle Betriebssysteme bieten Möglichkeiten, Dateiverwaltungsschritte zu automati
 - **Dateimanager**: Viele Dateimanager bieten Funktionen zum Batch-Umbenennen, Verschieben oder Löschen von Dateien.
 
 
-:::::::::::::::  challenge
+::::::::::::::: challenge
+
 ## Automatisierung
 
 Recherchieren sie eine Lösung für jeden der oben genannten Wege, um alle *.txt Textdateien in einem gewählten Verzeichnis umzubenennen, indem den Dateinamen ein `backup_` Präfix vorangestellt wird.
@@ -236,6 +237,7 @@ Finden sie Lösungen basierend auf
 - einem Dateimanager (Windows Explorer oder Finder)
 
 :::::::::: solution
+
 ## Antwort
 
 Ein mögliches Bash Shellskript unter Linux oder macOS:
@@ -328,6 +330,10 @@ wenn Dateien erzeugt, verarbeitet oder gespeichert werden.
 
 ## Aufgaben
 
+### Vorbereitende Aufgaben
+
+- [Aufgabe "Dateimanagementsysteme"](Aufgabe-Dateimanagementsysteme.md)
+
 ### Sitzungsfragen
 
 - Wie sollte ich Dateien besser nicht benennen und warum?
@@ -335,7 +341,10 @@ wenn Dateien erzeugt, verarbeitet oder gespeichert werden.
 - Welche Dateisysteme sind für den Datenaustausch zwischen Betriebssystemen geeignet?
 - Wie kann ich viele Dateien auf einmal verarbeiten?
 
+### Anwendungsaufgaben
 
+- [Sitzungsaufgabe "Versionschaos"](Aufgabe-Versionschaos.md)
+- [Abgabeaufgabe "Dateiorganisation"](Aufgabe-Dateiorganisation.md)
 
 :::::::::::::::::::::::::::
 
