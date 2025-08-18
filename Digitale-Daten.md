@@ -343,13 +343,13 @@ Aber *sie selbst* müssen *daran denken*!
    - **Prozentwerte:** oft **1 oder 2 Dezimalstellen**
    - **Währungsangaben:** **2 Dezimalstellen**
    - **Physikalische Größen:** abhängig von der Einheit und Genauigkeit, oft **2–3 Dezimalstellen**
-   - **Wissenschaftliche Notation:** z. B. $$3.14 × 10^5$$, oft **3 signifikante Stellen**
+   - **Wissenschaftliche Notation:** z. B. $3.14 × 10^5$, oft **3 signifikante Stellen**
 
 3. **Signifikante Stellen statt feste Dezimalstellen**  
    In vielen naturwissenschaftlichen Bereichen wird nach **signifikanten Stellen** gerundet, nicht nach Dezimalstellen.  
    *Beispiel:*  
-   - `12345` → wenn 1 signifikante Stelle: $$1 × 10^4$$  
-   - `12345` → wenn 3 signifikante Stellen: $$1.23 × 10^4$$
+   - `12345` → wenn 1 signifikante Stelle: $1 × 10^4$  
+   - `12345` → wenn 3 signifikante Stellen: $1.23 × 10^4$
    - Signifikanz ergibt sich hierbei aus
      - der Messgenauigkeit der Datenquelle
      - der Relevanz für die Analyse
