@@ -230,6 +230,16 @@ Allerdings sind diese Sicherheitsfeature nur bedingt wirksam und können durchau
 PDF Dateien sollten für *"Endprodukte"* verwendet werden, die nicht mehr verändert werden sollen, z.B. für Berichte, Präsentationen, Publikationen, etc.
 Sie sind wenig geeignet für die *Zusammenarbeit* und *Weiterverarbeitung* von Daten, da sie nicht so einfach zu bearbeiten sind wie Textdateien oder textbasierte Dateiformate.
 
+::::: testimonial
+
+Fast alle Betriebssysteme beinhalten mittlerweile einen virtuellen "PDF Drucker".
+Damit kann jedes Dokument, welches gedruckt werden kann, auch als PDF-Datei gespeichert werden.
+
+Dies ist besonders nützlich, um Dokumente zu archivieren oder zu teilen, da PDF-Dateien auf den meisten Geräten und Betriebssystemen angezeigt werden können, ohne dass spezielle Software erforderlich ist.
+
+:::::::::::::::::
+
+
 Grundlegend kann (fast) jedes PDF-Dokument mit einem entsprechenden Editor (z.B. Adobe Acrobat oder verschiedenen Onlinetools) bearbeitet werden.
 Allerdings erfolgt die Bearbeitung in der Regel nicht im Quellcode, sondern in einer grafischen Benutzeroberfläche, da das PDF-Format einen Mix aus Text- und Binärinformationen enthalten kann.
 
