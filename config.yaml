@@ -72,8 +72,10 @@ episodes:
 
 - Digitale-Daten.md
 - Dateiformate.md
+
 # - Dateiorganisation (extern)
 - Dateiverwaltung.md
+
 # - Speicherung, Archivierung, Vernichtung (extern)
 
 ######################################
@@ -82,7 +84,9 @@ episodes:
 
 - Forschungsdaten.md
 - Finden-und-Zitieren.md
+
 # - metadaten und rechliches (extern)
+
 - Netzwerke.md
 - Browser.md
 - Verschluesselung.md

@@ -345,6 +345,7 @@ wenn Dateien erzeugt, verarbeitet oder gespeichert werden.
 
 - [Sitzungsaufgabe "Versionschaos"](Aufgabe-Versionschaos.md)
 - [Abgabeaufgabe "Dateiorganisation"](Aufgabe-Dateiorganisation.md)
+- [Abgabeaufgabe "Backup"](Aufgabe-Backup.md)
 
 :::::::::::::::::::::::::::
 
