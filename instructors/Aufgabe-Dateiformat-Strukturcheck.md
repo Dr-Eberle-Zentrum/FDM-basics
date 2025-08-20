@@ -9,7 +9,7 @@ title: 'Aufgabe "Strukturcheck von Dateien"'
 
 ## Datenimportvorbereitung
 
-Sie zur Verarbeitung die folgende Datei erhalten
+Sie haben zur Verarbeitung die folgende Datei erhalten.
 
 - [turkish.tsv](data/turkish.tsv)
 
