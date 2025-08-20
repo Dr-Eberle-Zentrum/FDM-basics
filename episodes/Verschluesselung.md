@@ -327,10 +327,11 @@ Auch strenge Datenschutzbestimmungen können Verschlüsselung notwendig machen.
 
 ### Sitzungsfragen
 
-- 
+- (Wo) Sind meine Passwörter sicher?
 
 ### Anwendungsaufgaben
 
+- [Abgabeaufgabe "Hashing"](Aufgabe-Hashing.md)
 
 
 :::::::::::::::::::::::::::
