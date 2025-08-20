@@ -656,6 +656,7 @@ Die richtige Wahl des Dateiformats ist in allen Phasen des Datenlebenszyklus wic
 ### Anwendungsaufgaben
 
 - [Sitzungsaufgabe "Strukturcheck von Dateien"](Aufgabe-Dateiformat-Strukturcheck.md)
+- [Sitzungsaufgabe "Was für was?"](Aufgabe-Was-fuer-was.md)
 - [Sitzungsaufgabe "Einheitliche Dokumentation"](Aufgabe-PNG2CSV-rewrite.md)
 
 ### Sitzungsfragen
