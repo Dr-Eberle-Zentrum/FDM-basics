@@ -330,8 +330,27 @@ Immer dann, wenn wir auf fremde Rechner zugreifen oder mit diesen interagieren, 
 
 
 
+
+
+
 :::::::::::::::: instructor
 
-[Sitzungsaufgabe zu "Netzwerke"](Aufgabe-Netzwerke.md)
+## Aufgaben
+
+### Vorbereitende Aufgaben
+
+- [Aufgabe "Dateimanagementsysteme"](Aufgabe-Dateimanagementsysteme.md)
+
+### Sitzungsfragen
+
+- Wie funktioniert das Internet?
+- Wie finden die Daten ihr Ziel?
+
+### Anwendungsaufgaben
+
+- [Sitzungsaufgabe "Netzwerke"](Aufgabe-Netzwerke.md)
+
+- [Sitzungsaufgabe "Versionschaos"](Aufgabe-Versionschaos.md)
 
 :::::::::::::::::::::::::::
+

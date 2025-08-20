@@ -659,6 +659,11 @@ Die richtige Wahl des Dateiformats ist in allen Phasen des Datenlebenszyklus wic
 - [Sitzungsaufgabe "Was für was?"](Aufgabe-Was-fuer-was.md)
 - [Sitzungsaufgabe "Einheitliche Dokumentation"](Aufgabe-PNG2CSV-rewrite.md)
 
+ggf. noch Aufgaben zu
+
+- PDF editing
+- Dateikonvertierung
+
 ### Sitzungsfragen
 
 - Wie werden Daten im Computer verwaltet und warum gehts immer um diese Nullen und Einsen?
