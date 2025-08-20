@@ -330,10 +330,6 @@ wenn Dateien erzeugt, verarbeitet oder gespeichert werden.
 
 ## Aufgaben
 
-### Vorbereitende Aufgaben
-
-- [Aufgabe "Dateimanagementsysteme"](Aufgabe-Dateimanagementsysteme.md)
-
 ### Sitzungsfragen
 
 - Wie sollte ich Dateien besser nicht benennen und warum?
@@ -343,8 +339,11 @@ wenn Dateien erzeugt, verarbeitet oder gespeichert werden.
 
 ### Anwendungsaufgaben
 
-- [Sitzungsaufgabe "Versionschaos"](Aufgabe-Versionschaos.md)
+- [Abgabeaufgabe "Automatisierung"](Aufgabe-Automatisierung.md)
 - [Abgabeaufgabe "Dateiorganisation"](Aufgabe-Dateiorganisation.md)
+
+### Aufgabe zu Archivierung 
+
 - [Abgabeaufgabe "Backup"](Aufgabe-Backup.md)
 
 :::::::::::::::::::::::::::
