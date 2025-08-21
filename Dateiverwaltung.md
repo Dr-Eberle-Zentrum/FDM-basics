@@ -27,11 +27,11 @@ Daher sollte man einen Überblick über die Unterschiede und Eigenheiten der Dat
 
 
 
-# Datei- vs. Betriebssystem
+## Datei- vs. Betriebssystem
 
 
 
-## Was ist ein Dateisystem?
+### Was ist ein Dateisystem?
 
 Ein Dateisystem organisiert Daten auf Speichermedien wie Festplatten, SSDs oder USB-Sticks. Es legt fest:
 
@@ -56,7 +56,7 @@ Ein weiteres Unterscheidungsmerkmal ist ihre Unterstützung durch verbreitete Be
 
 :::::::::: challenge
 
-## Was ist ein EB?
+### Was ist ein EB?
 
 GB steht für "Gigabyte" und somit für $10^9$ Bytes.
 
@@ -79,7 +79,7 @@ Was ist dann ein EB und für welche 10-Potenz steht es?
 :::::::::::::::::::::
 
 
-## Was ist ein Betriebssystem?
+### Was ist ein Betriebssystem?
 
 Ein Betriebssystem (OS) ist die Software, die die Hardware eines Computers verwaltet und eine Schnittstelle für Anwendungen bereitstellt.
 Ein wichtiger Bestandteil eines Betriebssystems ist somit das Dateisystem, das die Organisation und Verwaltung von Dateien auf Speichermedien ermöglicht.
@@ -91,7 +91,7 @@ Im Folgenden sind die gängigsten Betriebssysteme und ihre bevorzugten Dateisyst
 - **macOS** verwendet **APFS** (modern) und **HFS+** (älter).
 - **Linux** setzt auf **ext4**, **Btrfs** oder **XFS**, je nach Distribution und Einsatzzweck.
 
-## Kompatibilitätsaspekte
+### Kompatibilitätsaspekte
 
 Um Daten zwischen verschiedenen Betriebssystemen auszutauschen, ist es wichtig, ein kompatibles Dateisystem zu wählen. Hier einige Hinweise:
 
@@ -129,12 +129,12 @@ Je nach Alter und Größe des USB Sticks, sind diese zumeist mit FAT32 oder exFA
 
 
 
-# Dateinamen und Pfade
+## Dateinamen und Pfade
 
 Beim Arbeiten mit Dateien in unterschiedlichen Betriebssystemen ist es wichtig, die Unterschiede in der Benennung und Pfadangabe zu kennen. 
 Fehlerhafte Dateinamen oder falsche Pfadangaben können zu Problemen beim Zugriff, der Verarbeitung oder dem Austausch von Dateien führen.
 
-## Pfadnotationen im Vergleich
+### Pfadnotationen im Vergleich
 
 Die Art und Weise, wie Pfade zu Dateien angegeben werden, variiert zwischen Betriebssystemen. Hier sind die wichtigsten Unterschiede:
 
@@ -175,7 +175,7 @@ Allerdings sind die Laufwerksbuchstaben in neueren Windowsversionen nur noch in 
 
 
 
-## Regeln für Dateinamen
+### Regeln für Dateinamen
 
 Auch unterscheiden sich die Betriebssysteme in ihren Dateinamenskonventionen.
 
@@ -198,20 +198,8 @@ Diese haben häufig direkte Auswirkung auf den Dateiaustausch, auch wenn die Dat
 :::::::::::::::::::::::::
 
 
-::::::: instructor
 
-TODO QUIZ ERSTELLEN
-
-
-1. Welches Dateisystem ist standardmäßig unter Windows im Einsatz?
-2. Was bedeutet „case-sensitive“?
-3. Warum ist exFAT für den Datenaustausch geeignet?
-
-::::::::::::::::::
-
-
-
-# Automatisierte Dateiverarbeitung
+## Automatisierte Dateiverarbeitung
 
 Wenn man mit einigen wenigen Dateien arbeitet, führt man die nötigen Dateiverwaltungsschritte wie Umbenennen, Verschieben, Vergleichen, Löschen, etc. zumeist manuell aus.
 Dies stößt schnell an seine Grenzen, wenn die Dateianzahl steigt.
