@@ -224,12 +224,22 @@
 <div class="accordion accordion-flush" id="accordionFlushcurrent">
   <div class="accordion-item">
     <div class="accordion-header" id="flush-headingcurrent">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsecurrent" aria-expanded="true" aria-controls="flush-collapsecurrent">
         <span class="visually-hidden">Current Chapter</span>
         <span class="current-chapter">
         Dateiverwaltung
         </span>
-      
+      </button>
     </div><!--/div.accordion-header-->
+
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+      <div class="accordion-body">
+        <ul><li><a href="#datei--vs.-betriebssystem">Datei- vs. Betriebssystem</a></li>
+<li><a href="#dateinamen-und-pfade">Dateinamen und Pfade</a></li>
+<li><a href="#automatisierte-dateiverarbeitung">Automatisierte Dateiverarbeitung</a></li>
+<li><a href="#zusammenfassung">Zusammenfassung</a></li>
+        </ul></div><!--/div.accordion-body-->
+    </div><!--/div.accordion-collapse-->
 
   </div><!--/div.accordion-item-->
 </div><!--/div.accordion-flush-->
@@ -346,7 +356,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Dateiverwaltung</h1>
-        <p>Zuletzt aktualisiert am 2025-08-20 |
+        <p>Zuletzt aktualisiert am 2025-08-21 |
 
         <a href="https://github.com/Dr-Eberle-Zentrum/FDM-basics/edit/main/episodes/Dateiverwaltung.md" class="external-link">Diese Seite bearbeiten <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -394,10 +404,9 @@ werden auf einem Linux-basierten Server gespeichert. Daher sollte man
 einen Überblick über die Unterschiede und Eigenheiten der Dateisysteme
 haben, um die Datenübertragung und -verarbeitung über Systemgrenzen
 hinweg zu erleichtern.</p>
-<div class="section level1">
-<h1 id="datei--vs--betriebssystem">Datei- vs. Betriebssystem<a class="anchor" aria-label="anchor" href="#datei--vs--betriebssystem"></a></h1>
-<div class="section level2">
-<h2 id="was-ist-ein-dateisystem">Was ist ein Dateisystem?<a class="anchor" aria-label="anchor" href="#was-ist-ein-dateisystem"></a></h2>
+<section><h2 class="section-heading" id="datei--vs--betriebssystem">Datei- vs. Betriebssystem<a class="anchor" aria-label="anchor" href="#datei--vs--betriebssystem"></a></h2>
+<hr class="half-width"><div class="section level3">
+<h3 id="was-ist-ein-dateisystem">Was ist ein Dateisystem?<a class="anchor" aria-label="anchor" href="#was-ist-ein-dateisystem"></a></h3>
 <p>Ein Dateisystem organisiert Daten auf Speichermedien wie Festplatten,
 SSDs oder USB-Sticks. Es legt fest:</p>
 <ul><li>wie Dateien gespeichert und gelesen werden,</li>
@@ -458,7 +467,9 @@ Betriebssysteme.</p>
 <div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Antwort </h4>
+  <h4 class="accordion-header" id="headingSolution1">
+  Antwort
+  </h4>
 </button>
 <div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
@@ -477,8 +488,8 @@ Bytes</li>
 </div>
 </div>
 </div>
-<div class="section level2">
-<h2 id="was-ist-ein-betriebssystem">Was ist ein Betriebssystem?<a class="anchor" aria-label="anchor" href="#was-ist-ein-betriebssystem"></a></h2>
+<div class="section level3">
+<h3 id="was-ist-ein-betriebssystem">Was ist ein Betriebssystem?<a class="anchor" aria-label="anchor" href="#was-ist-ein-betriebssystem"></a></h3>
 <p>Ein Betriebssystem (OS) ist die Software, die die Hardware eines
 Computers verwaltet und eine Schnittstelle für Anwendungen bereitstellt.
 Ein wichtiger Bestandteil eines Betriebssystems ist somit das
@@ -500,8 +511,8 @@ unterstützt aber auch <strong>FAT32</strong> und
 <strong>Btrfs</strong> oder <strong>XFS</strong>, je nach Distribution
 und Einsatzzweck.</li>
 </ul></div>
-<div class="section level2">
-<h2 id="kompatibilitätsaspekte">Kompatibilitätsaspekte<a class="anchor" aria-label="anchor" href="#kompatibilit%C3%A4tsaspekte"></a></h2>
+<div class="section level3">
+<h3 id="kompatibilitätsaspekte">Kompatibilitätsaspekte<a class="anchor" aria-label="anchor" href="#kompatibilit%C3%A4tsaspekte"></a></h3>
 <p>Um Daten zwischen verschiedenen Betriebssystemen auszutauschen, ist
 es wichtig, ein kompatibles Dateisystem zu wählen. Hier einige
 Hinweise:</p>
@@ -538,7 +549,9 @@ recherchieren sie kurz. Das ist wirklich wichtig!</em> 💪</p>
 <div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Antwort </h4>
+  <h4 class="accordion-header" id="headingSolution2">
+  Antwort
+  </h4>
 </button>
 <div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
@@ -553,15 +566,13 @@ oder exFAT formatiert.</p>
 </div>
 </div>
 </div>
-</div>
-<div class="section level1">
-<h1 id="dateinamen-und-pfade">Dateinamen und Pfade<a class="anchor" aria-label="anchor" href="#dateinamen-und-pfade"></a></h1>
-<p>Beim Arbeiten mit Dateien in unterschiedlichen Betriebssystemen ist
+</section><section><h2 class="section-heading" id="dateinamen-und-pfade">Dateinamen und Pfade<a class="anchor" aria-label="anchor" href="#dateinamen-und-pfade"></a></h2>
+<hr class="half-width"><p>Beim Arbeiten mit Dateien in unterschiedlichen Betriebssystemen ist
 es wichtig, die Unterschiede in der Benennung und Pfadangabe zu kennen.
 Fehlerhafte Dateinamen oder falsche Pfadangaben können zu Problemen beim
 Zugriff, der Verarbeitung oder dem Austausch von Dateien führen.</p>
-<div class="section level2">
-<h2 id="pfadnotationen-im-vergleich">Pfadnotationen im Vergleich<a class="anchor" aria-label="anchor" href="#pfadnotationen-im-vergleich"></a></h2>
+<div class="section level3">
+<h3 id="pfadnotationen-im-vergleich">Pfadnotationen im Vergleich<a class="anchor" aria-label="anchor" href="#pfadnotationen-im-vergleich"></a></h3>
 <p>Die Art und Weise, wie Pfade zu Dateien angegeben werden, variiert
 zwischen Betriebssystemen. Hier sind die wichtigsten Unterschiede:</p>
 <table class="table"><colgroup><col width="21%"><col width="34%"><col width="44%"></colgroup><thead><tr class="header"><th>Betriebssystem</th>
@@ -601,7 +612,9 @@ Bezeichnung von Laufwerken in Windows ergeben?</p>
 <div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
-  <h4 class="accordion-header" id="headingSolution3"> Antwort </h4>
+  <h4 class="accordion-header" id="headingSolution3">
+  Antwort
+  </h4>
 </button>
 <div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
@@ -615,8 +628,8 @@ werden die Laufwerke anders verwaltet.</p>
 </div>
 </div>
 </div>
-<div class="section level2">
-<h2 id="regeln-für-dateinamen">Regeln für Dateinamen<a class="anchor" aria-label="anchor" href="#regeln-f%C3%BCr-dateinamen"></a></h2>
+<div class="section level3">
+<h3 id="regeln-für-dateinamen">Regeln für Dateinamen<a class="anchor" aria-label="anchor" href="#regeln-f%C3%BCr-dateinamen"></a></h3>
 <p>Auch unterscheiden sich die Betriebssysteme in ihren
 Dateinamenskonventionen.</p>
 <table class="table"><colgroup><col width="29%"><col width="35%"><col width="35%"></colgroup><thead><tr class="header"><th>Merkmal</th>
@@ -656,12 +669,9 @@ langen Pfaden (&gt;260 Zeichen).</li>
 </ul></div>
 </div>
 </div>
-
 </div>
-</div>
-<div class="section level1">
-<h1 id="automatisierte-dateiverarbeitung">Automatisierte Dateiverarbeitung<a class="anchor" aria-label="anchor" href="#automatisierte-dateiverarbeitung"></a></h1>
-<p>Wenn man mit einigen wenigen Dateien arbeitet, führt man die nötigen
+</section><section><h2 class="section-heading" id="automatisierte-dateiverarbeitung">Automatisierte Dateiverarbeitung<a class="anchor" aria-label="anchor" href="#automatisierte-dateiverarbeitung"></a></h2>
+<hr class="half-width"><p>Wenn man mit einigen wenigen Dateien arbeitet, führt man die nötigen
 Dateiverwaltungsschritte wie Umbenennen, Verschieben, Vergleichen,
 Löschen, etc. zumeist manuell aus. Dies stößt schnell an seine Grenzen,
 wenn die Dateianzahl steigt. Daher ist es sinnvoll, diese Schritte zu
@@ -700,7 +710,9 @@ wird.</p>
 <div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
-  <h4 class="accordion-header" id="headingSolution4"> Antwort </h4>
+  <h4 class="accordion-header" id="headingSolution4">
+  Antwort
+  </h4>
 </button>
 <div id="collapseSolution4" class="accordion-collapse collapse" data-bs-parent="#accordionSolution4" aria-labelledby="headingSolution4">
 <div class="accordion-body">
@@ -756,9 +768,8 @@ Wartbarkeit erhöht.</p>
 einfache Syntax bieten und direkt auf das Dateisystem zugreifen können.
 Zudem sind diese direkt in den meisten Betriebssystemen verfügbar und
 benötigen keine zusätzliche Installation.</p>
-<div class="section level2">
-<h2 id="zusammenfassung">Zusammenfassung<a class="anchor" aria-label="anchor" href="#zusammenfassung"></a></h2>
-<div id="keypoints1" class="callout keypoints">
+</section><section><h2 class="section-heading" id="zusammenfassung">Zusammenfassung<a class="anchor" aria-label="anchor" href="#zusammenfassung"></a></h2>
+<hr class="half-width"><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
@@ -794,7 +805,9 @@ sie obige Punkte als besonders wichtig an?</em></div>
 <div id="accordionSolution5" class="accordion challenge-accordion accordion-flush">
 <div class="accordion-item">
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution5" aria-expanded="false" aria-controls="collapseSolution5">
-  <h4 class="accordion-header" id="headingSolution5"> Antwort </h4>
+  <h4 class="accordion-header" id="headingSolution5">
+  Antwort
+  </h4>
 </button>
 <div id="collapseSolution5" class="accordion-collapse collapse" data-bs-parent="#accordionSolution5" aria-labelledby="headingSolution5">
 <div class="accordion-body">
@@ -827,9 +840,7 @@ kompatiblen Formaten, Namen, Organisationen</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</div>
-</div>
-<div class="footnotes footnotes-end-of-document">
+</section><div class="footnotes footnotes-end-of-document">
 <hr><ol><li id="fn1"><p>Quelle - <a href="https://clubcomputer.at/2017/04/30/linux/" class="external-link">Franz Fiala</a> -
 15.08.2025<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
 </ol></div>
@@ -894,7 +905,7 @@ any links that you are not going to use.
   "url": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/Dateiverwaltung.html",
   "identifier": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/Dateiverwaltung.html",
   "dateCreated": "2024-08-01",
-  "dateModified": "2025-08-20",
+  "dateModified": "2025-08-21",
   "datePublished": "2025-08-21"
 }
 
