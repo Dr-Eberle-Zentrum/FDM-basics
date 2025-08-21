@@ -359,7 +359,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Netzwerke</h1>
-        <p>Zuletzt aktualisiert am 2025-08-20 |
+        <p>Zuletzt aktualisiert am 2025-08-21 |
 
         <a href="https://github.com/Dr-Eberle-Zentrum/FDM-basics/edit/main/episodes/Netzwerke.md" class="external-link">Diese Seite bearbeiten <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -524,8 +524,34 @@ funktioniert das Internet?</a> näher beschrieben wird.</p>
 </figure></div>
 </div>
 </div>
-<p>Was sie an der obigen Analogie aber auch erkennen können: jeder der
-Beteiligten könnte die Postkarte lesen, wenn er wollte!</p>
+<p>Allerdings bleibt eine Frage offen: <em>Wie findet der Portier
+(Router) heraus, wohin die Postkarte (Datenpaket) geschickt werden
+soll?</em></p>
+<p>Hierzu ist es nötig, dass die Postkarte auf eine bestimmte Art und
+Weise ausgefüllt wird, d.h. es gibt einen klaren Bereich in dem die
+Adresse steht. Derartige Festlegungen, wie Dinge ausgefüllt oder
+ausgeführt werden sollen, nennt man Protokoll. Im Falle des Internets
+ist ein wichtiges Protokoll das <em>Transmission Control Protocol
+(TCP)</em>, welches die Kommunikation zwischen Computern regelt. Das
+TCP-Protokoll legt fest, <em>wie die Datenpakete aufgebaut</em> sind,
+d.h. welche Information wo steht und wieviel Platz benötigt. Das ist
+wichtig, weil ein Datenpaket ja eigentlich nur eine Sequenz von
+Binärinformation (Nullen und Einsen) ist, die von den Computern wieder
+zu Zahlen und Buchstaben interpretiert werden müssen. Das ist ein
+bischen wie beim Morsen: die Nachricht wird in eine Abfolge von kurzen
+und langen Signalen übersetzt, die dann wieder in Buchstaben und Zahlen
+zurück übersetzt werden müssen. Beim Letzteren ist entscheidend, das
+bekannt sein muss, wieviele Signale ein Zeichen kodieren!</p>
+<p>Eine weitere wichtige Aufgabe des TCP ist die <em>Segmentierung von
+Daten</em>. Wenn ihre Nachricht nicht auf eine Postkarte passt, wird
+diese automatisch in mehrere Postkarten aufgeteilt, die dann einzeln
+verschickt werden. Das TCP-Protokoll sorgt dafür, dass die Postkarten
+(Datenpakete) in der richtigen Reihenfolge ankommen und wieder
+zusammengesetzt werden. Das ist wichtig, weil die Postkarten ja nicht
+unbedingt in der Reihenfolge ankommen, in der sie verschickt wurden.</p>
+<p>Was sie an der obigen Analogie von Urlaubspostkarte und
+Webkommunikation aber auch erkennen können: jeder der Beteiligten könnte
+die Postkarten lesen, wenn er wollte!</p>
 <p>Das gleiche trifft auch auf das Internet zu: die Datenpakete werden
 von verschiedenen Knotenpunkten weitergeleitet, die die Pakete anhand
 der IP-Adresse an den nächsten Knotenpunkt weiterleiten. Wenn die
@@ -599,7 +625,7 @@ ablesen?</em></p>
   Möglichkeiten …
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul><li>Was ist ihre Bank?</li>
 <li>Wo kaufen sie ein?</li>
@@ -789,11 +815,14 @@ schauen sie kurz nach links und rechts, ob wirklich alle anhalten.</p>
 <ul><li>Jeder Computer ist über seine IP-Adresse (im Internet)
 identifizierbar.</li>
 <li>Zertifikate bestätigen die Identität von Webservern.</li>
+<li>Zu versendende Daten werden in Pakete aufgeteilt (z.B. via TCP) und
+über das Internetprotokoll (IP) verschickt.</li>
 <li>Datenpakete zwischen Computern werden “von Knoten zu Knoten”
 weitergeleitet.</li>
-<li>HTTPS verschlüsselt die Datenpakete.</li>
-<li>Metadaten der Datenpakete können von lokalen Routern, ISPs,
-WLAN-Anbietern, … eingesehen werden.</li>
+<li>Datenpakete können von lokalen Routern, ISPs, WLAN-Anbietern, …
+eingesehen werden.</li>
+<li>HTTPS verschlüsselt den gesendeten Inhalt der Datenpakete (Metadaten
+wie Ziel-IP etc. nicht).</li>
 <li>VPN schützt vor lokalen Schnüfflern, aber nicht vor dem
 VPN-Anbieter.</li>
 <li>URLs beschreiben das Zieldokument inklusive des Namens des
@@ -822,7 +851,7 @@ sie obige Punkte als besonders wichtig an?</em></div>
   Antwort
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Das Wissen um Netzwerkkommunikation und Verschlüsselung ist in allen
 Phasen des Datenlebenszyklus wichtig. Kenntnisse darum erleichtern uns,
@@ -844,7 +873,7 @@ können.</p>
   Aufgaben
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <div class="section level3">
 <h3 id="vorbereitende-aufgaben">Vorbereitende Aufgaben<a class="anchor" aria-label="anchor" href="#vorbereitende-aufgaben"></a></h3>
@@ -929,7 +958,7 @@ any links that you are not going to use.
   "url": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/instructor/Netzwerke.html",
   "identifier": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/instructor/Netzwerke.html",
   "dateCreated": "2024-08-01",
-  "dateModified": "2025-08-20",
+  "dateModified": "2025-08-21",
   "datePublished": "2025-08-21"
 }
 
