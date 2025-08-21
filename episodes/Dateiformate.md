@@ -517,6 +517,31 @@ Auch für XML gilt, dass dieses i.d.R. automatisiert als Datenformat erzeugt wir
 Allerdings ist es, im Vergleich zu JSON, einfacher menschenlesbar, da alle Elemente eindeutig mit Tags benannt und begrenzt sind.
 
 
+### YAML
+
+YAML (YAML Ain't Markup Language) ist ein weiteres hierarchisches Datenformat, das für die Repräsentation von strukturierten Daten geeignet ist.
+Es ist eine menschenlesbare Auszeichnungssprache, die sich durch ihre einfache Syntax und Lesbarkeit auszeichnet.
+YAML wird häufig für Konfigurationsdateien oder Metadaten verwendet.
+Für die Datenrepräsentation ist es jedoch nur bedingt geeignet, da es keine Unterstützung für komplexe Datenstrukturen bietet und keine Validierung der Datenstruktur ermöglicht.
+
+Ein Beispiel für die YAML-Repräsentation unseres JSON-Datensatzes könnte wie folgt aussehen:
+
+```yaml
+Termine:
+  - Nr: 1
+    Tag: Mo
+    Ort: Zoom
+  - Nr: 8
+    Tag: Di
+    Ort: null
+```
+
+YAML verwendet Einrückungen, um die Hierarchie der Daten darzustellen, und verwendet Bindestriche `-`, um Listen zu kennzeichnen. Für eine weiterführende, kompakte Einführung empfehlen wir die Webseite 
+
+- [Was ist YAML? Die Grundlagen, die Syntax und die Anwendungsfälle verstehen](https://www.datacamp.com/de/blog/what-is-yaml).
+
+
+
 ## Bilder und Grafiken
 
 Neben Text- und Tabellendaten sind auch Bilder und Grafiken wichtige Bestandteile von Forschungsdaten.
