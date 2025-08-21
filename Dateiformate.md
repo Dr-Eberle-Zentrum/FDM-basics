@@ -606,6 +606,8 @@ Bei sehr komplexen Vektorgrafiken mit sehr vielen (überlappenden) Elementen kan
   - für Rohdaten und Publikation
   - für Austausch mit Kollegen und der Öffentlichkeit
   - i.d.R. textbasierte Formate (z.B. CSV, JSON, XML)
+    - *Achtung: Kodierung von Zeichen und Zeilenumbrüchen beachten!*
+  - meist "offen" und plattformunabhängig
 - Proprietäre Dateiformate für internen Gebrauch und spezielle Anwendungen/Software
   - ermöglichen i.d.R. umfangreichere Informationsspeicherung und -darstellung
   - können (für Austausch) in offene Formate konvertiert werden
