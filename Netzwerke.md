@@ -103,8 +103,23 @@ Die Idee ist in folgender Grafik dargestellt, die in Blogbeitrag [Wie funktionie
 
 :::::::::::::::::::::::
 
+Allerdings bleibt eine Frage offen: *Wie findet der Portier (Router) heraus, wohin die Postkarte (Datenpaket) geschickt werden soll?*
 
-Was sie an der obigen Analogie aber auch erkennen können: jeder der Beteiligten könnte die Postkarte lesen, wenn er wollte!
+Hierzu ist es nötig, dass die Postkarte auf eine bestimmte Art und Weise ausgefüllt wird, d.h. es gibt einen klaren Bereich in dem die Adresse steht.
+Derartige Festlegungen, wie Dinge ausgefüllt oder ausgeführt werden sollen, nennt man Protokoll.
+Im Falle des Internets ist ein wichtiges Protokoll das *Transmission Control Protocol (TCP)*, welches die Kommunikation zwischen Computern regelt.
+Das TCP-Protokoll legt fest, *wie die Datenpakete aufgebaut* sind, d.h. welche Information wo steht und wieviel Platz benötigt.
+Das ist wichtig, weil ein Datenpaket ja eigentlich nur eine Sequenz von Binärinformation (Nullen und Einsen) ist, die von den Computern wieder zu Zahlen und Buchstaben interpretiert werden müssen.
+Das ist ein bischen wie beim Morsen: die Nachricht wird in eine Abfolge von kurzen und langen Signalen übersetzt, die dann wieder in Buchstaben und Zahlen zurück übersetzt werden müssen.
+Beim Letzteren ist entscheidend, das bekannt sein muss, wieviele Signale ein Zeichen kodieren!
+
+Eine weitere wichtige Aufgabe des TCP ist die *Segmentierung von Daten*.
+Wenn ihre Nachricht nicht auf eine Postkarte passt, wird diese automatisch in mehrere Postkarten aufgeteilt, die dann einzeln verschickt werden.
+Das TCP-Protokoll sorgt dafür, dass die Postkarten (Datenpakete) in der richtigen Reihenfolge ankommen und wieder zusammengesetzt werden.
+Das ist wichtig, weil die Postkarten ja nicht unbedingt in der Reihenfolge ankommen, in der sie verschickt wurden.
+
+
+Was sie an der obigen Analogie von Urlaubspostkarte und Webkommunikation aber auch erkennen können: jeder der Beteiligten könnte die Postkarten lesen, wenn er wollte!
 
 Das gleiche trifft auch auf das Internet zu: die Datenpakete werden von verschiedenen Knotenpunkten weitergeleitet, die die Pakete anhand der IP-Adresse an den nächsten Knotenpunkt weiterleiten.
 Wenn die Datenpakete unverschlüsselt sind, können die Knotenpunkte die Datenpakete lesen und ggf. manipulieren.
@@ -297,9 +312,10 @@ Das ist wie am Fussgängerüberweg: Auch wenn sie Vorrang haben, schauen sie kur
 
 - Jeder Computer ist über seine IP-Adresse (im Internet) identifizierbar.
 - Zertifikate bestätigen die Identität von Webservern.
+- Zu versendende Daten werden in Pakete aufgeteilt (z.B. via TCP) und über das Internetprotokoll (IP) verschickt.
 - Datenpakete zwischen Computern werden "von Knoten zu Knoten" weitergeleitet.
-- HTTPS verschlüsselt die Datenpakete.
-- Metadaten der Datenpakete können von lokalen Routern, ISPs, WLAN-Anbietern, ... eingesehen werden.
+- Datenpakete können von lokalen Routern, ISPs, WLAN-Anbietern, ... eingesehen werden.
+- HTTPS verschlüsselt den gesendeten Inhalt der Datenpakete (Metadaten wie Ziel-IP etc. nicht).
 - VPN schützt vor lokalen Schnüfflern, aber nicht vor dem VPN-Anbieter.
 - URLs beschreiben das Zieldokument inklusive des Namens des Webservers etc.
 - Webservernamen werden durch DNS-Server in IP-Adressen aufgelöst
