@@ -36,7 +36,7 @@ Hier ein paar Beispiele:
 - *Passwortmanager*: Diese speichern Passwörter verschlüsselt, sodass sie sicher aufbewahrt werden können.
 - ...
 
-## Grundlagen der Datenverschlüsselung
+## Grundlagen
 
 Datenverschlüsselung ist ein Prozess, bei dem Informationen in eine Form umgewandelt werden, die für unbefugte Personen unlesbar ist.
 Die Verschlüsselung erfolgt in der Regel durch mathematische Algorithmen, die einen sogenannten "Schlüssel" (i.d.R. eine Zahl; ggf. basierend auf einem Passwort) verwenden, um die Daten zu verschlüsseln und zu entschlüsseln.
@@ -185,7 +185,7 @@ Denn je nach Cloud-Anbieter und dessen Sicherheitsvorkehrungen und AGBs, können
 Hierbei können die oben genannten Tools verwendet werden, um die Daten vor dem Hochladen zu verschlüsseln.
 Es ist jedoch wichtig, sicherzustellen, dass das Passwort oder der Schlüssel für die Verschlüsselung sicher aufbewahrt wird, da sonst der Zugriff auf die Daten verloren gehen kann.
 
-## Verschlüsselung von Datenträgern
+## Datenträger
 
 Neben der Verschlüsselung einzelner Dateien kann auch der gesamte Datenträger verschlüsselt werden, um alle darauf gespeicherten Daten zu schützen.
 Dies ist besonders wichtig, wenn sensible Daten auf einem Laptop oder einem USB-Stick gespeichert sind, der verloren gehen oder gestohlen werden könnte.
