@@ -1178,6 +1178,38 @@ erzeugt wird und nur in seltenen Fällen komplett manuell erfaßt wird.
 Allerdings ist es, im Vergleich zu JSON, einfacher menschenlesbar, da
 alle Elemente eindeutig mit Tags benannt und begrenzt sind.</p>
 </div>
+<div class="section level3">
+<h3 id="yaml">YAML<a class="anchor" aria-label="anchor" href="#yaml"></a></h3>
+<p>YAML (YAML Ain’t Markup Language) ist ein weiteres hierarchisches
+Datenformat, das für die Repräsentation von strukturierten Daten
+geeignet ist. Es ist eine menschenlesbare Auszeichnungssprache, die sich
+durch ihre einfache Syntax und Lesbarkeit auszeichnet. YAML wird häufig
+für Konfigurationsdateien oder Metadaten verwendet. Für die
+Datenrepräsentation ist es jedoch nur bedingt geeignet, da es keine
+Unterstützung für komplexe Datenstrukturen bietet und keine Validierung
+der Datenstruktur ermöglicht.</p>
+<p>Ein Beispiel für die YAML-Repräsentation unseres JSON-Datensatzes
+könnte wie folgt aussehen:</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode yaml" tabindex="0"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">Termine</span><span class="kw">:</span></span>
+<span id="cb5-2"><a href="#cb5-2" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">Nr</span><span class="kw">:</span><span class="at"> </span><span class="dv">1</span></span>
+<span id="cb5-3"><a href="#cb5-3" tabindex="-1"></a><span class="at">    </span><span class="fu">Tag</span><span class="kw">:</span><span class="at"> Mo</span></span>
+<span id="cb5-4"><a href="#cb5-4" tabindex="-1"></a><span class="at">    </span><span class="fu">Ort</span><span class="kw">:</span><span class="at"> Zoom</span></span>
+<span id="cb5-5"><a href="#cb5-5" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> </span><span class="fu">Nr</span><span class="kw">:</span><span class="at"> </span><span class="dv">8</span></span>
+<span id="cb5-6"><a href="#cb5-6" tabindex="-1"></a><span class="at">    </span><span class="fu">Tag</span><span class="kw">:</span><span class="at"> Di</span></span>
+<span id="cb5-7"><a href="#cb5-7" tabindex="-1"></a><span class="at">    </span><span class="fu">Ort</span><span class="kw">:</span><span class="at"> </span><span class="ch">null</span></span></code></pre>
+</div>
+<p>YAML verwendet Einrückungen, um die Hierarchie der Daten
+darzustellen, und verwendet Bindestriche <code>-</code>, um Listen zu
+kennzeichnen. Für eine weiterführende, kompakte Einführung empfehlen wir
+die Webseite</p>
+<ul><li>
+<a href="https://www.datacamp.com/de/blog/what-is-yaml" class="external-link">Was ist
+YAML? Die Grundlagen, die Syntax und die Anwendungsfälle
+verstehen</a>.</li>
+</ul></div>
 </section><section><h2 class="section-heading" id="bilder-und-grafiken">Bilder und Grafiken<a class="anchor" aria-label="anchor" href="#bilder-und-grafiken"></a></h2>
 <hr class="half-width"><p>Neben Text- und Tabellendaten sind auch Bilder und Grafiken wichtige
 Bestandteile von Forschungsdaten. Hierbei wird grundlegend in zwei Arten
