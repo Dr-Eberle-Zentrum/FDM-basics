@@ -103,7 +103,9 @@ Die Idee ist in folgender Grafik dargestellt, die in Blogbeitrag [Wie funktionie
 
 :::::::::::::::::::::::
 
-Allerdings bleibt eine Frage offen: *Wie findet der Portier (Router) heraus, wohin die Postkarte (Datenpaket) geschickt werden soll?*
+Allerdings bleibt eine Frage offen: 
+
+- **Wie findet der Portier (Router) heraus, wohin die Postkarte (Datenpaket) geschickt werden soll?**
 
 Hierzu ist es nötig, dass die Postkarte auf eine bestimmte Art und Weise ausgefüllt wird, d.h. es gibt einen klaren Bereich in dem die Adresse steht.
 Derartige Festlegungen, wie Dinge ausgefüllt oder ausgeführt werden sollen, nennt man Protokoll.
@@ -119,7 +121,9 @@ Das TCP-Protokoll sorgt dafür, dass die Postkarten (Datenpakete) in der richtig
 Das ist wichtig, weil die Postkarten ja nicht unbedingt in der Reihenfolge ankommen, in der sie verschickt wurden.
 
 
-Was sie an der obigen Analogie von Urlaubspostkarte und Webkommunikation aber auch erkennen können: jeder der Beteiligten könnte die Postkarten lesen, wenn er wollte!
+Was sie an der obigen Analogie von Urlaubspostkarte und Webkommunikation aber auch erkennen können: 
+
+- **Jeder der Beteiligten könnte die Postkarten lesen, wenn er wollte!**
 
 Das gleiche trifft auch auf das Internet zu: die Datenpakete werden von verschiedenen Knotenpunkten weitergeleitet, die die Pakete anhand der IP-Adresse an den nächsten Knotenpunkt weiterleiten.
 Wenn die Datenpakete unverschlüsselt sind, können die Knotenpunkte die Datenpakete lesen und ggf. manipulieren.
