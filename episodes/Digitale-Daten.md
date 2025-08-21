@@ -474,6 +474,8 @@ Da es sich um eine kontinuierliche Größe handelt, wird die Amplitude in der Re
   - Kodierungsprobleme bei Textimport
     - Sprachabhängige Darstellung von Zahlen
     - Unterschiedliche Zeichenencodings
+    - Zeilenumbrüche in Textdateien abh. vom Betriebssystem
+  - Farbmodelle decken nicht den gesamten Farbraum ab
   
 ::::::::::::::::
 
