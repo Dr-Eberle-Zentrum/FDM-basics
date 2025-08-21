@@ -6,81 +6,61 @@ title: 'Aufgabe "Metadaten mit KI"'
 ## Aufgabe zu "Metadaten"
 :::::::::::::::::::::::::::
 
-Metadaten sind Daten, die Informationen über andere Daten enthalten. 
-Sie beschreiben die Struktur, den Inhalt und die Eigenschaften von Datensätzen.
+Das Erstellen von Metadaten ist eine wichtige Aufgabe, um die Auffindbarkeit und Nachnutzbarkeit von Daten und Software zu gewährleisten.
+Allerdings kann das Erstellen und Pflegen von Metadaten auch zeitaufwändig sein.
+Um diesen Prozess zu vereinfachen, können KI-gestützte Tools eingesetzt werden, die bei der Erstellung und Überarbeitung von Metadaten helfen.
+In dieser Aufgabe werden wir KI-gestützte Tools verwenden, um relevante Metadatenschlagworte aus bestehenden Einträgen eines Repositoriums zu extrahieren und diese mit Informationen einer neuen Ressource zu füllen.
+Hierbei steht wieder einmal die Überprüfung der Ergebnisse im Vordergrund, da KI-gestützte Tools nicht immer die gewünschten Ergebnisse liefern und menschliche Expertise erforderlich ist, um die Qualität der Metadaten sicherzustellen.
 
-Es gibt verschiedene Standards und Formate für Metadaten, die je nach Anwendungsfall variieren können.
-In dieser Aufgabe werden wir verschiedene Metadatenformate betrachten und diese mit Hilfe von KI ineinander umformen.
+Konkret wollen wir
 
-## Citation File Format (CFF)
-
-Das [Citation File Format (CFF)](https://citation-file-format.github.io/) ist ein Standard, der es ermöglicht, bibliografische Informationen über Softwareprojekte oder Datenarchive in einer einfachen menschen- und maschinenlesbaren Form zu speichern.
-Die explizite Spezifikation solcher Informationen ist für Software und Daten extrem wichtig, da sie sich i.d.R. nicht vom Endprodukt oder dem Inhalt der Resource ableiten lassen.
-Softwarerepositorien wie GitHub oder Datenrepositorien wie ZENODO unterstützen dieses Format, um die Metadaten zu den Projekten zu speichern und nutzerfreundlich Zitationsinformationen in unterschiedlichen Formaten bereitzustellen.
-
-### Aufgabe 1 - CFF Metadaten untersuchen
-
-Die Datenbasis dieses Selbstlernmaterials ist ein GitHub Repository, in welchem auch Zitationsinformationen im `CFF` Format hinterlegt sind.
-
-- Besuchen sie das Repository [https://github.com/Dr-Eberle-Zentrum/FDM-basics](https://github.com/Dr-Eberle-Zentrum/FDM-basics)
-- Finden sie in der GitHub Oberfläche die von GitHub bereitgestellte Zitationsinformation (Menü im rechten Rand)
-- Erstellen sie eine Markdown-Datei 
-  - `FDM-basics-Metadaten.md` in ihrem Abgabeordner 
-  - und dokumentieren sie dort den aktuellen Stand:
-    - die Zitationsinformationen im CFF Format (nutzen sie einen Codeblock in Markdown)
-    - die Zitationsinformation im BibTeX Format
+- Wichtige Metadatenschlagworte aus einen Eintrag im [Zentralen Open Educational Resource Repositorium (ZOERR)](https://www.zoerr.de/) extrahieren
+- Entsprechende Metadaten für die Selbstlernmaterialien "[FDM-basics](https://dr-eberle-zentrum.github.io/FDM-basics/)" des Dr. Eberle Zentrums erstellen
 
 
-### Aufgabe 2 - CFF Metadaten überarbeiten
+## Aufgabe 1 - AI for the rescue
 
-CFF Dateien können auch von Menschen gelesen werden, da sie in einem YAML ähnlichen Format geschrieben sind.
-Sie können die Datei also auch in einem Texteditor öffnen und bearbeiten.
-Allerdings bietet es sich an, einen speziellen Editor zu verwenden, der die Syntaxprüfung und Validierung übernimmt.
-Im Folgenden sollen sie solch einen verwenden, um die Metadaten zu überarbeiten.
-
-- Öffnen sie den [Online CFF Editor](https://citation-file-format.github.io/cff-initializer-javascript/#/)
-- Laden sie den CFF Eintrag aus dem Repositorium zum Editieren hoch
-- Prüfen und überarbeiten sie u.a.
-  - Titel des Projekts
-  - Autorenliste
-  - Artifact repository (Basis-URL der erzeugten Selbstlernseiten wie in diesem Dokument)
-  - Veröffentlichungsdatum auf das aktuelle Datum setzen
-  - Version auf das aktuelle Semester setzen
-  - Keyword Liste ergänzen bzw. überarbeiten
-  - .. *falls sie nicht wissen, was gewisse Punkte bedeuten, schlagen sie kurz in der [CFF Spezifikation](https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md#index) nach*.
-- Speichern sie die überarbeiteten CFF Metadaten in der Datei `FDM-basics-Metadaten.md` in einem neuen Abschnitt ab.
-
-
-### Aufgabe 3 - CFF Metadaten in andere Formate umwandeln
-
-Es gibt verschiedene Formate, in denen Zitationsinformationen bereitgestellt werden können.
-Die gängigsten sind `BibTeX`, `RIS` und `JSON` und hierfür gibt es auch Konverter, die die CFF Metadaten in diese Formate umwandeln können.
-
-Allerdings möchten wir die Daten im allgemeinen [Dublin Core Format](https://www.glomas.de/glossar/dublin-core) bereitstellen, da dieses Format von vielen Repositorien und Bibliotheken unterstützt wird.
-
-Um uns die Suche nach einem geeigneten Konverter zu ersparen, beschliessen wir, die Umwandlung mit Hilfe von KI Tools wie [ChatGPT](https://chat.openai.com/), [Claude](https://claude.ai/) oder Microsoft [Copilot](https://www.microsoft.com/en-us/microsoft-365/copilot) durchzuführen.
-
-*ACHTUNG: Hierbei verschiebt sich jedoch ihre Rolle von der Erstellung von Inhalten hin zu einer Überprüfung der Ergebnisse, die die KI generiert.
-Also prüfen sie die Ergebnisse auf Vollständigkeit und Richtigkeit (und schlagen sie ggf. vorher nochmal kurz in der [Dublin Core Format](https://www.glomas.de/glossar/dublin-core) Zusammenfassung nach).*
-
-- Verwenden sie einen KI Dienst ihrer Wahl, um die CFF Metadaten in Dublin Core Metadaten im XML Format umzuwandeln.
-- Standardmäßig unterstützt Dublin Core 15 unterschiedliche Metadaten-Elemente, welche teilweise auch mehrfach vorkommen dürfen
-  - Prüfen sie, ob alle 15 Elemente in den Metadaten enthalten sind oder ob ggf. zusätzliche Elemente hinzugefügt werden könnten
-  - Überprüfen sie, ob Mehrfachverwendungen von Elementen sinnvoll sind und ob diese korrekt umgesetzt wurden
-  - ggf. benötigen sie den "Qualified Dublin Core" Standard, der zusätzliche Annotationen möglich macht
-  - Stellen sie sicher, dass die Datei in einem validen XML Format vorliegt
-- Speichern sie die Dublin Core XML Metadaten in der Datei `FDM-basics-Metadaten.md` in einem neuen Abschnitt ab.
-  - Dokumentieren sie auch die verwendete KI und was sie händisch nachgearbeitet haben.
-  - Beschreiben sie (halbe Seite), wo sie an welche Grenzen gestoßen sind und welches Metadatenformat sie für mächtiger halten und warum.
+- Besuchen sie die Seite des [ZOERR](https://www.zoerr.de/) und öffnen sie verschiedene Materialien
+  - (mindestens 3)
+  - Klicken sie jeweils auf den "(I) Infos" Button im oberen grauen Rand, um die hinterlegten Metadaten zu sehen
+  - Kopieren sie sich die **umfangreichsten Metadaten** (bzw. halten sie diese im Browser offen für den nächsten Schritt)
+- Öffnen sie eine neue Prompting Session im LLM Tool ihrer Wahl (z.B. MS Copilot, ChatGPT, ...)
+  - **BEACHTEN:** *Wenn das Ergebnis nach etwa 10 (konkreten und expliziten) Prompts noch nicht ihren Wünschen entspricht, brechen sie ab und machen mit dem nächsten Punkt weiter*
+  - Informieren sie die KI über ihre Absichten und was sie von ihr wollen (Kontext und Aufgabe definieren!)
+  - Liefern sie die Metadaten aus Schritt eins
+  - Sorgen sie dafür, dass diese auf ein leeres Formular reduziert werden
+    - Prüfen sie das leere Formular auf Vollständigkeit und Richtigkeit! (und lassen sie entsprechend korrigieren wenn nötig)
+  - Lassen sie das leere Formular für unser [Onlinelehrmaterial "FDM-basic"](https://dr-eberle-zentrum.github.io/FDM-basics/) füllen.
+  - Lassen sie sich eine Kurzbeschreibung in 10 Sätzen und 10 Schlagworte erstellen und einfügen
+    -  Verwenden sie hierfür die ["All-in-one"-Seitenansicht](https://dr-eberle-zentrum.github.io/FDM-basics/aio.html)
+  - Prüfen sie kritisch den Vorschlag
+    - Autoreninformation finden sie auf der GitHub Seite des Projektes
+    - Lassen sie den Vorschlag entsprechend korrigieren.
+- Lassen sie sich den letzten Vorschlag im Markdown Format ausgeben und speichern sie diesen in ihrem Abgabeordner:
+  - Dateiname: `FDM-basics.ZOERR.KI.md`
+  - Fügen sie der Datei einen neuen (letzten) Abschnitt "KI" hinzu
+    - Dokumentieren sie die verwendete KI (Name, URL, Version)
+    - Speichern sie ihre komplette LLM Prompthistorie (sollten max. 10 Prompts sein, s.o.) für diese Aufgabe ab Schritt 2 (einfach komplett mit Zwischenantworten) zur Dokumentation via Copy-And-Paste
+- Laden sie die Datei in ihrem Abgabeordner hoch
 
 
-### Aufgabe 4 - Abgabedatei überarbeiten
+## Aufgabe 2 - Manuelle Überarbeitung und Reflexion
 
-Zum Schluss sollten sie (vor Abgabe) noch einen letzten Blick auf ihre Abgabedatei werfen und folgende Punkte prüfen:
+- Kopieren sie die erzeugte Markdown Datei und nehmen sie finale händische Überarbeitungen vor
+  - Dateiname: `FDM-basics.ZOERR.md`
+  - Entfernen sie den "KI" Abschnitt der Prompthistorie
+  - Prüfen sie Metadaten, insbesondere
+    - Autoren, Lizenz, Schlagwörter, Fachbereich, ... korrekt?
+    - "Alte" Informationen aus Vorlage entfernt?
+    - Erweiterte Kurzbeschreibung und Schlagworte von oben integriert und korrekt?
+    - Kann man noch was ergänzen?
+- Ergänzen sie einen neuen Abschnitt "Reflexion":
+  - Dokumentieren sie ihre Erfahrungen und Beurteilen sie den Workflow. Beantworten sie dazu einige Fragen:
+    - Was musste noch final angepasst werden? Wo hat generatives Erstellen nicht funktioniert?
+    - Wie schätzen sie den Zeitbedarf ein? Wären sie händisch schneller gewesen? Was ging so schneller?
+    - Wo sehen sie Grenzen in der Anwendung ihres LLM Tools für derartige Aufgaben? Wie beurteilen sie die Zuverlässigkeit?
+    - Gibt es aus ihrer Sicht rechtliche Bedenken und wenn ja welche?
+    - Wie sicher sind sie, dass die finalen, händisch überarbeiteten Metadaten stimmen?
+- Laden sie die finale Datei in ihrem Abgabeordner hoch
 
-- Sind alle Metadaten in eigenen `Code` Blöcken in Markdown gesetzt, sodass sie nicht als Fließtext interpretiert werden?
-- Haben sie alle Abschnitte mit Überschriften versehen?
-- Fügen sie kurze Beschreibungen zu den Absätzen hinzu, was dort zu finden ist.
-
-Alles ok? Na dann kann es ja losgehen mit der Abgabe! 👍
 
