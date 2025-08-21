@@ -355,127 +355,106 @@
         
 
 
-<p>Metadaten sind Daten, die Informationen über andere Daten enthalten.
-Sie beschreiben die Struktur, den Inhalt und die Eigenschaften von
-Datensätzen.</p>
-<p>Es gibt verschiedene Standards und Formate für Metadaten, die je nach
-Anwendungsfall variieren können. In dieser Aufgabe werden wir
-verschiedene Metadatenformate betrachten und diese mit Hilfe von KI
-ineinander umformen.</p>
-<section><h2 class="section-heading" id="citation-file-format-cff">Citation File Format (CFF)<a class="anchor" aria-label="anchor" href="#citation-file-format-cff"></a></h2>
-<hr class="half-width"><p>Das <a href="https://citation-file-format.github.io/" class="external-link">Citation File
-Format (CFF)</a> ist ein Standard, der es ermöglicht, bibliografische
-Informationen über Softwareprojekte oder Datenarchive in einer einfachen
-menschen- und maschinenlesbaren Form zu speichern. Die explizite
-Spezifikation solcher Informationen ist für Software und Daten extrem
-wichtig, da sie sich i.d.R. nicht vom Endprodukt oder dem Inhalt der
-Resource ableiten lassen. Softwarerepositorien wie GitHub oder
-Datenrepositorien wie ZENODO unterstützen dieses Format, um die
-Metadaten zu den Projekten zu speichern und nutzerfreundlich
-Zitationsinformationen in unterschiedlichen Formaten
-bereitzustellen.</p>
-<div class="section level3">
-<h3 id="aufgabe-1---cff-metadaten-untersuchen">Aufgabe 1 - CFF Metadaten untersuchen<a class="anchor" aria-label="anchor" href="#aufgabe-1---cff-metadaten-untersuchen"></a></h3>
-<p>Die Datenbasis dieses Selbstlernmaterials ist ein GitHub Repository,
-in welchem auch Zitationsinformationen im <code>CFF</code> Format
-hinterlegt sind.</p>
-<ul><li>Besuchen sie das Repository <a href="https://github.com/Dr-Eberle-Zentrum/FDM-basics" class="external-link">https://github.com/Dr-Eberle-Zentrum/FDM-basics</a>
-</li>
-<li>Finden sie in der GitHub Oberfläche die von GitHub bereitgestellte
-Zitationsinformation (Menü im rechten Rand)</li>
-<li>Erstellen sie eine Markdown-Datei
+<p>Das Erstellen von Metadaten ist eine wichtige Aufgabe, um die
+Auffindbarkeit und Nachnutzbarkeit von Daten und Software zu
+gewährleisten. Allerdings kann das Erstellen und Pflegen von Metadaten
+auch zeitaufwändig sein. Um diesen Prozess zu vereinfachen, können
+KI-gestützte Tools eingesetzt werden, die bei der Erstellung und
+Überarbeitung von Metadaten helfen. In dieser Aufgabe werden wir
+KI-gestützte Tools verwenden, um relevante Metadatenschlagworte aus
+bestehenden Einträgen eines Repositoriums zu extrahieren und diese mit
+Informationen einer neuen Ressource zu füllen. Hierbei steht wieder
+einmal die Überprüfung der Ergebnisse im Vordergrund, da KI-gestützte
+Tools nicht immer die gewünschten Ergebnisse liefern und menschliche
+Expertise erforderlich ist, um die Qualität der Metadaten
+sicherzustellen.</p>
+<p>Konkret wollen wir</p>
+<ul><li>Wichtige Metadatenschlagworte aus einen Eintrag im <a href="https://www.zoerr.de/" class="external-link">Zentralen Open Educational Resource
+Repositorium (ZOERR)</a> extrahieren</li>
+<li>Entsprechende Metadaten für die Selbstlernmaterialien “<a href="https://dr-eberle-zentrum.github.io/FDM-basics/" class="external-link">FDM-basics</a>”
+des Dr. Eberle Zentrums erstellen</li>
+</ul><section><h2 class="section-heading" id="aufgabe-1---ai-for-the-rescue">Aufgabe 1 - AI for the rescue<a class="anchor" aria-label="anchor" href="#aufgabe-1---ai-for-the-rescue"></a></h2>
+<hr class="half-width"><ul><li>Besuchen sie die Seite des <a href="https://www.zoerr.de/" class="external-link">ZOERR</a>
+und öffnen sie verschiedene Materialien
+<ul><li>(mindestens 3)</li>
+<li>Klicken sie jeweils auf den “(I) Infos” Button im oberen grauen
+Rand, um die hinterlegten Metadaten zu sehen</li>
+<li>Kopieren sie sich die <strong>umfangreichsten Metadaten</strong>
+(bzw. halten sie diese im Browser offen für den nächsten Schritt)</li>
+</ul></li>
+<li>Öffnen sie eine neue Prompting Session im LLM Tool ihrer Wahl (z.B.
+MS Copilot, ChatGPT, …)
 <ul><li>
-<code>FDM-basics-Metadaten.md</code> in ihrem Abgabeordner</li>
-<li>und dokumentieren sie dort den aktuellen Stand:
-<ul><li>die Zitationsinformationen im CFF Format (nutzen sie einen Codeblock
-in Markdown)</li>
-<li>die Zitationsinformation im BibTeX Format</li>
-</ul></li>
-</ul></li>
-</ul></div>
-<div class="section level3">
-<h3 id="aufgabe-2---cff-metadaten-überarbeiten">Aufgabe 2 - CFF Metadaten überarbeiten<a class="anchor" aria-label="anchor" href="#aufgabe-2---cff-metadaten-%C3%BCberarbeiten"></a></h3>
-<p>CFF Dateien können auch von Menschen gelesen werden, da sie in einem
-YAML ähnlichen Format geschrieben sind. Sie können die Datei also auch
-in einem Texteditor öffnen und bearbeiten. Allerdings bietet es sich an,
-einen speziellen Editor zu verwenden, der die Syntaxprüfung und
-Validierung übernimmt. Im Folgenden sollen sie solch einen verwenden, um
-die Metadaten zu überarbeiten.</p>
-<ul><li>Öffnen sie den <a href="https://citation-file-format.github.io/cff-initializer-javascript/#/" class="external-link">Online
-CFF Editor</a>
+<strong>BEACHTEN:</strong> <em>Wenn das Ergebnis nach etwa 10
+(konkreten und expliziten) Prompts noch nicht ihren Wünschen entspricht,
+brechen sie ab und machen mit dem nächsten Punkt weiter</em>
 </li>
-<li>Laden sie den CFF Eintrag aus dem Repositorium zum Editieren
-hoch</li>
-<li>Prüfen und überarbeiten sie u.a.
-<ul><li>Titel des Projekts</li>
-<li>Autorenliste</li>
-<li>Artifact repository (Basis-URL der erzeugten Selbstlernseiten wie in
-diesem Dokument)</li>
-<li>Veröffentlichungsdatum auf das aktuelle Datum setzen</li>
-<li>Version auf das aktuelle Semester setzen</li>
-<li>Keyword Liste ergänzen bzw. überarbeiten</li>
-<li>.. <em>falls sie nicht wissen, was gewisse Punkte bedeuten, schlagen
-sie kurz in der <a href="https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md#index" class="external-link">CFF
-Spezifikation</a> nach</em>.</li>
+<li>Informieren sie die KI über ihre Absichten und was sie von ihr
+wollen (Kontext und Aufgabe definieren!)</li>
+<li>Liefern sie die Metadaten aus Schritt eins</li>
+<li>Sorgen sie dafür, dass diese auf ein leeres Formular reduziert
+werden
+<ul><li>Prüfen sie das leere Formular auf Vollständigkeit und Richtigkeit!
+(und lassen sie entsprechend korrigieren wenn nötig)</li>
 </ul></li>
-<li>Speichern sie die überarbeiteten CFF Metadaten in der Datei
-<code>FDM-basics-Metadaten.md</code> in einem neuen Abschnitt ab.</li>
-</ul></div>
-<div class="section level3">
-<h3 id="aufgabe-3---cff-metadaten-in-andere-formate-umwandeln">Aufgabe 3 - CFF Metadaten in andere Formate umwandeln<a class="anchor" aria-label="anchor" href="#aufgabe-3---cff-metadaten-in-andere-formate-umwandeln"></a></h3>
-<p>Es gibt verschiedene Formate, in denen Zitationsinformationen
-bereitgestellt werden können. Die gängigsten sind <code>BibTeX</code>,
-<code>RIS</code> und <code>JSON</code> und hierfür gibt es auch
-Konverter, die die CFF Metadaten in diese Formate umwandeln können.</p>
-<p>Allerdings möchten wir die Daten im allgemeinen <a href="https://www.glomas.de/glossar/dublin-core" class="external-link">Dublin Core Format</a>
-bereitstellen, da dieses Format von vielen Repositorien und Bibliotheken
-unterstützt wird.</p>
-<p>Um uns die Suche nach einem geeigneten Konverter zu ersparen,
-beschliessen wir, die Umwandlung mit Hilfe von KI Tools wie <a href="https://chat.openai.com/" class="external-link">ChatGPT</a>, <a href="https://claude.ai/" class="external-link">Claude</a> oder Microsoft <a href="https://www.microsoft.com/en-us/microsoft-365/copilot" class="external-link">Copilot</a>
-durchzuführen.</p>
-<p><em>ACHTUNG: Hierbei verschiebt sich jedoch ihre Rolle von der
-Erstellung von Inhalten hin zu einer Überprüfung der Ergebnisse, die die
-KI generiert. Also prüfen sie die Ergebnisse auf Vollständigkeit und
-Richtigkeit (und schlagen sie ggf. vorher nochmal kurz in der <a href="https://www.glomas.de/glossar/dublin-core" class="external-link">Dublin Core Format</a>
-Zusammenfassung nach).</em></p>
-<ul><li>Verwenden sie einen KI Dienst ihrer Wahl, um die CFF Metadaten in
-Dublin Core Metadaten im XML Format umzuwandeln.</li>
-<li>Standardmäßig unterstützt Dublin Core 15 unterschiedliche
-Metadaten-Elemente, welche teilweise auch mehrfach vorkommen dürfen
-<ul><li>Prüfen sie, ob alle 15 Elemente in den Metadaten enthalten sind oder
-ob ggf. zusätzliche Elemente hinzugefügt werden könnten</li>
-<li>Überprüfen sie, ob Mehrfachverwendungen von Elementen sinnvoll sind
-und ob diese korrekt umgesetzt wurden</li>
-<li>ggf. benötigen sie den “Qualified Dublin Core” Standard, der
-zusätzliche Annotationen möglich macht</li>
-<li>Stellen sie sicher, dass die Datei in einem validen XML Format
-vorliegt</li>
+<li>Lassen sie das leere Formular für unser <a href="https://dr-eberle-zentrum.github.io/FDM-basics/" class="external-link">Onlinelehrmaterial
+“FDM-basic”</a> füllen.</li>
+<li>Lassen sie sich eine Kurzbeschreibung in 10 Sätzen und 10
+Schlagworte erstellen und einfügen
+<ul><li>Verwenden sie hierfür die <a href="https://dr-eberle-zentrum.github.io/FDM-basics/aio.html" class="external-link">“All-in-one”-Seitenansicht</a>
+</li>
 </ul></li>
-<li>Speichern sie die Dublin Core XML Metadaten in der Datei
-<code>FDM-basics-Metadaten.md</code> in einem neuen Abschnitt ab.
-<ul><li>Dokumentieren sie auch die verwendete KI und was sie händisch
-nachgearbeitet haben.</li>
-<li>Beschreiben sie (halbe Seite), wo sie an welche Grenzen gestoßen
-sind und welches Metadatenformat sie für mächtiger halten und
-warum.</li>
+<li>Prüfen sie kritisch den Vorschlag
+<ul><li>Autoreninformation finden sie auf der GitHub Seite des
+Projektes</li>
+<li>Lassen sie den Vorschlag entsprechend korrigieren.</li>
 </ul></li>
-</ul></div>
-<div class="section level3">
-<h3 id="aufgabe-4---abgabedatei-überarbeiten">Aufgabe 4 - Abgabedatei überarbeiten<a class="anchor" aria-label="anchor" href="#aufgabe-4---abgabedatei-%C3%BCberarbeiten"></a></h3>
-<p>Zum Schluss sollten sie (vor Abgabe) noch einen letzten Blick auf
-ihre Abgabedatei werfen und folgende Punkte prüfen:</p>
-<ul><li>Sind alle Metadaten in eigenen <code>Code</code> Blöcken in Markdown
-gesetzt, sodass sie nicht als Fließtext interpretiert werden?</li>
-<li>Haben sie alle Abschnitte mit Überschriften versehen?</li>
-<li>Fügen sie kurze Beschreibungen zu den Absätzen hinzu, was dort zu
-finden ist.</li>
-</ul><p>Alles ok? Na dann kann es ja losgehen mit der Abgabe! 👍</p>
-<!--
+</ul></li>
+<li>Lassen sie sich den letzten Vorschlag im Markdown Format ausgeben
+und speichern sie diesen in ihrem Abgabeordner:
+<ul><li>Dateiname: <code>FDM-basics.ZOERR.KI.md</code>
+</li>
+<li>Fügen sie der Datei einen neuen (letzten) Abschnitt “KI” hinzu
+<ul><li>Dokumentieren sie die verwendete KI (Name, URL, Version)</li>
+<li>Speichern sie ihre komplette LLM Prompthistorie (sollten max. 10
+Prompts sein, s.o.) für diese Aufgabe ab Schritt 2 (einfach komplett mit
+Zwischenantworten) zur Dokumentation via Copy-And-Paste</li>
+</ul></li>
+</ul></li>
+<li>Laden sie die Datei in ihrem Abgabeordner hoch</li>
+</ul></section><section><h2 class="section-heading" id="aufgabe-2---manuelle-überarbeitung-und-reflexion">Aufgabe 2 - Manuelle Überarbeitung und Reflexion<a class="anchor" aria-label="anchor" href="#aufgabe-2---manuelle-%C3%BCberarbeitung-und-reflexion"></a></h2>
+<hr class="half-width"><ul><li>Kopieren sie die erzeugte Markdown Datei und nehmen sie finale
+händische Überarbeitungen vor
+<ul><li>Dateiname: <code>FDM-basics.ZOERR.md</code>
+</li>
+<li>Entfernen sie den “KI” Abschnitt der Prompthistorie</li>
+<li>Prüfen sie Metadaten, insbesondere
+<ul><li>Autoren, Lizenz, Schlagwörter, Fachbereich, … korrekt?</li>
+<li>“Alte” Informationen aus Vorlage entfernt?</li>
+<li>Erweiterte Kurzbeschreibung und Schlagworte von oben integriert und
+korrekt?</li>
+<li>Kann man noch was ergänzen?</li>
+</ul></li>
+</ul></li>
+<li>Ergänzen sie einen neuen Abschnitt “Reflexion”:
+<ul><li>Dokumentieren sie ihre Erfahrungen und Beurteilen sie den Workflow.
+Beantworten sie dazu einige Fragen:
+<ul><li>Was musste noch final angepasst werden? Wo hat generatives Erstellen
+nicht funktioniert?</li>
+<li>Wie schätzen sie den Zeitbedarf ein? Wären sie händisch schneller
+gewesen? Was ging so schneller?</li>
+<li>Wo sehen sie Grenzen in der Anwendung ihres LLM Tools für derartige
+Aufgaben? Wie beurteilen sie die Zuverlässigkeit?</li>
+<li>Gibt es aus ihrer Sicht rechtliche Bedenken und wenn ja welche?</li>
+<li>Wie sicher sind sie, dass die finalen, händisch überarbeiteten
+Metadaten stimmen?</li>
+</ul></li>
+</ul></li>
+<li>Laden sie die finale Datei in ihrem Abgabeordner hoch</li>
+</ul><!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
- -->
-</div>
-</section></div> <!-- / div.lesson-content -->
+ --></section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Vorheriges und nächstes Kapitel"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="index.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Zurück</a>
         <a class="chapter-link float-end" href="index.html">Weiter<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
