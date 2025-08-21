@@ -1,5 +1,5 @@
 ---
-title: 'Aufgabe "Strukturcheck von Dateien"'
+title: 'Aufgabe "Metadaten mit KI"'
 ---
 
 :::::::::::::::: instructor
@@ -31,27 +31,27 @@ Die Datenbasis dieses Selbstlernmaterials ist ein GitHub Repository, in welchem 
     - die Zitationsinformation im BibTeX Format
 
 
-### Aufgabe 1 - CFF Metadaten überarbeiten
+### Aufgabe 2 - CFF Metadaten überarbeiten
 
 CFF Dateien können auch von Menschen gelesen werden, da sie in einem YAML ähnlichen Format geschrieben sind.
 Sie können die Datei also auch in einem Texteditor öffnen und bearbeiten.
 Allerdings bietet es sich an, einen speziellen Editor zu verwenden, der die Syntaxprüfung und Validierung übernimmt.
 Im Folgenden sollen sie solch einen verwenden, um die Metadaten zu überarbeiten.
 
-- Öffnen sie die den [Online CFF Editor](https://citation-file-format.github.io/cff-initializer-javascript/#/)
-- Laden sie die CFF Datei aus dem Repositorium zum Editieren hoch
-- Prüfen und Überarbeiten sie die Metadaten, indem sie u.a. prüfen
+- Öffnen sie den [Online CFF Editor](https://citation-file-format.github.io/cff-initializer-javascript/#/)
+- Laden sie den CFF Eintrag aus dem Repositorium zum Editieren hoch
+- Prüfen und überarbeiten sie u.a.
   - Titel des Projekts
-  - Autorenliste (check)
-  - Artifact repository (URL der erzeugten Selbstlernseite wie in diesem Dokument)
+  - Autorenliste
+  - Artifact repository (Basis-URL der erzeugten Selbstlernseiten wie in diesem Dokument)
   - Veröffentlichungsdatum auf das aktuelle Datum setzen
-  - Keyword Liste ergänzen bzw. überarbeiten
   - Version auf das aktuelle Semester setzen
+  - Keyword Liste ergänzen bzw. überarbeiten
   - .. *falls sie nicht wissen, was gewisse Punkte bedeuten, schlagen sie kurz in der [CFF Spezifikation](https://github.com/citation-file-format/citation-file-format/blob/main/schema-guide.md#index) nach*.
 - Speichern sie die überarbeiteten CFF Metadaten in der Datei `FDM-basics-Metadaten.md` in einem neuen Abschnitt ab.
 
 
-### Aufgabe 2 - CFF Metadaten in andere Formate umwandeln
+### Aufgabe 3 - CFF Metadaten in andere Formate umwandeln
 
 Es gibt verschiedene Formate, in denen Zitationsinformationen bereitgestellt werden können.
 Die gängigsten sind `BibTeX`, `RIS` und `JSON` und hierfür gibt es auch Konverter, die die CFF Metadaten in diese Formate umwandeln können.
@@ -60,19 +60,27 @@ Allerdings möchten wir die Daten im allgemeinen [Dublin Core Format](https://ww
 
 Um uns die Suche nach einem geeigneten Konverter zu ersparen, beschliessen wir, die Umwandlung mit Hilfe von KI Tools wie [ChatGPT](https://chat.openai.com/), [Claude](https://claude.ai/) oder Microsoft [Copilot](https://www.microsoft.com/en-us/microsoft-365/copilot) durchzuführen.
 
-*ACHTUNG: Hierbei verschiebt sich jedoch ihre Rolle als Datenmanager:in von der manuellen Umwandlung hin zu einer Überprüfung der Ergebnisse, die die KI generiert.
+*ACHTUNG: Hierbei verschiebt sich jedoch ihre Rolle von der Erstellung von Inhalten hin zu einer Überprüfung der Ergebnisse, die die KI generiert.
 Also prüfen sie die Ergebnisse auf Vollständigkeit und Richtigkeit (und schlagen sie ggf. vorher nochmal kurz in der [Dublin Core Format](https://www.glomas.de/glossar/dublin-core) Zusammenfassung nach).*
 
 - Verwenden sie einen KI Dienst ihrer Wahl, um die CFF Metadaten in Dublin Core Metadaten im XML Format umzuwandeln.
 - Standardmäßig unterstützt Dublin Core 15 unterschiedliche Metadaten-Elemente, welche teilweise auch mehrfach vorkommen dürfen
   - Prüfen sie, ob alle 15 Elemente in den Metadaten enthalten sind oder ob ggf. zusätzliche Elemente hinzugefügt werden könnten
   - Überprüfen sie, ob Mehrfachverwendungen von Elementen sinnvoll sind und ob diese korrekt umgesetzt wurden
+  - ggf. benötigen sie den "Qualified Dublin Core" Standard, der zusätzliche Annotationen möglich macht
   - Stellen sie sicher, dass die Datei in einem validen XML Format vorliegt
-- Speichern sie die Metadaten in der Datei `FDM-basics-Metadaten.md` in einem neuen Abschnitt ab.
+- Speichern sie die Dublin Core XML Metadaten in der Datei `FDM-basics-Metadaten.md` in einem neuen Abschnitt ab.
   - Dokumentieren sie auch die verwendete KI und was sie händisch nachgearbeitet haben.
   - Beschreiben sie (halbe Seite), wo sie an welche Grenzen gestoßen sind und welches Metadatenformat sie für mächtiger halten und warum.
 
 
+### Aufgabe 4 - Abgabedatei überarbeiten
 
+Zum Schluss sollten sie (vor Abgabe) noch einen letzten Blick auf ihre Abgabedatei werfen und folgende Punkte prüfen:
 
+- Sind alle Metadaten in eigenen `Code` Blöcken in Markdown gesetzt, sodass sie nicht als Fließtext interpretiert werden?
+- Haben sie alle Abschnitte mit Überschriften versehen?
+- Fügen sie kurze Beschreibungen zu den Absätzen hinzu, was dort zu finden ist.
+
+Alles ok? Na dann kann es ja losgehen mit der Abgabe! 👍
 
