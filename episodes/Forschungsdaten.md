@@ -148,7 +148,7 @@ Ohne oder bei eingeschränkter Dokumentation können folgende Fragen nicht beant
 
 - Forschungsdaten sind nicht nur Rohdaten, sondern auch Metadaten, Dokumentation und Software.
 - Forschungsdaten sollten geteilt werden.
-- Die F.A.I.R.-Prinzipien unterstützen das Teilen von Daten.
+- Die F.A.I.R.-Prinzipien unterstützen das Teilen von Daten. (*F*indable, *A*ccessible, *I*nteroperable, *R*eusable)
 - Dokumentation ist zentral für die Nachvollziehbarkeit und Wiederverwendbarkeit von Daten.
 
 ::::::::::::::::::::
