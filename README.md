@@ -6,7 +6,7 @@ Der Fokus liegt hierbei auf Recherche, Dokumentation und Wiederverwendung von Fo
 
 ## Zielgruppe
 
-Dieses Modul richtet sich an Personen ohne oder mit wenig Erfahrung im Forschungsdatenmanagement, die sich einen ersten Überblick über die Thematik verschaffen möchten.
+Dieses Modul richtet sich an Personen ohne oder mit wenig Erfahrung im Forschungsdatenmanagement und IT-Grundlagen, die sich einen ersten Überblick über die Thematik verschaffen möchten.
 
 ## Los geht's ...
 
