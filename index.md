@@ -6,8 +6,9 @@ site: sandpaper::sandpaper_site
 Dies ist ein Kurzüberblick über einige grundlegende Aspekte von Forschungsdatenmanagement.
 
 Dieses Modul richtet sich an Personen ohne oder mit wenig Erfahrung im Forschungsdatenmanagement, die sich einen ersten Überblick über die Thematik verschaffen möchten.
+Auch werden Grundlagen der digitalen Informationstechnologie erklärt.
 
-Der Fokus liegt hierbei auf Recherche, Dokumentation, Organisation und Wiederverwendung von digitalen (Forschungs)Daten.
+Der Fokus liegt hierbei auf IT-Grundlagen, Recherche, Dokumentation, Organisation und Wiederverwendung von digitalen (Forschungs)Daten.
 
 :::::::::::::::::::::::::::::::::::::: questions 
 
@@ -37,7 +38,7 @@ In diesem Kurs werden wichtige Schritte und Probleme des Forschungsdatenmanageme
 Der Fokus liegt hierbei auf der praktischen Anwendung von Werkzeugen und Workflows, die Ihnen helfen, Ihre Forschungsdaten effizient und nachhaltig zu verwalten und zu teilen.
 Zudem ist die Dokumentation von Daten und Arbeitsschritten ein wichtiger Bestandteil des FDM, der in diesem Kurs ebenfalls behandelt wird.
 
-Im Laufe des Kurses durchlaufen die Teilnehmenden alle Schritte des Forschungsdatenmanagements im Rahmen eines konkreten Projekts.
+Im Laufe des Kurses erleben die Teilnehmenden wichtige Aspekte des Forschungsdatenmanagements im Rahmen von kleinen praktischen Übungen.
 Die wichtigsten Schritte im Lebenszyklus von Forschungsdaten sind in folgender Grafik der Informationsseite ["Was ist Forschungsdatenmanagement (FDM)?"](https://uni-tuebingen.de/de/240762) der Universität Tübingen zusammengefasst.
 
 ![Wissenschaftliche Forschung ist ein iterativer Prozess, der aus verschiedenen Phasen besteht.
