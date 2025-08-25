@@ -1,0 +1,23 @@
+
+## Ideen einer Musterlösung
+
+### 1. Urheberrechtliche Beteiligung
+- Die Soziologin und der Informatiker sind Miturheber, da sie konzeptionell und inhaltlich an der Datenerhebung beteiligt waren.
+- Die studentische Hilfskraft ist in der Regel nicht urheberrechtlich beteiligt, wenn sie rein unterstützend tätig war (z. B. Transkription nach Vorgabe), es sei denn, sie hat kreativ mitgewirkt.
+- Transkripte können als eigene Werke gelten, wenn sie kreativ gestaltet wurden.
+
+### 2. Rechteklärung
+- Alle Miturheber müssen der Veröffentlichung zustimmen.
+- Bei personenbezogenen Daten sind Einwilligungen der Interviewten erforderlich.
+- Eine Anonymisierung kann erforderlich sein, um Datenschutzvorgaben zu erfüllen.
+
+### 3. Lizenzierung
+- Eine **CC BY-Lizenz** ist geeignet, wenn Nachnutzung erlaubt sein soll und die Urheber genannt werden.
+- Eine **CC0-Lizenz** ist nur möglich, wenn alle Rechteinhaber zustimmen und keine personenbezogenen Daten enthalten sind.
+- Einschränkungen können sich aus Datenschutz oder Drittmittelverträgen ergeben.
+
+### 4. Empfehlung
+- Gemeinsame Klärung der Urheberrechte im Team.
+- Dokumentation der Rechteklärung und Einwilligungen.
+- Wahl einer offenen Lizenz unter Berücksichtigung der Datenschutzvorgaben.
+- Ggf. Rücksprache mit der Hochschuljuristin oder dem Datenschutzbeauftragten.
