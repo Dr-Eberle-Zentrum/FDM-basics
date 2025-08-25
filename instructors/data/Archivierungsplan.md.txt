@@ -1,0 +1,53 @@
+## ✅ Musterlösung: Archivierung und Speicherung
+
+### 1. Relevante vs. unnötige Dateien
+
+**Relevante Dateien für Archivierung:**
+- `umfrage_bereinigt.xlsx`: bereinigte Umfragedaten, geeignet für Nachnutzung.
+- `interview_01.txt`, `interview_02_final.txt`: qualitative Daten, ggf. anonymisieren.
+- `sensor_messung_gesamt.json`: strukturierte Messdaten.
+- `methodenbeschreibung.pdf`, `ethikvotum.pdf`: Dokumentation und rechtliche Grundlage.
+- `datenmanagementplan.docx`: enthält Archivierungsstrategie.
+- `README.txt`, `metadaten_umfrage.xml`, `metadaten_interviews.json`: essenzielle Metadaten.
+
+**Unnötige oder redundante Dateien:**
+- Kopien wie `Kopie_umfrage_rohdaten(1).csv`, `FINAL_umfrage_bereinigt_NEU.xlsx`, `interview_02_final_final.txt`.
+- Temporäre Dateien: `.DS_Store`, `thumbs.db`, `.temp`.
+- Backup-ZIPs (`backup_mai.zip`, `backup_juni.zip`) ohne klare Versionierung.
+- Test- und Entwurfsdateien: `testdatei.txt`, `Entwurf_Poster.odt`, `ToDoListe_Jan.xlsx`.
+
+---
+
+### 2. Probleme der aktuellen Struktur
+
+- **Versionschaos**: keine klare Benennung, viele „final_final“-Dateien.
+- **Redundanz**: doppelte und veraltete Dateien erschweren Übersicht.
+- **Datenschutzrisiken**: sensible Daten liegen mehrfach und ungeschützt vor.
+- **Fehlende Struktur**: keine Trennung nach Datentypen oder Projektphasen.
+- **Metadaten unvollständig**: nicht alle Dateien sind dokumentiert.
+
+---
+
+### 3. Empfehlungen für Archivierung
+
+**Strukturierungsvorschlag:**
+
+```plaintext
+📁 Archiv_Digitale_Teilhabe
+├── 📁 Rohdaten und Skripte
+│   ├── umfrage_bereinigt.xlsx
+│   ├── sensor_messung_gesamt.json
+│   ├── auswertung_umfrage.rmd
+│   └── interview_01_anonymisiert.txt
+├── 📁 Dokumentation
+│   ├── methodenbeschreibung.pdf
+│   ├── ethikvotum.pdf
+│   └── datenmanagementplan.docx
+├── 📁 Metadaten
+│   ├── README.txt
+│   ├── metadaten_umfrage.xml
+│   └── metadaten_interviews.json
+├── 📁 Auswertungen
+│   ├── statistikbericht.pdf
+│   └── grafik_teilhabe.png
+```
