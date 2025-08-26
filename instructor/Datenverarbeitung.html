@@ -422,7 +422,7 @@ Relevanz der Themen zu verdeutlichen:</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-1" class="tab-pane show active" aria-labelledby="nav-tab-1-1" role="tabpanel">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-1">
 <p>Sie verspüren heute einen unbändigen Tatendrang und möchten Daten zu
 Blütenformen analysieren.</p>
 <p>Nach kurzer Recherche finden sie den <a href="https://en.wikipedia.org/wiki/Iris_flower_data_set" class="external-link">Iris-Datensatz</a>,
@@ -478,7 +478,7 @@ holen ihre Notizen und den Ausdruck.</p>
   Mögliche Probleme
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul><li>
 <strong>Nicht nachvollziehbar</strong>: Leider sind sie sich nicht
@@ -601,17 +601,12 @@ automatisiert durchführt:</p>
 </button>
 <button class="nav-link" id="nav-tab-2-2" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-2" type="button" role="tab" aria-controls="nav-tabpanel-2-2" aria-selected="false">
   <h3 class="tab-header" id="nav-tab-heading-2-2">
-  R online interaktiv
-  </h3>
-</button>
-<button class="nav-link" id="nav-tab-2-3" data-bs-toggle="tab" data-bs-target="#nav-tabpanel-2-3" type="button" role="tab" aria-controls="nav-tabpanel-2-3" aria-selected="false">
-  <h3 class="tab-header" id="nav-tab-heading-2-3">
   Python-Skript
   </h3>
 </button>
 </div>
 </nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-1" class="tab-pane show active" aria-labelledby="nav-tab-2-1" role="tabpanel">
+<div id="nav-tabpanel-2-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-1">
 <p>Hier als R-Skript:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -634,14 +629,10 @@ automatisiert durchführt:</p>
 <span>  <span class="fu">labs</span><span class="op">(</span>title<span class="op">=</span><span class="st">'Sepal length as a function of sepal width'</span>, </span>
 <span>       x<span class="op">=</span><span class="st">'Sepal length'</span>, y<span class="op">=</span><span class="st">'Sepal width'</span><span class="op">)</span></span></code></pre>
 </div>
+<p>Der Code kann [auch interaktiv online via rdrr.io ausgeführt](‘<a href="https://rdrr.io/snippets/embed/?code=library(tidyverse)%20%20%0A%23%20(1)%20Daten%20direkt%20laden%20(ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung)%0Adata%20%3C-%20iris%0A%23%20(2)%20Enthaltene%20Arten%20extrahieren%0Adistinct(data%2C%20Species)%0A%23%20(3)%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount(data%2C%20Species)%0A%23%20(4)%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%0Adata%20%25%3E%25%20%0A%20%20group_by(Species)%20%25%3E%25%20%0A%20%20summarise(across(everything" class="external-link uri">https://rdrr.io/snippets/embed/?code=library(tidyverse)%20%20%0A%23%20(1)%20Daten%20direkt%20laden%20(ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung)%0Adata%20%3C-%20iris%0A%23%20(2)%20Enthaltene%20Arten%20extrahieren%0Adistinct(data%2C%20Species)%0A%23%20(3)%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount(data%2C%20Species)%0A%23%20(4)%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%0Adata%20%25%3E%25%20%0A%20%20group_by(Species)%20%25%3E%25%20%0A%20%20summarise(across(everything</a>()%2C%20mean))%0A%23%20(5)%20Visualisierung%20als%20Streudiagram%0Aggplot(data%2C%20aes(x%3DSepal.Length%2C%20y%3DSepal.Width%2C%20color%3DSpecies))%20%2B%0A%20%20geom_point()%20%2B%0A%20%20labs(title%3D’Sepal%20length%20as%20a%20function%20of%20sepal%20width’%2C%20%0A%20%20%20%20%20%20%20x%3D’Sepal%20length’%2C%20y%3D’Sepal%20width)
+werden.</p>
 </div>
-<div id="nav-tabpanel-2-2" class="tab-pane" aria-labelledby="nav-tab-2-2" role="tabpanel">
-<p>Und hier als interaktives R-Skript (kann direkt im Browser ausgeführt
-werden):</p>
-<p>&lt;iframe width=‘100%’ height=‘300’ src=‘<a href="https://rdrr.io/snippets/embed/?code=library(tidyverse)%20%20%0A%23%20(1)%20Daten%20direkt%20laden%20(ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung)%0Adata%20%3C-%20iris%0A%23%20(2)%20Enthaltene%20Arten%20extrahieren%0Adistinct(data%2C%20Species)%0A%23%20(3)%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount(data%2C%20Species)%0A%23%20(4)%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%0Adata%20%25%3E%25%20%0A%20%20group_by(Species)%20%25%3E%25%20%0A%20%20summarise(across(everything" class="external-link uri">https://rdrr.io/snippets/embed/?code=library(tidyverse)%20%20%0A%23%20(1)%20Daten%20direkt%20laden%20(ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung)%0Adata%20%3C-%20iris%0A%23%20(2)%20Enthaltene%20Arten%20extrahieren%0Adistinct(data%2C%20Species)%0A%23%20(3)%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount(data%2C%20Species)%0A%23%20(4)%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%0Adata%20%25%3E%25%20%0A%20%20group_by(Species)%20%25%3E%25%20%0A%20%20summarise(across(everything</a>()%2C%20mean))%0A%23%20(5)%20Visualisierung%20als%20Streudiagram%0Aggplot(data%2C%20aes(x%3DSepal.Length%2C%20y%3DSepal.Width%2C%20color%3DSpecies))%20%2B%0A%20%20geom_point()%20%2B%0A%20%20labs(title%3D’Sepal%20length%20as%20a%20function%20of%20sepal%20width’%2C%20%0A%20%20%20%20%20%20%20x%3D’Sepal%20length’%2C%20y%3D’Sepal%20width’)’
-frameborder=‘0’&gt;</p>
-</div>
-<div id="nav-tabpanel-2-3" class="tab-pane" aria-labelledby="nav-tab-2-3" role="tabpanel">
+<div id="nav-tabpanel-2-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-2">
 <p>Und das Gleiche als Python-Skript:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -775,18 +766,22 @@ jedem genutzt werden können, z.B. <a href="https://usegalaxy.org/" class="exter
 <div class="section level3">
 <h3 id="openrefine">OpenRefine<a class="anchor" aria-label="anchor" href="#openrefine"></a></h3>
 <p><a href="https://openrefine.org/" class="external-link">OpenRefine</a> (früher Google
-Refine) ist ein Open-Source-Tool zur Datenbereinigung und
--transformation. Es bietet eine grafische Benutzeroberfläche, in der man
-große Datensätze importieren, bereinigen und untersuchen kann.
-OpenRefine ist besonders nützlich für die Arbeit mit unstrukturierten
+Refine) ist eine Open-Source Desktop-Anwendung zur Datenbereinigung und
+-transformation, die lokal auf dem eigenen Rechner installiert wird. Sie
+bietet eine grafische Benutzeroberfläche, in der man große Datensätze
+importieren, bereinigen und untersuchen kann.</p>
+<p>OpenRefine ist besonders nützlich für die Arbeit mit unstrukturierten
 oder semi-strukturierten Daten, wie z.B. CSV-Dateien, Excel-Tabellen
 oder JSON-Daten. OpenRefine ermöglicht es Nutzern, Daten zu filtern, zu
 sortieren, zu gruppieren und zu transformieren. Es unterstützt auch die
-Anwendung von regulären Ausdrücken und bietet eine Vielzahl von
-Erweiterungen, die zusätzliche Funktionalitäten bereitstellen. Ein
-weiterer Vorteil von OpenRefine ist die Möglichkeit, Daten aus
-verschiedenen Quellen zu importieren und zu exportieren, was die
-Integration in bestehende Datenverarbeitungsprozesse erleichtert.</p>
+Anwendung von regulären Ausdrücken und verwendet eine eigene
+Expressions-Sprache namens GREL (General Refine Expression Language) für
+komplexe Datenmanipulationen, welche Ähnlichkeiten zu JavaScript
+aufweist.</p>
+<p>OpenRefine speichert alle durchgeführten Schritte in einem
+sogenannten “Projekt”, das exportiert und später wieder importiert
+werden kann. Dies ermöglicht es, die Datenbereinigung nachvollziehbar zu
+dokumentieren und auf ähnliche Datensätze anzuwenden.</p>
 </div>
 </section><section><h2 class="section-heading" id="portierbarkeit">Portierbarkeit<a class="anchor" aria-label="anchor" href="#portierbarkeit"></a></h2>
 <hr class="half-width"></section><section><h2 class="section-heading" id="skalierbarkeit">Skalierbarkeit<a class="anchor" aria-label="anchor" href="#skalierbarkeit"></a></h2>
@@ -949,7 +944,7 @@ sie obige Punkte als besonders wichtig an?</em></div>
   Antwort
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Das Wissen um die <strong>digitale Repräsentation von
 Informationen</strong> ist immer dann zentral, wenn Daten importiert
@@ -977,7 +972,7 @@ Formaten</li>
   Aufgaben
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
 <div class="accordion-body">
 <div class="section level3">
 <h3 id="sitzungsaufgaben">Sitzungsaufgaben<a class="anchor" aria-label="anchor" href="#sitzungsaufgaben"></a></h3>
