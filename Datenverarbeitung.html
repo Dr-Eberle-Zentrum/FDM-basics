@@ -118,11 +118,11 @@
   Basics Forschungsdatenmanagement
 </div>
 
-<aside class="col-md-12 lesson-progress"><div style="width: 78%" class="percentage">
-    78%
+<aside class="col-md-12 lesson-progress"><div style="width: 81%" class="percentage">
+    81%
   </div>
   <div class="progress UT">
-    <div class="progress-bar UT" role="progressbar" style="width: 78%" aria-valuenow="78" aria-label="Lernfortschritt" aria-valuemin="0" aria-valuemax="100">
+    <div class="progress-bar UT" role="progressbar" style="width: 81%" aria-valuenow="81" aria-label="Lernfortschritt" aria-valuemin="0" aria-valuemax="100">
     </div>
   </div>
 </aside><div class="container">
@@ -421,7 +421,7 @@ Relevanz der Themen zu verdeutlichen:</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-1" class="tab-pane show active" aria-labelledby="nav-tab-1-1" role="tabpanel">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-1">
 <p>Sie verspüren heute einen unbändigen Tatendrang und möchten Daten zu
 Blütenformen analysieren.</p>
 <p>Nach kurzer Recherche finden sie den <a href="https://en.wikipedia.org/wiki/Iris_flower_data_set" class="external-link">Iris-Datensatz</a>,
@@ -477,7 +477,7 @@ holen ihre Notizen und den Ausdruck.</p>
   Mögliche Probleme
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <ul><li>
 <strong>Nicht nachvollziehbar</strong>: Leider sind sie sich nicht
@@ -605,7 +605,7 @@ automatisiert durchführt:</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-1" class="tab-pane show active" aria-labelledby="nav-tab-2-1" role="tabpanel">
+<div id="nav-tabpanel-2-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-1">
 <p>Hier als R-Skript:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -631,7 +631,7 @@ automatisiert durchführt:</p>
 <p>Der obige Code ist <a href="https://rdrr.io/snippets/embed/?code=library%28tidyverse%29%20%20%0A%23%20%281%29%20Daten%20laden%20%28ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung%29%0Adata%20%3C-%20iris%0A%23%20%282%29%20Enthaltene%20Arten%20extrahieren%0Adistinct%28data%2C%20Species%29%0A%23%20%283%29%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount%28data%2C%20Species%29%0A%23%20%284%29%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%20als%20Pipeline%0Adata%20%7C%3E%20%0A%20%20group_by%28Species%29%20%7C%3E%20%0A%20%20summarise%28across%28everything%28%29%2C%20mean%29%29%0A%23%20%285%29%20Visualisierung%20als%20Streudiagram%0Aggplot%28data%2C%20aes%28x%3DSepal.Length%2C%20y%3DSepal.Width%2C%20color%3DSpecies%29%29%20%2B%0A%20%20geom_point%28%29%20%2B%0A%20%20labs%28title%3D%27Sepal%20length%20as%20a%20function%20of%20sepal%20width%27%2C%20%0A%20%20%20%20%20%20%20x%3D%27Sepal%20length%27%2C%20y%3D%27Sepal%20width%27%29" class="external-link">online
 via rdrr.io ausführbar</a>, um die Ergebnisse zu sehen.</p>
 </div>
-<div id="nav-tabpanel-2-2" class="tab-pane" aria-labelledby="nav-tab-2-2" role="tabpanel">
+<div id="nav-tabpanel-2-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-2">
 <p>Und das Gleiche als Python-Skript:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -645,15 +645,14 @@ via rdrr.io ausführbar</a>, um die Ergebnisse zu sehen.</p>
 <span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a><span class="co"># (3) Anzahl der Datensätze pro Art bestimmen</span></span>
 <span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a><span class="bu">print</span>(data[<span class="st">'Species'</span>].value_counts())</span>
 <span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a><span class="co"># (4) Gruppieren pro Art und Mittelwerte der Spalten berechnen</span></span>
-<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a>grouped_data <span class="op">=</span> data.groupby(<span class="st">'Species'</span>).mean()</span>
-<span id="cb2-11"><a href="#cb2-11" tabindex="-1"></a><span class="bu">print</span>(grouped_data)</span>
-<span id="cb2-12"><a href="#cb2-12" tabindex="-1"></a><span class="co"># (5) Visualisierung als Streudiagramm</span></span>
-<span id="cb2-13"><a href="#cb2-13" tabindex="-1"></a>plt.scatter(x<span class="op">=</span>data[<span class="st">'Sepal.Length'</span>], y<span class="op">=</span>data[<span class="st">'Sepal.Width'</span>], c<span class="op">=</span>data[<span class="st">'Species'</span>].astype(<span class="st">'category'</span>).cat.codes)</span>
-<span id="cb2-14"><a href="#cb2-14" tabindex="-1"></a>plt.title(<span class="st">'Sepal length as a function of sepal width'</span>)</span>
-<span id="cb2-15"><a href="#cb2-15" tabindex="-1"></a>plt.xlabel(<span class="st">'Sepal Length'</span>)</span>
-<span id="cb2-16"><a href="#cb2-16" tabindex="-1"></a>plt.ylabel(<span class="st">'Sepal Width'</span>)</span>
-<span id="cb2-17"><a href="#cb2-17" tabindex="-1"></a>plt.show()</span>
-<span id="cb2-18"><a href="#cb2-18" tabindex="-1"></a><span class="co"># PS: Legende für die Farben fehlt noch...</span></span></code></pre>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a><span class="bu">print</span>(data.groupby(<span class="st">'Species'</span>).mean())</span>
+<span id="cb2-11"><a href="#cb2-11" tabindex="-1"></a><span class="co"># (5) Visualisierung als Streudiagramm</span></span>
+<span id="cb2-12"><a href="#cb2-12" tabindex="-1"></a>plt.scatter(x<span class="op">=</span>data[<span class="st">'Sepal.Length'</span>], y<span class="op">=</span>data[<span class="st">'Sepal.Width'</span>], c<span class="op">=</span>data[<span class="st">'Species'</span>].astype(<span class="st">'category'</span>).cat.codes)</span>
+<span id="cb2-13"><a href="#cb2-13" tabindex="-1"></a>plt.title(<span class="st">'Sepal length as a function of sepal width'</span>)</span>
+<span id="cb2-14"><a href="#cb2-14" tabindex="-1"></a>plt.xlabel(<span class="st">'Sepal Length'</span>)</span>
+<span id="cb2-15"><a href="#cb2-15" tabindex="-1"></a>plt.ylabel(<span class="st">'Sepal Width'</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" tabindex="-1"></a>plt.show()</span>
+<span id="cb2-17"><a href="#cb2-17" tabindex="-1"></a><span class="co"># PS: Legende für die Farben fehlt noch...</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -662,8 +661,8 @@ via rdrr.io ausführbar</a>, um die Ergebnisse zu sehen.</p>
 in Skripte übersetzen. Häufig sind mehrere Schritte notwendig, um eine
 vollständige Analyse durchzuführen, welche ggf. dann in verschiedenen
 Skriptdateien organisiert werden müssen. Allerdings ist nun die
-übergeordnete Ausführteihenfolge der Einzelskripte entscheidend, um die
-gesamte Analyse durchzuführen. Das heißt, es entsteht eine
+übergeordnete Reihenfolge der Einzelskripte entscheidend, um die gesamte
+Analyse durchzuführen. Das heißt, es entsteht eine
 <strong>Abhängigkeit</strong> zwischen den einzelnen Skripten und die
 Organisations- und Dokumentationsprobleme verschieben sich nun auf die
 Ebene der <strong>Verwaltung und Ausführung von
@@ -895,7 +894,7 @@ sie obige Punkte als besonders wichtig an?</em></div>
   Antwort
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>Das Wissen um die <strong>digitale Repräsentation von
 Informationen</strong> ist immer dann zentral, wenn Daten importiert
@@ -905,8 +904,8 @@ oder exportiert werden, um sicherzustellen, dass die Daten korrekt
 <strong>Verarbeitung</strong>: Automatisierung und Dokumentation der
 Verarbeitungsschritte</li>
 <li>
-<strong>Archivierung</strong>: Export von Workflows und Skripten zur
-späteren Nutzung</li>
+<strong>Publikation und Archivierung</strong>: Export von Workflows
+und Skripten</li>
 <li>
 <strong>Nachnutzung</strong>: Verwendung von Skripten und Workflows
 für ähnliche Analysen</li>
