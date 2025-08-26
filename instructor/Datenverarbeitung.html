@@ -619,9 +619,9 @@ automatisiert durchführt:</p>
 <span><span class="fu">distinct</span><span class="op">(</span><span class="va">data</span>, <span class="va">Species</span><span class="op">)</span></span>
 <span><span class="co"># (3) Anzahl der Datensätze pro Art bestimmen</span></span>
 <span><span class="fu">count</span><span class="op">(</span><span class="va">data</span>, <span class="va">Species</span><span class="op">)</span></span>
-<span><span class="co"># (4) Gruppieren pro Art und Mittelwerte der Spalten berechnen</span></span>
-<span><span class="va">data</span> <span class="op">%&gt;%</span> </span>
-<span>  <span class="fu">group_by</span><span class="op">(</span><span class="va">Species</span><span class="op">)</span> <span class="op">%&gt;%</span> </span>
+<span><span class="co"># (4) Gruppieren pro Art und Mittelwerte der Spalten berechnen als Pipeline</span></span>
+<span><span class="va">data</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu">group_by</span><span class="op">(</span><span class="va">Species</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
 <span>  <span class="fu">summarise</span><span class="op">(</span><span class="fu">across</span><span class="op">(</span><span class="fu">everything</span><span class="op">(</span><span class="op">)</span>, <span class="va">mean</span><span class="op">)</span><span class="op">)</span></span>
 <span><span class="co"># (5) Visualisierung als Streudiagram</span></span>
 <span><span class="fu">ggplot</span><span class="op">(</span><span class="va">data</span>, <span class="fu">aes</span><span class="op">(</span>x<span class="op">=</span><span class="va">Sepal.Length</span>, y<span class="op">=</span><span class="va">Sepal.Width</span>, color<span class="op">=</span><span class="va">Species</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
@@ -629,8 +629,8 @@ automatisiert durchführt:</p>
 <span>  <span class="fu">labs</span><span class="op">(</span>title<span class="op">=</span><span class="st">'Sepal length as a function of sepal width'</span>, </span>
 <span>       x<span class="op">=</span><span class="st">'Sepal length'</span>, y<span class="op">=</span><span class="st">'Sepal width'</span><span class="op">)</span></span></code></pre>
 </div>
-<p>Der Code kann [auch interaktiv online via rdrr.io ausgeführt](‘<a href="https://rdrr.io/snippets/embed/?code=library(tidyverse)%20%20%0A%23%20(1)%20Daten%20direkt%20laden%20(ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung)%0Adata%20%3C-%20iris%0A%23%20(2)%20Enthaltene%20Arten%20extrahieren%0Adistinct(data%2C%20Species)%0A%23%20(3)%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount(data%2C%20Species)%0A%23%20(4)%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%0Adata%20%25%3E%25%20%0A%20%20group_by(Species)%20%25%3E%25%20%0A%20%20summarise(across(everything" class="external-link uri">https://rdrr.io/snippets/embed/?code=library(tidyverse)%20%20%0A%23%20(1)%20Daten%20direkt%20laden%20(ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung)%0Adata%20%3C-%20iris%0A%23%20(2)%20Enthaltene%20Arten%20extrahieren%0Adistinct(data%2C%20Species)%0A%23%20(3)%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount(data%2C%20Species)%0A%23%20(4)%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%0Adata%20%25%3E%25%20%0A%20%20group_by(Species)%20%25%3E%25%20%0A%20%20summarise(across(everything</a>()%2C%20mean))%0A%23%20(5)%20Visualisierung%20als%20Streudiagram%0Aggplot(data%2C%20aes(x%3DSepal.Length%2C%20y%3DSepal.Width%2C%20color%3DSpecies))%20%2B%0A%20%20geom_point()%20%2B%0A%20%20labs(title%3D’Sepal%20length%20as%20a%20function%20of%20sepal%20width’%2C%20%0A%20%20%20%20%20%20%20x%3D’Sepal%20length’%2C%20y%3D’Sepal%20width)
-werden.</p>
+<p>Der obige Code ist [online via rdrr.io ausführbar](<a href="https://rdrr.io/snippets/embed/?code=library(tidyverse)%20%20%0A%23%20(1)%20Daten%20direkt%20laden%20(ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung)%0Adata%20%3C-%20iris%0A%23%20(2)%20Enthaltene%20Arten%20extrahieren%0Adistinct(data%2C%20Species)%0A%23%20(3)%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount(data%2C%20Species)%0A%23%20(4)%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%0Adata%20%25%3E%25%20%0A%20%20group_by(Species)%20%25%3E%25%20%0A%20%20summarise(across(everything" class="external-link uri">https://rdrr.io/snippets/embed/?code=library(tidyverse)%20%20%0A%23%20(1)%20Daten%20direkt%20laden%20(ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung)%0Adata%20%3C-%20iris%0A%23%20(2)%20Enthaltene%20Arten%20extrahieren%0Adistinct(data%2C%20Species)%0A%23%20(3)%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount(data%2C%20Species)%0A%23%20(4)%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%0Adata%20%25%3E%25%20%0A%20%20group_by(Species)%20%25%3E%25%20%0A%20%20summarise(across(everything</a>()%2C%20mean))%0A%23%20(5)%20Visualisierung%20als%20Streudiagram%0Aggplot(data%2C%20aes(x%3DSepal.Length%2C%20y%3DSepal.Width%2C%20color%3DSpecies))%20%2B%0A%20%20geom_point()%20%2B%0A%20%20labs(title%3D’Sepal%20length%20as%20a%20function%20of%20sepal%20width’%2C%20%0A%20%20%20%20%20%20%20x%3D’Sepal%20length’%2C%20y%3D’Sepal%20width),
+um die Ergebnisse zu sehen.</p>
 </div>
 <div id="nav-tabpanel-2-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-2">
 <p>Und das Gleiche als Python-Skript:</p>
@@ -687,7 +687,11 @@ Aufgabe erfüllt.</p>
 auf die Verarbeitung von Daten in einer sequenziellen Abfolge von
 Schritten konzentrieren. Pipelines sind besonders nützlich, wenn Daten
 durch mehrere Verarbeitungsschritte transformiert werden müssen, bevor
-sie analysiert oder visualisiert werden können.</p>
+sie analysiert oder visualisiert werden können. Das Konzept der
+Pipeline-basierten Datenverarbeitung kommt auch in vielen Skriptsprachen
+vor. Hierbei erlaubt ein spezieller Pipe-Operator die Ausgabe eines
+Befehls direkt als Eingabe in den nächsten Befehl weiterzureichen (z.B.
+<code>|</code> in Bash/Shell oder <code>|&gt;</code> in R, s.o.).</p>
 <p>Beide Konzepte, Workflows und Pipelines, bieten mehrere Vorteile:</p>
 <ul><li>
 <strong>Automatisierung</strong>: Einmal definierte Workflows können
@@ -770,48 +774,86 @@ Refine) ist eine Open-Source Desktop-Anwendung zur Datenbereinigung und
 -transformation, die lokal auf dem eigenen Rechner installiert wird. Sie
 bietet eine grafische Benutzeroberfläche, in der man große Datensätze
 importieren, bereinigen und untersuchen kann.</p>
-<p>OpenRefine ist besonders nützlich für die Arbeit mit unstrukturierten
+<figure><img src="../fig/openrefine-gui.png" style="width:80.0%" alt="OpenRefine Benutzeroberfläche" class="figure mx-auto d-block"><div class="figcaption">OpenRefine Benutzeroberfläche</div>
+</figure><p>OpenRefine ist besonders nützlich für die Arbeit mit unstrukturierten
 oder semi-strukturierten Daten, wie z.B. CSV-Dateien, Excel-Tabellen
-oder JSON-Daten. OpenRefine ermöglicht es Nutzern, Daten zu filtern, zu
-sortieren, zu gruppieren und zu transformieren. Es unterstützt auch die
-Anwendung von regulären Ausdrücken und verwendet eine eigene
-Expressions-Sprache namens GREL (General Refine Expression Language) für
-komplexe Datenmanipulationen, welche Ähnlichkeiten zu JavaScript
-aufweist.</p>
-<p>OpenRefine speichert alle durchgeführten Schritte in einem
-sogenannten “Projekt”, das exportiert und später wieder importiert
-werden kann. Dies ermöglicht es, die Datenbereinigung nachvollziehbar zu
-dokumentieren und auf ähnliche Datensätze anzuwenden.</p>
+oder JSON-Daten. Daten können hiermit einfach gefiltert, sortiert,
+gruppiert und transformiert werden. Es unterstützt auch die Anwendung
+von regulären Ausdrücken und verwendet eine eigene Skriptsprache namens
+GREL (General Refine Expression Language) für komplexe
+Datenmanipulationen, welche Ähnlichkeiten zu JavaScript aufweist.</p>
+<p>Alle Daten und durchgeführten Schritte werden in OpenRefine in einem
+sogenannten “Projekt” gemeinsam verwaltet, das exportiert und später
+wieder importiert werden kann. Dies ermöglicht es, die Datenbereinigung
+nachvollziehbar zu dokumentieren und auf ähnliche Datensätze
+anzuwenden.</p>
 </div>
 </section><section><h2 class="section-heading" id="portierbarkeit">Portierbarkeit<a class="anchor" aria-label="anchor" href="#portierbarkeit"></a></h2>
-<hr class="half-width"></section><section><h2 class="section-heading" id="skalierbarkeit">Skalierbarkeit<a class="anchor" aria-label="anchor" href="#skalierbarkeit"></a></h2>
-<hr class="half-width"><p>Das klingt nach einer spannenden und wichtigen Einführung! Für eine
-erste Sitzung zur Datenverarbeitung im Rahmen eines FDM-Hochschulkurses
-(Forschungsdatenmanagement) könntest du die Inhalte so strukturieren,
-dass sie sowohl konzeptionell als auch praxisnah sind. Hier sind
-relevante Themenbereiche und Inhalte, die du abdecken könntest:</p>
-<p>🧭 1. Überblick über Datenverarbeitung im FDM-Kontext - Was bedeutet
-Datenverarbeitung im Forschungsdatenmanagement? - Lebenszyklus von
-Forschungsdaten: Erhebung, Verarbeitung, Analyse, Archivierung,
-Publikation - Bedeutung von Reproduzierbarkeit und Nachvollziehbarkeit
-🔄 2. Workflow-Systeme - Was sind Workflows und warum sind sie wichtig?
-- Beispiele: Snakemake, Nextflow, Apache Airflow - Vorteile:
-Automatisierung, Dokumentation, Wiederverwendbarkeit - Kurze Demo oder
-Visualisierung eines einfachen Workflows - bsp. galaxy - openrefine (für
-begrenzte anwendungen)</p>
-<p>🧬 4. Pipelines - Was ist eine Datenpipeline? - Aufbau: Input →
-Verarbeitungsschritte → Output - Beispiel: Pipeline zur
-Genomdatenanalyse oder Bildverarbeitung - Tools: Snakemake, Luigi, DVC
-(Data Version Control) 🖥️ 5. Systemunabhängigkeit und Portabilität -
-Containerisierung: Docker, Singularity - Vorteile: Reproduzierbarkeit,
-einfache Weitergabe - Beispiel: Ein Dockerfile für eine
-Datenanalyseumgebung 📦 6. Datenformate und Standards - Offene Formate:
-CSV, JSON, HDF5, NetCDF - Metadatenstandards: Dublin Core, DataCite,
-schema.org - Bedeutung für Langzeitarchivierung und Interoperabilität 🧠
-7. Best Practices &amp; Tools - Versionskontrolle mit Git -
-Dokumentation mit Markdown, Jupyter Notebooks - Datenvalidierung und
-Qualitätssicherung 💬 8. Diskussion &amp; Ausblick - Welche Tools nutzen
-die Studierenden bereits? - Welche Herausforderungen sehen sie in der
+<hr class="half-width"><p>Die Portierbarkeit von Datenverarbeitungsprozessen bezieht sich auf
+die Fähigkeit, diese Prozesse auf verschiedenen (Betriebs)Systemen und
+Umgebungen (Computern) auszuführen, ohne dass umfangreiche Anpassungen
+erforderlich sind. Dies ist besonders wichtig in der wissenschaftlichen
+Forschung, wo Datenanalysen oft auf unterschiedlichen Rechnern, in
+verschiedenen Institutionen oder in Cloud-Umgebungen durchgeführt werden
+müssen. Oder wenn verschiedene Teammitglieder mit unterschiedlichen
+Systemen arbeiten.</p>
+<p>Skriptsprachen ermöglichen häufige eine hohe Portierbarkeit, da sie
+plattformunabhängig sind und auf verschiedenen Betriebssystemen
+(Windows, macOS, Linux) ausgeführt werden können. Hierbei muss auf dem
+jeweiligen System lediglich die entsprechende Laufzeitumgebung (der
+Interpreter) installiert sein. Das heißt, ein einmal geschriebenes
+Skript kann in der Regel ohne Änderungen auf verschiedenen Systemen
+ausgeführt werden, solange die benötigten Abhängigkeiten (Bibliotheken,
+Pakete) ebenfalls verfügbar sind.</p>
+<p>Allerdings können Unterschiede in den Systemumgebungen, wie z.B.
+unterschiedliche Versionen von Bibliotheken oder
+(Betriebs)System-spezifische Pfade, die Portierbarkeit
+beeinträchtigen.</p>
+<p>Workflow-Systeme wie Galaxy sind ebenfalls darauf ausgelegt, portabel
+zu sein, da die erzeugten Workflows umfangreiche Metadaten über die
+verwendeten Tools und Arbeitsschritte enthalten, die die Ausführung auf
+verschiedenen Instanzen ermöglichen. Hierbei liegt ein deutlicher Fokus
+darauf, das Workflows möglichst unabhängig von der zugrunde liegenden
+Infrastruktur sind und somit archiviert oder veröffentlicht werden
+können.</p>
+<p>Ein weiterer Ansatz zur Verbesserung der Portierbarkeit ist die
+Verwendung von Containerisierungstechnologien wie Docker oder
+Singularity. Container ermöglichen es, eine komplette Softwareumgebung,
+einschließlich aller Abhängigkeiten und Konfigurationen, in einem
+isolierten Paket zu bündeln. Dies stellt sicher, dass die
+Datenverarbeitungsprozesse in der gleichen Umgebung ausgeführt werden,
+unabhängig vom Host-System. Container sind besonders nützlich, wenn
+komplexe Software-Stacks benötigt werden, die schwer zu installieren
+oder zu konfigurieren sind.</p>
+</section><section><h2 class="section-heading" id="skalierbarkeit">Skalierbarkeit<a class="anchor" aria-label="anchor" href="#skalierbarkeit"></a></h2>
+<hr class="half-width"><p>Skalierbarkeit bezieht sich auf die Fähigkeit eines Systems, einer
+Anwendung oder eines Prozesses, mit zunehmender Datenmenge oder
+Arbeitslast umzugehen, ohne dass die Leistung oder Effizienz erheblich
+beeinträchtigt wird. Im Bezug auf Datenverarbeitung bedeutet dies, dass
+die Methoden und Werkzeuge, die zur Analyse von Daten verwendet werden,
+in der Lage sein sollten, größere Datensätze entsprechend zu
+verarbeiten.</p>
+<p>Skriptsprachen bieten in der Regel eine gute Skalierbarkeit, da sie
+auf leistungsfähigen Computern oder Servern ausgeführt werden können,
+die über ausreichende Ressourcen verfügen, um große Datenmengen zu
+verarbeiten. Das heißt, ein Skript, das auf einem lokalen Rechner mit
+einem kleinen Datensatz funktioniert, kann oft auch auf einem
+Hochleistungsrechner oder in einer Cloud-Umgebung ausgeführt werden, um
+größere Datensätze zu analysieren. Allerdings können Skripte, die für
+kleine Datensätze optimiert sind, bei größeren Datenmengen ineffizient
+werden, wenn sie nicht entsprechend angepasst oder optimiert werden.</p>
+<p>Workflow-Systeme wie Galaxy sind ebenfalls darauf ausgelegt,
+skalierbar zu sein. Hierbei liegt der Fokus auf der Verwaltung der
+Ausführung von Workflows auf Hochleistungsrechnern und Cloud-Umgebungen.
+Die zugrundelegenden Queue- und Ressourcenmanagement-Systeme ermöglichen
+es, Workflows effizient zu verteilen und auszuführen, auch wenn die
+Datenmengen erheblich zunehmen. Dabei werden die einzelnen Schritte
+eines Workflows oft parallelisiert, um die Verarbeitungsgeschwindigkeit
+zu erhöhen und die Auslastung der verfügbaren Ressourcen zu optimieren.
+Diese Verwaltung geschieht dabei automatisch, ohne dass der Nutzer sich
+um die technischen Details kümmern muss.</p>
+<p>💬 8. Diskussion &amp; Ausblick - Welche Tools nutzen die
+Studierenden bereits? - Welche Herausforderungen sehen sie in der
 Datenverarbeitung? - Ausblick auf weiterführende Themen: Datenbanken,
 Big Data, Machine Learning</p>
 <ol start="9" style="list-style-type: decimal"><li>Clustercomputing etc…</li>
