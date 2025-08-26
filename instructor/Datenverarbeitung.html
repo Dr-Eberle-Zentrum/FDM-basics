@@ -293,6 +293,7 @@
 <li><a href="#workflow-systeme-und-pipelines">Workflow-Systeme und Pipelines</a></li>
 <li><a href="#portierbarkeit">Portierbarkeit</a></li>
 <li><a href="#skalierbarkeit">Skalierbarkeit</a></li>
+<li><a href="#zusammenfassung">Zusammenfassung</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -422,7 +423,7 @@ Relevanz der Themen zu verdeutlichen:</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-1">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" aria-labelledby="nav-tab-1-1" role="tabpanel">
 <p>Sie verspüren heute einen unbändigen Tatendrang und möchten Daten zu
 Blütenformen analysieren.</p>
 <p>Nach kurzer Recherche finden sie den <a href="https://en.wikipedia.org/wiki/Iris_flower_data_set" class="external-link">Iris-Datensatz</a>,
@@ -606,7 +607,7 @@ automatisiert durchführt:</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-1">
+<div id="nav-tabpanel-2-1" class="tab-pane show active" aria-labelledby="nav-tab-2-1" role="tabpanel">
 <p>Hier als R-Skript:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -632,7 +633,7 @@ automatisiert durchführt:</p>
 <p>Der obige Code ist <a href="https://rdrr.io/snippets/embed/?code=library%28tidyverse%29%20%20%0A%23%20%281%29%20Daten%20laden%20%28ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung%29%0Adata%20%3C-%20iris%0A%23%20%282%29%20Enthaltene%20Arten%20extrahieren%0Adistinct%28data%2C%20Species%29%0A%23%20%283%29%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount%28data%2C%20Species%29%0A%23%20%284%29%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%20als%20Pipeline%0Adata%20%7C%3E%20%0A%20%20group_by%28Species%29%20%7C%3E%20%0A%20%20summarise%28across%28everything%28%29%2C%20mean%29%29%0A%23%20%285%29%20Visualisierung%20als%20Streudiagram%0Aggplot%28data%2C%20aes%28x%3DSepal.Length%2C%20y%3DSepal.Width%2C%20color%3DSpecies%29%29%20%2B%0A%20%20geom_point%28%29%20%2B%0A%20%20labs%28title%3D%27Sepal%20length%20as%20a%20function%20of%20sepal%20width%27%2C%20%0A%20%20%20%20%20%20%20x%3D%27Sepal%20length%27%2C%20y%3D%27Sepal%20width%27%29" class="external-link">online
 via rdrr.io ausführbar</a>, um die Ergebnisse zu sehen.</p>
 </div>
-<div id="nav-tabpanel-2-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-2">
+<div id="nav-tabpanel-2-2" class="tab-pane" aria-labelledby="nav-tab-2-2" role="tabpanel">
 <p>Und das Gleiche als Python-Skript:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -853,118 +854,27 @@ eines Workflows oft parallelisiert, um die Verarbeitungsgeschwindigkeit
 zu erhöhen und die Auslastung der verfügbaren Ressourcen zu optimieren.
 Diese Verwaltung geschieht dabei automatisch, ohne dass der Nutzer sich
 um die technischen Details kümmern muss.</p>
-<p>💬 8. Diskussion &amp; Ausblick - Welche Tools nutzen die
-Studierenden bereits? - Welche Herausforderungen sehen sie in der
-Datenverarbeitung? - Ausblick auf weiterführende Themen: Datenbanken,
-Big Data, Machine Learning</p>
-<ol start="9" style="list-style-type: decimal"><li>Clustercomputing etc…</li>
-</ol><p><a href="https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-101-everyone/tutorial.html" class="external-link uri">https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-101-everyone/tutorial.html</a>
-<a href="https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-101-everyone/workflows/main_workflow.html" class="external-link uri">https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-101-everyone/workflows/main_workflow.html</a></p>
-</section><div class="section level1">
-<h1 id="galaxy-101-workflow-zusammenfassung">Galaxy 101 Workflow – Zusammenfassung<a class="anchor" aria-label="anchor" href="#galaxy-101-workflow-zusammenfassung"></a></h1>
-<div class="section level2">
-<h2 id="ziel">🎯 Ziel<a class="anchor" aria-label="anchor" href="#ziel"></a></h2>
-<p>Demonstration eines einfachen, reproduzierbaren
-Datenanalyse-Workflows mit Galaxy anhand des Iris-Datensatzes.</p>
-<hr></div>
-<div class="section level2">
-<h2 id="workflow-schritte">🧰 Workflow-Schritte<a class="anchor" aria-label="anchor" href="#workflow-schritte"></a></h2>
-<div class="section level3">
-<h3 id="datenimport">1. Datenimport<a class="anchor" aria-label="anchor" href="#datenimport"></a></h3>
-<ul><li>
-<strong>Tool</strong>: <code>Upload Data</code>
-</li>
-<li>
-<strong>Datei</strong>: <code>iris.csv</code>
-</li>
-<li>
-<strong>Ziel</strong>: Laden des Iris-Datensatzes in Galaxy</li>
-</ul></div>
-<div class="section level3">
-<h3 id="csv-in-tabellarisches-format-umwandeln">2. CSV in tabellarisches Format umwandeln<a class="anchor" aria-label="anchor" href="#csv-in-tabellarisches-format-umwandeln"></a></h3>
-<ul><li>
-<strong>Tool</strong>: <code>csv_to_tabular</code>
-</li>
-<li>
-<strong>Ziel</strong>: Konvertierung der CSV-Datei in ein
-tabellarisches Format für weitere Verarbeitung</li>
-</ul></div>
-<div class="section level3">
-<h3 id="entfernen-der-kopfzeile">3. Entfernen der Kopfzeile<a class="anchor" aria-label="anchor" href="#entfernen-der-kopfzeile"></a></h3>
-<ul><li>
-<strong>Tool</strong>: <code>Remove beginning</code>
-</li>
-<li>
-<strong>Parameter</strong>: Entferne die erste Zeile</li>
-<li>
-<strong>Ziel</strong>: Entfernen der Spaltenüberschriften</li>
-</ul></div>
-<div class="section level3">
-<h3 id="spalten-extrahieren">4. Spalten extrahieren<a class="anchor" aria-label="anchor" href="#spalten-extrahieren"></a></h3>
-<ul><li>
-<strong>Tool</strong>: <code>Cut columns from a table</code>
-</li>
-<li>
-<strong>Parameter</strong>: Auswahl relevanter Spalten (z. B. Sepal
-Length, Petal Length, Species)</li>
-<li>
-<strong>Ziel</strong>: Reduktion auf relevante Daten</li>
-</ul></div>
-<div class="section level3">
-<h3 id="gruppierung-und-aggregation">5. Gruppierung und Aggregation<a class="anchor" aria-label="anchor" href="#gruppierung-und-aggregation"></a></h3>
-<ul><li>
-<strong>Tool</strong>: <code>Datamash</code>
-</li>
-<li>
-<strong>Parameter</strong>: Gruppieren nach Spezies, Berechnung von
-Mittelwerten</li>
-<li>
-<strong>Ziel</strong>: Statistische Analyse der Daten</li>
-</ul></div>
-<div class="section level3">
-<h3 id="sortieren-und-duplikate-entfernen">6. Sortieren und Duplikate entfernen<a class="anchor" aria-label="anchor" href="#sortieren-und-duplikate-entfernen"></a></h3>
-<ul><li>
-<strong>Tool</strong>: <code>Sort</code>, <code>Unique</code>
-</li>
-<li>
-<strong>Ziel</strong>: Aufbereitung der Daten für
-Visualisierung</li>
-</ul></div>
-<div class="section level3">
-<h3 id="visualisierung">7. Visualisierung<a class="anchor" aria-label="anchor" href="#visualisierung"></a></h3>
-<ul><li>
-<strong>Tool</strong>: <code>ggplot2</code>
-</li>
-<li>
-<strong>Parameter</strong>: Erstellen eines Scatterplots (z. B.
-Sepal vs. Petal Länge, farblich nach Spezies)</li>
-<li>
-<strong>Ziel</strong>: Grafische Darstellung der Daten</li>
-</ul><hr></div>
-</div>
-<div class="section level2">
-<h2 id="outputs">📦 Outputs<a class="anchor" aria-label="anchor" href="#outputs"></a></h2>
-<ul><li>Bereinigte und aggregierte Datentabellen</li>
-<li>Interaktive Visualisierungen (ggplot2-Plots)</li>
-</ul><hr></div>
-<div class="section level2">
-<h2 id="lernziele">🧠 Lernziele<a class="anchor" aria-label="anchor" href="#lernziele"></a></h2>
-<ul><li>Nutzung von Galaxy als grafisches Workflow-System</li>
-<li>Verarbeitung tabellarischer Daten ohne Programmierung</li>
-<li>Erstellung und Wiederverwendung von Workflows</li>
-<li>Visualisierung von Daten direkt im Browser</li>
-</ul></div>
-<div class="section level2">
-<h2 id="zusammenfassung">Zusammenfassung<a class="anchor" aria-label="anchor" href="#zusammenfassung"></a></h2>
-<div id="keypoints1" class="callout keypoints">
+</section><section><h2 class="section-heading" id="zusammenfassung">Zusammenfassung<a class="anchor" aria-label="anchor" href="#zusammenfassung"></a></h2>
+<hr class="half-width"><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
 </div>
 <span class="callout-header">Hauptpunkte</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ul><li>
-</li></ul></div>
+<ul><li>Datenverarbeitung sollte Reproduzierbarkeit und Nachvollziehbarkeit
+gewährleisten</li>
+<li>Automatisierung, Skalierbarkeit und Portabilität sind weitere
+wichtige Ziele</li>
+<li>Skriptsprachen (z.B. Python, R, Bash) ermöglichen automatisierte und
+dokumentierte Datenverarbeitung</li>
+<li>Workflow-Systeme (z.B. Galaxy, Snakemake) helfen bei der Verwaltung
+und Ausführung komplexer Datenverarbeitungsprozesse</li>
+<li>Workflows können gespeichert/archiviert, geteilt und wiederverwendet
+werden</li>
+<li>Portierbarkeit und Skalierbarkeit sind entscheidend für die Nutzung
+in verschiedenen Umgebungen und bei großen Datenmengen</li>
+</ul></div>
 </div>
 </div>
 <div id="einordnung-im-datenlebenszyklus" class="callout challenge">
@@ -994,15 +904,14 @@ Informationen</strong> ist immer dann zentral, wenn Daten importiert
 oder exportiert werden, um sicherzustellen, dass die Daten korrekt
 übertragen und gespeichert werden.</p>
 <ul><li>
-<strong>Planung</strong>: Festlegung von Datenformaten und
--strukturen</li>
+<strong>Verarbeitung</strong>: Automatisierung und Dokumentation der
+Verarbeitungsschritte</li>
 <li>
-<strong>Erhebung</strong>: Korrekte Interpretation von Daten</li>
+<strong>Archivierung</strong>: Export von Workflows und Skripten zur
+späteren Nutzung</li>
 <li>
-<strong>Archivierung</strong>: Export von Daten in geeigneten
-Formaten</li>
-<li>
-<strong>Nachnutzung</strong>: korrekter Datenimport und -export</li>
+<strong>Nachnutzung</strong>: Verwendung von Skripten und Workflows
+für ähnliche Analysen</li>
 </ul></div>
 </div>
 </div>
@@ -1023,8 +932,13 @@ Formaten</li>
 </li></ul></div>
 <div class="section level3">
 <h3 id="sitzungsfragen">Sitzungsfragen<a class="anchor" aria-label="anchor" href="#sitzungsfragen"></a></h3>
-<ul><li>
-</li></ul></div>
+<ul><li>Welche Tools nutzen die Studierenden bereits?</li>
+<li>Welche Herausforderungen sehen sie in der Datenverarbeitung?</li>
+<li>Ausblick auf weiterführende Themen: Datenbanken, Big Data, Machine
+Learning</li>
+<li>
+</li>
+</ul></div>
 </div>
 </div>
 </div>
@@ -1033,12 +947,7 @@ Formaten</li>
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
-</div>
-</div>
-
-
-
-      </div> <!-- / div.lesson-content -->
+</section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Vorheriges und nächstes Kapitel"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/Verschluesselung.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Zurück</a>
         <a class="chapter-link float-end" href="../instructor/RegEx.html">Weiter<i aria-hidden="true" class="small-arrow" data-feather="arrow-right"></i></a>
