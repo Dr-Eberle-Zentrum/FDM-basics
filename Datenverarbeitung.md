@@ -159,11 +159,7 @@ ggplot(data, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
        x='Sepal length', y='Sepal width')
 ```
 
-### R online interaktiv
-
-Und hier als interaktives R-Skript (kann direkt im Browser ausgeführt werden):
-
-<iframe width='100%' height='300' src='https://rdrr.io/snippets/embed/?code=library(tidyverse)%20%20%0A%23%20(1)%20Daten%20direkt%20laden%20(ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung)%0Adata%20%3C-%20iris%0A%23%20(2)%20Enthaltene%20Arten%20extrahieren%0Adistinct(data%2C%20Species)%0A%23%20(3)%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount(data%2C%20Species)%0A%23%20(4)%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%0Adata%20%25%3E%25%20%0A%20%20group_by(Species)%20%25%3E%25%20%0A%20%20summarise(across(everything()%2C%20mean))%0A%23%20(5)%20Visualisierung%20als%20Streudiagram%0Aggplot(data%2C%20aes(x%3DSepal.Length%2C%20y%3DSepal.Width%2C%20color%3DSpecies))%20%2B%0A%20%20geom_point()%20%2B%0A%20%20labs(title%3D'Sepal%20length%20as%20a%20function%20of%20sepal%20width'%2C%20%0A%20%20%20%20%20%20%20x%3D'Sepal%20length'%2C%20y%3D'Sepal%20width')' frameborder='0'></iframe>
+Der Code kann [auch interaktiv online via rdrr.io ausgeführt]('https://rdrr.io/snippets/embed/?code=library(tidyverse)%20%20%0A%23%20(1)%20Daten%20direkt%20laden%20(ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung)%0Adata%20%3C-%20iris%0A%23%20(2)%20Enthaltene%20Arten%20extrahieren%0Adistinct(data%2C%20Species)%0A%23%20(3)%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount(data%2C%20Species)%0A%23%20(4)%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%0Adata%20%25%3E%25%20%0A%20%20group_by(Species)%20%25%3E%25%20%0A%20%20summarise(across(everything()%2C%20mean))%0A%23%20(5)%20Visualisierung%20als%20Streudiagram%0Aggplot(data%2C%20aes(x%3DSepal.Length%2C%20y%3DSepal.Width%2C%20color%3DSpecies))%20%2B%0A%20%20geom_point()%20%2B%0A%20%20labs(title%3D'Sepal%20length%20as%20a%20function%20of%20sepal%20width'%2C%20%0A%20%20%20%20%20%20%20x%3D'Sepal%20length'%2C%20y%3D'Sepal%20width) werden.
 
 
 ### Python-Skript
@@ -258,13 +254,15 @@ Es gibt aber auch öffentliche Galaxy-Server, die von jedem genutzt werden könn
 
 ### OpenRefine
 
-[OpenRefine](https://openrefine.org/) (früher Google Refine) ist ein Open-Source-Tool zur Datenbereinigung und -transformation.
-Es bietet eine grafische Benutzeroberfläche, in der man große Datensätze importieren, bereinigen und untersuchen kann.
+[OpenRefine](https://openrefine.org/) (früher Google Refine) ist eine Open-Source Desktop-Anwendung zur Datenbereinigung und -transformation, die lokal auf dem eigenen Rechner installiert wird.
+Sie bietet eine grafische Benutzeroberfläche, in der man große Datensätze importieren, bereinigen und untersuchen kann.
+
 OpenRefine ist besonders nützlich für die Arbeit mit unstrukturierten oder semi-strukturierten Daten, wie z.B. CSV-Dateien, Excel-Tabellen oder JSON-Daten.
 OpenRefine ermöglicht es Nutzern, Daten zu filtern, zu sortieren, zu gruppieren und zu transformieren.
-Es unterstützt auch die Anwendung von regulären Ausdrücken und bietet eine Vielzahl von Erweiterungen, die zusätzliche Funktionalitäten bereitstellen.
-Ein weiterer Vorteil von OpenRefine ist die Möglichkeit, Daten aus verschiedenen Quellen zu importieren und zu exportieren, was die Integration in bestehende Datenverarbeitungsprozesse erleichtert.
+Es unterstützt auch die Anwendung von regulären Ausdrücken und verwendet eine eigene Expressions-Sprache namens GREL (General Refine Expression Language) für komplexe Datenmanipulationen, welche Ähnlichkeiten zu JavaScript aufweist.
 
+OpenRefine speichert alle durchgeführten Schritte in einem sogenannten "Projekt", das exportiert und später wieder importiert werden kann.
+Dies ermöglicht es, die Datenbereinigung nachvollziehbar zu dokumentieren und auf ähnliche Datensätze anzuwenden.
 
 
 ## Portierbarkeit
