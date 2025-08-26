@@ -1,7 +1,7 @@
 ---
 title: "Datenverarbeitung"
-teaching: 30
-exercises: 10
+teaching: 20
+exercises: 5
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -176,8 +176,7 @@ print(data['Species'].unique())
 # (3) Anzahl der Datensätze pro Art bestimmen
 print(data['Species'].value_counts())
 # (4) Gruppieren pro Art und Mittelwerte der Spalten berechnen
-grouped_data = data.groupby('Species').mean()
-print(grouped_data)
+print(data.groupby('Species').mean())
 # (5) Visualisierung als Streudiagramm
 plt.scatter(x=data['Sepal.Length'], y=data['Sepal.Width'], c=data['Species'].astype('category').cat.codes)
 plt.title('Sepal length as a function of sepal width')
@@ -192,7 +191,7 @@ plt.show()
 
 Nicht alle Schritte der Datenverarbeitung lassen sich immer einfach in Skripte übersetzen.
 Häufig sind mehrere Schritte notwendig, um eine vollständige Analyse durchzuführen, welche ggf. dann in verschiedenen Skriptdateien organisiert werden müssen.
-Allerdings ist nun die übergeordnete Ausführteihenfolge der Einzelskripte entscheidend, um die gesamte Analyse durchzuführen.
+Allerdings ist nun die übergeordnete Reihenfolge der Einzelskripte entscheidend, um die gesamte Analyse durchzuführen.
 Das heißt, es entsteht eine **Abhängigkeit** zwischen den einzelnen Skripten und die Organisations- und Dokumentationsprobleme verschieben sich nun auf die Ebene der **Verwaltung und Ausführung von Skript-Abfolgen**.
 
 An dieser Stelle kommen **Workflow-Systeme** und **Pipelines** ins Spiel, die genau diese Probleme adressieren.
@@ -338,7 +337,7 @@ Diese Verwaltung geschieht dabei automatisch, ohne dass der Nutzer sich um die t
 Das Wissen um die **digitale Repräsentation von Informationen** ist immer dann zentral, wenn Daten importiert oder exportiert werden, um sicherzustellen, dass die Daten korrekt übertragen und gespeichert werden.
 
 - **Verarbeitung**: Automatisierung und Dokumentation der Verarbeitungsschritte
-- **Archivierung**: Export von Workflows und Skripten zur späteren Nutzung
+- **Publikation und Archivierung**: Export von Workflows und Skripten
 - **Nachnutzung**: Verwendung von Skripten und Workflows für ähnliche Analysen
 
 :::
