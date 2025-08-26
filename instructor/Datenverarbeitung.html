@@ -478,7 +478,7 @@ holen ihre Notizen und den Ausdruck.</p>
   Mögliche Probleme
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul><li>
 <strong>Nicht nachvollziehbar</strong>: Leider sind sie sich nicht
@@ -629,8 +629,8 @@ automatisiert durchführt:</p>
 <span>  <span class="fu">labs</span><span class="op">(</span>title<span class="op">=</span><span class="st">'Sepal length as a function of sepal width'</span>, </span>
 <span>       x<span class="op">=</span><span class="st">'Sepal length'</span>, y<span class="op">=</span><span class="st">'Sepal width'</span><span class="op">)</span></span></code></pre>
 </div>
-<p>Der obige Code ist [online via rdrr.io ausführbar](<a href="https://rdrr.io/snippets/embed/?code=library(tidyverse)%20%20%0A%23%20(1)%20Daten%20direkt%20laden%20(ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung)%0Adata%20%3C-%20iris%0A%23%20(2)%20Enthaltene%20Arten%20extrahieren%0Adistinct(data%2C%20Species)%0A%23%20(3)%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount(data%2C%20Species)%0A%23%20(4)%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%0Adata%20%25%3E%25%20%0A%20%20group_by(Species)%20%25%3E%25%20%0A%20%20summarise(across(everything" class="external-link uri">https://rdrr.io/snippets/embed/?code=library(tidyverse)%20%20%0A%23%20(1)%20Daten%20direkt%20laden%20(ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung)%0Adata%20%3C-%20iris%0A%23%20(2)%20Enthaltene%20Arten%20extrahieren%0Adistinct(data%2C%20Species)%0A%23%20(3)%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount(data%2C%20Species)%0A%23%20(4)%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%0Adata%20%25%3E%25%20%0A%20%20group_by(Species)%20%25%3E%25%20%0A%20%20summarise(across(everything</a>()%2C%20mean))%0A%23%20(5)%20Visualisierung%20als%20Streudiagram%0Aggplot(data%2C%20aes(x%3DSepal.Length%2C%20y%3DSepal.Width%2C%20color%3DSpecies))%20%2B%0A%20%20geom_point()%20%2B%0A%20%20labs(title%3D’Sepal%20length%20as%20a%20function%20of%20sepal%20width’%2C%20%0A%20%20%20%20%20%20%20x%3D’Sepal%20length’%2C%20y%3D’Sepal%20width),
-um die Ergebnisse zu sehen.</p>
+<p>Der obige Code ist <a href="https://rdrr.io/snippets/embed/?code=library%28tidyverse%29%20%20%0A%23%20%281%29%20Daten%20laden%20%28ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung%29%0Adata%20%3C-%20iris%0A%23%20%282%29%20Enthaltene%20Arten%20extrahieren%0Adistinct%28data%2C%20Species%29%0A%23%20%283%29%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount%28data%2C%20Species%29%0A%23%20%284%29%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%20als%20Pipeline%0Adata%20%7C%3E%20%0A%20%20group_by%28Species%29%20%7C%3E%20%0A%20%20summarise%28across%28everything%28%29%2C%20mean%29%29%0A%23%20%285%29%20Visualisierung%20als%20Streudiagram%0Aggplot%28data%2C%20aes%28x%3DSepal.Length%2C%20y%3DSepal.Width%2C%20color%3DSpecies%29%29%20%2B%0A%20%20geom_point%28%29%20%2B%0A%20%20labs%28title%3D%27Sepal%20length%20as%20a%20function%20of%20sepal%20width%27%2C%20%0A%20%20%20%20%20%20%20x%3D%27Sepal%20length%27%2C%20y%3D%27Sepal%20width%27%29" class="external-link">online
+via rdrr.io ausführbar</a>, um die Ergebnisse zu sehen.</p>
 </div>
 <div id="nav-tabpanel-2-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-2">
 <p>Und das Gleiche als Python-Skript:</p>
@@ -743,6 +743,7 @@ Oberfläche, die es Forschenden ermöglicht, komplexe Datenanalysen
 durchzuführen, ohne dass sie Programmierkenntnisse benötigen. Die
 Plattform unterstützt eine Vielzahl von Datenformaten und
 Analysewerkzeugen, die in sogenannten “Tools” organisiert sind.</p>
+<p><a href="https://en.wikipedia.org/wiki/Galaxy_%28computational_biology%29#/media/File:Galaxy_Workflow_Run_tuberculosis_tutorial_2025_03_v3.png" class="external-link"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Galaxy_Workflow_Run_tuberculosis_tutorial_2025_03_v3.png/1920px-Galaxy_Workflow_Run_tuberculosis_tutorial_2025_03_v3.png" style="width:80.0%" alt="Galaxy Benutzeroberfläche" class="figure"></a></p>
 <p>Galaxy ermöglicht es Nutzern, Workflows zu erstellen, indem sie
 verschiedene Tools miteinander verknüpfen. Diese Workflows können
 gespeichert, geteilt und wiederverwendet werden, was die Zusammenarbeit
@@ -755,8 +756,8 @@ für einen Workflow in Galaxy</a>, der die Schritte aus unserem
 Iris-Datensatz-Beispiel automatisiert. Die darin enthaltenen
 Arbeitsschritte und ihre Verknüpfung zu einem Workflow können in Galaxy
 direkt nachvollzogen und visualisiert werden:</p>
-<figure><img src="https://training.galaxyproject.org/training-material/topics/introduction/images/101_foreveryone_workflow_editor.png" style="width:70.0%" alt="Galaxy Workflow" class="figure mx-auto d-block"><div class="figcaption">Galaxy Workflow</div>
-</figure><p><a href="https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-101-everyone/workflows/main_workflow.html" class="external-link">Der
+<p><a href="https://training.galaxyproject.org/training-material/topics/introduction/images/101_foreveryone_workflow_editor.png" class="external-link"><img src="https://training.galaxyproject.org/training-material/topics/introduction/images/101_foreveryone_workflow_editor.png" style="width:80.0%" alt="Galaxy Workflow" class="figure"></a></p>
+<p><a href="https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-101-everyone/workflows/main_workflow.html" class="external-link">Der
 Workflow selbst</a>, ist dabei exportierbar und kann in anderen
 Galaxy-Instanzen importiert und ausgeführt werden.</p>
 <p>Da Galaxy webbasiert ist, ist keine Installation auf dem eigenen
@@ -986,7 +987,7 @@ sie obige Punkte als besonders wichtig an?</em></div>
   Antwort
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Das Wissen um die <strong>digitale Repräsentation von
 Informationen</strong> ist immer dann zentral, wenn Daten importiert
@@ -1014,7 +1015,7 @@ Formaten</li>
   Aufgaben
   </h3>
 </button>
-<div id="collapseInstructor1" class="accordion-collapse collapse" aria-labelledby="headingInstructor1" data-bs-parent="#accordionInstructor1">
+<div id="collapseInstructor1" class="accordion-collapse collapse" data-bs-parent="#accordionInstructor1" aria-labelledby="headingInstructor1">
 <div class="accordion-body">
 <div class="section level3">
 <h3 id="sitzungsaufgaben">Sitzungsaufgaben<a class="anchor" aria-label="anchor" href="#sitzungsaufgaben"></a></h3>
