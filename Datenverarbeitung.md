@@ -159,7 +159,7 @@ ggplot(data, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
        x='Sepal length', y='Sepal width')
 ```
 
-Der obige Code ist [online via rdrr.io ausführbar](https://rdrr.io/snippets/embed/?code=library(tidyverse)%20%20%0A%23%20(1)%20Daten%20direkt%20laden%20(ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung)%0Adata%20%3C-%20iris%0A%23%20(2)%20Enthaltene%20Arten%20extrahieren%0Adistinct(data%2C%20Species)%0A%23%20(3)%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount(data%2C%20Species)%0A%23%20(4)%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%0Adata%20%25%3E%25%20%0A%20%20group_by(Species)%20%25%3E%25%20%0A%20%20summarise(across(everything()%2C%20mean))%0A%23%20(5)%20Visualisierung%20als%20Streudiagram%0Aggplot(data%2C%20aes(x%3DSepal.Length%2C%20y%3DSepal.Width%2C%20color%3DSpecies))%20%2B%0A%20%20geom_point()%20%2B%0A%20%20labs(title%3D'Sepal%20length%20as%20a%20function%20of%20sepal%20width'%2C%20%0A%20%20%20%20%20%20%20x%3D'Sepal%20length'%2C%20y%3D'Sepal%20width), um die Ergebnisse zu sehen.
+Der obige Code ist [online via rdrr.io ausführbar](https://rdrr.io/snippets/embed/?code=library%28tidyverse%29%20%20%0A%23%20%281%29%20Daten%20laden%20%28ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung%29%0Adata%20%3C-%20iris%0A%23%20%282%29%20Enthaltene%20Arten%20extrahieren%0Adistinct%28data%2C%20Species%29%0A%23%20%283%29%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount%28data%2C%20Species%29%0A%23%20%284%29%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%20als%20Pipeline%0Adata%20%7C%3E%20%0A%20%20group_by%28Species%29%20%7C%3E%20%0A%20%20summarise%28across%28everything%28%29%2C%20mean%29%29%0A%23%20%285%29%20Visualisierung%20als%20Streudiagram%0Aggplot%28data%2C%20aes%28x%3DSepal.Length%2C%20y%3DSepal.Width%2C%20color%3DSpecies%29%29%20%2B%0A%20%20geom_point%28%29%20%2B%0A%20%20labs%28title%3D%27Sepal%20length%20as%20a%20function%20of%20sepal%20width%27%2C%20%0A%20%20%20%20%20%20%20x%3D%27Sepal%20length%27%2C%20y%3D%27Sepal%20width%27%29), um die Ergebnisse zu sehen.
 
 
 ### Python-Skript
@@ -235,6 +235,8 @@ Die [Galaxy](https://galaxyproject.org/)-Plattform ist ein webbasiertes Workflow
 Galaxy bietet eine benutzerfreundliche grafische Oberfläche, die es Forschenden ermöglicht, komplexe Datenanalysen durchzuführen, ohne dass sie Programmierkenntnisse benötigen.
 Die Plattform unterstützt eine Vielzahl von Datenformaten und Analysewerkzeugen, die in sogenannten "Tools" organisiert sind.
 
+[![Galaxy Benutzeroberfläche (Wikipedia, click to enlarge)](https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Galaxy_Workflow_Run_tuberculosis_tutorial_2025_03_v3.png/1920px-Galaxy_Workflow_Run_tuberculosis_tutorial_2025_03_v3.png){width=80% alt="Galaxy Benutzeroberfläche"}](https://en.wikipedia.org/wiki/Galaxy_%28computational_biology%29#/media/File:Galaxy_Workflow_Run_tuberculosis_tutorial_2025_03_v3.png)
+
 Galaxy ermöglicht es Nutzern, Workflows zu erstellen, indem sie verschiedene Tools miteinander verknüpfen.
 Diese Workflows können gespeichert, geteilt und wiederverwendet werden, was die Zusammenarbeit und Reproduzierbarkeit von Analysen fördert.
 Ein weiterer Vorteil von Galaxy ist die Möglichkeit, Analysen in einer Cloud-Umgebung durchzuführen, was die Skalierbarkeit und den Zugriff auf leistungsfähige Rechenressourcen erleichtert.
@@ -242,7 +244,7 @@ Ein weiterer Vorteil von Galaxy ist die Möglichkeit, Analysen in einer Cloud-Um
 Es gibt ein einführendes [Tutorial für einen Workflow in Galaxy](https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-101-everyone/tutorial.html), der die Schritte aus unserem Iris-Datensatz-Beispiel automatisiert.
 Die darin enthaltenen Arbeitsschritte und ihre Verknüpfung zu einem Workflow können in Galaxy direkt nachvollzogen und visualisiert werden:
 
-![Galaxy Workflow](https://training.galaxyproject.org/training-material/topics/introduction/images/101_foreveryone_workflow_editor.png){width=70% alt="Galaxy Workflow"}
+[![Galaxy Workflow des Iris-Beispiels (click to enlarge)](https://training.galaxyproject.org/training-material/topics/introduction/images/101_foreveryone_workflow_editor.png){width=80% alt="Galaxy Workflow"}](https://training.galaxyproject.org/training-material/topics/introduction/images/101_foreveryone_workflow_editor.png)
 
 [Der Workflow selbst](https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-101-everyone/workflows/main_workflow.html), ist dabei exportierbar und kann in anderen Galaxy-Instanzen importiert und ausgeführt werden.
 
