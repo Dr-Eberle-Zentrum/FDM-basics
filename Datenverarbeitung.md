@@ -309,95 +309,18 @@ Dabei werden die einzelnen Schritte eines Workflows oft parallelisiert, um die V
 Diese Verwaltung geschieht dabei automatisch, ohne dass der Nutzer sich um die technischen Details kümmern muss.
 
 
-💬 8. Diskussion & Ausblick
-  - Welche Tools nutzen die Studierenden bereits?
-  - Welche Herausforderungen sehen sie in der Datenverarbeitung?
-  - Ausblick auf weiterführende Themen: Datenbanken, Big Data, Machine Learning
-
-9. Clustercomputing etc...
-
-
-
-
-
-
-https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-101-everyone/tutorial.html
-https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-101-everyone/workflows/main_workflow.html
-
-
-
-# Galaxy 101 Workflow – Zusammenfassung
-
-## 🎯 Ziel
-Demonstration eines einfachen, reproduzierbaren Datenanalyse-Workflows mit Galaxy anhand des Iris-Datensatzes.
-
----
-
-## 🧰 Workflow-Schritte
-
-### 1. Datenimport
-- **Tool**: `Upload Data`
-- **Datei**: `iris.csv`
-- **Ziel**: Laden des Iris-Datensatzes in Galaxy
-
-### 2. CSV in tabellarisches Format umwandeln
-- **Tool**: `csv_to_tabular`
-- **Ziel**: Konvertierung der CSV-Datei in ein tabellarisches Format für weitere Verarbeitung
-
-### 3. Entfernen der Kopfzeile
-- **Tool**: `Remove beginning`
-- **Parameter**: Entferne die erste Zeile
-- **Ziel**: Entfernen der Spaltenüberschriften
-
-### 4. Spalten extrahieren
-- **Tool**: `Cut columns from a table`
-- **Parameter**: Auswahl relevanter Spalten (z. B. Sepal Length, Petal Length, Species)
-- **Ziel**: Reduktion auf relevante Daten
-
-### 5. Gruppierung und Aggregation
-- **Tool**: `Datamash`
-- **Parameter**: Gruppieren nach Spezies, Berechnung von Mittelwerten
-- **Ziel**: Statistische Analyse der Daten
-
-### 6. Sortieren und Duplikate entfernen
-- **Tool**: `Sort`, `Unique`
-- **Ziel**: Aufbereitung der Daten für Visualisierung
-
-### 7. Visualisierung
-- **Tool**: `ggplot2`
-- **Parameter**: Erstellen eines Scatterplots (z. B. Sepal vs. Petal Länge, farblich nach Spezies)
-- **Ziel**: Grafische Darstellung der Daten
-
----
-
-## 📦 Outputs
-- Bereinigte und aggregierte Datentabellen
-- Interaktive Visualisierungen (ggplot2-Plots)
-
----
-
-## 🧠 Lernziele
-- Nutzung von Galaxy als grafisches Workflow-System
-- Verarbeitung tabellarischer Daten ohne Programmierung
-- Erstellung und Wiederverwendung von Workflows
-- Visualisierung von Daten direkt im Browser
-
-
-
-
-
-
-
-
-
-
 
 
 ## Zusammenfassung
 
 :::::: keypoints
 
-- 
+- Datenverarbeitung sollte Reproduzierbarkeit und Nachvollziehbarkeit gewährleisten
+- Automatisierung, Skalierbarkeit und Portabilität sind weitere wichtige Ziele
+- Skriptsprachen (z.B. Python, R, Bash) ermöglichen automatisierte und dokumentierte Datenverarbeitung
+- Workflow-Systeme (z.B. Galaxy, Snakemake) helfen bei der Verwaltung und Ausführung komplexer Datenverarbeitungsprozesse
+- Workflows können gespeichert/archiviert, geteilt und wiederverwendet werden
+- Portierbarkeit und Skalierbarkeit sind entscheidend für die Nutzung in verschiedenen Umgebungen und bei großen Datenmengen
   
 ::::::::::::::::
 
@@ -414,10 +337,9 @@ Demonstration eines einfachen, reproduzierbaren Datenanalyse-Workflows mit Galax
 
 Das Wissen um die **digitale Repräsentation von Informationen** ist immer dann zentral, wenn Daten importiert oder exportiert werden, um sicherzustellen, dass die Daten korrekt übertragen und gespeichert werden.
 
-- **Planung**: Festlegung von Datenformaten und -strukturen
-- **Erhebung**: Korrekte Interpretation von Daten
-- **Archivierung**: Export von Daten in geeigneten Formaten
-- **Nachnutzung**: korrekter Datenimport und -export
+- **Verarbeitung**: Automatisierung und Dokumentation der Verarbeitungsschritte
+- **Archivierung**: Export von Workflows und Skripten zur späteren Nutzung
+- **Nachnutzung**: Verwendung von Skripten und Workflows für ähnliche Analysen
 
 :::
 
@@ -435,6 +357,9 @@ Das Wissen um die **digitale Repräsentation von Informationen** ist immer dann 
 
 ### Sitzungsfragen
 
+- Welche Tools nutzen die Studierenden bereits?
+- Welche Herausforderungen sehen sie in der Datenverarbeitung?
+- Ausblick auf weiterführende Themen: Datenbanken, Big Data, Machine Learning
 - 
 
 :::::::::::::::::::::::::::
