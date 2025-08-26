@@ -148,9 +148,9 @@ data <- read_csv('https://zenodo.org/record/1319069/files/iris.csv')
 distinct(data, Species)
 # (3) Anzahl der Datensätze pro Art bestimmen
 count(data, Species)
-# (4) Gruppieren pro Art und Mittelwerte der Spalten berechnen
-data %>% 
-  group_by(Species) %>% 
+# (4) Gruppieren pro Art und Mittelwerte der Spalten berechnen als Pipeline
+data |> 
+  group_by(Species) |> 
   summarise(across(everything(), mean))
 # (5) Visualisierung als Streudiagram
 ggplot(data, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
@@ -159,7 +159,7 @@ ggplot(data, aes(x=Sepal.Length, y=Sepal.Width, color=Species)) +
        x='Sepal length', y='Sepal width')
 ```
 
-Der Code kann [auch interaktiv online via rdrr.io ausgeführt]('https://rdrr.io/snippets/embed/?code=library(tidyverse)%20%20%0A%23%20(1)%20Daten%20direkt%20laden%20(ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung)%0Adata%20%3C-%20iris%0A%23%20(2)%20Enthaltene%20Arten%20extrahieren%0Adistinct(data%2C%20Species)%0A%23%20(3)%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount(data%2C%20Species)%0A%23%20(4)%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%0Adata%20%25%3E%25%20%0A%20%20group_by(Species)%20%25%3E%25%20%0A%20%20summarise(across(everything()%2C%20mean))%0A%23%20(5)%20Visualisierung%20als%20Streudiagram%0Aggplot(data%2C%20aes(x%3DSepal.Length%2C%20y%3DSepal.Width%2C%20color%3DSpecies))%20%2B%0A%20%20geom_point()%20%2B%0A%20%20labs(title%3D'Sepal%20length%20as%20a%20function%20of%20sepal%20width'%2C%20%0A%20%20%20%20%20%20%20x%3D'Sepal%20length'%2C%20y%3D'Sepal%20width) werden.
+Der obige Code ist [online via rdrr.io ausführbar](https://rdrr.io/snippets/embed/?code=library(tidyverse)%20%20%0A%23%20(1)%20Daten%20direkt%20laden%20(ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung)%0Adata%20%3C-%20iris%0A%23%20(2)%20Enthaltene%20Arten%20extrahieren%0Adistinct(data%2C%20Species)%0A%23%20(3)%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount(data%2C%20Species)%0A%23%20(4)%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%0Adata%20%25%3E%25%20%0A%20%20group_by(Species)%20%25%3E%25%20%0A%20%20summarise(across(everything()%2C%20mean))%0A%23%20(5)%20Visualisierung%20als%20Streudiagram%0Aggplot(data%2C%20aes(x%3DSepal.Length%2C%20y%3DSepal.Width%2C%20color%3DSpecies))%20%2B%0A%20%20geom_point()%20%2B%0A%20%20labs(title%3D'Sepal%20length%20as%20a%20function%20of%20sepal%20width'%2C%20%0A%20%20%20%20%20%20%20x%3D'Sepal%20length'%2C%20y%3D'Sepal%20width), um die Ergebnisse zu sehen.
 
 
 ### Python-Skript
@@ -207,6 +207,7 @@ Jeder Schritt kann ein Skript, ein Programm oder ein Tool sein, das eine spezifi
 
 *Pipelines* sind eine spezielle Art von Workflows, die sich auf die Verarbeitung von Daten in einer sequenziellen Abfolge von Schritten konzentrieren.
 Pipelines sind besonders nützlich, wenn Daten durch mehrere Verarbeitungsschritte transformiert werden müssen, bevor sie analysiert oder visualisiert werden können.
+Das Konzept der Pipeline-basierten Datenverarbeitung kommt auch in vielen Skriptsprachen vor. Hierbei erlaubt ein spezieller Pipe-Operator die Ausgabe eines Befehls direkt als Eingabe in den nächsten Befehl weiterzureichen (z.B. `|` in Bash/Shell oder `|>` in R, s.o.).
 
 
 Beide Konzepte, Workflows und Pipelines, bieten mehrere Vorteile:
@@ -257,53 +258,55 @@ Es gibt aber auch öffentliche Galaxy-Server, die von jedem genutzt werden könn
 [OpenRefine](https://openrefine.org/) (früher Google Refine) ist eine Open-Source Desktop-Anwendung zur Datenbereinigung und -transformation, die lokal auf dem eigenen Rechner installiert wird.
 Sie bietet eine grafische Benutzeroberfläche, in der man große Datensätze importieren, bereinigen und untersuchen kann.
 
-OpenRefine ist besonders nützlich für die Arbeit mit unstrukturierten oder semi-strukturierten Daten, wie z.B. CSV-Dateien, Excel-Tabellen oder JSON-Daten.
-OpenRefine ermöglicht es Nutzern, Daten zu filtern, zu sortieren, zu gruppieren und zu transformieren.
-Es unterstützt auch die Anwendung von regulären Ausdrücken und verwendet eine eigene Expressions-Sprache namens GREL (General Refine Expression Language) für komplexe Datenmanipulationen, welche Ähnlichkeiten zu JavaScript aufweist.
+![OpenRefine Benutzeroberfläche](fig/openrefine-gui.png){width=80% alt="OpenRefine Benutzeroberfläche"}
 
-OpenRefine speichert alle durchgeführten Schritte in einem sogenannten "Projekt", das exportiert und später wieder importiert werden kann.
+OpenRefine ist besonders nützlich für die Arbeit mit unstrukturierten oder semi-strukturierten Daten, wie z.B. CSV-Dateien, Excel-Tabellen oder JSON-Daten.
+Daten können hiermit einfach gefiltert, sortiert, gruppiert und transformiert werden.
+Es unterstützt auch die Anwendung von regulären Ausdrücken und verwendet eine eigene Skriptsprache namens GREL (General Refine Expression Language) für komplexe Datenmanipulationen, welche Ähnlichkeiten zu JavaScript aufweist.
+
+Alle Daten und durchgeführten Schritte werden in OpenRefine in einem sogenannten "Projekt" gemeinsam verwaltet, das exportiert und später wieder importiert werden kann.
 Dies ermöglicht es, die Datenbereinigung nachvollziehbar zu dokumentieren und auf ähnliche Datensätze anzuwenden.
 
 
+
 ## Portierbarkeit
+
+Die Portierbarkeit von Datenverarbeitungsprozessen bezieht sich auf die Fähigkeit, diese Prozesse auf verschiedenen (Betriebs)Systemen und Umgebungen (Computern) auszuführen, ohne dass umfangreiche Anpassungen erforderlich sind.
+Dies ist besonders wichtig in der wissenschaftlichen Forschung, wo Datenanalysen oft auf unterschiedlichen Rechnern, in verschiedenen Institutionen oder in Cloud-Umgebungen durchgeführt werden müssen.
+Oder wenn verschiedene Teammitglieder mit unterschiedlichen Systemen arbeiten.
+
+Skriptsprachen ermöglichen häufige eine hohe Portierbarkeit, da sie plattformunabhängig sind und auf verschiedenen Betriebssystemen (Windows, macOS, Linux) ausgeführt werden können.
+Hierbei muss auf dem jeweiligen System lediglich die entsprechende Laufzeitumgebung (der Interpreter) installiert sein.
+Das heißt, ein einmal geschriebenes Skript kann in der Regel ohne Änderungen auf verschiedenen Systemen ausgeführt werden, solange die benötigten Abhängigkeiten (Bibliotheken, Pakete) ebenfalls verfügbar sind.
+
+Allerdings können Unterschiede in den Systemumgebungen, wie z.B. unterschiedliche Versionen von Bibliotheken oder (Betriebs)System-spezifische Pfade, die Portierbarkeit beeinträchtigen.
+
+Workflow-Systeme wie Galaxy sind ebenfalls darauf ausgelegt, portabel zu sein, da die erzeugten Workflows umfangreiche Metadaten über die verwendeten Tools und Arbeitsschritte enthalten, die die Ausführung auf verschiedenen Instanzen ermöglichen.
+Hierbei liegt ein deutlicher Fokus darauf, das Workflows möglichst unabhängig von der zugrunde liegenden Infrastruktur sind und somit archiviert oder veröffentlicht werden können.
+
+Ein weiterer Ansatz zur Verbesserung der Portierbarkeit ist die Verwendung von Containerisierungstechnologien wie Docker oder Singularity.
+Container ermöglichen es, eine komplette Softwareumgebung, einschließlich aller Abhängigkeiten und Konfigurationen, in einem isolierten Paket zu bündeln.
+Dies stellt sicher, dass die Datenverarbeitungsprozesse in der gleichen Umgebung ausgeführt werden, unabhängig vom Host-System.
+Container sind besonders nützlich, wenn komplexe Software-Stacks benötigt werden, die schwer zu installieren oder zu konfigurieren sind.
 
 
 
 ## Skalierbarkeit
 
+Skalierbarkeit bezieht sich auf die Fähigkeit eines Systems, einer Anwendung oder eines Prozesses, mit zunehmender Datenmenge oder Arbeitslast umzugehen, ohne dass die Leistung oder Effizienz erheblich beeinträchtigt wird.
+Im Bezug auf Datenverarbeitung bedeutet dies, dass die Methoden und Werkzeuge, die zur Analyse von Daten verwendet werden, in der Lage sein sollten, größere Datensätze entsprechend zu verarbeiten.
+
+Skriptsprachen bieten in der Regel eine gute Skalierbarkeit, da sie auf leistungsfähigen Computern oder Servern ausgeführt werden können, die über ausreichende Ressourcen verfügen, um große Datenmengen zu verarbeiten.
+Das heißt, ein Skript, das auf einem lokalen Rechner mit einem kleinen Datensatz funktioniert, kann oft auch auf einem Hochleistungsrechner oder in einer Cloud-Umgebung ausgeführt werden, um größere Datensätze zu analysieren.
+Allerdings können Skripte, die für kleine Datensätze optimiert sind, bei größeren Datenmengen ineffizient werden, wenn sie nicht entsprechend angepasst oder optimiert werden.
+
+Workflow-Systeme wie Galaxy sind ebenfalls darauf ausgelegt, skalierbar zu sein.
+Hierbei liegt der Fokus auf der Verwaltung der Ausführung von Workflows auf Hochleistungsrechnern und Cloud-Umgebungen.
+Die zugrundelegenden Queue- und Ressourcenmanagement-Systeme ermöglichen es, Workflows effizient zu verteilen und auszuführen, auch wenn die Datenmengen erheblich zunehmen.
+Dabei werden die einzelnen Schritte eines Workflows oft parallelisiert, um die Verarbeitungsgeschwindigkeit zu erhöhen und die Auslastung der verfügbaren Ressourcen zu optimieren.
+Diese Verwaltung geschieht dabei automatisch, ohne dass der Nutzer sich um die technischen Details kümmern muss.
 
 
-Das klingt nach einer spannenden und wichtigen Einführung! Für eine erste Sitzung zur Datenverarbeitung im Rahmen eines FDM-Hochschulkurses (Forschungsdatenmanagement) könntest du die Inhalte so strukturieren, dass sie sowohl konzeptionell als auch praxisnah sind. Hier sind relevante Themenbereiche und Inhalte, die du abdecken könntest:
-
-🧭 1. Überblick über Datenverarbeitung im FDM-Kontext
-  - Was bedeutet Datenverarbeitung im Forschungsdatenmanagement?
-  - Lebenszyklus von Forschungsdaten: Erhebung, Verarbeitung, Analyse, Archivierung, Publikation
-  - Bedeutung von Reproduzierbarkeit und Nachvollziehbarkeit
-🔄 2. Workflow-Systeme
-  - Was sind Workflows und warum sind sie wichtig?
-  - Beispiele: Snakemake, Nextflow, Apache Airflow
-  - Vorteile: Automatisierung, Dokumentation, Wiederverwendbarkeit
-  - Kurze Demo oder Visualisierung eines einfachen Workflows
-    - bsp. galaxy
-    - openrefine (für begrenzte anwendungen)
-
-🧬 4. Pipelines
-  - Was ist eine Datenpipeline?
-  - Aufbau: Input → Verarbeitungsschritte → Output
-  - Beispiel: Pipeline zur Genomdatenanalyse oder Bildverarbeitung
-  - Tools: Snakemake, Luigi, DVC (Data Version Control)
-🖥️ 5. Systemunabhängigkeit und Portabilität
-  - Containerisierung: Docker, Singularity
-  - Vorteile: Reproduzierbarkeit, einfache Weitergabe
-  - Beispiel: Ein Dockerfile für eine Datenanalyseumgebung
-📦 6. Datenformate und Standards
-  - Offene Formate: CSV, JSON, HDF5, NetCDF
-  - Metadatenstandards: Dublin Core, DataCite, schema.org
-  - Bedeutung für Langzeitarchivierung und Interoperabilität
-🧠 7. Best Practices & Tools
-  - Versionskontrolle mit Git
-  - Dokumentation mit Markdown, Jupyter Notebooks
-  - Datenvalidierung und Qualitätssicherung
 💬 8. Diskussion & Ausblick
   - Welche Tools nutzen die Studierenden bereits?
   - Welche Herausforderungen sehen sie in der Datenverarbeitung?
