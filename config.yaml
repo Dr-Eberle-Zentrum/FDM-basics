@@ -94,7 +94,12 @@ episodes:
 ######################################
 ##### Verarbeiten ####################
 ######################################
+
+- Datenverarbeitung.md
 - RegEx.md
+
+
+
 
 # Information for Learners
 learners:
