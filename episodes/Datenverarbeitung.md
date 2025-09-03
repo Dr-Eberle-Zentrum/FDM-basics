@@ -378,7 +378,9 @@ Das Wissen um die **digitale Repräsentation von Informationen** ist immer dann 
 
 ### Sitzungsfragen
 
-- 
+- Was leisten Skriptsprachen?
+- Wann brauche ich Workflowsysteme?
+- MS Excel vs. OpenRefine ...
 
 :::::::::::::::::::::::::::
 
