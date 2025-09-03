@@ -421,7 +421,7 @@ Relevanz der Themen zu verdeutlichen:</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-1" class="tab-content">
-<div id="nav-tabpanel-1-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-1-1">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" aria-labelledby="nav-tab-1-1" role="tabpanel">
 <p>Sie verspüren heute einen unbändigen Tatendrang und möchten Daten zu
 Blütenformen analysieren.</p>
 <p>Nach kurzer Recherche finden sie den <a href="https://en.wikipedia.org/wiki/Iris_flower_data_set" class="external-link">Iris-Datensatz</a>,
@@ -477,7 +477,7 @@ holen ihre Notizen und den Ausdruck.</p>
   Mögliche Probleme
   </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <ul><li>
 <strong>Nicht nachvollziehbar</strong>: Leider sind sie sich nicht
@@ -605,7 +605,7 @@ automatisiert durchführt:</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-2" class="tab-content">
-<div id="nav-tabpanel-2-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-2-1">
+<div id="nav-tabpanel-2-1" class="tab-pane show active" aria-labelledby="nav-tab-2-1" role="tabpanel">
 <p>Hier als R-Skript:</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -631,7 +631,7 @@ automatisiert durchführt:</p>
 <p>Der obige Code ist <a href="https://rdrr.io/snippets/embed/?code=library%28tidyverse%29%20%20%0A%23%20%281%29%20Daten%20laden%20%28ersetzt%20Import%2C%20Umformatierung%20und%20Kopfzeilenentfernung%29%0Adata%20%3C-%20iris%0A%23%20%282%29%20Enthaltene%20Arten%20extrahieren%0Adistinct%28data%2C%20Species%29%0A%23%20%283%29%20Anzahl%20der%20Datens%C3%A4tze%20pro%20Art%20bestimmen%0Acount%28data%2C%20Species%29%0A%23%20%284%29%20Gruppieren%20pro%20Art%20und%20Mittelwerte%20der%20Spalten%20berechnen%20als%20Pipeline%0Adata%20%7C%3E%20%0A%20%20group_by%28Species%29%20%7C%3E%20%0A%20%20summarise%28across%28everything%28%29%2C%20mean%29%29%0A%23%20%285%29%20Visualisierung%20als%20Streudiagram%0Aggplot%28data%2C%20aes%28x%3DSepal.Length%2C%20y%3DSepal.Width%2C%20color%3DSpecies%29%29%20%2B%0A%20%20geom_point%28%29%20%2B%0A%20%20labs%28title%3D%27Sepal%20length%20as%20a%20function%20of%20sepal%20width%27%2C%20%0A%20%20%20%20%20%20%20x%3D%27Sepal%20length%27%2C%20y%3D%27Sepal%20width%27%29" class="external-link">online
 via rdrr.io ausführbar</a>, um die Ergebnisse zu sehen.</p>
 </div>
-<div id="nav-tabpanel-2-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-2-2">
+<div id="nav-tabpanel-2-2" class="tab-pane" aria-labelledby="nav-tab-2-2" role="tabpanel">
 <p>Und das Gleiche als Python-Skript:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -773,7 +773,7 @@ Refine) ist eine Open-Source Desktop-Anwendung zur Datenbereinigung und
 -transformation, die lokal auf dem eigenen Rechner installiert wird. Sie
 bietet eine grafische Benutzeroberfläche, in der man große Datensätze
 importieren, bereinigen und untersuchen kann.</p>
-<figure><img src="fig/openrefine-gui.png" style="width:80.0%" alt="OpenRefine Benutzeroberfläche" class="figure mx-auto d-block"><div class="figcaption">OpenRefine Benutzeroberfläche</div>
+<figure><img src="data/openrefine_example.result.png" style="width:80.0%" alt="Iris Beispiel Ergebnis in OpenRefine" class="figure mx-auto d-block"><div class="figcaption">Ergebnis des Iris Workflows in OpenRefine</div>
 </figure><p>OpenRefine ist besonders nützlich für die Arbeit mit unstrukturierten
 oder semi-strukturierten Daten, wie z.B. CSV-Dateien, Excel-Tabellen
 oder JSON-Daten. Daten können hiermit einfach gefiltert, sortiert,
@@ -791,10 +791,9 @@ werden:</p>
 <ul><li>Import der CSV-Datei in ein neues Projekt</li>
 <li>Transformation der Datenspalten in Zahlenformate</li>
 <li>Sortieren der Daten nach Spezies</li>
-<li>Ausblenden von Duplikaten in der Spezies Spalte
-<ul><li>ermöglicht beim Umschalten auf die “Datensatz”-Ansicht eine
-Gruppierung der Daten nach Spezies</li>
-</ul></li>
+<li>Ausblenden von Duplikaten in der Spezies Spalte</li>
+<li>Umschalten auf die “Datensatz”-Ansicht: ermöglicht eine Gruppierung
+der Daten nach Spezies (“records”)</li>
 <li>Anlegen von neuen Spalten für die Mittelwerte der Blütenmaße pro
 Spezies
 <ul><li>mit GREL z.B.
@@ -804,14 +803,13 @@ Spezies
 <li>Originale Datenspalten löschen</li>
 <li>Spezies-Spalte wieder auffüllen</li>
 <li>Duplikate entfernen</li>
-</ul><figure><img src="data/openrefine_example.result.png" style="width:80.0%" alt="Iris Beispiel Ergebnis in OpenRefine" class="figure mx-auto d-block"><div class="figcaption">Ergebnis des Iris Workflows</div>
-</figure><p>Ein Nachteil von OpenRefine gegenüber Skriptsprachen und anderen
-Workflow-Systemen ist, dass es keine Möglichkeit bietet, das bestimmte
-Arbeitsschritte auf mehreren Spalten gleichzeitig angewendet werden
-können. So müssen die Mittelwerte für die verschiedenen Blütenmaße
-jeweils einzeln berechnet und neue Spalten angelegt werden. Auch
-benötigt man i.d.R. für komplexere Datenmanipulationen Kenntnisse in
-GREL (oder Python), sodass OpenRefine nicht komplett ohne
+</ul><p>Ein Nachteil von OpenRefine gegenüber Skriptsprachen und anderen
+Workflow-Systemen ist, dass es keine Möglichkeit bietet, das
+wiederkehrende Arbeitsschritte auf mehrere Spalten angewendet werden. So
+müssen für die Mittelwerte für die verschiedenen Blütenmaße jeweils
+einzelne neue Spalten angelegt und berechnet werden. Auch benötigt man
+i.d.R. für komplexere Datenmanipulationen wie hier Kenntnisse in GREL
+(oder Python), sodass OpenRefine nicht komplett ohne
 Programmierkenntnisse genutzt werden kann. Allerdings ist OpenRefine
 eine gute Wahl für die schnelle und vor allem interaktive
 Datenbereinigung und -transformation, insbesondere wenn die Daten nicht
@@ -844,7 +842,7 @@ Webseite</a>).</p>
 </button>
 </div>
 </nav><div id="nav-tabContent-3" class="tab-content">
-<div id="nav-tabpanel-3-1" class="tab-pane show active" role="tabpanel" aria-labelledby="nav-tab-3-1">
+<div id="nav-tabpanel-3-1" class="tab-pane show active" aria-labelledby="nav-tab-3-1" role="tabpanel">
 <p>Hier sollen sie ein komplettes Projekt importieren, d.h. Daten und
 Arbeitsschritte in einem.</p>
 <ul><li>Speichern sie die <a href="data/openrefine_example.projekt.tar.gz">Iris OpenRefine
@@ -859,7 +857,7 @@ Schritte des Workflows zu sehen</li>
 <li>Klicken sie auf verschiedene Schritte, um die Effekte der einzelnen
 Datentransformationen zu sehen.</li>
 </ul></div>
-<div id="nav-tabpanel-3-2" class="tab-pane" role="tabpanel" aria-labelledby="nav-tab-3-2">
+<div id="nav-tabpanel-3-2" class="tab-pane" aria-labelledby="nav-tab-3-2" role="tabpanel">
 <p>Nun wollen wir lediglich den Workflow (also die Arbeitsschritte)
 importieren, was nützlich ist, um einenen Workflow auf andere (aber
 gleich strukturierte) Datensätze anzuwenden.</p>
@@ -1004,7 +1002,7 @@ sie obige Punkte als besonders wichtig an?</em></div>
   Antwort
   </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>Das Wissen um die <strong>digitale Repräsentation von
 Informationen</strong> ist immer dann zentral, wenn Daten importiert
