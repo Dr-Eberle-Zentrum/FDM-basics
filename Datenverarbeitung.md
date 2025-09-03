@@ -290,50 +290,6 @@ Auch benötigt man i.d.R. für komplexere Datenmanipulationen wie hier Kenntniss
 Allerdings ist OpenRefine eine gute Wahl für die schnelle und vor allem interaktive Datenbereinigung und -transformation, insbesondere wenn die Daten nicht allzu komplex sind.
 
 
-:::::::::::::::: challenge
-
-## OpenRefine in action
-
-Versuchen sie den obigen OpenRefine Workflow selbst nachzuvollziehen.
-
-Dazu müssen sie allerdings OpenRefine lokal auf ihrem Rechner installieren (Anleitung auf der [OpenRefine Webseite](https://openrefine.org/download.html)).
-
-Im Anschluß können sie OpenRefine auf zwei Arten testen:
-
-:::::::::::: tab
-
-### Projektimport
-
-Hier sollen sie ein komplettes Projekt importieren, d.h. Daten und Arbeitsschritte in einem.
-
-- Speichern sie die [Iris OpenRefine Projektdatei](data/openrefine_example.projekt.tar.gz) lokal auf ihrem Rechner
-- Öffnen sie OpenRefine
-- Klicken sie auf "Öffnen..." (oben rechts)
-- Wählen sie links "Projekt importieren" und wählen sie die heruntergeladene Datei aus und bestätigen sie den Import
-- Nun sollte das Ergebnis wie oben gezeigt erscheinen
-- Wählen sie links oben "Rückgängig/Wiederholen", um die einzelnen Schritte des Workflows zu sehen
-- Klicken sie auf verschiedene Schritte, um die Effekte der einzelnen Datentransformationen zu sehen.
-   
-### Workflowimport
-
-Nun wollen wir lediglich den Workflow (also die Arbeitsschritte) importieren, was nützlich ist, um einenen Workflow auf andere (aber gleich strukturierte) Datensätze anzuwenden.
-
-- Erzeugen sie ein neues Projekt in OpenRefine via "Öffnen..."
-- Verwenden sie "Webaddressen (URLs)" und geben sie die URL des Iris-Datensatzes ein: `https://zenodo.org/record/1319069/files/iris.csv`
-- Prüfen sie die Datenvorschau und die verschiedenen Importoptionen und klicken sie am Ende auf "Projekt erstellen" (oben rechts)
-- Nun sollten die rohen Daten des Iris-Datensatzes in OpenRefine erscheinen
-- Speichern sie den [Iris OpenRefine Workflow](data/openrefine_example.workflow.json) lokal auf ihrem Rechner
-- Wechseln sie in OpenRefine links oben zu "Rückgängig/Wiederholen"
-  - Klicken sie auf "Anwenden", um den heruntergeladenen Workflow zu importieren und auszuführen
-- Nun sollte das Ergebnis wie oben gezeigt erscheinen
-
-Wer möchte, kann auf die gleiche Art auch einen [Python-basierten Workflow](data/openrefine_example.workflow.python.json) austesten.
-
-:::::::::
-
-:::::::::::::::::::::::::::::::
-
-
 
 ## Portierbarkeit
 
@@ -417,13 +373,11 @@ Das Wissen um die **digitale Repräsentation von Informationen** ist immer dann 
 
 ### Sitzungsaufgaben
 
-- 
+- [Sitzungsaufgabe "OpenRefine in Action"](Aufgabe-OpenRefine-iris.md)
+
 
 ### Sitzungsfragen
 
-- Welche Tools nutzen die Studierenden bereits?
-- Welche Herausforderungen sehen sie in der Datenverarbeitung?
-- Ausblick auf weiterführende Themen: Datenbanken, Big Data, Machine Learning
 - 
 
 :::::::::::::::::::::::::::
