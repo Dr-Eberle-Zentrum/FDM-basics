@@ -319,8 +319,7 @@ Hier sollen sie ein komplettes Projekt importieren, d.h. Daten und Arbeitsschrit
 Nun wollen wir lediglich den Workflow (also die Arbeitsschritte) importieren, was nützlich ist, um einenen Workflow auf andere (aber gleich strukturierte) Datensätze anzuwenden.
 
 - Erzeugen sie ein neues Projekt in OpenRefine via "Öffnen..."
-  - Verwenden sie "Webaddressen (URLs)" und geben sie die URL des Iris-Datensatzes ein: `https://zenodo.org/record/1319069/files/iris.csv`
-  - Klicken sie auf "Nächste"
+- Verwenden sie "Webaddressen (URLs)" und geben sie die URL des Iris-Datensatzes ein: `https://zenodo.org/record/1319069/files/iris.csv`
 - Prüfen sie die Datenvorschau und die verschiedenen Importoptionen und klicken sie am Ende auf "Projekt erstellen" (oben rechts)
 - Nun sollten die rohen Daten des Iris-Datensatzes in OpenRefine erscheinen
 - Speichern sie den [Iris OpenRefine Workflow](data/openrefine_example.workflow.json) lokal auf ihrem Rechner
