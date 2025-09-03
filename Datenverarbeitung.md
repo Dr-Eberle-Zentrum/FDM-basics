@@ -259,7 +259,7 @@ Es gibt aber auch öffentliche Galaxy-Server, die von jedem genutzt werden könn
 [OpenRefine](https://openrefine.org/) (früher Google Refine) ist eine Open-Source Desktop-Anwendung zur Datenbereinigung und -transformation, die lokal auf dem eigenen Rechner installiert wird.
 Sie bietet eine grafische Benutzeroberfläche, in der man große Datensätze importieren, bereinigen und untersuchen kann.
 
-![OpenRefine Benutzeroberfläche](fig/openrefine-gui.png){width=80% alt="OpenRefine Benutzeroberfläche"}
+![Ergebnis des Iris Workflows in OpenRefine](data/openrefine_example.result.png){width=80% alt="Iris Beispiel Ergebnis in OpenRefine"}
 
 OpenRefine ist besonders nützlich für die Arbeit mit unstrukturierten oder semi-strukturierten Daten, wie z.B. CSV-Dateien, Excel-Tabellen oder JSON-Daten.
 Daten können hiermit einfach gefiltert, sortiert, gruppiert und transformiert werden.
@@ -275,7 +275,7 @@ Für das Iris-Datensatz-Beispiel könnte OpenRefine wie folgt verwendet werden:
 - Transformation der Datenspalten in Zahlenformate
 - Sortieren der Daten nach Spezies
 - Ausblenden von Duplikaten in der Spezies Spalte
-  - ermöglicht beim Umschalten auf die "Datensatz"-Ansicht eine Gruppierung der Daten nach Spezies
+- Umschalten auf die "Datensatz"-Ansicht: ermöglicht eine Gruppierung der Daten nach Spezies ("records")
 - Anlegen von neuen Spalten für die Mittelwerte der Blütenmaße pro Spezies
   - mit GREL z.B. `row.record.cells["Petal.Width"]["value"].sum() / row.record.cells["Petal.Width"].length()`
 - Originale Datenspalten löschen
@@ -283,12 +283,10 @@ Für das Iris-Datensatz-Beispiel könnte OpenRefine wie folgt verwendet werden:
 - Duplikate entfernen
 
 
-![Ergebnis des Iris Workflows](data/openrefine_example.result.png){width=80% alt="Iris Beispiel Ergebnis in OpenRefine"}
 
-
-Ein Nachteil von OpenRefine gegenüber Skriptsprachen und anderen Workflow-Systemen ist, dass es keine Möglichkeit bietet, das bestimmte Arbeitsschritte auf mehreren Spalten gleichzeitig angewendet werden können.
-So müssen die Mittelwerte für die verschiedenen Blütenmaße jeweils einzeln berechnet und neue Spalten angelegt werden.
-Auch benötigt man i.d.R. für komplexere Datenmanipulationen Kenntnisse in GREL (oder Python), sodass OpenRefine nicht komplett ohne Programmierkenntnisse genutzt werden kann.
+Ein Nachteil von OpenRefine gegenüber Skriptsprachen und anderen Workflow-Systemen ist, dass es keine Möglichkeit bietet, das wiederkehrende Arbeitsschritte auf mehrere Spalten angewendet werden.
+So müssen für die Mittelwerte für die verschiedenen Blütenmaße jeweils einzelne neue Spalten angelegt und berechnet werden.
+Auch benötigt man i.d.R. für komplexere Datenmanipulationen wie hier Kenntnisse in GREL (oder Python), sodass OpenRefine nicht komplett ohne Programmierkenntnisse genutzt werden kann.
 Allerdings ist OpenRefine eine gute Wahl für die schnelle und vor allem interaktive Datenbereinigung und -transformation, insbesondere wenn die Daten nicht allzu komplex sind.
 
 
