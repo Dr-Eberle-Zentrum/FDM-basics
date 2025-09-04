@@ -351,7 +351,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Aufgabe zu "Manuelle Datenbereinigung"</h1>
-        <p>Zuletzt aktualisiert am 2024-11-07 |
+        <p>Zuletzt aktualisiert am 2025-09-04 |
 
         <a href="https://github.com/Dr-Eberle-Zentrum/FDM-basics/edit/main/instructors/Aufgabe-Datenbereinigung-manuell.md" class="external-link">Diese Seite bearbeiten <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -381,11 +381,17 @@ werden.</li>
 Datensätzen durchgeführt werden.</li>
 </ul><div class="section level3">
 <h3 id="ziel">Ziel<a class="anchor" aria-label="anchor" href="#ziel"></a></h3>
-<p>Konkret wollen wir die Daten für die <a href="https://www.statistik-bw.de/GesamtwBranchen/KonjunktPreise/VPI-LR.jsp?i=h" class="external-link">Mietpreisentwicklung
-in Baden-Württemberg extrahieren vom Statistischen Landesamt
-Baden-Württemberg</a> extrahieren und bereinigen (siehe Link).</p>
-<ul><li>Die Gesamttabelle ist als CSV Download auf der oben gelinkten Seite
-verfügbar.</li>
+<p>Konkret wollen wir die Daten für die Mietpreisentwicklung in
+Baden-Württemberg extrahieren vom Statistischen Landesamt
+Baden-Württemberg extrahieren und bereinigen. Die Daten wurden 2024 vom
+destatis Server heruntergeladen, liegen jedoch in einem Format vor, das
+nicht direkt weiterverwendet werden kann.</p>
+<ul><li>
+<a href="../data/mietpreisindex-bw.komplett.csv"><code>mietpreisindex-bw.komplett.csv</code></a>
+(Quelle: <a href="https://www.statistik-bw.de/GesamtwBranchen/KonjunktPreise/VPI-LR.jsp?i=h" class="external-link">Statistisches
+Landesamt Baden-Württemberg</a> - Zugriff 13.09.2024; Aktuelle Daten via
+<a href="https://daten.statistik-bw.de/genesisonline/online?operation=table&amp;code=61111_0003" class="external-link">Tabelle
+61111_0003 in Genesis-Online</a>)</li>
 </ul><p>Wir sind allerdings nur an Teilen der Daten interessiert,
 konkret:</p>
 <ul><li>Verbraucherpreisindex für Baden-Württemberg (Spalte 2)</li>
@@ -394,16 +400,38 @@ konkret:</p>
 </ul></div>
 <div class="section level3">
 <h3 id="aufgabe-1---reguläre-ausdrücke">Aufgabe 1 - Reguläre Ausdrücke<a class="anchor" aria-label="anchor" href="#aufgabe-1---regul%C3%A4re-ausdr%C3%BCcke"></a></h3>
-<ul><li>Downloaden sie die CSV Datei von der oben verlinkten Seite und
-<ul><li>Speichern sie diese in ihrem Abgabeordner</li>
-<li>Dateiname: <code>mietpreisindex-bw.komplett.csv</code>
-</li>
-</ul></li>
-<li>Öffnen sie die Datei in einem TEXTEDITOR (nicht Excel oder
-ähnliches) der in der Suche REGULÄRE AUSDRÜCKE unterstützt.</li>
+<ul><li>Speichern sie die oben verlinkte Datei
+<code>mietpreisindex-bw.komplett.csv</code> in ihrem Abgabeordner</li>
+</ul><p>Zum Erstellen und Testen von Regulären Ausdrücken empfehlen wir einen
+der folgenden Schritte:</p>
+<div class="tabs">
+<nav><div id="nav-tab-1" class="nav nav-tabs" role="tablist">
+
+</div>
+</nav><div id="nav-tabContent-1" class="tab-content">
+<div id="nav-tabpanel-1-1" class="tab-pane show active" aria-labelledby="nav-tab-1-1" role="tabpanel">
+
+</div>
+<div id="nav-tabpanel-1-2" class="tab-pane" aria-labelledby="nav-tab-1-2" role="tabpanel">
+<ul><li>Öffnen sie die Datei in einem TEXTEDITOR (nicht Excel oder
+ähnliches) oder einer Programmierumgebung (IDE) welche in der Suche
+<em>REGULÄRE AUSDRÜCKE</em> unterstützt.</li>
 <li>Falls sie Notepad++ verwenden, können sie in der Suchmaske auf den
 Reiter “Hervorheben” wechseln, um Treffer leichter zu sehen.</li>
-</ul><p>Ersinnen sie REGULÄRE AUSDRÜCKE für die folgenden Aufgaben und
+</ul></div>
+<div id="nav-tabpanel-1-3" class="tab-pane" aria-labelledby="nav-tab-1-3" role="tabpanel">
+<ul><li>Wählen sie links oben als Flavor “Python” aus</li>
+</ul></div>
+<div id="nav-tabpanel-1-4" class="tab-pane" aria-labelledby="nav-tab-1-4" role="tabpanel">
+<ul><li>Öffnen sie ein Online-Tool für Reguläre Ausdrücke, z.B. <a href="https://regex101.com/" class="external-link">regex101.com</a>
+<ul><li>Wählen sie links oben als Flavor “Python” aus</li>
+</ul></li>
+<li>Öffnen sie die Datei in einem Texteditor und kopieren sie den Inhalt
+in den unteren Bereich “TEST STRING” des Online-Tools</li>
+</ul></div>
+</div>
+</div>
+<p>Ersinnen sie REGULÄRE AUSDRÜCKE für die folgenden Aufgaben und
 dokumentieren sie diese in ihrem Abgabeordner.</p>
 <ul><li>Dateiname: <code>mietpreisindex-bw.komplett.regex.md</code>
 </li>
@@ -415,8 +443,9 @@ dokumentieren sie diese in ihrem Abgabeordner.</p>
 <code>Januar;117,4;109,3;+3,0;108,9;+2,7;109,8;+2,8</code> sein</li>
 <li>letzter Treffer is <code>Dezember;27,3;23,8;–;-;–;-;–</code>
 </li>
-<li>Versuchen sie den Ausdruck möglichst klein zu halten. Sie können
-auch gern mehrere Varianten vorschlagen!</li>
+<li>Versuchen sie den Ausdruck möglichst klein zu halten.</li>
+<li><em>Finden sie mindestens 2 unterschiedliche Ausdrücke für diese
+Aufgabe</em></li>
 </ul></li>
 <li>Ausdruck selektiert AUSSCHLIESSLICH die gewünschten Daten (siehe
 Ziel)
@@ -430,34 +459,58 @@ selektiert werden
 </ul></li>
 <li>Kombination aus 1. und 4. um die gewünschten Daten inklusive
 Überschrift zu selektieren</li>
+</ol><p>Nun wollen wir den Regulären Ausdruck aus 5. verwenden, um die Daten
+zu extrahieren. In der Linux/Unix Kommandozeile gibt es hierfür das Tool
+<code>grep</code>, welches reguläre Ausdrücke unterstützt. Im Folgenden
+wollen wir eine Online-Version von <code>grep</code> verwenden.</p>
+<ol start="6" style="list-style-type: decimal"><li>Öffnen sie die Webseite <a href="https://www.online-utility.org/text/grep.jsp" class="external-link">Grep Online</a>
+<ul><li>Kopieren sie ihren Regulären Ausdruck aus 5. in das Feld “Input
+Regular Expression”</li>
+<li>Kopieren sie den Inhalt der Datei
+<code>mietpreisindex-bw.komplett.csv</code> in das Feld “Enter
+Text”</li>
+<li>Klicken “Only Matching”</li>
+<li>Starten sie die Extraktion via “Process text”</li>
+</ul></li>
+<li>Kopieren sie das Ergebnis in ihre Markdowndatei
+<ul><li>Verwenden sie einen Codeblock im Markdown, um das Ergebnis
+einzufügen</li>
+</ul></li>
 </ol></div>
 <div class="section level3">
 <h3 id="aufgabe-2---copy-paste-edit">Aufgabe 2 - Copy-Paste-Edit<a class="anchor" aria-label="anchor" href="#aufgabe-2---copy-paste-edit"></a></h3>
-<ul><li>Öffnen sie die Webseite von oben</li>
-<li>Markieren sie die gewünschten Daten (siehe Ziel)</li>
-<li>Kopieren sie die Daten in die Zwischenablage</li>
-<li>Öffnen sie einen TEXTEDITOR und fügen sie die Daten ein</li>
-<li>Bereinigen sie die Daten manuell
+<ul><li>Speichern sie die Datei <a href="../data/mietpreisindex-bw.jahresdurchschnitt.csv"><code>mietpreisindex-bw.jahresdurchschnitt.csv</code></a>
+in ihrem Abgabeordner
+<ul><li>Diese Datei enthält die Jahresdurchschnittszeilen aus der kompletten
+Datei von oben</li>
+</ul></li>
+</ul><p>Nun wollen wir die Daten manuell bereinigen, um nur die zwei
+Zielspalten zu behalten und die Jahreszahlen zu extrahieren. Ausserdem
+soll die Datei am Ende im amerikanischen CSV Format (Punkt als
+Dezimaltrenner, Komma als Spaltentrenner) vorliegen.</p>
+<ul><li>Öffnen sie die Datei in einem TEXTEDITOR (nicht Excel oder
+ähnliches)</li>
+<li>Bereinigen sie die Daten manuell (ohne reguläre Ausdrücke etc.)
 <ul><li>Verwenden sie <a href="https://www.pctipp.ch/praxis/zubehoer/kleines-maus-trickli-fuer-word-writer-2012970.html" class="external-link">vertikale
 Markierung</a> (<a href="https://www.macwelt.de/article/934976/textedit-beliebig-markieren.html" class="external-link">MacOs</a>),
 um spaltenweise zu markieren und zu löschen</li>
-<li>Verwenden sie “Suchen und Ersetzen”, um ein Semikolon als
-Spaltentrenner zwischen den zwei Zielspalten einzufügen</li>
+<li>Verwenden sie “Suchen und Ersetzen”, um die Spaltentrenner und
+Dezimaltrennzeichen zu korrigieren</li>
 <li>Reduzieren sie die erste Spalte auf die Jahreszahlen (vertikale
 Markierung oder Suchen-und-Ersetzen)</li>
 <li>Fügen sie eine Überschriftszeile
-<code>Jahr;Verbraucherpreisindex</code> ein</li>
+<code>Jahr,Verbraucherpreisindex</code> ein</li>
+<li>Reduzieren sie den Datensatz auf die Jahre 2000-2023</li>
 </ul></li>
-<li>Speichern sie die Daten als CSV Datei
-<ul><li>Dateiname:
-<code>mietpreisindex-bw.jahresdurchschnitt.csv</code>
-</li>
-</ul></li>
-<li>Dokumentieren sie die Schritte in einer Markdown-Datei
+<li>Speichern sie die Datei in ihrem Ablageordner</li>
+</ul><p>Und damit das auch nachvollziehbar bleibt:</p>
+<ul><li>Dokumentieren sie die Herkunft und den Inhalt der Datei in einer
+Markdown-Datei
 <ul><li>Dateiname:
 <code>mietpreisindex-bw.jahresdurchschnitt.README.md</code>
 </li>
-<li>Denken sie an eine komplette Quellen- und Editierbeschreibung!</li>
+<li>Denken sie an eine komplette Onlinequellen- und
+Editierbeschreibung!</li>
 </ul></li>
 </ul><!--
 Place links that you need to refer to multiple times across pages here. Delete
@@ -521,8 +574,8 @@ any links that you are not going to use.
   "url": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/instructor/Aufgabe-Datenbereinigung-manuell.html",
   "identifier": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/instructor/Aufgabe-Datenbereinigung-manuell.html",
   "dateCreated": "2024-08-01",
-  "dateModified": "2024-11-07",
-  "datePublished": "2025-09-03"
+  "dateModified": "2025-09-04",
+  "datePublished": "2025-09-04"
 }
 
   </script><script>
