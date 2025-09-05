@@ -33,7 +33,7 @@ Mögliche Quellen sind hierbei:
 ## Was kann schiefgehen?
 
 Beim Import von Daten treten häufig Probleme auf, die den weiteren Arbeitsprozess erschweren können.
-Dies ist **insbesondere beim Import fremder oder alter Daten** der Fall, wenn die ursprünglichen Rahmenbedingungen nicht mehr bekannt sind.
+Dies ist **insbesondere beim Import fremder oder alter Daten** der Fall, wenn die ursprünglichen Rahmenbedingungen oder Programme nicht mehr bekannt sind.
 
 Im Folgenden gehen wir davon aus, dass sie es mit *textbasierten Dateiformaten* zu tun haben (z.B. CSV, TSV, JSON, XML, etc.), da diese am häufigsten zum Teilen und Archivieren von Daten verwendet werden.
 
@@ -108,13 +108,13 @@ projekt/
 
 Nehmen wir weiter an, dass das Skript `analyse.py` die Messdaten mit einem relativen Pfad ohne Ordnerangabe, z.B. mit `pandas.read_csv("messdaten.csv")`, importieren würde.
 
-Wenn wir nun in der Skriptumgebung den Arbeitsordner auf `projekt/20250901/` setzen und das Skript ausführen, würde die Datei `projekt/20250901/messdaten.csv` importiert werden.
-Würden wir hingegen den Arbeitsordner auf `projekt/20250902/` setzen, würde die Datei `projekt/20250902/messdaten.csv` importiert werden.
+Wenn wir nun in der Skriptumgebung den Arbeitsordner auf `projekt/daten/20250901/` setzen und das Skript ausführen, würde die Datei `projekt/daten/20250901/messdaten.csv` importiert werden.
+Würden wir hingegen den Arbeitsordner auf `projekt/daten/20250902/` setzen, würde die dortige Datei `messdaten.csv` importiert werden.
 Dadurch könnten wir das gleiche Skript für die Analyse der Daten aus beiden Tagen verwenden, ohne den Pfad im Skript anpassen zu müssen.
 
 Zudem könnte das Skript auch problemlos auf einem anderen Rechner ausgeführt werden, solange die Ordnerstruktur beibehalten wird.
 
-Ausserdem ermöglicht diese Ordnerstruktur eine einfache Organisation eine Automatisierung der Analysen, z.B. mit einem Makefile oder einem Bash-Skript, um die Analysen für alle Datumsordner durchzuführen.
+Ausserdem ermöglicht diese Ordnerstruktur eine Automatisierung der Analysen, z.B. mit einem Makefile oder einem Bash-Skript, um die Analysen für alle Datumsordner durchzuführen.
 Dies ist beispielhaft in folgendem Bash-Skript dargestellt:
 
 ```bash
@@ -122,6 +122,7 @@ Dies ist beispielhaft in folgendem Bash-Skript dargestellt:
 cd projekt
 # Schleife über alle Datumsordner (relative Pfade bzgl. Projektordner)
 for dir in daten/*/; do
+  # Ausgabe des aktuellen Datenordners
   echo "Analysiere Daten in $dir"
   # In Datenordner wechseln (via relativen Pfad)
   # und Skript ausführen (Arbeitsverzeichnis = Aufrufordner = Datenordner)
@@ -131,12 +132,23 @@ for dir in daten/*/; do
 done
 ```
 
-Hierbei ist zu bemerken, dass auch as Bash-Skript zur Automatisierung wiederum mit relativen Pfaden arbeitet, um das Skript `analyse.py` auszuführen.
+Hierbei ist zu bemerken, dass auch das Bash-Skript zur Automatisierung wiederum mit relativen Pfaden arbeitet, u.a. um das Skript `analyse.py` auszuführen.
+Das `..` verweist hierbei auf den übergeordneten Ordner, sodass der Pfad `../../skripte/analyse.py` vom aktuellen Datenordner aus auf das Skript im `skripte` Ordner zeigt ("Zwei Ordner hoch und dann ins `skripte` Verzeichnis", siehe Verzeichnisstruktur oben).
+
 Dadurch ist das gesamte Projekt sehr flexibel und wiederverwendbar gestaltet.
 Es kann auf beliebig viele Daten (z.B. weitere Datumsordner) angewandt werden, ohne dass Pfade im Skript oder im Automatisierungsskript angepasst werden müssen.
 Ausserdem kann das gesamte Projekt problemlos auf einen anderen Rechner verschoben werden, solange die projektinterne Ordnerstruktur beibehalten wird.
 
 Die obigen Bash-Kommandos könnten hierfür als eigenes Skript (z.B. `run_analysen.sh`) im `skripte` Ordner gespeichert und ausgeführt werden.
+
+### `\` vs. `/`
+
+In Windows werden Pfade häufig mit dem Backslash `\` angegeben (z.B. `C:\Users\Name\Documents\Projekt\data\datei.csv`), während in Unix-basierten Systemen (Linux, macOS) der Forwardslash `/` verwendet wird (z.B. `/home/name/dokumente/projekt/data/datei.csv`).
+Dies kann zu Problemen führen, wenn Skripte auf verschiedenen Betriebssystemen ausgeführt werden sollen.
+
+Daher empfiehlt es sich, in **Skripten immer den Forwardslash `/`** zu verwenden, da dieser in den meisten Programmiersprachen und Skriptumgebungen (z.B. Python, R, Bash) auch unter Windows unterstützt wird.
+
+
 
 ### Best Practices
 
