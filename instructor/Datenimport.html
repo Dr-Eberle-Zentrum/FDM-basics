@@ -424,7 +424,8 @@ unterschiedlichen Formaten vor.</p>
 <hr class="half-width"><p>Beim Import von Daten treten häufig Probleme auf, die den weiteren
 Arbeitsprozess erschweren können. Dies ist <strong>insbesondere beim
 Import fremder oder alter Daten</strong> der Fall, wenn die
-ursprünglichen Rahmenbedingungen nicht mehr bekannt sind.</p>
+ursprünglichen Rahmenbedingungen oder Programme nicht mehr bekannt
+sind.</p>
 <p>Im Folgenden gehen wir davon aus, dass sie es mit <em>textbasierten
 Dateiformaten</em> zu tun haben (z.B. CSV, TSV, JSON, XML, etc.), da
 diese am häufigsten zum Teilen und Archivieren von Daten verwendet
@@ -544,19 +545,19 @@ werden:</p>
 Messdaten mit einem relativen Pfad ohne Ordnerangabe, z.B. mit
 <code>pandas.read_csv("messdaten.csv")</code>, importieren würde.</p>
 <p>Wenn wir nun in der Skriptumgebung den Arbeitsordner auf
-<code>projekt/20250901/</code> setzen und das Skript ausführen, würde
-die Datei <code>projekt/20250901/messdaten.csv</code> importiert werden.
-Würden wir hingegen den Arbeitsordner auf <code>projekt/20250902/</code>
-setzen, würde die Datei <code>projekt/20250902/messdaten.csv</code>
-importiert werden. Dadurch könnten wir das gleiche Skript für die
-Analyse der Daten aus beiden Tagen verwenden, ohne den Pfad im Skript
-anpassen zu müssen.</p>
+<code>projekt/daten/20250901/</code> setzen und das Skript ausführen,
+würde die Datei <code>projekt/daten/20250901/messdaten.csv</code>
+importiert werden. Würden wir hingegen den Arbeitsordner auf
+<code>projekt/daten/20250902/</code> setzen, würde die dortige Datei
+<code>messdaten.csv</code> importiert werden. Dadurch könnten wir das
+gleiche Skript für die Analyse der Daten aus beiden Tagen verwenden,
+ohne den Pfad im Skript anpassen zu müssen.</p>
 <p>Zudem könnte das Skript auch problemlos auf einem anderen Rechner
 ausgeführt werden, solange die Ordnerstruktur beibehalten wird.</p>
-<p>Ausserdem ermöglicht diese Ordnerstruktur eine einfache Organisation
-eine Automatisierung der Analysen, z.B. mit einem Makefile oder einem
-Bash-Skript, um die Analysen für alle Datumsordner durchzuführen. Dies
-ist beispielhaft in folgendem Bash-Skript dargestellt:</p>
+<p>Ausserdem ermöglicht diese Ordnerstruktur eine Automatisierung der
+Analysen, z.B. mit einem Makefile oder einem Bash-Skript, um die
+Analysen für alle Datumsordner durchzuführen. Dies ist beispielhaft in
+folgendem Bash-Skript dargestellt:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -564,25 +565,49 @@ ist beispielhaft in folgendem Bash-Skript dargestellt:</p>
 <span id="cb2-2"><a href="#cb2-2" tabindex="-1"></a><span class="bu">cd</span> projekt</span>
 <span id="cb2-3"><a href="#cb2-3" tabindex="-1"></a><span class="co"># Schleife über alle Datumsordner (relative Pfade bzgl. Projektordner)</span></span>
 <span id="cb2-4"><a href="#cb2-4" tabindex="-1"></a><span class="cf">for</span> dir <span class="kw">in</span> daten/<span class="pp">*</span>/<span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>  <span class="bu">echo</span> <span class="st">"Analysiere Daten in </span><span class="va">$dir</span><span class="st">"</span></span>
-<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a>  <span class="co"># In Datenordner wechseln (via relativen Pfad)</span></span>
-<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a>  <span class="co"># und Skript ausführen (Arbeitsverzeichnis = Aufrufordner = Datenordner)</span></span>
-<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a>  <span class="co"># (relativer Pfad im Skript funktioniert, da Arbeitsverzeichnis auf </span></span>
-<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a>  <span class="co">#  aktuellen Datenordner gesetzt)</span></span>
-<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a>  <span class="kw">(</span><span class="bu">cd</span> <span class="st">"</span><span class="va">$dir</span><span class="st">"</span> <span class="kw">&amp;&amp;</span> <span class="ex">python</span> ../../skripte/analyse.py<span class="kw">)</span></span>
-<span id="cb2-11"><a href="#cb2-11" tabindex="-1"></a><span class="cf">done</span></span></code></pre>
+<span id="cb2-5"><a href="#cb2-5" tabindex="-1"></a>  <span class="co"># Ausgabe des aktuellen Datenordners</span></span>
+<span id="cb2-6"><a href="#cb2-6" tabindex="-1"></a>  <span class="bu">echo</span> <span class="st">"Analysiere Daten in </span><span class="va">$dir</span><span class="st">"</span></span>
+<span id="cb2-7"><a href="#cb2-7" tabindex="-1"></a>  <span class="co"># In Datenordner wechseln (via relativen Pfad)</span></span>
+<span id="cb2-8"><a href="#cb2-8" tabindex="-1"></a>  <span class="co"># und Skript ausführen (Arbeitsverzeichnis = Aufrufordner = Datenordner)</span></span>
+<span id="cb2-9"><a href="#cb2-9" tabindex="-1"></a>  <span class="co"># (relativer Pfad im Skript funktioniert, da Arbeitsverzeichnis auf </span></span>
+<span id="cb2-10"><a href="#cb2-10" tabindex="-1"></a>  <span class="co">#  aktuellen Datenordner gesetzt)</span></span>
+<span id="cb2-11"><a href="#cb2-11" tabindex="-1"></a>  <span class="kw">(</span><span class="bu">cd</span> <span class="st">"</span><span class="va">$dir</span><span class="st">"</span> <span class="kw">&amp;&amp;</span> <span class="ex">python</span> ../../skripte/analyse.py<span class="kw">)</span></span>
+<span id="cb2-12"><a href="#cb2-12" tabindex="-1"></a><span class="cf">done</span></span></code></pre>
 </div>
-<p>Hierbei ist zu bemerken, dass auch as Bash-Skript zur Automatisierung
-wiederum mit relativen Pfaden arbeitet, um das Skript
-<code>analyse.py</code> auszuführen. Dadurch ist das gesamte Projekt
-sehr flexibel und wiederverwendbar gestaltet. Es kann auf beliebig viele
-Daten (z.B. weitere Datumsordner) angewandt werden, ohne dass Pfade im
-Skript oder im Automatisierungsskript angepasst werden müssen. Ausserdem
-kann das gesamte Projekt problemlos auf einen anderen Rechner verschoben
-werden, solange die projektinterne Ordnerstruktur beibehalten wird.</p>
+<p>Hierbei ist zu bemerken, dass auch das Bash-Skript zur
+Automatisierung wiederum mit relativen Pfaden arbeitet, u.a. um das
+Skript <code>analyse.py</code> auszuführen. Das <code>..</code> verweist
+hierbei auf den übergeordneten Ordner, sodass der Pfad
+<code>../../skripte/analyse.py</code> vom aktuellen Datenordner aus auf
+das Skript im <code>skripte</code> Ordner zeigt (“Zwei Ordner hoch und
+dann ins <code>skripte</code> Verzeichnis”, siehe Verzeichnisstruktur
+oben).</p>
+<p>Dadurch ist das gesamte Projekt sehr flexibel und wiederverwendbar
+gestaltet. Es kann auf beliebig viele Daten (z.B. weitere Datumsordner)
+angewandt werden, ohne dass Pfade im Skript oder im
+Automatisierungsskript angepasst werden müssen. Ausserdem kann das
+gesamte Projekt problemlos auf einen anderen Rechner verschoben werden,
+solange die projektinterne Ordnerstruktur beibehalten wird.</p>
 <p>Die obigen Bash-Kommandos könnten hierfür als eigenes Skript (z.B.
 <code>run_analysen.sh</code>) im <code>skripte</code> Ordner gespeichert
 und ausgeführt werden.</p>
+</div>
+<div class="section level3">
+<h3 id="vs-">
+<code>\</code> vs. <code>/</code>
+<a class="anchor" aria-label="anchor" href="#vs-"></a></h3>
+<p>In Windows werden Pfade häufig mit dem Backslash <code>\</code>
+angegeben (z.B.
+<code>C:\Users\Name\Documents\Projekt\data\datei.csv</code>), während in
+Unix-basierten Systemen (Linux, macOS) der Forwardslash <code>/</code>
+verwendet wird (z.B.
+<code>/home/name/dokumente/projekt/data/datei.csv</code>). Dies kann zu
+Problemen führen, wenn Skripte auf verschiedenen Betriebssystemen
+ausgeführt werden sollen.</p>
+<p>Daher empfiehlt es sich, in <strong>Skripten immer den Forwardslash
+<code>/</code></strong> zu verwenden, da dieser in den meisten
+Programmiersprachen und Skriptumgebungen (z.B. Python, R, Bash) auch
+unter Windows unterstützt wird.</p>
 </div>
 <div class="section level3">
 <h3 id="best-practices">Best Practices<a class="anchor" aria-label="anchor" href="#best-practices"></a></h3>
