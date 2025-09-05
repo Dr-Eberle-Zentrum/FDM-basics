@@ -1,7 +1,7 @@
 ---
 title: 'Datenimport'
 teaching: 10
-exercises: 2
+exercises: 0
 ---
 
 :::::::::::::::::::::::::::::::::::::: questions 
@@ -118,14 +118,15 @@ Ausserdem ermöglicht diese Ordnerstruktur eine einfache Organisation eine Autom
 Dies ist beispielhaft in folgendem Bash-Skript dargestellt:
 
 ```bash
-# Wechsle ins Projektverzeichnis
+# Wechsle ins Projektverzeichnis (ggf. via absoluten Pfad)
 cd projekt
-# Schleife über alle Datumsordner
+# Schleife über alle Datumsordner (relative Pfade bzgl. Projektordner)
 for dir in daten/*/; do
   echo "Analysiere Daten in $dir"
-  # In Datenordner wechseln
+  # In Datenordner wechseln (via relativen Pfad)
   # und Skript ausführen (Arbeitsverzeichnis = Aufrufordner = Datenordner)
-  # (relativer Pfad im Skript funktioniert, da Arbeitsverzeichnis auf Datenordner gesetzt)
+  # (relativer Pfad im Skript funktioniert, da Arbeitsverzeichnis auf 
+  #  aktuellen Datenordner gesetzt)
   (cd "$dir" && python ../../skripte/analyse.py)
 done
 ```
