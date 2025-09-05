@@ -65,41 +65,17 @@ contact: 'info@eberle-zentrum.uni-tuebingen.de'
 
 # Order of episodes in your lesson
 episodes:
-
-######################################
-##### Basiswissen ####################
-######################################
-
 - Digitale-Daten.md
 - Dateiformate.md
-
-# - Dateiorganisation (extern)
 - Dateiverwaltung.md
-
-# - Speicherung, Archivierung, Vernichtung (extern)
-
-######################################
-##### Teilen #########################
-######################################
-
 - Forschungsdaten.md
 - Finden-und-Zitieren.md
-
-# - metadaten und rechliches (extern)
-
 - Netzwerke.md
 - Browser.md
 - Verschluesselung.md
-
-######################################
-##### Verarbeiten ####################
-######################################
-
 - Datenverarbeitung.md
 - RegEx.md
-
-
-
+- Datenimport.md
 
 # Information for Learners
 learners:
