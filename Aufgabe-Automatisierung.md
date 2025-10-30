@@ -28,7 +28,7 @@ Sie sollen diese Aufgabe auf verschiedene Arten lösen und die Vor- und Nachteil
    - Welche Schritte sie unternommen haben.
    - Welche Vor- und Nachteile diese Herangehensweise hat.
    - Wie sie die Skalierbarkeit dieses Ansatzes einschätzen.
-   - Wie sieht die Reproduizierbarkeit dieses Ansatzes aus?
+   - Wie sieht die Reproduzierbarkeit dieses Ansatzes aus?
    
 ### Variante 2 - Automatisierung via Shell Skript
 
