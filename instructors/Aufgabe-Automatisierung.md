@@ -34,7 +34,12 @@ Sie sollen diese Aufgabe auf verschiedene Arten lösen und die Vor- und Nachteil
 
 Erstellen sie ein Skript, das die Dateien automatisch in die entsprechenden Ordner verschiebt.
 
-Wählen sie hierfür **eine Skriptsprache, die sie noch nicht beherrschen**!
+Wählen sie hierfür **eine Skriptsprache, die sie noch nicht beherrschen**! Mögliche Sprachen sind u.a.
+
+- BASH (Linux/MacOS)
+- Windows Kommandozeile (DOS-style)
+- Windows Powershell
+
 Finden sie sich hierfür zu Kleingruppen mit anderen Kursteilnehmenden zusammen, die die gleiche Sprache gewählt haben.
 
 Lassen sie sich (getrennt voneinander) von einem LLM (z.B. ChatGPT) ein entsprechendes Skript generieren.
