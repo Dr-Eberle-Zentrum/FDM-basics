@@ -14,7 +14,7 @@ Hierfür haben wir ihnen eine Archivdatei mit 60 leeren Dateien vorbereitet, die
 - [Dateien-fuer-Automatisierung.zip](data/Dateien-fuer-Automatisierung.zip)
 
 Das Ziel dieser Aufgabe ist es, die enthaltenen Dateien in verschiedene Ordner zu verschieben, die nach den Dateiendungen benannt sind.
-D.h. alle `.txt`-Dateien sollen in den Ordner `txt`, alle `.md`-Dateien in den Ordner `md` usw. verschoben werden.
+D.h. es sollen z.B. alle `.txt`-Dateien in einen Ordner `txt` verschoben werden.
 
 Sie sollen diese Aufgabe auf verschiedene Arten lösen und die Vor- und Nachteile der jeweiligen Herangehensweise dokumentieren.
 
@@ -22,7 +22,8 @@ Sie sollen diese Aufgabe auf verschiedene Arten lösen und die Vor- und Nachteil
 
 1. Entpacken sie die Archivdatei in einen Ordner ihrer Wahl.
 2. Öffnen sie den Ordner in ihrem Dateimanager.
-3. Erstellen sie die Ordner `txt`, `md`, für alle Dateiendungen, die in den Dateien vorkommen. (Achtung: nur für diese und keine darüber hinaus!)
+3. Erstellen sie JEWEILS einen Ordner für alle Dateiendungen, die in den vorhandenen Dateinamen vorkommen. 
+   - **Achtung:** nur für diese und keine darüber hinaus!
 4. Verschieben sie die Dateien in die entsprechenden Ordner.
 5. Dokumentieren sie in einem Markdown-Dokument `Automatisierung.md` in einem Abschnitt `Variante 1 - manuell` in ihrem Abgabeordner:
    - Welche Schritte sie unternommen haben.
