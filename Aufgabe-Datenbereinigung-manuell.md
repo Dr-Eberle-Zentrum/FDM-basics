@@ -37,12 +37,12 @@ Zum Erstellen und Testen von Regulären Ausdrücken empfehlen wir einen der folg
 
 :::::: tab
 
-## Texteditor oder IDE
+### Texteditor oder IDE
 
 - Öffnen sie die Datei in einem TEXTEDITOR (nicht Excel oder ähnliches) oder einer Programmierumgebung (IDE) welche in der Suche *REGULÄRE AUSDRÜCKE* unterstützt.
 - Falls sie Notepad++ verwenden, können sie in der Suchmaske auf den Reiter "Hervorheben" wechseln, um Treffer leichter zu sehen.
 
-## Online-Tool
+### Online-Tool
 
 - Öffnen sie ein Online-Tool für Reguläre Ausdrücke, z.B. [regex101.com](https://regex101.com/)
   - Wählen sie links oben als Flavor "Python" aus
