@@ -1,4 +1,3 @@
-
 ---
 title: 'Aufgabe "OpenRefine in Action"'
 ---
