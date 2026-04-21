@@ -233,7 +233,7 @@
       </button>
     </div><!--/div.accordion-header-->
 
-    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" aria-labelledby="flush-headingcurrent" data-bs-parent="#accordionFlushcurrent">
+    <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#datei--vs.-betriebssystem">Datei- vs. Betriebssystem</a></li>
 <li><a href="#dateinamen-und-pfade">Dateinamen und Pfade</a></li>
@@ -436,35 +436,35 @@ SSDs oder USB-Sticks. Es legt fest:</p>
 ..).</li>
 </ul><p>Gängige Dateisysteme sind im Folgenden aufgelistet und
 verglichen.</p>
-<table class="table"><colgroup><col width="19%"><col width="28%"><col width="28%"><col width="23%"></colgroup><thead><tr><th>Dateisystem</th>
+<table class="table"><colgroup><col width="19%"><col width="28%"><col width="28%"><col width="23%"></colgroup><thead><tr class="header"><th>Dateisystem</th>
 <th>Betriebssystem(e)</th>
 <th>Max. Dateigröße</th>
 <th>Kompatibilität</th>
-</tr></thead><tbody><tr><td>FAT32</td>
+</tr></thead><tbody><tr class="odd"><td>FAT32</td>
 <td>Windows, Linux, macOS</td>
 <td>4 GB</td>
 <td>Hoch (aber veraltet)</td>
-</tr><tr><td>NTFS</td>
+</tr><tr class="even"><td>NTFS</td>
 <td>Windows</td>
 <td>&gt;16 TB</td>
 <td>Eingeschränkt auf macOS/Linux</td>
-</tr><tr><td>exFAT</td>
+</tr><tr class="odd"><td>exFAT</td>
 <td>Windows, macOS, Linux</td>
 <td>&gt;16 EB</td>
 <td>Sehr hoch</td>
-</tr><tr><td>HFS+</td>
+</tr><tr class="even"><td>HFS+</td>
 <td>macOS</td>
 <td>&gt;8 EB</td>
 <td>Nur macOS</td>
-</tr><tr><td>APFS</td>
+</tr><tr class="odd"><td>APFS</td>
 <td>macOS</td>
 <td>&gt;8 EB</td>
 <td>Nur macOS</td>
-</tr><tr><td>ext4</td>
+</tr><tr class="even"><td>ext4</td>
 <td>Linux</td>
 <td>&gt;1 EB</td>
 <td>Eingeschränkt auf Windows/macOS</td>
-</tr><tr><td>Btrfs/XFS</td>
+</tr><tr class="odd"><td>Btrfs/XFS</td>
 <td>Linux</td>
 <td>&gt;16 EB</td>
 <td>Nur Linux</td>
@@ -596,13 +596,13 @@ Zugriff, der Verarbeitung oder dem Austausch von Dateien führen.</p>
 <h3 id="pfadnotationen-im-vergleich">Pfadnotationen im Vergleich<a class="anchor" aria-label="anchor" href="#pfadnotationen-im-vergleich"></a></h3>
 <p>Die Art und Weise, wie Pfade zu Dateien angegeben werden, variiert
 zwischen Betriebssystemen. Hier sind die wichtigsten Unterschiede:</p>
-<table class="table"><colgroup><col width="21%"><col width="34%"><col width="44%"></colgroup><thead><tr><th>Betriebssystem</th>
+<table class="table"><colgroup><col width="21%"><col width="34%"><col width="44%"></colgroup><thead><tr class="header"><th>Betriebssystem</th>
 <th>Beispielpfad innerhalb des Systems</th>
 <th>Besonderheiten</th>
-</tr></thead><tbody><tr><td>Windows</td>
+</tr></thead><tbody><tr class="odd"><td>Windows</td>
 <td><code>C:\Benutzer\Max\Dokumente</code></td>
 <td>Backslashes <code>\</code> als Trenner</td>
-</tr><tr><td>macOS/Linux</td>
+</tr><tr class="even"><td>macOS/Linux</td>
 <td><code>/home/max/Dokumente</code></td>
 <td>Slashes <code>/</code> als Trenner</td>
 </tr></tbody></table><p><strong>Windows</strong> verwendet Laufwerksbuchstaben für einzelne
@@ -653,17 +653,17 @@ werden die Laufwerke anders verwaltet.</p>
 <h3 id="regeln-für-dateinamen">Regeln für Dateinamen<a class="anchor" aria-label="anchor" href="#regeln-f%C3%BCr-dateinamen"></a></h3>
 <p>Auch unterscheiden sich die Betriebssysteme in ihren
 Dateinamenskonventionen.</p>
-<table class="table"><colgroup><col width="29%"><col width="35%"><col width="35%"></colgroup><thead><tr><th>Merkmal</th>
+<table class="table"><colgroup><col width="29%"><col width="35%"><col width="35%"></colgroup><thead><tr class="header"><th>Merkmal</th>
 <th>Windows</th>
 <th>macOS/Linux</th>
-</tr></thead><tbody><tr><td>Sonderzeichen</td>
+</tr></thead><tbody><tr class="odd"><td>Sonderzeichen</td>
 <td>Verboten: <code>\ / : * ? " &lt; &gt; |</code>
 </td>
 <td>Meist erlaubt, aber mit Vorsicht</td>
-</tr><tr><td>Groß-/Kleinschreibung</td>
+</tr><tr class="even"><td>Groß-/Kleinschreibung</td>
 <td>Nicht relevant</td>
 <td>Relevant (case-sensitive)</td>
-</tr><tr><td>Erweiterungen</td>
+</tr><tr class="odd"><td>Erweiterungen</td>
 <td>Wichtig (z.B. <code>.docx</code>)</td>
 <td>Optional, aber üblich</td>
 </tr></tbody></table><p>Diese haben häufig direkte Auswirkung auf den Dateiaustausch, auch
@@ -741,24 +741,24 @@ wird.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="cf">for</span> file <span class="kw">in</span> <span class="pp">*</span>.txt<span class="kw">;</span> <span class="cf">do</span></span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a>    <span class="fu">mv</span> <span class="st">"</span><span class="va">$file</span><span class="st">"</span> <span class="st">"backup_</span><span class="va">$file</span><span class="st">"</span></span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="cf">done</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="cf">for</span> file <span class="kw">in</span> <span class="pp">*</span>.txt<span class="kw">;</span> <span class="cf">do</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1" aria-label="code-block-1-2"></a>    <span class="fu">mv</span> <span class="st">"</span><span class="va">$file</span><span class="st">"</span> <span class="st">"backup_</span><span class="va">$file</span><span class="st">"</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1" aria-label="code-block-1-3"></a><span class="cf">done</span></span></code></pre>
 </div>
 <p>PowerShell unter Windows:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">POWERSHELL<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode powershell" tabindex="0"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" tabindex="-1"></a><span class="fu">Get-ChildItem</span> <span class="op">*.</span><span class="fu">txt</span> <span class="op">|</span> <span class="fu">Rename-Item</span> <span class="op">-</span>NewName <span class="op">{</span> <span class="st">"backup_"</span> <span class="op">+</span> <span class="va">$_</span><span class="op">.</span><span class="fu">Name</span> <span class="op">}</span></span></code></pre>
+<pre class="sourceCode powershell" tabindex="0"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="fu">Get-ChildItem</span> <span class="op">*.</span><span class="fu">txt</span> <span class="op">|</span> <span class="fu">Rename-Item</span> <span class="op">-</span>NewName <span class="op">{</span> <span class="st">"backup_"</span> <span class="op">+</span> <span class="va">$_</span><span class="op">.</span><span class="fu">Name</span> <span class="op">}</span></span></code></pre>
 </div>
 <p>Ein einfaches Python-Skript:</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="im">import</span> os</span>
-<span id="cb3-2"><a href="#cb3-2" tabindex="-1"></a><span class="cf">for</span> <span class="bu">file</span> <span class="kw">in</span> os.listdir(<span class="st">'.'</span>):</span>
-<span id="cb3-3"><a href="#cb3-3" tabindex="-1"></a>    <span class="cf">if</span> <span class="bu">file</span>.endswith(<span class="st">'.txt'</span>):</span>
-<span id="cb3-4"><a href="#cb3-4" tabindex="-1"></a>        os.rename(<span class="bu">file</span>, <span class="ss">f'backup_</span><span class="sc">{</span><span class="bu">file</span><span class="sc">}</span><span class="ss">'</span>)</span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="im">import</span> os</span>
+<span id="cb3-2"><a href="#cb3-2" tabindex="-1" aria-label="code-block-3-2"></a><span class="cf">for</span> <span class="bu">file</span> <span class="kw">in</span> os.listdir(<span class="st">'.'</span>):</span>
+<span id="cb3-3"><a href="#cb3-3" tabindex="-1" aria-label="code-block-3-3"></a>    <span class="cf">if</span> <span class="bu">file</span>.endswith(<span class="st">'.txt'</span>):</span>
+<span id="cb3-4"><a href="#cb3-4" tabindex="-1" aria-label="code-block-3-4"></a>        os.rename(<span class="bu">file</span>, <span class="ss">f'backup_</span><span class="sc">{</span><span class="bu">file</span><span class="sc">}</span><span class="ss">'</span>)</span></code></pre>
 </div>
 <p>Im Windows Explorer lassen sich alle <code>.txt</code> Dateien
 auswählen, dann Rechtsklick -&gt; “Umbenennen” und den neuen Namen
@@ -939,7 +939,7 @@ any links that you are not going to use.
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
 
         <p>Vorlage lizenziert unter <a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">CC-BY 4.0</a> von <a href="https://carpentries.org/" class="external-link">The Carpentries</a></p>
-        <p>Erstellt mit <a href="https://github.com/carpentries/sandpaper/tree/" class="external-link">sandpaper (0.20.0)</a>, <a href="https://github.com/carpentries/pegboard/tree/" class="external-link">pegboard (0.7.9)</a> und <a href="https://github.com/Dr-Eberle-Zentrum/varnish/tree/e83e91d2c5ad53b329070b9741d678731ea434ae" class="external-link">varnish (1.0.9)</a></p>
+        <p>Erstellt mit <a href="https://github.com/carpentries/sandpaper/tree/0.20.1" class="external-link">sandpaper (0.20.1)</a>, <a href="https://github.com/carpentries/pegboard/tree/0.7.9" class="external-link">pegboard (0.7.9)</a> und <a href="https://github.com/Dr-Eberle-Zentrum/varnish/tree/e83e91d2c5ad53b329070b9741d678731ea434ae" class="external-link">varnish (1.0.9)</a></p>
 		</div>
 		</footer></div> <!-- / div.container -->
 	<div id="to-top">
@@ -962,7 +962,7 @@ any links that you are not going to use.
   "identifier": "https://Dr-Eberle-Zentrum.github.io/FDM-basics/instructor/Dateiverwaltung.html",
   "dateCreated": "2024-08-01",
   "dateModified": "2025-08-21",
-  "datePublished": "2026-04-14"
+  "datePublished": "2026-04-21"
 }
 
   </script><script>
